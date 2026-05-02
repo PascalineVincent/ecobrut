@@ -1,0 +1,1685 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.8.25">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>lecobrut.fr</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-446cba8f0bd80e672e6d306615c6ffd9.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+<style>html{ scroll-behavior: smooth; }</style>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Anybody:wght@400;700;900&amp;family=Source+Serif+4:ital,wght@0,400;0,600;1,400&amp;family=JetBrains+Mono:wght@400;600&amp;display=swap" rel="stylesheet">
+<link rel="manifest" href="../assets/pwa/manifest.json">
+<meta name="theme-color" content="#2E5D4B">
+<script>
+// ================================================================
+// ECO GAME ENGINE v2
+// Loading: injected via <script defer> in <head>
+// All page scripts use: onEcoReady(() => { ... })
+// ================================================================
+
+// onEcoReady: legacy helper — game.js now runs in <head> so ECO is always ready
+function onEcoReady(fn) { fn(); }
+
+const ECO = (() => {
+
+  const LEVELS = [
+    { id:1, xpNeeded:0,    name:"L'Ignorant Curieux",   title:"Tu sais que tu ne sais rien.",       charStage:1 },
+    { id:2, xpNeeded:100,  name:"L'Apprenti Lecteur",   title:"Tu lis les gros titres maintenant.", charStage:2 },
+    { id:3, xpNeeded:300,  name:"Le Citoyen Éclairé",   title:"Tu poses les bonnes questions.",     charStage:3 },
+    { id:4, xpNeeded:600,  name:"L'Expert du Dîner",    title:"Tu brilles en société.",             charStage:4 },
+    { id:5, xpNeeded:1000, name:"L'Économiste en Chef", title:"Piketty te cite en réunion.",        charStage:5 },
+  ];
+
+  const MODULES = [
+    { id:"definition",   title:"C'est quoi l'éco ?",     emoji:"🤔", xp:50  },
+    { id:"courants",     title:"Courants de pensée",      emoji:"🧠", xp:80  },
+    { id:"croissance",   title:"La croissance",            emoji:"📈", xp:80  },
+    { id:"inflation",    title:"L'inflation",              emoji:"💸", xp:80  },
+    { id:"dette",        title:"La dette publique",        emoji:"🏛️", xp:100 },
+    { id:"inegalites",   title:"Les inégalités",           emoji:"⚖️", xp:100 },
+    { id:"commerce",     title:"Commerce international",   emoji:"🌐", xp:100 },
+    { id:"idees_recues", title:"Les idées reçues",         emoji:"🔍", xp:80  },
+  ];
+
+  const CHALLENGES = [
+    { id:"ch_vocab",    title:"Parler comme un éco",          xpReward:80,  badge:"🗣️", type:"manual",     unlockAt:1 },
+    { id:"ch_news",     title:"Décrypte une actu éco",        xpReward:100, badge:"📰", type:"manual",     unlockAt:1 },
+    { id:"ch_speed",    title:"Sprint : 10 questions / 3 min",xpReward:120, badge:"⚡", type:"quiz_speed", unlockAt:2 },
+    { id:"ch_vrai_faux",title:"Vrai ou Faux — 10 cartes",    xpReward:100, badge:"🃏", type:"mini_game",  unlockAt:1 },
+    { id:"ch_assoc",    title:"Jeu d'association",            xpReward:120, badge:"🔗", type:"mini_game",  unlockAt:2 },
+    { id:"ch_debate",   title:"Pour ou contre la dette ?",    xpReward:100, badge:"⚔️", type:"manual",     unlockAt:2 },
+    { id:"ch_piketty",  title:"Expliquer r > g",              xpReward:120, badge:"📚", type:"manual",     unlockAt:3 },
+    { id:"ch_streak",   title:"Sans-faute : 5 d'affilée",    xpReward:150, badge:"🎯", type:"auto_streak",unlockAt:3 },
+    { id:"ch_perfect",  title:"Score parfait sur un quiz",    xpReward:200, badge:"💎", type:"auto_perfect",unlockAt:1 },
+    { id:"ch_actu",     title:"Analyse d'actu guidée",        xpReward:150, badge:"🔎", type:"mini_game",  unlockAt:2 },
+    { id:"ch_all",      title:"Grand Parcours",               xpReward:300, badge:"🏆", type:"auto_all",   unlockAt:1 },
+  ];
+
+  const KEY = "eco_v2";
+  const defaultState = () => ({
+    xp:0, completedModules:[], quizScores:{},
+    completedChallenges:[], badges:[], diagnosticDone:false,
+    streak:0, maxStreak:0, createdAt:new Date().toISOString(),
+    xpHistory:[], wrongAnswers:{}, lastDailyDate:'', dailyStreak:0, darkMode:false
+  });
+
+  const load = () => { try { const r=localStorage.getItem(KEY); return r?JSON.parse(r):defaultState(); } catch{ return defaultState(); } };
+  const save = s => { try { localStorage.setItem(KEY,JSON.stringify(s)); } catch{} };
+  const reset = () => { localStorage.removeItem(KEY); location.reload(); };
+
+  const getLevel   = xp => { let l=LEVELS[0]; for(const x of LEVELS){ if(xp>=x.xpNeeded) l=x; } return l; };
+  const getNextLvl = xp => { for(const x of LEVELS){ if(xp<x.xpNeeded) return x; } return null; };
+
+  const addXP = (amount, reason="") => {
+    const s=load(); const before=getLevel(s.xp).id;
+    s.xp+=amount;
+    s.xpHistory=s.xpHistory||[];
+    s.xpHistory.push({xp:s.xp, date:new Date().toISOString(), reason:reason||'xp'});
+    if(s.xpHistory.length>100) s.xpHistory=s.xpHistory.slice(-100);
+    save(s);
+    showToast(`+${amount} XP${reason?" — "+reason:""}`, "xp");
+    refreshHUD();
+    if(getLevel(s.xp).id>before) setTimeout(()=>showLevelUp(getLevel(s.xp)),800);
+  };
+
+  const completeModule = id => {
+    const s=load();
+    if(!s.completedModules.includes(id)){
+      s.completedModules.push(id);
+      const m=MODULES.find(x=>x.id===id);
+      if(m) s.xp+=m.xp;
+      save(s); refreshHUD();
+    }
+    checkAutoChallenge(load());
+  };
+
+  const saveQuizScore = (quizId, score, total, wrongQs=[]) => {
+    const s=load();
+    const pct=Math.round((score/total)*100);
+    const prev=s.quizScores[quizId];
+    if(!prev||pct>prev.pct) s.quizScores[quizId]={score,total,pct,date:new Date().toISOString()};
+    // Track wrong answers for revision mode
+    s.wrongAnswers=s.wrongAnswers||{};
+    wrongQs.forEach(q=>{ const k=q.question.slice(0,40); if(!s.wrongAnswers[k]||pct<s.wrongAnswers[k].pct) s.wrongAnswers[k]={question:q.question,options:q.options,correct:q.correct,explanation:q.explanation,quizId,pct}; });
+    const xpEarned=Math.round((pct/100)*40);
+    s.xp+=xpEarned;
+    s.xpHistory=s.xpHistory||[];
+    s.xpHistory.push({xp:s.xp, date:new Date().toISOString(), reason:quizId});
+    if(s.xpHistory.length>100) s.xpHistory=s.xpHistory.slice(-100);
+    if(pct===100 && !s.completedChallenges.includes("ch_perfect")){
+      s.completedChallenges.push("ch_perfect"); s.xp+=200;
+      setTimeout(()=>showChallengeUnlock(CHALLENGES.find(c=>c.id==="ch_perfect")),1200);
+    }
+    save(s); refreshHUD(); checkAutoChallenge(s);
+    return xpEarned;
+  };
+
+  const completeChallenge = id => {
+    const s=load();
+    if(s.completedChallenges.includes(id)) return;
+    const ch=CHALLENGES.find(c=>c.id===id);
+    if(!ch) return;
+    const before=getLevel(s.xp).id;
+    s.completedChallenges.push(id); s.xp+=ch.xpReward; s.badges.push(ch.badge);
+    save(s); refreshHUD(); showChallengeUnlock(ch);
+    if(getLevel(s.xp).id>before) setTimeout(()=>showLevelUp(getLevel(s.xp)),1400);
+  };
+
+  const checkAutoChallenge = s => {
+    if(s.completedModules.length>=6 && s.diagnosticDone && !s.completedChallenges.includes("ch_all")){
+      const ch=CHALLENGES.find(c=>c.id==="ch_all");
+      s.completedChallenges.push("ch_all"); s.xp+=ch.xpReward; s.badges.push(ch.badge);
+      save(s); setTimeout(()=>showChallengeUnlock(ch),1000);
+    }
+  };
+
+  // ── PERSONNAGE SVG ───────────────────────────────────────────
+  const getCharSVG = stage => {
+    const s = [
+      `<svg viewBox="0 0 80 100" xmlns="http://www.w3.org/2000/svg" width="72" height="90">
+        <circle cx="40" cy="28" r="20" fill="#EDE6D6" stroke="#1A1A2E" stroke-width="2"/>
+        <ellipse cx="40" cy="72" rx="22" ry="26" fill="#EDE6D6" stroke="#1A1A2E" stroke-width="2"/>
+        <circle cx="32" cy="26" r="3" fill="#1A1A2E"/><circle cx="48" cy="26" r="3" fill="#1A1A2E"/>
+        <path d="M34 36 Q40 32 46 36" stroke="#1A1A2E" stroke-width="1.8" fill="none" stroke-linecap="round"/>
+        <path d="M36 12 Q40 6 44 12" stroke="#C9973A" stroke-width="2" fill="none" stroke-linecap="round"/>
+        <rect x="28" y="74" width="24" height="16" rx="3" fill="#8B7355" stroke="#1A1A2E" stroke-width="1.5"/>
+        <text x="40" y="85" text-anchor="middle" font-size="8" fill="#EDE6D6" font-family="sans-serif">?</text>
+      </svg>`,
+      `<svg viewBox="0 0 80 100" xmlns="http://www.w3.org/2000/svg" width="72" height="90">
+        <circle cx="40" cy="28" r="20" fill="#EDE6D6" stroke="#1A1A2E" stroke-width="2"/>
+        <ellipse cx="40" cy="72" rx="22" ry="26" fill="#EDE6D6" stroke="#1A1A2E" stroke-width="2"/>
+        <circle cx="32" cy="26" r="3.5" fill="#1A1A2E"/><circle cx="48" cy="26" r="3.5" fill="#1A1A2E"/>
+        <path d="M33 35 Q40 41 47 35" stroke="#1A1A2E" stroke-width="1.8" fill="none" stroke-linecap="round"/>
+        <rect x="26" y="60" width="28" height="22" rx="3" fill="#C9973A" stroke="#1A1A2E" stroke-width="1.5"/>
+        <line x1="30" y1="67" x2="50" y2="67" stroke="#1A1A2E" stroke-width="1" opacity=".5"/>
+        <line x1="30" y1="73" x2="47" y2="73" stroke="#1A1A2E" stroke-width="1" opacity=".5"/>
+        <circle cx="58" cy="14" r="7" fill="#C9973A" stroke="#1A1A2E" stroke-width="1.5"/>
+        <text x="58" y="18" text-anchor="middle" font-size="8" fill="#1A1A2E" font-family="sans-serif">★</text>
+      </svg>`,
+      `<svg viewBox="0 0 80 100" xmlns="http://www.w3.org/2000/svg" width="72" height="90">
+        <circle cx="40" cy="28" r="20" fill="#EDE6D6" stroke="#1A1A2E" stroke-width="2"/>
+        <ellipse cx="40" cy="72" rx="22" ry="26" fill="#2E5D4B" stroke="#1A1A2E" stroke-width="2"/>
+        <circle cx="32" cy="26" r="3.5" fill="#1A1A2E"/><circle cx="48" cy="26" r="3.5" fill="#1A1A2E"/>
+        <rect x="26" y="22" width="12" height="8" rx="3" fill="none" stroke="#1A1A2E" stroke-width="2"/>
+        <rect x="42" y="22" width="12" height="8" rx="3" fill="none" stroke="#1A1A2E" stroke-width="2"/>
+        <line x1="38" y1="26" x2="42" y2="26" stroke="#1A1A2E" stroke-width="1.5"/>
+        <path d="M33 37 Q40 42 47 37" stroke="#1A1A2E" stroke-width="2" fill="none" stroke-linecap="round"/>
+        <rect x="24" y="62" width="14" height="18" rx="2" fill="#F5F0E8" stroke="#1A1A2E" stroke-width="1.5"/>
+        <rect x="42" y="62" width="14" height="18" rx="2" fill="#F5F0E8" stroke="#1A1A2E" stroke-width="1.5"/>
+        <line x1="38" y1="71" x2="42" y2="71" stroke="#1A1A2E" stroke-width="1.5"/>
+      </svg>`,
+      `<svg viewBox="0 0 80 100" xmlns="http://www.w3.org/2000/svg" width="72" height="90">
+        <circle cx="40" cy="26" r="20" fill="#EDE6D6" stroke="#1A1A2E" stroke-width="2"/>
+        <ellipse cx="40" cy="72" rx="24" ry="26" fill="#1A1A2E" stroke="#1A1A2E" stroke-width="2"/>
+        <circle cx="32" cy="24" r="3.5" fill="#1A1A2E"/><circle cx="48" cy="24" r="3.5" fill="#1A1A2E"/>
+        <path d="M33 34 Q40 40 47 34" stroke="#1A1A2E" stroke-width="2" fill="none" stroke-linecap="round"/>
+        <path d="M36 44 L40 54 L44 44" fill="#C9973A" stroke="#C9973A" stroke-width="1"/>
+        <line x1="40" y1="55" x2="40" y2="90" stroke="#C9973A" stroke-width="2.5"/>
+        <rect x="26" y="5" width="28" height="8" rx="4" fill="#C9973A" opacity=".8"/>
+      </svg>`,
+      `<svg viewBox="0 0 80 100" xmlns="http://www.w3.org/2000/svg" width="72" height="90">
+        <circle cx="40" cy="30" r="20" fill="#EDE6D6" stroke="#1A1A2E" stroke-width="2"/>
+        <ellipse cx="40" cy="74" rx="24" ry="24" fill="#2E5D4B" stroke="#1A1A2E" stroke-width="2"/>
+        <circle cx="32" cy="28" r="3.5" fill="#1A1A2E"/><circle cx="48" cy="28" r="3.5" fill="#1A1A2E"/>
+        <path d="M33 38 Q40 44 47 38" stroke="#1A1A2E" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+        <polygon points="40,4 43,13 52,13 45,18 48,27 40,22 32,27 35,18 28,13 37,13" fill="#C9973A" stroke="#1A1A2E" stroke-width="1.2"/>
+        <rect x="28" y="68" width="24" height="16" rx="3" fill="#F5F0E8" stroke="#1A1A2E" stroke-width="1.5"/>
+        <circle cx="40" cy="76" r="4" fill="#C9973A"/>
+        <text x="40" y="88" text-anchor="middle" font-size="5" fill="#8B7355" font-family="sans-serif">PhD</text>
+      </svg>`
+    ];
+    return s[Math.min(stage-1,4)];
+  };
+
+  // ── HUD ─────────────────────────────────────────────────────
+  const refreshHUD = () => {
+    const s=load(); const lv=getLevel(s.xp); const nx=getNextLvl(s.xp);
+    const xpRange=nx?nx.xpNeeded-lv.xpNeeded:1;
+    const pct=nx?Math.min(100,Math.round(((s.xp-lv.xpNeeded)/xpRange)*100)):100;
+    document.querySelectorAll("[data-xp]").forEach(el=>el.textContent=s.xp);
+    document.querySelectorAll("[data-level]").forEach(el=>el.textContent=lv.name);
+    document.querySelectorAll("[data-xp-bar]").forEach(el=>el.style.width=pct+"%");
+    document.querySelectorAll("[data-xp-next]").forEach(el=>
+      el.textContent=nx?`${nx.xpNeeded-s.xp} XP → "${nx.name}"`:"Niveau maximum !");
+    document.querySelectorAll("[data-modules-done]").forEach(el=>
+      el.textContent=`${s.completedModules.length} / ${MODULES.length}`);
+    document.querySelectorAll("[data-challenges-done]").forEach(el=>
+      el.textContent=`${s.completedChallenges.length} / ${CHALLENGES.length}`);
+    document.querySelectorAll("[data-char-stage]").forEach(el=>{
+      el.innerHTML=getCharSVG(lv.charStage);
+    });
+    // Mark completed tiles
+    document.querySelectorAll("[data-module-tile]").forEach(el=>{
+      if(s.completedModules.includes(el.dataset.moduleTile)) el.classList.add("completed");
+    });
+    document.querySelectorAll("[data-challenge-tile]").forEach(el=>{
+      const id=el.dataset.challengeTile;
+      const ch=CHALLENGES.find(c=>c.id===id);
+      if(!ch) return;
+      if(s.completedChallenges.includes(id)){ el.classList.add("completed"); }
+      else if(lv.id<ch.unlockAt){ el.classList.add("locked"); }
+    });
+  };
+
+  // ── TOAST ────────────────────────────────────────────────────
+  const showToast = (msg, type="info") => {
+    let t=document.getElementById("eco-toast");
+    if(!t){ t=document.createElement("div"); t.id="eco-toast"; t.className="eco-toast"; document.body.appendChild(t); }
+    const icons={xp:"⭐",info:"💡",success:"✅",warning:"⚠️"};
+    t.innerHTML=`<span style="font-size:1.1rem">${icons[type]||"💡"}</span>${msg}`;
+    t.classList.add("show");
+    clearTimeout(t._t);
+    t._t=setTimeout(()=>t.classList.remove("show"),3200);
+  };
+
+  // ── LEVEL UP MODAL ───────────────────────────────────────────
+  const showLevelUp = lv => {
+    const ov=document.createElement("div");
+    ov.style.cssText="position:fixed;inset:0;background:rgba(26,26,46,.75);z-index:99999;display:flex;align-items:center;justify-content:center;padding:1rem;backdrop-filter:blur(4px)";
+    ov.innerHTML=`<div style="background:var(--ivory);border-radius:var(--r-xl);padding:3rem 2.5rem;text-align:center;max-width:380px;width:100%;border:2px solid var(--gold);animation:levelPop .5s cubic-bezier(.34,1.56,.64,1)">
+      <div style="animation:floatUp 2s ease-in-out infinite;margin-bottom:1.25rem">${getCharSVG(lv.charStage)}</div>
+      <div style="font-family:var(--ff-display);font-size:.7rem;text-transform:uppercase;letter-spacing:.1em;color:var(--gold);margin-bottom:.5rem">Nouveau niveau !</div>
+      <h2 style="font-family:var(--ff-display);font-size:1.7rem;color:var(--ink);margin:0 0 .5rem">${lv.name}</h2>
+      <p style="color:var(--dust);font-style:italic;margin:0 0 2rem">"${lv.title}"</p>
+      <button onclick="this.closest('[style*=fixed]').remove()" style="background:var(--ink);color:var(--ivory);border:none;padding:.75rem 2rem;border-radius:var(--r-md);font-family:var(--ff-display);font-weight:900;cursor:pointer">Continuer →</button>
+    </div>`;
+    document.body.appendChild(ov);
+    ov.addEventListener("click",e=>{if(e.target===ov)ov.remove();});
+  };
+
+  const showChallengeUnlock = ch => {
+    showToast(`${ch.badge} Défi accompli : "${ch.title}" (+${ch.xpReward} XP)`, "success");
+  };
+
+  document.addEventListener("DOMContentLoaded", refreshHUD);
+
+  // ── TOOLTIP LEXICAL ───────────────────────────────────────
+  const TOOLTIPS = {
+    "PIB":"Produit Intérieur Brut. Valeur totale des biens et services produits en un an sur le territoire national.",
+    "IPC":"Indice des Prix à la Consommation. Mesure l'inflation via un panier de biens représentatif (calculé par l'INSEE).",
+    "BCE":"Banque Centrale Européenne. Gère l'euro et vise une inflation autour de 2%.",
+    "inflation":"Hausse générale et durable du niveau des prix. Son contraire : la déflation.",
+    "déflation":"Baisse générale des prix. Paralyse l'économie car les agents attendent des baisses supplémentaires avant d'acheter.",
+    "stagflation":"Situation rare : inflation élevée + stagnation économique. Les remèdes classiques s'annulent mutuellement.",
+    "PIB/habitant":"Le PIB divisé par la population. Meilleur indicateur du niveau de vie moyen qu'un pays.",
+    "IDH":"Indice de Développement Humain (ONU). Combine PIB/habitant, espérance de vie et niveau d'éducation.",
+    "Gini":"Coefficient mesurant les inégalités. De 0 (égalité parfaite) à 1 (inégalité totale). France : ~0,30.",
+    "taux directeur":"Taux fixé par la banque centrale auquel les banques commerciales peuvent emprunter. Principal outil de la politique monétaire.",
+    "main invisible":"Métaphore d'Adam Smith : en poursuivant leur intérêt, les agents servent (sans le vouloir) l'intérêt général via le marché.",
+    "multiplicateur":"Effet par lequel 1€ de dépense publique génère plus d'1€ de PIB, car la dépense d'un agent est le revenu d'un autre.",
+    "plus-value":"Pour Marx : différence entre la valeur produite par le travail et le salaire versé — captée par le capitaliste.",
+    "rareté":"Situation fondamentale où les ressources sont limitées face à des besoins potentiellement illimités.",
+    "déficit":"Écart annuel entre dépenses et recettes publiques. S'accumule pour former la dette.",
+    "dette publique":"Total des emprunts de l'État et des administrations publiques non encore remboursés.",
+    "OAT":"Obligation Assimilable du Trésor. Titre de dette émis par l'État français pour se financer sur les marchés.",
+    "spread":"Écart de taux d'intérêt entre deux emprunteurs. Un spread élevé = prime de risque plus élevée.",
+    "croissance":"Augmentation du PIB en volume d'une période à l'autre. Permet en principe d'augmenter le niveau de vie.",
+    "décroissance":"Courant proposant de réduire volontairement la production pour respecter les limites planétaires.",
+    "r > g":"Formule de Piketty : quand le rendement du capital (r) dépasse la croissance (g), les inégalités de patrimoine augmentent.",
+    "redistribution":"Mécanismes (impôts progressifs, prestations) qui réduisent les inégalités de revenus primaires.",
+    "coût d'opportunité":"Valeur de ce à quoi on renonce en faisant un choix. Choisir A, c'est renoncer à B.",
+    "macroéconomie":"Étudie l'économie dans son ensemble : PIB, chômage, inflation, balance commerciale.",
+    "microéconomie":"Étudie les comportements individuels : ménage, entreprise, marché particulier.",
+    "keynésianisme":"Courant de Keynes : l'État doit intervenir activement pour stabiliser l'économie en cas de crise.",
+    "monétarisme":"Courant de Friedman : l'inflation est toujours un phénomène monétaire. Priorité au contrôle de la masse monétaire.",
+  };
+
+  const initTooltips = () => {
+    // Inject tooltip CSS once
+    if(!document.getElementById('eco-tooltip-style')){
+      const st=document.createElement('style');
+      st.id='eco-tooltip-style';
+      st.textContent=`
+        .eco-term { border-bottom:1.5px dashed var(--gold); cursor:help; position:relative; color:inherit; }
+        #eco-tip {
+          position:fixed; z-index:9998; max-width:280px;
+          background:var(--ink); color:var(--ivory);
+          padding:.65rem 1rem; border-radius:var(--r-md);
+          font-family:var(--ff-body); font-size:.85rem; line-height:1.55;
+          border-left:3px solid var(--gold);
+          pointer-events:none; opacity:0;
+          transition:opacity .18s; box-shadow:0 8px 24px rgba(26,26,46,.3);
+        }
+        #eco-tip.show { opacity:1; }
+        #eco-tip strong { font-family:var(--ff-display); font-size:.9rem; display:block; margin-bottom:.25rem; color:var(--gold-2); }
+      `;
+      document.head.appendChild(st);
+    }
+    // Create tooltip element
+    if(!document.getElementById('eco-tip')){
+      const tip=document.createElement('div');
+      tip.id='eco-tip';
+      document.body.appendChild(tip);
+    }
+    const tip=document.getElementById('eco-tip');
+
+    // Scan article text nodes and wrap known terms
+    const wrap = (node) => {
+      if(node.nodeType===3 && node.parentElement && !['SCRIPT','STYLE','CODE','PRE'].includes(node.parentElement.tagName)){
+        let html=node.textContent;
+        let changed=false;
+        for(const [term, def] of Object.entries(TOOLTIPS)){
+          const rx=new RegExp('(?<![\w\-])'+term.replace(/[.*+?^${}()|[\]\\]/g,'\\$&')+'(?![\w\-])','g');
+          if(rx.test(html)){
+            const safeDef = def.replace(/"/g, '&quot;').replace(/'/g, '&#39;');
+            html=html.replace(rx, '<span class="eco-term" data-tip-term="' + term.replace(/"/g, '&quot;') + '" data-tip-def="' + safeDef + '">' + term + '</span>');
+            changed=true;
+          }
+        }
+        if(changed){
+          const span=document.createElement('span');
+          span.innerHTML=html;
+          node.parentNode.replaceChild(span,node);
+        }
+      } else if(node.nodeType===1 && !node.classList.contains('eco-term') && !['SCRIPT','STYLE'].includes(node.tagName)){
+        for(const child of [...node.childNodes]) wrap(child);
+      }
+    };
+
+    // Only wrap article/main content
+    const main=document.querySelector('main, .content, article, #quarto-content');
+    if(main) wrap(main);
+
+    // Hover events
+    document.addEventListener('mouseover', e=>{
+      const el=e.target.closest('.eco-term');
+      if(!el) return;
+      const term = el.dataset.tipTerm || '';
+      const def  = el.dataset.tipDef  || '';
+      tip.innerHTML=`<strong>${term}</strong>${def}`;
+      tip.classList.add('show');
+    });
+    document.addEventListener('mousemove', e=>{
+      const el=e.target.closest('.eco-term');
+      if(!el){ tip.classList.remove('show'); return; }
+      const x=Math.min(e.clientX+14, window.innerWidth-300);
+      const y=Math.min(e.clientY+14, window.innerHeight-120);
+      tip.style.left=x+'px'; tip.style.top=y+'px';
+    });
+    document.addEventListener('mouseout', e=>{
+      if(!e.target.closest('.eco-term')) tip.classList.remove('show');
+    });
+  };
+
+  document.addEventListener('DOMContentLoaded', initTooltips);
+
+
+  // ── DARK MODE ────────────────────────────────────────────
+  const applyDarkMode = (dark) => {
+    document.documentElement.setAttribute('data-theme', dark ? 'dark' : 'light');
+    const btn = document.getElementById('dark-toggle');
+    if(btn) btn.textContent = dark ? '☀️' : '🌙';
+  };
+  const toggleDark = () => {
+    const s=load(); s.darkMode=!s.darkMode; save(s);
+    applyDarkMode(s.darkMode);
+  };
+  document.addEventListener('DOMContentLoaded', () => {
+    const s=load(); applyDarkMode(s.darkMode||false);
+  });
+
+  // ── SCROLL PROGRESS BAR ──────────────────────────────────
+  document.addEventListener('DOMContentLoaded', () => {
+    const bar = document.createElement('div');
+    bar.id = 'scroll-progress';
+    bar.style.cssText = 'position:fixed;top:0;left:0;height:3px;width:0%;background:linear-gradient(90deg,var(--slate),var(--gold));z-index:9999;transition:width .1s linear;pointer-events:none';
+    document.body.prepend(bar);
+    window.addEventListener('scroll', () => {
+      const el = document.documentElement;
+      const pct = (el.scrollTop / (el.scrollHeight - el.clientHeight)) * 100;
+      bar.style.width = Math.min(100, pct) + '%';
+    }, { passive: true });
+  });
+
+  // ── DAILY QUIZ ───────────────────────────────────────────
+  const DAILY_QUESTIONS = [
+    {q:"Qui a inventé le concept de 'main invisible' ?",opts:["Keynes","Adam Smith","Friedman","Marx"],c:1,expl:"Adam Smith dans La Richesse des Nations (1776)."},
+    {q:"Que mesure le coefficient de Gini ?",opts:["La croissance","L'inflation","Les inégalités","La dette"],c:2,expl:"De 0 (égalité totale) à 1 (inégalité totale). France : ~0,30."},
+    {q:"La BCE vise une inflation de combien ?",opts:["0%","~2%","~5%","Il n'y a pas d'objectif"],c:1,expl:"~2% par an. Ni trop peu (risque de déflation), ni trop (perte de pouvoir d'achat)."},
+    {q:"Qu'est-ce que la stagflation ?",opts:["Fort PIB + forte inflation","Inflation + stagnation économique","Déflation + chômage","Aucune des réponses"],c:1,expl:"Stagnation + inflation. Situation délicate car les remèdes habituels s'annulent."},
+    {q:"La dette publique française en 2023 dépasse…",opts:["60% du PIB","80% du PIB","110% du PIB","150% du PIB"],c:2,expl:"110% du PIB, soit plus de 3 100 milliards d'euros."},
+    {q:"'r > g' est la formule de…",opts:["Keynes","Friedman","Piketty","Solow"],c:2,expl:"Thomas Piketty dans Le Capital au XXIe siècle. Quand le rendement du capital dépasse la croissance, les inégalités augmentent."},
+    {q:"Le PIB est un indicateur de…",opts:["Bonheur national","Richesse accumulée","Production annuelle","Niveau de vie"],c:2,expl:"Valeur de tous les biens et services finaux produits sur un territoire en un an."},
+    {q:"La déflation est généralement…",opts:["Bonne pour l'économie","Neutre","Dangereuse à terme","Recherchée par la BCE"],c:2,expl:"Elle paralyse les achats (on attend des prix encore plus bas) et crée un cercle vicieux."},
+    {q:"Le multiplicateur keynésien signifie que…",opts:["Les impôts doublent","1€ public génère > 1€ de PIB","Les salaires augmentent","La monnaie se multiplie"],c:1,expl:"La dépense publique circule : elle crée des revenus qui sont à nouveau dépensés, etc."},
+    {q:"Quel pays a le Gini le plus bas (= le plus égalitaire) ?",opts:["France","États-Unis","Afrique du Sud","Danemark"],c:3,expl:"Les pays nordiques ont des Gini autour de 0,25-0,28, grâce à une redistribution très forte."},
+    {q:"La microéconomie s'intéresse à…",opts:["L'économie mondiale","Le PIB national","Un marché ou agent particulier","La politique monétaire"],c:2,expl:"La micro analyse les comportements individuels : ménage, entreprise, marché spécifique."},
+    {q:"Quelle institution fixe les taux directeurs en zone euro ?",opts:["Le FMI","La Banque de France","La BCE","Le ministère des Finances"],c:2,expl:"La Banque Centrale Européenne, indépendante des gouvernements, fixe les taux pour toute la zone euro."},
+    {q:"Le coût d'opportunité, c'est…",opts:["Le prix d'une opportunité","Ce à quoi on renonce en choisissant","Un impôt sur les profits","Un coût de production"],c:1,expl:"Choisir A, c'est renoncer à B. C'est la valeur de cette option abandonnée."},
+    {q:"La crise de 2008 a été déclenchée par…",opts:["Une hyperinflation","Une crise des subprimes immobiliers américains","Un choc pétrolier","Une crise de la dette souveraine"],c:1,expl:"Des prêts immobiliers risqués (subprimes) ont été titrisés et vendus mondialement. Quand la bulle a éclaté, tout le système financier a vacillé."},
+    {q:"L'IDH est calculé par…",opts:["La BCE","L'INSEE","L'ONU (PNUD)","Le FMI"],c:2,expl:"Le Programme des Nations Unies pour le Développement publie l'IDH chaque année depuis 1990."},
+    {q:"Un déficit budgétaire, c'est quand…",opts:["La dette dépasse 100% du PIB","Les dépenses publiques > recettes sur un an","Le PIB baisse deux trimestres","L'inflation dépasse 5%"],c:1,expl:"Le déficit est un flux annuel. Il s'accumule pour former la dette (stock)."},
+    {q:"La 'destruction créatrice' est un concept de…",opts:["Marx","Keynes","Schumpeter","Friedman"],c:2,expl:"Joseph Schumpeter : le capitalisme avance en détruisant les anciennes structures pour en créer de nouvelles."},
+    {q:"Quelle affirmation est VRAIE concernant la dette d'un État ?",opts:["Elle doit toujours être remboursée entièrement","Un État peut la 'rouler' indéfiniment si les conditions sont favorables","Elle appartient toujours à des citoyens du pays","Elle est toujours exprimée en monnaie locale"],c:1,expl:"Les États refinancent leur dette en permanence — pas besoin de 'rembourser' si g > r."},
+    {q:"L'empreinte écologique mesure…",opts:["La pollution industrielle","La surface naturelle nécessaire à notre mode de vie","Les émissions de CO2 d'un pays","La dépense énergétique par habitant"],c:1,expl:"Si tout le monde vivait comme un Français, il faudrait environ 2,7 planètes."},
+    {q:"En économie, 'toutes choses égales par ailleurs' signifie…",opts:["On compare deux situations identiques","On isole l'effet d'une seule variable","On suppose que le marché est parfait","On ignore l'inflation"],c:1,expl:"C'est une hypothèse de méthode (ceteris paribus) pour étudier l'effet d'une seule variable sans que les autres ne changent."},
+    {q:"La France fait partie de la zone…",opts:["Dollar","Franc","Euro","Sterling"],c:2,expl:"La France utilise l'euro depuis 2002. La politique monétaire est donc gérée par la BCE, pas par la Banque de France."},
+    {q:"Le taux de chômage naturel (ou NAIRU) désigne…",opts:["0% de chômage","Le taux minimum incompressible en économie saine","Le chômage causé par la mondialisation","Le taux maximal acceptable"],c:1,expl:"Un taux de chômage nul est considéré impossible. Le NAIRU est le niveau 'naturel' au-dessous duquel l'inflation s'emballe."},
+    {q:"Quel mécanisme explique que l'inflation peut 'fondre' la dette publique ?",opts:["L'État paie moins d'intérêts","La valeur réelle des remboursements diminue","Le PIB augmente automatiquement","Les créanciers renoncent à leurs créances"],c:1,expl:"Si l'inflation est à 5% et la dette à taux fixe, la valeur réelle de ce qu'on rembourse diminue chaque année."},
+    {q:"Qu'est-ce que la 'répression financière' ?",opts:["Interdire la spéculation","Maintenir des taux réels négatifs pour réduire la dette sans l'annoncer","Taxer les revenus du capital à 100%","Nationaliser les banques"],c:1,expl:"Quand l'inflation > taux d'intérêt réel, les épargnants perdent en pouvoir d'achat et la valeur réelle de la dette diminue discrètement."},
+    {q:"Quelle est la différence entre croissance nominale et réelle du PIB ?",opts:["Aucune, c'est la même chose","La croissance réelle est corrigée de l'inflation","La nominale concerne l'industrie, la réelle les services","La réelle est toujours plus haute"],c:1,expl:"La croissance nominale inclut l'effet prix. Pour savoir si on produit vraiment plus, on corrige par l'inflation → croissance réelle."},
+    {q:"L'économie comportementale (Thaler, Kahneman) montre que…",opts:["Les agents sont toujours rationnels","Les marchés sont toujours efficaces","Les humains ont des biais cognitifs qui influencent leurs décisions","La monnaie détermine tout"],c:2,expl:"Contrairement à l'agent rationnel de l'économie classique, les vrais humains ont des biais : aversion à la perte, ancrage, biais de confirmation..."},
+    {q:"La balance commerciale d'un pays est…",opts:["Son budget annuel","La différence entre ses exportations et ses importations","Sa dette extérieure","Le solde de sa balance des paiements"],c:1,expl:"Exports > Imports = excédent commercial (Allemagne). Imports > Exports = déficit (France, USA)."},
+    {q:"La 'trappe à liquidité' de Keynes désigne…",opts:["Un compte bancaire bloqué","Une situation où baisser les taux ne relance plus l'économie","Un impôt sur l'épargne","Une crise de liquidité bancaire"],c:1,expl:"Quand les taux sont proches de 0 et que personne n'emprunte quand même (Japon, Europe 2015-2022), la politique monétaire classique est impuissante."},
+    {q:"Qui reçoit le 'prix Nobel d'économie' (qui n'en est pas vraiment un) ?",opts:["L'Académie suédoise","La Banque de Suède en mémoire de Nobel","Le FMI","L'Université de Chicago"],c:1,expl:"Le Prix de la Banque de Suède en sciences économiques en mémoire d'Alfred Nobel n'a pas été créé par Nobel lui-même — d'où les guillemets."},
+    {q:"Qu'est-ce que le PIB 'par habitant en parité de pouvoir d'achat' (PPA) ?",opts:["Le PIB corrigé de l'inflation","Le PIB ajusté pour comparer les niveaux de vie réels entre pays","Le PIB multiplié par la population","Le PIB hors secteur public"],c:1,expl:"La PPA corrige les différences de prix entre pays : 1€ n'achète pas la même chose en France et en Bulgarie. Essentiel pour comparer les niveaux de vie."},
+  ];
+
+  const getTodayKey = () => new Date().toISOString().slice(0,10);
+
+  const getDailyQuestion = () => {
+    const dayNum = Math.floor(Date.now() / 86400000);
+    return DAILY_QUESTIONS[dayNum % DAILY_QUESTIONS.length];
+  };
+
+  const hasDoneDaily = () => {
+    const s = load();
+    return s.lastDailyDate === getTodayKey();
+  };
+
+  const completeDailyQuiz = (correct) => {
+    const s = load();
+    const today = getTodayKey();
+    const yesterday = new Date(Date.now()-86400000).toISOString().slice(0,10);
+    s.dailyStreak = (s.lastDailyDate === yesterday) ? (s.dailyStreak||0)+1 : 1;
+    s.lastDailyDate = today;
+    const xp = correct ? 15 : 5;
+    s.xp += xp;
+    s.xpHistory = s.xpHistory||[];
+    s.xpHistory.push({xp:s.xp, date:new Date().toISOString(), reason:'daily'});
+    save(s);
+    refreshHUD();
+    return { xp, streak: s.dailyStreak };
+  };
+
+  return { load, save, reset, addXP, completeModule, saveQuizScore,
+           completeChallenge, getLevel, getNextLvl, LEVELS, MODULES, CHALLENGES,
+           getCharSVG, showToast, refreshHUD,
+           toggleDark, getDailyQuestion, hasDoneDaily, completeDailyQuiz, getTodayKey };
+})();
+
+
+
+// ================================================================
+// QUIZ ENGINE
+// ================================================================
+function shuffle(arr){ return [...arr].sort(()=>Math.random()-.5); }
+
+function initQuiz(containerId, allQuestions, quizId, opts={}) {
+  const container = document.getElementById(containerId);
+  if(!container){ console.warn("Quiz container not found:", containerId); return; }
+
+  // Pick N random questions from the full bank (default 5, or all if fewer)
+  const n = opts.count || Math.min(5, allQuestions.length);
+  const questions = shuffle(allQuestions).slice(0, n);
+
+  let current=0, score=0, streak=0, wrongIdx=[];
+  const startTime=Date.now();
+  const s=ECO.load();
+  const prev=s.quizScores[quizId];
+
+  if(prev && !opts.forceRetry){
+    container.innerHTML=`<div style="background:var(--paper);border-radius:var(--r-lg);border:1.5px solid var(--ivory-2);padding:1.5rem;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:1rem">
+      <div>
+        <div class="chip slate" style="margin-bottom:.5rem">Déjà complété</div>
+        <p style="margin:0;font-family:var(--ff-display);font-weight:900">Meilleur score : ${prev.pct}%</p>
+        <p style="margin:.25rem 0 0;color:var(--dust);font-size:.88rem">${prev.score}/${prev.total} bonnes réponses</p>
+      </div>
+      <button class="btn-main" onclick="initQuiz('${containerId}',window['_q_${containerId}'],'${quizId}',{forceRetry:true})">Rejouer</button>
+    </div>`;
+    return;
+  }
+
+  const render = () => {
+    if(current>=questions.length){ showResult(); return; }
+    const q=questions[current];
+    container.innerHTML=`
+      <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:1rem">
+        <span style="font-family:var(--ff-display);font-size:.8rem;text-transform:uppercase;letter-spacing:.04em;color:var(--dust)">${current+1} / ${questions.length}</span>
+        <span class="chip gold">⭐ ${score}/${current}</span>
+      </div>
+      <div class="xp-track" style="margin-bottom:1.5rem"><div class="xp-fill" style="width:${Math.round((current/questions.length)*100)}%"></div></div>
+      <p style="font-family:var(--ff-display);font-weight:900;font-size:1.1rem;margin-bottom:1.25rem;letter-spacing:-.02em">${q.question}</p>
+      <div id="qopts">
+        ${q.options.map((o,i)=>`<button class="q-option" onclick="qAnswer(${i})">${String.fromCharCode(65+i)}. ${o}</button>`).join("")}
+      </div>
+      <div id="qfb" style="display:none;margin-top:1rem"></div>`;
+
+    window.qAnswer = i => {
+      const ok=i===q.correct;
+      if(ok){ score++; streak++; } else { streak=0; wrongIdx.push(current); }
+      // Check streak challenge
+      const st=ECO.load();
+      if(!st.maxStreak || streak > st.maxStreak){ st.maxStreak=streak; ECO.save(st); }
+      if(streak>=5 && !st.completedChallenges.includes("ch_streak")) ECO.completeChallenge("ch_streak");
+      document.querySelectorAll(".q-option").forEach((b,idx)=>{
+        b.disabled=true;
+        if(idx===q.correct) b.classList.add("correct");
+        else if(idx===i&&!ok) b.classList.add("wrong");
+      });
+      const fb=document.getElementById("qfb");
+      fb.style.display="block";
+      fb.innerHTML=`<div class="eco-note${ok?"":" warning"}"><strong>${ok?"✅ Exact !":"❌ Pas tout à fait…"}</strong> ${q.explanation||""}</div>
+        <button class="btn-main" style="margin-top:.75rem;font-size:.88rem;padding:.55rem 1.25rem" onclick="qNext()">
+          ${current+1<questions.length?"Suivant →":"Voir mes résultats →"}
+        </button>`;
+    };
+    window.qNext = () => { current++; render(); };
+  };
+
+  const showResult = () => {
+    const pct=Math.round((score/questions.length)*100);
+    const elapsed=Math.round((Date.now()-startTime)/1000);
+    const wrongQs=questions.filter((_,i)=>wrongIdx.includes(i));
+    const xpEarned=ECO.saveQuizScore(quizId,score,questions.length,wrongQs);
+    const medal=pct===100?"💎":pct>=80?"🥇":pct>=60?"🥈":pct>=40?"🥉":"📖";
+    const msg=pct===100?"Score parfait ! Tu maîtrises ce thème.":
+              pct>=80?"Excellent ! Presque parfait.":
+              pct>=60?"Bien joué ! Relis quelques points.":
+              pct>=40?"Pas mal ! Le module mérite une relecture.":"Reprends le module depuis le début.";
+    container.innerHTML=`<div style="text-align:center;padding:1.5rem 0">
+      <div style="font-size:3.5rem;margin-bottom:1rem">${medal}</div>
+      <h2 style="font-family:var(--ff-display);font-size:1.7rem;margin-bottom:.25rem">${score} / ${questions.length}</h2>
+      <p style="color:var(--dust);margin-bottom:1.5rem">${msg}</p>
+      <div style="display:flex;gap:.75rem;justify-content:center;flex-wrap:wrap;margin-bottom:1.5rem">
+        <span class="chip gold">⭐ +${xpEarned} XP</span>
+        <span class="chip">${pct}% de réussite</span>
+        <span class="chip">⏱ ${elapsed}s</span>
+      </div>
+      <div class="xp-track" style="max-width:260px;margin:0 auto 1.5rem"><div class="xp-fill" style="width:${pct}%"></div></div>
+      <button class="btn-main" onclick="initQuiz('${containerId}',window['_q_${containerId}'],'${quizId}',{forceRetry:true})">🔄 Recommencer</button>
+    </div>`;
+  };
+
+  window[`_q_${containerId}`]=allQuestions;
+  render();
+}
+
+</script>
+
+
+<link rel="stylesheet" href="../assets/css/style.css">
+</head>
+
+<body class="nav-fixed quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a href="../index.html" class="navbar-brand navbar-brand-logo">
+    </a>
+    <a class="navbar-brand" href="../index.html">
+    <span class="navbar-title">lecobrut.fr</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../index.html"> 
+<span class="menu-text">Accueil</span></a>
+  </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-modules" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Modules</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-modules">    
+        <li>
+    <a class="dropdown-item" href="../modules/01-definition.html">
+ <span class="dropdown-text">01 · C’est quoi l’économie ?</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../modules/02-courants.html">
+ <span class="dropdown-text">02 · Courants de pensée</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../modules/03-croissance.html">
+ <span class="dropdown-text">03 · La croissance</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../modules/04-inflation.html">
+ <span class="dropdown-text">04 · L’inflation</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../modules/05-dette.html">
+ <span class="dropdown-text">05 · La dette publique</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../modules/06-inegalites.html">
+ <span class="dropdown-text">06 · Les inégalités</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../modules/07-commerce.html">
+ <span class="dropdown-text">07 · Commerce international</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../modules/08-idees-recues.html">
+ <span class="dropdown-text">08 · Idées reçues</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-défis--outils" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Défis &amp; Outils</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-défis--outils">    
+        <li>
+    <a class="dropdown-item" href="../quiz/quiz-du-jour.html">
+ <span class="dropdown-text">☀️ Quiz du jour</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../quiz/diagnostic.html">
+ <span class="dropdown-text">🎯 Diagnostic initial</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../quiz/frise-chronologique.html">
+ <span class="dropdown-text">📅 Frise des crises</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../quiz/defi-sprint.html">
+ <span class="dropdown-text">⚡ Sprint chronométré</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../quiz/defi-vrai-faux.html">
+ <span class="dropdown-text">🃏 Vrai ou Faux</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../quiz/defi-actu.html">
+ <span class="dropdown-text">🔎 Analyse d’actu</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../quiz/defi-association.html">
+ <span class="dropdown-text">🔗 Jeu d’association</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="../glossaire.html"> 
+<span class="menu-text">Glossaire</span></a>
+  </li>  
+</ul>
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../tableau-de-bord.html"> 
+<span class="menu-text">📊 Mon tableau de bord</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../apropos.html"> 
+<span class="menu-text">À propos</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    
+<!-- main -->
+<main class="content column-page" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
+
+
+
+
+<style>
+@keyframes floatUp{0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)}}
+@keyframes fadeSlide{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:translateY(0)}}
+@keyframes progressFill{from{width:0}to{width:var(--w)}}
+
+.step-box {
+  background: var(--card);
+  border: 1.5px solid var(--ivory-2);
+  border-radius: var(--r-xl);
+  padding: 2rem;
+  margin-bottom: 1.5rem;
+  animation: fadeSlide .3s ease;
+}
+.step-label {
+  font-family: var(--ff-display);
+  font-size: .72rem;
+  text-transform: uppercase;
+  letter-spacing: .1em;
+  color: var(--gold);
+  margin-bottom: .75rem;
+}
+.actu-tag {
+  display: inline-flex; align-items: center; gap: .35rem;
+  background: var(--ivory); border: 1.5px solid var(--ivory-2);
+  color: var(--dust); padding: .3rem .85rem;
+  border-radius: 999px; font-family: var(--ff-display);
+  font-weight: 700; font-size: .75rem; cursor: pointer;
+  transition: all .15s;
+}
+.actu-tag:hover, .actu-tag.selected {
+  background: var(--ink); border-color: var(--ink); color: var(--ivory);
+}
+.actu-tag.selected-slate {
+  background: rgba(46,93,75,.1); border-color: var(--slate); color: var(--slate);
+}
+.text-area-eco {
+  width: 100%; min-height: 80px;
+  border: 1.5px solid var(--ivory-2); border-radius: var(--r-md);
+  padding: .85rem 1rem; font-family: var(--ff-body); font-size: .97rem;
+  color: var(--ink); background: var(--paper); resize: vertical;
+  transition: border-color .2s; line-height: 1.6;
+  box-sizing: border-box;
+}
+.text-area-eco:focus { outline: none; border-color: var(--slate); }
+.feedback-ok  { border-left: 3px solid var(--slate); background: rgba(46,93,75,.07); padding: 1rem 1.25rem; border-radius: 0 var(--r-sm) var(--r-sm) 0; margin-top: 1rem; }
+.feedback-tip { border-left: 3px solid var(--gold);  background: rgba(201,151,58,.07); padding: 1rem 1.25rem; border-radius: 0 var(--r-sm) var(--r-sm) 0; margin-top: 1rem; }
+.news-card {
+  border: 1.5px solid var(--ivory-2); border-radius: var(--r-lg);
+  overflow: hidden; cursor: pointer; transition: all .2s;
+}
+.news-card:hover { border-color: var(--slate); box-shadow: var(--shadow-hover); transform: translateY(-3px); }
+.news-card.selected { border-color: var(--gold); box-shadow: 0 0 0 3px rgba(201,151,58,.2); }
+</style>
+
+<!-- HEADER -->
+<div style="background:var(--ink);padding:3rem 2rem 4rem;position:relative;overflow:hidden">
+  <div style="position:absolute;bottom:-50px;left:5%;width:200px;height:200px;border-radius:50%;background:rgba(201,151,58,.07)"></div>
+  <div style="position:absolute;top:-30px;right:8%;width:160px;height:160px;border-radius:50%;background:rgba(46,93,75,.08)"></div>
+  <div class="section-sm" style="position:relative;z-index:1;text-align:center">
+    <div style="font-size:3.5rem;margin-bottom:1rem;animation:floatUp 3s ease-in-out infinite">🔎</div>
+    <h1 style="color:var(--ivory);margin-bottom:.5rem">Analyse d'actu guidée</h1>
+    <p style="color:rgba(245,240,232,.6);font-style:italic;margin:0 0 1.5rem;max-width:480px;margin-left:auto;margin-right:auto">
+      Choisis un sujet d'actualité économique, puis suis la grille de lecture en 5 étapes. +150 XP à la clé.
+    </p>
+    <div style="display:flex;gap:1rem;justify-content:center;flex-wrap:wrap">
+      <div style="background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);border-radius:var(--r-md);padding:.65rem 1.1rem;text-align:center">
+        <div style="font-family:var(--ff-display);font-size:1.3rem;font-weight:900;color:var(--gold-2)">5 étapes</div>
+        <div style="font-size:.72rem;color:rgba(245,240,232,.4);font-family:var(--ff-display);text-transform:uppercase;letter-spacing:.04em">de réflexion</div>
+      </div>
+      <div style="background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);border-radius:var(--r-md);padding:.65rem 1.1rem;text-align:center">
+        <div style="font-family:var(--ff-display);font-size:1.3rem;font-weight:900;color:var(--gold-2)">+150 XP</div>
+        <div style="font-size:.72rem;color:rgba(245,240,232,.4);font-family:var(--ff-display);text-transform:uppercase;letter-spacing:.04em">à gagner</div>
+      </div>
+      <div style="background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);border-radius:var(--r-md);padding:.65rem 1.1rem;text-align:center">
+        <div style="font-family:var(--ff-display);font-size:1.3rem;font-weight:900;color:var(--gold-2)">~10 min</div>
+        <div style="font-size:.72rem;color:rgba(245,240,232,.4);font-family:var(--ff-display);text-transform:uppercase;letter-spacing:.04em">à tête reposée</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- PROGRESSION STEPS -->
+<div style="background:var(--card);border-bottom:1.5px solid var(--ivory-2);padding:.9rem 1.5rem;position:sticky;top:0;z-index:100">
+  <div style="max-width:720px;margin:0 auto">
+    <div style="display:flex;align-items:center;gap:.4rem;margin-bottom:.4rem" id="step-dots"></div>
+    <div class="xp-track"><div class="xp-fill" id="step-bar" style="width:0%"></div></div>
+    <div style="font-family:var(--ff-display);font-size:.72rem;color:var(--dust);margin-top:.3rem" id="step-label-top">Étape 0 / 5</div>
+  </div>
+</div>
+
+<div class="section-sm" style="padding-top:2rem">
+  <div id="main-zone"></div>
+</div>
+<script>
+// ── DONNÉES ──────────────────────────────────────────────────
+var ACTUS = [
+  {
+    id:"inflation2024", theme:"Inflation",
+    titre:"L'inflation recule en zone euro — mais les prix alimentaires restent élevés",
+    resume:"En 2024, l'inflation en zone euro est revenue autour de 2-3%, après le pic de 10% en 2022. La BCE a commencé à baisser ses taux directeurs. Pourtant, les consommateurs continuent de ressentir la pression sur leurs courses : les prix alimentaires restent 20-25% plus élevés qu'avant la crise.",
+    module:"Module 04 — L'inflation", moduleHref:"../modules/04-inflation.html",
+    concepts:["Inflation","IPC","BCE","Taux directeur","Pouvoir d'achat"],
+    qui:["La BCE (banque centrale)","Les ménages / consommateurs","Les distributeurs et industriels alimentaires","Les syndicats et salariés"],
+    pistes_pos:"Retour à l'équilibre : la politique monétaire a fonctionné, les taux baissent, le crédit reprend.",
+    pistes_neg:"Les prix ne baissent pas quand l'inflation ralentit — ils augmentent juste moins vite. Le pouvoir d'achat réel n'est pas restauré.",
+    question_finale:"Peut-on parler de 'victoire' sur l'inflation quand les prix restent durablement plus élevés qu'avant ?"
+  },
+  {
+    id:"dette_france2024", theme:"Dette publique",
+    titre:"La dette française dépasse 3 100 milliards d'euros — le gouvernement cherche 40 Mds d'économies",
+    resume:"Le déficit public français atteint environ 6% du PIB en 2024, bien au-delà du plafond européen de 3%. La dette dépasse 110% du PIB. Face aux marchés financiers et à la Commission européenne, le gouvernement doit présenter un plan d'économies massives. Le débat porte sur les coupes à opérer : dépenses sociales, investissements publics, hausse d'impôts ?",
+    module:"Module 05 — La dette publique", moduleHref:"../modules/05-dette.html",
+    concepts:["Dette publique","Déficit","PIB","Taux souverain","Austérité"],
+    qui:["L'État français et le gouvernement","La Commission européenne","Les marchés financiers (créanciers)","Les Français (contribuables et bénéficiaires des services publics)"],
+    pistes_pos:"La rigueur budgétaire préserve la crédibilité de la France et évite un emballement des taux comme en Grèce.",
+    pistes_neg:"Couper les dépenses en période de faible croissance risque d'aggraver la situation (multiplicateur keynésien négatif).",
+    question_finale:"Faut-il réduire la dette maintenant au risque de ralentir la croissance, ou investir maintenant au risque d'aggraver la dette ?"
+  },
+  {
+    id:"ia_emploi", theme:"Croissance & Travail",
+    titre:"L'IA générative va-t-elle détruire des millions d'emplois ou en créer ?",
+    resume:"Le FMI estimait en 2024 que l'IA pourrait affecter 40% des emplois dans le monde, et jusqu'à 60% dans les économies avancées. Certains secteurs (droit, comptabilité, rédaction, code) voient déjà des transformations profondes. Mais l'histoire économique montre que chaque vague technologique a finalement créé plus d'emplois qu'elle n'en a détruits — souvent dans des domaines inimaginables avant.",
+    module:"Module 03 — La croissance", moduleHref:"../modules/03-croissance.html",
+    concepts:["Croissance","Productivité","Destruction créatrice","PIB","Inégalités"],
+    qui:["Les travailleurs des secteurs exposés","Les entreprises technologiques","Les États (fiscalité, formation)","Les consommateurs (prix potentiellement plus bas)"],
+    pistes_pos:"Hausse de productivité, nouvelles industries, libération de tâches répétitives, croissance du PIB.",
+    pistes_neg:"Transition douloureuse, polarisation des emplois, inégalités accrues entre ceux qui maîtrisent l'IA et les autres.",
+    question_finale:"La destruction créatrice de Schumpeter s'applique-t-elle à l'IA comme aux révolutions industrielles précédentes ?"
+  },
+  {
+    id:"immobilier_crise", theme:"Inégalités & Patrimoine",
+    titre:"La crise du logement : quand la pierre creuse les inégalités",
+    resume:"En France, les prix immobiliers ont été multipliés par 3 à 4 depuis 2000 dans les grandes métropoles. La hausse des taux depuis 2022 a bloqué le marché : moins de transactions, mais des prix qui résistent. Résultat : les propriétaires voient leur patrimoine croître passivement, pendant que les locataires — surtout les jeunes — sont exclus de la propriété. L'accès au logement devient un nouveau marqueur d'inégalités intergénérationnelles.",
+    module:"Module 06 — Les inégalités", moduleHref:"../modules/06-inegalites.html",
+    concepts:["r > g","Inégalités de patrimoine","Gini","Redistribution","Taux directeur"],
+    qui:["Les propriétaires (surtout anciens)","Les locataires et primo-accédants","La BCE (politique de taux)","Les collectivités locales (logement social)"],
+    pistes_pos:"La baisse des taux depuis 2024 relance progressivement le marché, le logement social amortit partiellement les effets.",
+    pistes_neg:"L'immobilier illustre exactement r>g de Piketty : le patrimoine croît plus vite que les revenus du travail.",
+    question_finale:"Le droit à un logement abordable est-il compatible avec la logique de marché immobilier ?"
+  },
+  {
+    id:"protectionnisme_montee", theme:"Commerce international",
+    titre:"Droits de douane, relocalisations : le grand retour du protectionnisme",
+    resume:"Depuis 2018, les États-Unis ont imposé des droits de douane massifs sur les produits chinois — maintenus et amplifiés sous Biden puis Trump. L'UE riposte avec ses propres taxes sur les voitures électriques chinoises. Partout, la 'souveraineté industrielle' devient un mot d'ordre. Les économistes sont divisés : le libre-échange reste optimal en théorie, mais des considérations géopolitiques et sociales le contredisent en pratique.",
+    module:"Module 07 — Commerce international", moduleHref:"../modules/07-commerce.html",
+    concepts:["Protectionnisme","Libre-échange","Avantage comparatif","Balance commerciale","Mondialisation"],
+    qui:["Les gouvernements (USA, UE, Chine)","Les industries protégées (aciéries, semi-conducteurs)","Les consommateurs (prix plus élevés)","Les pays émergents exportateurs"],
+    pistes_pos:"Protection des emplois industriels, réduction des dépendances stratégiques, relocalisation de secteurs critiques.",
+    pistes_neg:"Hausse des prix pour les consommateurs, risque de guerre commerciale, inefficacité économique, représailles.",
+    question_finale:"Le protectionnisme peut-il être justifié par des arguments non-économiques (sécurité, emploi, souveraineté) ?"
+  }
+];
+
+// ── ÉTAT ─────────────────────────────────────────────────────
+var currentActu = null;
+var stepAnswers = {};
+var currentStep = 0;
+var TOTAL_STEPS = 5;
+
+// ── DOM ───────────────────────────────────────────────────────
+var mainZone   = document.getElementById("main-zone");
+var stepBar    = document.getElementById("step-bar");
+var stepLbl    = document.getElementById("step-label-top");
+var stepDots   = document.getElementById("step-dots");
+
+// ── UTILITAIRES ───────────────────────────────────────────────
+var updateProgress = function(step) {
+  var pct = Math.round((step / TOTAL_STEPS) * 100);
+  stepBar.style.width = pct + "%";
+  stepLbl.textContent = step === 0 ? "Choisis un sujet" : "Etape " + step + " / " + TOTAL_STEPS;
+  // Dots
+  stepDots.innerHTML = "";
+  for(var i = 1; i <= TOTAL_STEPS; i++){
+    var d = document.createElement("div");
+    d.style.cssText = "width:10px;height:10px;border-radius:50%;flex-shrink:0;transition:all .3s;background:" +
+      (i < step ? "var(--slate)" : i === step ? "var(--gold)" : "var(--ivory-2)");
+    stepDots.appendChild(d);
+    if(i < TOTAL_STEPS){
+      var sep = document.createElement("div");
+      sep.style.cssText = "flex:1;height:2px;background:" + (i < step ? "var(--slate)" : "var(--ivory-2)") + ";transition:background .3s";
+      stepDots.appendChild(sep);
+    }
+  }
+};
+
+var nextBtn = function(label, onClick) {
+  var btn = document.createElement("button");
+  btn.className = "btn-main";
+  btn.style.cssText = "margin-top:1.25rem;font-size:.9rem";
+  btn.textContent = label;
+  btn.onclick = onClick;
+  return btn;
+};
+
+var minWords = function(text, min) {
+  return text.trim().split(/\s+/).filter(function(w){ return w.length > 0; }).length >= min;
+};
+
+// ── STEP 0 : Choix du sujet ───────────────────────────────────
+var renderChoix = function() {
+  currentStep = 0;
+  updateProgress(0);
+
+  var html = '<div class="step-box">' +
+    '<div class="step-label">Point de départ</div>' +
+    '<h2 style="font-family:var(--ff-display);margin:0 0 .5rem">Choisis un sujet d\'actualité</h2>' +
+    '<p style="color:var(--dust);margin:0 0 1.5rem;font-size:.95rem">5 sujets tirés de l\'actualité économique récente. Clique sur celui qui t\'intéresse.</p>' +
+    '<div class="tile-grid">' +
+      ACTUS.map(function(a) {
+        return '<div class="news-card" id="card-' + a.id + '" onclick="selectActu(\'' + a.id + '\')">' +
+          '<div style="padding:1.25rem">' +
+            '<div style="display:flex;align-items:center;gap:.6rem;margin-bottom:.75rem">' +
+              '<span class="chip slate" style="font-size:.72rem">' + a.theme + '</span>' +
+              '<span style="font-size:.72rem;color:var(--dust);font-family:var(--ff-display)">→ ' + a.module + '</span>' +
+            '</div>' +
+            '<div style="font-family:var(--ff-display);font-weight:900;font-size:.95rem;line-height:1.35;margin-bottom:.6rem;color:var(--ink)">' + a.titre + '</div>' +
+            '<p style="font-size:.85rem;color:var(--dust);margin:0;line-height:1.55">' + a.resume.slice(0,120) + '…</p>' +
+          '</div>' +
+          '<div style="background:var(--ivory);padding:.6rem 1.25rem;border-top:1.5px solid var(--ivory-2);font-family:var(--ff-display);font-size:.75rem;color:var(--dust);font-weight:700">' +
+            'Concepts : ' + a.concepts.slice(0,3).join(', ') +
+          '</div>' +
+        '</div>';
+      }).join('') +
+    '</div>' +
+  '</div>';
+
+  mainZone.innerHTML = html;
+};
+
+window.selectActu = function(id) {
+  currentActu = ACTUS.find(function(a){ return a.id === id; });
+  document.querySelectorAll(".news-card").forEach(function(c){ c.classList.remove("selected"); });
+  var card = document.getElementById("card-" + id);
+  if(card) card.classList.add("selected");
+
+  // Show confirm button
+  var existing = document.getElementById("confirm-btn-wrap");
+  if(existing) existing.remove();
+  var wrap = document.createElement("div");
+  wrap.id = "confirm-btn-wrap";
+  wrap.style.cssText = "text-align:center;margin-top:1.5rem";
+  var btn = nextBtn("Analyser ce sujet →", renderLecture);
+  wrap.appendChild(btn);
+  mainZone.appendChild(wrap);
+  wrap.scrollIntoView({behavior:"smooth", block:"center"});
+};
+
+// ── STEP 1 : Lecture ─────────────────────────────────────────
+var renderLecture = function() {
+  currentStep = 1;
+  updateProgress(1);
+
+  mainZone.innerHTML =
+    '<div class="step-box">' +
+      '<div class="step-label">Étape 1 / 5 — Compréhension</div>' +
+      '<h2 style="font-family:var(--ff-display);margin:0 0 1rem">Lis et comprends le sujet</h2>' +
+      '<div style="background:var(--ivory);border-radius:var(--r-lg);padding:1.5rem;margin-bottom:1.5rem;border-left:4px solid var(--gold)">' +
+        '<div style="font-family:var(--ff-display);font-weight:900;font-size:1.05rem;margin-bottom:.75rem;line-height:1.35">' + currentActu.titre + '</div>' +
+        '<p style="margin:0;font-size:.95rem;line-height:1.8;color:var(--dust)">' + currentActu.resume + '</p>' +
+        '<div style="margin-top:1rem;padding-top:.75rem;border-top:1.5px solid var(--ivory-2)">' +
+          '<span style="font-family:var(--ff-display);font-size:.72rem;text-transform:uppercase;letter-spacing:.05em;color:var(--dust)">Concepts mobilisés → </span>' +
+          currentActu.concepts.map(function(c){ return '<span class="chip" style="margin:.15rem">' + c + '</span>'; }).join('') +
+        '</div>' +
+      '</div>' +
+      '<p style="color:var(--dust);font-size:.9rem;margin-bottom:1rem">Résume l\'essentiel de cet article en <strong>2-3 phrases</strong>, avec tes propres mots. Pas de copier-coller !</p>' +
+      '<textarea class="text-area-eco" id="ans-lecture" placeholder="En quelques mots, de quoi parle cet article ? Quel est le problème central posé ?" rows="4"></textarea>' +
+      '<div id="fb-lecture"></div>' +
+    '</div>';
+
+  var btn = nextBtn("Valider →", function() {
+    var val = document.getElementById("ans-lecture").value;
+    if(!minWords(val, 15)){
+      document.getElementById("fb-lecture").innerHTML =
+        '<div class="feedback-tip"><strong>💡 Trop court.</strong> Essaie d\'écrire au moins 15 mots pour montrer que tu as bien compris.</div>';
+      return;
+    }
+    stepAnswers.lecture = val;
+    document.getElementById("fb-lecture").innerHTML =
+      '<div class="feedback-ok"><strong>✅ Bien résumé.</strong> Tu as identifié le cœur du sujet. On continue.</div>';
+    setTimeout(renderConcepts, 900);
+  });
+  mainZone.querySelector(".step-box").appendChild(btn);
+};
+
+// ── STEP 2 : Concepts ────────────────────────────────────────
+var renderConcepts = function() {
+  currentStep = 2;
+  updateProgress(2);
+  window.scrollTo({top:0, behavior:'smooth'});
+
+  mainZone.innerHTML =
+    '<div class="step-box">' +
+      '<div class="step-label">Étape 2 / 5 — Concepts clés</div>' +
+      '<h2 style="font-family:var(--ff-display);margin:0 0 .5rem">Quels concepts économiques sont en jeu ?</h2>' +
+      '<p style="color:var(--dust);font-size:.9rem;margin:0 0 1.25rem">Coche les concepts de tes modules que tu reconnais dans cet article.</p>' +
+      '<div style="display:flex;flex-wrap:wrap;gap:.5rem;margin-bottom:1.5rem" id="tag-zone">' +
+        currentActu.concepts.map(function(c){
+          return '<div class="actu-tag" id="tag-' + c.replace(/\s+/g,'_') + '" onclick="toggleTag(this)">' + c + '</div>';
+        }).join('') +
+        // Distractors
+        ["Taux de change","Commerce extérieur","Chômage structurel","Revenu universel","Capital humain"].map(function(c){
+          return '<div class="actu-tag" id="tag-d-' + c.replace(/\s+/g,'_') + '" onclick="toggleTag(this)">' + c + '</div>';
+        }).join('') +
+      '</div>' +
+      '<p style="color:var(--dust);font-size:.9rem;margin-bottom:.75rem">Maintenant, explique en quoi <strong>un des concepts cochés</strong> s\'applique directement à cet article :</p>' +
+      '<textarea class="text-area-eco" id="ans-concept" placeholder="Ex : La BCE est en jeu ici car... / L\'inflation par les coûts explique... / Le coefficient de Gini permet de..." rows="3"></textarea>' +
+      '<div id="fb-concepts"></div>' +
+    '</div>';
+
+  window.toggleTag = function(el) {
+    el.classList.toggle("selected");
+  };
+
+  var btn = nextBtn("Valider →", function() {
+    var selected = document.querySelectorAll(".actu-tag.selected");
+    var expl = document.getElementById("ans-concept").value;
+    var correctSelected = currentActu.concepts.filter(function(c){
+      return document.getElementById("tag-" + c.replace(/\s+/g,'_')) &&
+             document.getElementById("tag-" + c.replace(/\s+/g,'_')).classList.contains("selected");
+    });
+
+    if(selected.length === 0){
+      document.getElementById("fb-concepts").innerHTML =
+        '<div class="feedback-tip"><strong>💡</strong> Coche au moins un concept avant de continuer.</div>';
+      return;
+    }
+    if(!minWords(expl, 12)){
+      document.getElementById("fb-concepts").innerHTML =
+        '<div class="feedback-tip"><strong>💡 Développe davantage.</strong> Explique précisément comment ce concept s\'applique ici (12 mots min).</div>';
+      return;
+    }
+    stepAnswers.concepts = { selected: Array.from(selected).map(function(e){ return e.textContent; }), explication: expl };
+    var nbCorrect = correctSelected.length;
+    document.getElementById("fb-concepts").innerHTML =
+      '<div class="feedback-ok"><strong>✅</strong> Tu as identifié ' + nbCorrect + ' concept(s) directement liés à ce sujet. ' +
+      (nbCorrect >= 3 ? 'Excellent — tu fais des liens précis !' : 'Continue à muscler tes associations.') + '</div>';
+    setTimeout(renderActeurs, 900);
+  });
+  mainZone.querySelector(".step-box").appendChild(btn);
+};
+
+// ── STEP 3 : Acteurs ─────────────────────────────────────────
+var renderActeurs = function() {
+  currentStep = 3;
+  updateProgress(3);
+  window.scrollTo({top:0, behavior:'smooth'});
+
+  mainZone.innerHTML =
+    '<div class="step-box">' +
+      '<div class="step-label">Étape 3 / 5 — Qui est concerné ?</div>' +
+      '<h2 style="font-family:var(--ff-display);margin:0 0 .5rem">Identifie les acteurs et leurs intérêts</h2>' +
+      '<p style="color:var(--dust);font-size:.9rem;margin:0 0 1.25rem">Dans cette situation, qui sont les acteurs principaux ? Qui gagne, qui perd ?</p>' +
+      '<div style="display:flex;flex-wrap:wrap;gap:.5rem;margin-bottom:1.5rem">' +
+        currentActu.qui.map(function(q){ return '<span class="chip" style="font-size:.82rem">' + q + '</span>'; }).join('') +
+      '</div>' +
+      '<p style="color:var(--dust);font-size:.9rem;margin-bottom:.75rem">Choisis <strong>un acteur</strong> et explique son intérêt ou sa position face à ce sujet :</p>' +
+      '<textarea class="text-area-eco" id="ans-acteurs" placeholder="Ex : La BCE est incitée à... parce que son mandat est... / Les ménages sont affectés car... / Les entreprises préfèrent..." rows="3"></textarea>' +
+      '<div id="fb-acteurs"></div>' +
+    '</div>';
+
+  var btn = nextBtn("Valider →", function() {
+    var val = document.getElementById("ans-acteurs").value;
+    if(!minWords(val, 15)){
+      document.getElementById("fb-acteurs").innerHTML =
+        '<div class="feedback-tip"><strong>💡</strong> Développe davantage l\'intérêt ou la position de l\'acteur choisi (15 mots min).</div>';
+      return;
+    }
+    stepAnswers.acteurs = val;
+    document.getElementById("fb-acteurs").innerHTML =
+      '<div class="feedback-ok"><strong>✅</strong> Bien — analyser les intérêts en jeu, c\'est le cœur de l\'analyse économique.</div>';
+    setTimeout(renderDebat, 900);
+  });
+  mainZone.querySelector(".step-box").appendChild(btn);
+};
+
+// ── STEP 4 : Débat ───────────────────────────────────────────
+var renderDebat = function() {
+  currentStep = 4;
+  updateProgress(4);
+  window.scrollTo({top:0, behavior:'smooth'});
+
+  mainZone.innerHTML =
+    '<div class="step-box">' +
+      '<div class="step-label">Étape 4 / 5 — Débat économique</div>' +
+      '<h2 style="font-family:var(--ff-display);margin:0 0 .5rem">Arguments pour et contre</h2>' +
+      '<p style="color:var(--dust);font-size:.9rem;margin:0 0 1.25rem">Tout sujet économique comporte plusieurs lectures. Voici deux grandes pistes :</p>' +
+      '<div class="tile-grid" style="margin-bottom:1.5rem">' +
+        '<div style="background:rgba(46,93,75,.06);border:1.5px solid var(--slate);border-radius:var(--r-md);padding:1rem">' +
+          '<div style="font-family:var(--ff-display);font-weight:700;color:var(--slate);margin-bottom:.5rem;font-size:.85rem">✅ Arguments favorables</div>' +
+          '<p style="color:var(--dust);font-size:.88rem;margin:0;line-height:1.6">' + currentActu.pistes_pos + '</p>' +
+        '</div>' +
+        '<div style="background:rgba(192,57,43,.05);border:1.5px solid var(--danger);border-radius:var(--r-md);padding:1rem">' +
+          '<div style="font-family:var(--ff-display);font-weight:700;color:var(--danger);margin-bottom:.5rem;font-size:.85rem">⚠️ Points de vigilance</div>' +
+          '<p style="color:var(--dust);font-size:.88rem;margin:0;line-height:1.6">' + currentActu.pistes_neg + '</p>' +
+        '</div>' +
+      '</div>' +
+      '<p style="color:var(--dust);font-size:.9rem;margin-bottom:.75rem">Ajoute <strong>un argument</strong> qui n\'est pas mentionné ci-dessus — du côté que tu veux :</p>' +
+      '<textarea class="text-area-eco" id="ans-debat" placeholder="Un argument supplémentaire que tu n\'as pas vu ci-dessus, basé sur ce que tu as appris dans les modules..." rows="3"></textarea>' +
+      '<div id="fb-debat"></div>' +
+    '</div>';
+
+  var btn = nextBtn("Valider →", function() {
+    var val = document.getElementById("ans-debat").value;
+    if(!minWords(val, 12)){
+      document.getElementById("fb-debat").innerHTML =
+        '<div class="feedback-tip"><strong>💡</strong> Développe ton argument (12 mots min). Il doit être différent des pistes déjà listées.</div>';
+      return;
+    }
+    stepAnswers.debat = val;
+    document.getElementById("fb-debat").innerHTML =
+      '<div class="feedback-ok"><strong>✅</strong> Excellent. Voir les deux côtés d\'un argument économique, c\'est la marque d\'un esprit formé.</div>';
+    setTimeout(renderSynthese, 900);
+  });
+  mainZone.querySelector(".step-box").appendChild(btn);
+};
+
+// ── STEP 5 : Synthèse ────────────────────────────────────────
+var renderSynthese = function() {
+  currentStep = 5;
+  updateProgress(5);
+  window.scrollTo({top:0, behavior:'smooth'});
+
+  mainZone.innerHTML =
+    '<div class="step-box">' +
+      '<div class="step-label">Étape 5 / 5 — Synthèse personnelle</div>' +
+      '<h2 style="font-family:var(--ff-display);margin:0 0 .5rem">Ton avis éclairé</h2>' +
+      '<p style="color:var(--dust);font-size:.9rem;margin:0 0 1.25rem">Dernière étape : prends position. Après avoir analysé le sujet sous tous ses angles, que penses-tu ?</p>' +
+      '<div style="background:var(--ivory);border-radius:var(--r-md);padding:1rem 1.25rem;border-left:3px solid var(--gold);margin-bottom:1.25rem">' +
+        '<div style="font-family:var(--ff-display);font-weight:700;font-size:.9rem;color:var(--gold);margin-bottom:.35rem">Question centrale</div>' +
+        '<p style="margin:0;font-style:italic;font-size:.97rem;color:var(--ink)">' + currentActu.question_finale + '</p>' +
+      '</div>' +
+      '<textarea class="text-area-eco" id="ans-synthese" placeholder="Réponds en 3-5 phrases. Appuie-toi sur ce que tu as appris (concepts, acteurs, arguments). Il n\'y a pas de bonne ou mauvaise réponse — mais une réponse argumentée vaut plus qu\'une opinion brute." rows="5"></textarea>' +
+      '<div id="fb-synthese"></div>' +
+    '</div>';
+
+  var btn = nextBtn("Terminer l'analyse →", function() {
+    var val = document.getElementById("ans-synthese").value;
+    if(!minWords(val, 25)){
+      document.getElementById("fb-synthese").innerHTML =
+        '<div class="feedback-tip"><strong>💡</strong> Une synthèse mérite au moins 25 mots. Argumente ta position avec les concepts du module.</div>';
+      return;
+    }
+    stepAnswers.synthese = val;
+    renderResultat();
+  });
+  mainZone.querySelector(".step-box").appendChild(btn);
+};
+
+// ── RÉSULTAT ─────────────────────────────────────────────────
+var renderResultat = function() {
+  window.scrollTo({top:0, behavior:'smooth'});
+  ECO.completeChallenge("ch_actu");
+
+  var allWords = Object.values(stepAnswers).map(function(v){
+    return typeof v === 'string' ? v : (v.explication || '');
+  }).join(' ').split(/\s+/).length;
+
+  mainZone.innerHTML =
+    '<div style="text-align:center;padding:1.5rem 0 2rem">' +
+      '<div style="font-size:4rem;margin-bottom:1rem">🔎</div>' +
+      '<h2 style="font-family:var(--ff-display);font-size:1.8rem;margin-bottom:.5rem">Analyse complète !</h2>' +
+      '<p style="color:var(--dust);margin-bottom:1.5rem">' + allWords + ' mots rédigés · 5 étapes validées</p>' +
+      '<div style="display:flex;gap:.75rem;justify-content:center;flex-wrap:wrap;margin-bottom:2rem">' +
+        '<span class="chip gold">🔎 +150 XP</span>' +
+        '<span class="chip slate">Badge Analyste obtenu</span>' +
+      '</div>' +
+    '</div>' +
+    '<div style="background:var(--ivory);border-radius:var(--r-xl);padding:1.5rem;margin-bottom:1.5rem">' +
+      '<div style="font-family:var(--ff-display);font-size:.72rem;text-transform:uppercase;letter-spacing:.08em;color:var(--dust);margin-bottom:1rem">Ton analyse complète</div>' +
+      '<div style="margin-bottom:1rem">' +
+        '<div style="font-family:var(--ff-display);font-weight:700;font-size:.82rem;color:var(--slate);margin-bottom:.35rem">Résumé</div>' +
+        '<p style="font-size:.92rem;line-height:1.7;margin:0;color:var(--ink)">' + stepAnswers.lecture + '</p>' +
+      '</div>' +
+      '<div style="margin-bottom:1rem">' +
+        '<div style="font-family:var(--ff-display);font-weight:700;font-size:.82rem;color:var(--slate);margin-bottom:.35rem">Concept identifié</div>' +
+        '<p style="font-size:.92rem;line-height:1.7;margin:0;color:var(--ink)">' + (stepAnswers.concepts ? stepAnswers.concepts.explication : '') + '</p>' +
+      '</div>' +
+      '<div style="margin-bottom:1rem">' +
+        '<div style="font-family:var(--ff-display);font-weight:700;font-size:.82rem;color:var(--slate);margin-bottom:.35rem">Analyse d\'un acteur</div>' +
+        '<p style="font-size:.92rem;line-height:1.7;margin:0;color:var(--ink)">' + stepAnswers.acteurs + '</p>' +
+      '</div>' +
+      '<div style="margin-bottom:1rem">' +
+        '<div style="font-family:var(--ff-display);font-weight:700;font-size:.82rem;color:var(--slate);margin-bottom:.35rem">Argument supplémentaire</div>' +
+        '<p style="font-size:.92rem;line-height:1.7;margin:0;color:var(--ink)">' + stepAnswers.debat + '</p>' +
+      '</div>' +
+      '<div>' +
+        '<div style="font-family:var(--ff-display);font-weight:700;font-size:.82rem;color:var(--gold);margin-bottom:.35rem">Ta synthèse</div>' +
+        '<p style="font-size:.92rem;line-height:1.7;margin:0;color:var(--ink);font-style:italic">' + stepAnswers.synthese + '</p>' +
+      '</div>' +
+    '</div>' +
+    '<div style="background:var(--ink);border-radius:var(--r-lg);padding:1.25rem 1.5rem;margin-bottom:1.5rem">' +
+      '<div style="font-family:var(--ff-display);font-size:.72rem;text-transform:uppercase;letter-spacing:.08em;color:var(--gold);margin-bottom:.75rem">Pour aller plus loin</div>' +
+      '<a href="' + currentActu.moduleHref + '" class="btn-main" style="font-size:.88rem;padding:.55rem 1.25rem;background:white;color:var(--ink)">Revoir ' + currentActu.module + ' →</a>' +
+    '</div>' +
+    '<div style="display:flex;gap:.75rem;flex-wrap:wrap">' +
+      '<button class="btn-main btn-ghost" onclick="renderChoix()">Analyser un autre sujet</button>' +
+      '<a href="../index.html" class="btn-main btn-ghost">Accueil</a>' +
+    '</div>';
+};
+
+// ── INIT ─────────────────────────────────────────────────────
+document.addEventListener("DOMContentLoaded", function() {
+  updateProgress(0);
+  renderChoix();
+});
+</script>
+
+
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+<p>© 2025 · lecobrut.fr</p>
+</div>   
+    <div class="nav-footer-center">
+      &nbsp;
+    </div>
+    <div class="nav-footer-right">
+<p>Construit avec ❤️ Quarto &amp; R</p>
+</div>
+  </div>
+</footer>
+
+
+
+
+<script src="../site_libs/quarto-html/zenscroll-min.js"></script>
+</body></html>
