@@ -1104,23 +1104,51 @@ var renderActeurs = function() {
     '<div class="step-box">' +
       '<div class="step-label">Étape 3 / 5 — Qui est concerné ?</div>' +
       '<h2 style="font-family:var(--ff-display);margin:0 0 .5rem">Identifie les acteurs et leurs intérêts</h2>' +
-      '<p style="color:var(--dust);font-size:.9rem;margin:0 0 1.25rem">Dans cette situation, qui sont les acteurs principaux ? Qui gagne, qui perd ?</p>' +
-      '<div style="display:flex;flex-wrap:wrap;gap:.5rem;margin-bottom:1.5rem">' +
-        currentActu.qui.map(function(q){ return '<span class="chip" style="font-size:.82rem">' + q + '</span>'; }).join('') +
+      '<p style="color:var(--dust);font-size:.9rem;margin:0 0 1.25rem">Clique sur un acteur pour le choisir, puis explique son intérêt ou sa position.</p>' +
+      '<div style="display:flex;flex-wrap:wrap;gap:.5rem;margin-bottom:1.5rem" id="acteur-chips">' +
+        currentActu.qui.map(function(q){
+          return '<button class="actu-tag" onclick="pickActeur(this)" data-acteur="' + q + '" style="font-size:.82rem;border:none;cursor:pointer">' + q + '</button>';
+        }).join('') +
       '</div>' +
-      '<p style="color:var(--dust);font-size:.9rem;margin-bottom:.75rem">Choisis <strong>un acteur</strong> et explique son intérêt ou sa position face à ce sujet :</p>' +
-      '<textarea class="text-area-eco" id="ans-acteurs" placeholder="Ex : La BCE est incitée à... parce que son mandat est... / Les ménages sont affectés car... / Les entreprises préfèrent..." rows="3"></textarea>' +
-      '<div id="fb-acteurs"></div>' +
+      '<div id="acteur-textarea-zone" style="display:none">' +
+        '<p style="color:var(--dust);font-size:.9rem;margin-bottom:.75rem">Explique l'intérêt ou la position de cet acteur :</p>' +
+        '<textarea class="text-area-eco" id="ans-acteurs" rows="3"></textarea>' +
+        '<div id="fb-acteurs"></div>' +
+      '</div>' +
     '</div>';
 
+  window.pickActeur = function(el) {
+    // Highlight selected chip
+    document.querySelectorAll("#acteur-chips .actu-tag").forEach(function(b){ b.classList.remove("selected"); });
+    el.classList.add("selected");
+    var acteur = el.dataset.acteur;
+    // Show textarea with pre-filled placeholder
+    var zone = document.getElementById("acteur-textarea-zone");
+    zone.style.display = "block";
+    var ta = document.getElementById("ans-acteurs");
+    ta.placeholder = acteur + " est concerné(e) car…";
+    ta.focus();
+  };
+
   var btn = nextBtn("Valider →", function() {
+    var selected = document.querySelector("#acteur-chips .actu-tag.selected");
+    if(!selected){
+      document.getElementById("fb-acteurs") && (document.getElementById("fb-acteurs").innerHTML =
+        '<div class="feedback-tip"><strong>💡</strong> Clique d'abord sur un acteur pour le sélectionner.</div>');
+      // Show fb even if zone hidden
+      var zone = document.getElementById("acteur-textarea-zone");
+      zone.style.display = "block";
+      document.getElementById("fb-acteurs").innerHTML =
+        '<div class="feedback-tip"><strong>💡</strong> Clique d'abord sur un acteur pour le sélectionner.</div>';
+      return;
+    }
     var val = document.getElementById("ans-acteurs").value;
     if(!minWords(val, 15)){
       document.getElementById("fb-acteurs").innerHTML =
-        '<div class="feedback-tip"><strong>💡</strong> Développe davantage l\'intérêt ou la position de l\'acteur choisi (15 mots min).</div>';
+        '<div class="feedback-tip"><strong>💡</strong> Développe davantage (15 mots min).</div>';
       return;
     }
-    stepAnswers.acteurs = val;
+    stepAnswers.acteurs = selected.dataset.acteur + " — " + val;
     document.getElementById("fb-acteurs").innerHTML =
       '<div class="feedback-ok"><strong>✅</strong> Bien — analyser les intérêts en jeu, c\'est le cœur de l\'analyse économique.</div>';
     setTimeout(renderDebat, 900);
