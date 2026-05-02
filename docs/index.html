@@ -189,7 +189,7 @@ const ECO = (() => {
   };
 
   const checkAutoChallenge = s => {
-    if(s.completedModules.length>=6 && s.diagnosticDone && !s.completedChallenges.includes("ch_all")){
+    if(s.completedModules.length>=MODULES.length && s.diagnosticDone && !s.completedChallenges.includes("ch_all")){
       const ch=CHALLENGES.find(c=>c.id==="ch_all");
       s.completedChallenges.push("ch_all"); s.xp+=ch.xpReward; s.badges.push(ch.badge);
       save(s); setTimeout(()=>showChallengeUnlock(ch),1000);
@@ -1046,7 +1046,7 @@ function initQuiz(containerId, allQuestions, quizId, opts={}) {
         <div class="tile-icon">🏆</div><span class="chip gold">+300 XP</span>
       </div>
       <div class="tile-title">Grand Parcours</div>
-      <p class="tile-desc">Tous les 6 modules terminés + le diagnostic initial complété. Le défi ultime.</p>
+      <p class="tile-desc">Les 8 modules terminés + le diagnostic initial complété. Le défi ultime.</p>
       <div class="tile-footer"><span>Auto · Niveau max</span><span>🔒</span></div>
     </div>
 

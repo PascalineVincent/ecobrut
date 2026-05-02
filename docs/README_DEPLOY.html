@@ -20,27 +20,62 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
-<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="../site_libs/quarto-nav/headroom.min.js"></script>
-<script src="../site_libs/clipboard/clipboard.min.js"></script>
-<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="../site_libs/quarto-search/fuse.min.js"></script>
-<script src="../site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="../">
-<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
-<script src="../site_libs/quarto-html/popper.min.js"></script>
-<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="../site_libs/quarto-html/anchor.min.js"></script>
-<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-446cba8f0bd80e672e6d306615c6ffd9.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<script src="site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-446cba8f0bd80e672e6d306615c6ffd9.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -71,7 +106,7 @@ ul.task-list li input[type="checkbox"] {
 <style>html{ scroll-behavior: smooth; }</style>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Anybody:wght@400;700;900&amp;family=Source+Serif+4:ital,wght@0,400;0,600;1,400&amp;family=JetBrains+Mono:wght@400;600&amp;display=swap" rel="stylesheet">
-<link rel="manifest" href="../assets/pwa/manifest.json">
+<link rel="manifest" href="./assets/pwa/manifest.json">
 <meta name="theme-color" content="#2E5D4B">
 <script>
 // ================================================================
@@ -621,7 +656,7 @@ function initQuiz(containerId, allQuestions, quizId, opts={}) {
 </script>
 
 
-<link rel="stylesheet" href="../assets/css/style.css">
+<link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body class="nav-fixed quarto-light">
@@ -631,9 +666,9 @@ function initQuiz(containerId, allQuestions, quizId, opts={}) {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a href="../index.html" class="navbar-brand navbar-brand-logo">
+    <a href="./index.html" class="navbar-brand navbar-brand-logo">
     </a>
-    <a class="navbar-brand" href="../index.html">
+    <a class="navbar-brand" href="./index.html">
     <span class="navbar-title">lecobrut.fr</span>
     </a>
   </div>
@@ -644,7 +679,7 @@ function initQuiz(containerId, allQuestions, quizId, opts={}) {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../index.html"> 
+    <a class="nav-link" href="./index.html"> 
 <span class="menu-text">Accueil</span></a>
   </li>  
   <li class="nav-item dropdown ">
@@ -653,35 +688,35 @@ function initQuiz(containerId, allQuestions, quizId, opts={}) {
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-modules">    
         <li>
-    <a class="dropdown-item" href="../modules/01-definition.html">
+    <a class="dropdown-item" href="./modules/01-definition.html">
  <span class="dropdown-text">01 · C’est quoi l’économie ?</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../modules/02-courants.html">
+    <a class="dropdown-item" href="./modules/02-courants.html">
  <span class="dropdown-text">02 · Courants de pensée</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../modules/03-croissance.html">
+    <a class="dropdown-item" href="./modules/03-croissance.html">
  <span class="dropdown-text">03 · La croissance</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../modules/04-inflation.html">
+    <a class="dropdown-item" href="./modules/04-inflation.html">
  <span class="dropdown-text">04 · L’inflation</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../modules/05-dette.html">
+    <a class="dropdown-item" href="./modules/05-dette.html">
  <span class="dropdown-text">05 · La dette publique</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../modules/06-inegalites.html">
+    <a class="dropdown-item" href="./modules/06-inegalites.html">
  <span class="dropdown-text">06 · Les inégalités</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../modules/07-commerce.html">
+    <a class="dropdown-item" href="./modules/07-commerce.html">
  <span class="dropdown-text">07 · Commerce international</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../modules/08-idees-recues.html">
+    <a class="dropdown-item" href="./modules/08-idees-recues.html">
  <span class="dropdown-text">08 · Idées reçues</span></a>
   </li>  
     </ul>
@@ -692,47 +727,47 @@ function initQuiz(containerId, allQuestions, quizId, opts={}) {
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-défis--outils">    
         <li>
-    <a class="dropdown-item" href="../quiz/quiz-du-jour.html">
+    <a class="dropdown-item" href="./quiz/quiz-du-jour.html">
  <span class="dropdown-text">☀️ Quiz du jour</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../quiz/diagnostic.html">
+    <a class="dropdown-item" href="./quiz/diagnostic.html">
  <span class="dropdown-text">🎯 Diagnostic initial</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../quiz/frise-chronologique.html">
+    <a class="dropdown-item" href="./quiz/frise-chronologique.html">
  <span class="dropdown-text">📅 Frise des crises</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../quiz/defi-sprint.html">
+    <a class="dropdown-item" href="./quiz/defi-sprint.html">
  <span class="dropdown-text">⚡ Sprint chronométré</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../quiz/defi-vrai-faux.html">
+    <a class="dropdown-item" href="./quiz/defi-vrai-faux.html">
  <span class="dropdown-text">🃏 Vrai ou Faux</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../quiz/defi-actu.html">
+    <a class="dropdown-item" href="./quiz/defi-actu.html">
  <span class="dropdown-text">🔎 Analyse d’actu</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../quiz/defi-association.html">
+    <a class="dropdown-item" href="./quiz/defi-association.html">
  <span class="dropdown-text">🔗 Jeu d’association</span></a>
   </li>  
     </ul>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="../glossaire.html"> 
+    <a class="nav-link" href="./glossaire.html"> 
 <span class="menu-text">Glossaire</span></a>
   </li>  
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../tableau-de-bord.html"> 
+    <a class="nav-link" href="./tableau-de-bord.html"> 
 <span class="menu-text">📊 Mon tableau de bord</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../apropos.html"> 
+    <a class="nav-link" href="./apropos.html"> 
 <span class="menu-text">À propos</span></a>
   </li>  
 </ul>
@@ -753,514 +788,155 @@ function initQuiz(containerId, allQuestions, quizId, opts={}) {
 
 
 
-<style>
-@keyframes floatUp{0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)}}
-@keyframes fadeSlide{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:translateY(0)}}
-@keyframes progressFill{from{width:0}to{width:var(--w)}}
-
-.step-box {
-  background: var(--card);
-  border: 1.5px solid var(--ivory-2);
-  border-radius: var(--r-xl);
-  padding: 2rem;
-  margin-bottom: 1.5rem;
-  animation: fadeSlide .3s ease;
-}
-.step-label {
-  font-family: var(--ff-display);
-  font-size: .72rem;
-  text-transform: uppercase;
-  letter-spacing: .1em;
-  color: var(--gold);
-  margin-bottom: .75rem;
-}
-.actu-tag {
-  display: inline-flex; align-items: center; gap: .35rem;
-  background: var(--ivory); border: 1.5px solid var(--ivory-2);
-  color: var(--dust); padding: .3rem .85rem;
-  border-radius: 999px; font-family: var(--ff-display);
-  font-weight: 700; font-size: .75rem; cursor: pointer;
-  transition: all .15s;
-}
-.actu-tag:hover, .actu-tag.selected {
-  background: var(--ink); border-color: var(--ink); color: var(--ivory);
-}
-.actu-tag.selected-slate {
-  background: rgba(46,93,75,.1); border-color: var(--slate); color: var(--slate);
-}
-.text-area-eco {
-  width: 100%; min-height: 80px;
-  border: 1.5px solid var(--ivory-2); border-radius: var(--r-md);
-  padding: .85rem 1rem; font-family: var(--ff-body); font-size: .97rem;
-  color: var(--ink); background: var(--paper); resize: vertical;
-  transition: border-color .2s; line-height: 1.6;
-  box-sizing: border-box;
-}
-.text-area-eco:focus { outline: none; border-color: var(--slate); }
-.feedback-ok  { border-left: 3px solid var(--slate); background: rgba(46,93,75,.07); padding: 1rem 1.25rem; border-radius: 0 var(--r-sm) var(--r-sm) 0; margin-top: 1rem; }
-.feedback-tip { border-left: 3px solid var(--gold);  background: rgba(201,151,58,.07); padding: 1rem 1.25rem; border-radius: 0 var(--r-sm) var(--r-sm) 0; margin-top: 1rem; }
-.news-card {
-  border: 1.5px solid var(--ivory-2); border-radius: var(--r-lg);
-  overflow: hidden; cursor: pointer; transition: all .2s;
-}
-.news-card:hover { border-color: var(--slate); box-shadow: var(--shadow-hover); transform: translateY(-3px); }
-.news-card.selected { border-color: var(--gold); box-shadow: 0 0 0 3px rgba(201,151,58,.2); }
-</style>
-
-<!-- HEADER -->
-<div style="background:var(--ink);padding:3rem 2rem 4rem;position:relative;overflow:hidden">
-  <div style="position:absolute;bottom:-50px;left:5%;width:200px;height:200px;border-radius:50%;background:rgba(201,151,58,.07)"></div>
-  <div style="position:absolute;top:-30px;right:8%;width:160px;height:160px;border-radius:50%;background:rgba(46,93,75,.08)"></div>
-  <div class="section-sm" style="position:relative;z-index:1;text-align:center">
-    <div style="font-size:3.5rem;margin-bottom:1rem;animation:floatUp 3s ease-in-out infinite">🔎</div>
-    <h1 style="color:var(--ivory);margin-bottom:.5rem">Analyse d'actu guidée</h1>
-    <p style="color:rgba(245,240,232,.6);font-style:italic;margin:0 0 1.5rem;max-width:480px;margin-left:auto;margin-right:auto">
-      Choisis un sujet d'actualité économique, puis suis la grille de lecture en 5 étapes. +150 XP à la clé.
-    </p>
-    <div style="display:flex;gap:1rem;justify-content:center;flex-wrap:wrap">
-      <div style="background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);border-radius:var(--r-md);padding:.65rem 1.1rem;text-align:center">
-        <div style="font-family:var(--ff-display);font-size:1.3rem;font-weight:900;color:var(--gold-2)">5 étapes</div>
-        <div style="font-size:.72rem;color:rgba(245,240,232,.4);font-family:var(--ff-display);text-transform:uppercase;letter-spacing:.04em">de réflexion</div>
-      </div>
-      <div style="background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);border-radius:var(--r-md);padding:.65rem 1.1rem;text-align:center">
-        <div style="font-family:var(--ff-display);font-size:1.3rem;font-weight:900;color:var(--gold-2)">+150 XP</div>
-        <div style="font-size:.72rem;color:rgba(245,240,232,.4);font-family:var(--ff-display);text-transform:uppercase;letter-spacing:.04em">à gagner</div>
-      </div>
-      <div style="background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);border-radius:var(--r-md);padding:.65rem 1.1rem;text-align:center">
-        <div style="font-family:var(--ff-display);font-size:1.3rem;font-weight:900;color:var(--gold-2)">~10 min</div>
-        <div style="font-size:.72rem;color:rgba(245,240,232,.4);font-family:var(--ff-display);text-transform:uppercase;letter-spacing:.04em">à tête reposée</div>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- PROGRESSION STEPS -->
-<div style="background:var(--card);border-bottom:1.5px solid var(--ivory-2);padding:.9rem 1.5rem;position:sticky;top:0;z-index:100">
-  <div style="max-width:720px;margin:0 auto">
-    <div style="display:flex;align-items:center;gap:.4rem;margin-bottom:.4rem" id="step-dots"></div>
-    <div class="xp-track"><div class="xp-fill" id="step-bar" style="width:0%"></div></div>
-    <div style="font-family:var(--ff-display);font-size:.72rem;color:var(--dust);margin-top:.3rem" id="step-label-top">Étape 0 / 5</div>
-  </div>
-</div>
-
-<div class="section-sm" style="padding-top:2rem">
-  <div id="main-zone"></div>
-</div>
-<script>
-// ── DONNÉES ──────────────────────────────────────────────────
-var ACTUS = [
-  {
-    id:"inflation2024", theme:"Inflation",
-    titre:"L'inflation recule en zone euro — mais les prix alimentaires restent élevés",
-    resume:"En 2024, l'inflation en zone euro est revenue autour de 2-3%, après le pic de 10% en 2022. La BCE a commencé à baisser ses taux directeurs. Pourtant, les consommateurs continuent de ressentir la pression sur leurs courses : les prix alimentaires restent 20-25% plus élevés qu'avant la crise.",
-    module:"Module 04 — L'inflation", moduleHref:"../modules/04-inflation.html",
-    concepts:["Inflation","IPC","BCE","Taux directeur","Pouvoir d'achat"],
-    qui:["La BCE (banque centrale)","Les ménages / consommateurs","Les distributeurs et industriels alimentaires","Les syndicats et salariés"],
-    pistes_pos:"Retour à l'équilibre : la politique monétaire a fonctionné, les taux baissent, le crédit reprend.",
-    pistes_neg:"Les prix ne baissent pas quand l'inflation ralentit — ils augmentent juste moins vite. Le pouvoir d'achat réel n'est pas restauré.",
-    question_finale:"Peut-on parler de 'victoire' sur l'inflation quand les prix restent durablement plus élevés qu'avant ?"
-  },
-  {
-    id:"dette_france2024", theme:"Dette publique",
-    titre:"La dette française dépasse 3 100 milliards d'euros — le gouvernement cherche 40 Mds d'économies",
-    resume:"Le déficit public français atteint environ 6% du PIB en 2024, bien au-delà du plafond européen de 3%. La dette dépasse 110% du PIB. Face aux marchés financiers et à la Commission européenne, le gouvernement doit présenter un plan d'économies massives. Le débat porte sur les coupes à opérer : dépenses sociales, investissements publics, hausse d'impôts ?",
-    module:"Module 05 — La dette publique", moduleHref:"../modules/05-dette.html",
-    concepts:["Dette publique","Déficit","PIB","Taux souverain","Austérité"],
-    qui:["L'État français et le gouvernement","La Commission européenne","Les marchés financiers (créanciers)","Les Français (contribuables et bénéficiaires des services publics)"],
-    pistes_pos:"La rigueur budgétaire préserve la crédibilité de la France et évite un emballement des taux comme en Grèce.",
-    pistes_neg:"Couper les dépenses en période de faible croissance risque d'aggraver la situation (multiplicateur keynésien négatif).",
-    question_finale:"Faut-il réduire la dette maintenant au risque de ralentir la croissance, ou investir maintenant au risque d'aggraver la dette ?"
-  },
-  {
-    id:"ia_emploi", theme:"Croissance & Travail",
-    titre:"L'IA générative va-t-elle détruire des millions d'emplois ou en créer ?",
-    resume:"Le FMI estimait en 2024 que l'IA pourrait affecter 40% des emplois dans le monde, et jusqu'à 60% dans les économies avancées. Certains secteurs (droit, comptabilité, rédaction, code) voient déjà des transformations profondes. Mais l'histoire économique montre que chaque vague technologique a finalement créé plus d'emplois qu'elle n'en a détruits — souvent dans des domaines inimaginables avant.",
-    module:"Module 03 — La croissance", moduleHref:"../modules/03-croissance.html",
-    concepts:["Croissance","Productivité","Destruction créatrice","PIB","Inégalités"],
-    qui:["Les travailleurs des secteurs exposés","Les entreprises technologiques","Les États (fiscalité, formation)","Les consommateurs (prix potentiellement plus bas)"],
-    pistes_pos:"Hausse de productivité, nouvelles industries, libération de tâches répétitives, croissance du PIB.",
-    pistes_neg:"Transition douloureuse, polarisation des emplois, inégalités accrues entre ceux qui maîtrisent l'IA et les autres.",
-    question_finale:"La destruction créatrice de Schumpeter s'applique-t-elle à l'IA comme aux révolutions industrielles précédentes ?"
-  },
-  {
-    id:"immobilier_crise", theme:"Inégalités & Patrimoine",
-    titre:"La crise du logement : quand la pierre creuse les inégalités",
-    resume:"En France, les prix immobiliers ont été multipliés par 3 à 4 depuis 2000 dans les grandes métropoles. La hausse des taux depuis 2022 a bloqué le marché : moins de transactions, mais des prix qui résistent. Résultat : les propriétaires voient leur patrimoine croître passivement, pendant que les locataires — surtout les jeunes — sont exclus de la propriété. L'accès au logement devient un nouveau marqueur d'inégalités intergénérationnelles.",
-    module:"Module 06 — Les inégalités", moduleHref:"../modules/06-inegalites.html",
-    concepts:["r > g","Inégalités de patrimoine","Gini","Redistribution","Taux directeur"],
-    qui:["Les propriétaires (surtout anciens)","Les locataires et primo-accédants","La BCE (politique de taux)","Les collectivités locales (logement social)"],
-    pistes_pos:"La baisse des taux depuis 2024 relance progressivement le marché, le logement social amortit partiellement les effets.",
-    pistes_neg:"L'immobilier illustre exactement r>g de Piketty : le patrimoine croît plus vite que les revenus du travail.",
-    question_finale:"Le droit à un logement abordable est-il compatible avec la logique de marché immobilier ?"
-  },
-  {
-    id:"protectionnisme_montee", theme:"Commerce international",
-    titre:"Droits de douane, relocalisations : le grand retour du protectionnisme",
-    resume:"Depuis 2018, les États-Unis ont imposé des droits de douane massifs sur les produits chinois — maintenus et amplifiés sous Biden puis Trump. L'UE riposte avec ses propres taxes sur les voitures électriques chinoises. Partout, la 'souveraineté industrielle' devient un mot d'ordre. Les économistes sont divisés : le libre-échange reste optimal en théorie, mais des considérations géopolitiques et sociales le contredisent en pratique.",
-    module:"Module 07 — Commerce international", moduleHref:"../modules/07-commerce.html",
-    concepts:["Protectionnisme","Libre-échange","Avantage comparatif","Balance commerciale","Mondialisation"],
-    qui:["Les gouvernements (USA, UE, Chine)","Les industries protégées (aciéries, semi-conducteurs)","Les consommateurs (prix plus élevés)","Les pays émergents exportateurs"],
-    pistes_pos:"Protection des emplois industriels, réduction des dépendances stratégiques, relocalisation de secteurs critiques.",
-    pistes_neg:"Hausse des prix pour les consommateurs, risque de guerre commerciale, inefficacité économique, représailles.",
-    question_finale:"Le protectionnisme peut-il être justifié par des arguments non-économiques (sécurité, emploi, souveraineté) ?"
-  }
-];
-
-// ── ÉTAT ─────────────────────────────────────────────────────
-var currentActu = null;
-var stepAnswers = {};
-var currentStep = 0;
-var TOTAL_STEPS = 5;
-
-// ── DOM ───────────────────────────────────────────────────────
-var mainZone   = document.getElementById("main-zone");
-var stepBar    = document.getElementById("step-bar");
-var stepLbl    = document.getElementById("step-label-top");
-var stepDots   = document.getElementById("step-dots");
-
-// ── UTILITAIRES ───────────────────────────────────────────────
-var updateProgress = function(step) {
-  var pct = Math.round((step / TOTAL_STEPS) * 100);
-  stepBar.style.width = pct + "%";
-  stepLbl.textContent = step === 0 ? "Choisis un sujet" : "Etape " + step + " / " + TOTAL_STEPS;
-  // Dots
-  stepDots.innerHTML = "";
-  for(var i = 1; i <= TOTAL_STEPS; i++){
-    var d = document.createElement("div");
-    d.style.cssText = "width:10px;height:10px;border-radius:50%;flex-shrink:0;transition:all .3s;background:" +
-      (i < step ? "var(--slate)" : i === step ? "var(--gold)" : "var(--ivory-2)");
-    stepDots.appendChild(d);
-    if(i < TOTAL_STEPS){
-      var sep = document.createElement("div");
-      sep.style.cssText = "flex:1;height:2px;background:" + (i < step ? "var(--slate)" : "var(--ivory-2)") + ";transition:background .3s";
-      stepDots.appendChild(sep);
-    }
-  }
-};
-
-var nextBtn = function(label, onClick) {
-  var btn = document.createElement("button");
-  btn.className = "btn-main";
-  btn.style.cssText = "margin-top:1.25rem;font-size:.9rem";
-  btn.textContent = label;
-  btn.onclick = onClick;
-  return btn;
-};
-
-var minWords = function(text, min) {
-  return text.trim().split(/\s+/).filter(function(w){ return w.length > 0; }).length >= min;
-};
-
-// ── STEP 0 : Choix du sujet ───────────────────────────────────
-var renderChoix = function() {
-  currentStep = 0;
-  updateProgress(0);
-
-  var html = '<div class="step-box">' +
-    '<div class="step-label">Point de départ</div>' +
-    '<h2 style="font-family:var(--ff-display);margin:0 0 .5rem">Choisis un sujet d\'actualité</h2>' +
-    '<p style="color:var(--dust);margin:0 0 1.5rem;font-size:.95rem">5 sujets tirés de l\'actualité économique récente. Clique sur celui qui t\'intéresse.</p>' +
-    '<div class="tile-grid">' +
-      ACTUS.map(function(a) {
-        return '<div class="news-card" id="card-' + a.id + '" onclick="selectActu(\'' + a.id + '\')">' +
-          '<div style="padding:1.25rem">' +
-            '<div style="display:flex;align-items:center;gap:.6rem;margin-bottom:.75rem">' +
-              '<span class="chip slate" style="font-size:.72rem">' + a.theme + '</span>' +
-              '<span style="font-size:.72rem;color:var(--dust);font-family:var(--ff-display)">→ ' + a.module + '</span>' +
-            '</div>' +
-            '<div style="font-family:var(--ff-display);font-weight:900;font-size:.95rem;line-height:1.35;margin-bottom:.6rem;color:var(--ink)">' + a.titre + '</div>' +
-            '<p style="font-size:.85rem;color:var(--dust);margin:0;line-height:1.55">' + a.resume.slice(0,120) + '…</p>' +
-          '</div>' +
-          '<div style="background:var(--ivory);padding:.6rem 1.25rem;border-top:1.5px solid var(--ivory-2);font-family:var(--ff-display);font-size:.75rem;color:var(--dust);font-weight:700">' +
-            'Concepts : ' + a.concepts.slice(0,3).join(', ') +
-          '</div>' +
-        '</div>';
-      }).join('') +
-    '</div>' +
-  '</div>';
-
-  mainZone.innerHTML = html;
-};
-
-window.selectActu = function(id) {
-  currentActu = ACTUS.find(function(a){ return a.id === id; });
-  document.querySelectorAll(".news-card").forEach(function(c){ c.classList.remove("selected"); });
-  var card = document.getElementById("card-" + id);
-  if(card) card.classList.add("selected");
-
-  // Show confirm button
-  var existing = document.getElementById("confirm-btn-wrap");
-  if(existing) existing.remove();
-  var wrap = document.createElement("div");
-  wrap.id = "confirm-btn-wrap";
-  wrap.style.cssText = "text-align:center;margin-top:1.5rem";
-  var btn = nextBtn("Analyser ce sujet →", renderLecture);
-  wrap.appendChild(btn);
-  mainZone.appendChild(wrap);
-  wrap.scrollIntoView({behavior:"smooth", block:"center"});
-};
-
-// ── STEP 1 : Lecture ─────────────────────────────────────────
-var renderLecture = function() {
-  currentStep = 1;
-  updateProgress(1);
-
-  mainZone.innerHTML =
-    '<div class="step-box">' +
-      '<div class="step-label">Étape 1 / 5 — Compréhension</div>' +
-      '<h2 style="font-family:var(--ff-display);margin:0 0 1rem">Lis et comprends le sujet</h2>' +
-      '<div style="background:var(--ivory);border-radius:var(--r-lg);padding:1.5rem;margin-bottom:1.5rem;border-left:4px solid var(--gold)">' +
-        '<div style="font-family:var(--ff-display);font-weight:900;font-size:1.05rem;margin-bottom:.75rem;line-height:1.35">' + currentActu.titre + '</div>' +
-        '<p style="margin:0;font-size:.95rem;line-height:1.8;color:var(--dust)">' + currentActu.resume + '</p>' +
-        '<div style="margin-top:1rem;padding-top:.75rem;border-top:1.5px solid var(--ivory-2)">' +
-          '<span style="font-family:var(--ff-display);font-size:.72rem;text-transform:uppercase;letter-spacing:.05em;color:var(--dust)">Concepts mobilisés → </span>' +
-          currentActu.concepts.map(function(c){ return '<span class="chip" style="margin:.15rem">' + c + '</span>'; }).join('') +
-        '</div>' +
-      '</div>' +
-      '<p style="color:var(--dust);font-size:.9rem;margin-bottom:1rem">Résume l\'essentiel de cet article en <strong>2-3 phrases</strong>, avec tes propres mots. Pas de copier-coller !</p>' +
-      '<textarea class="text-area-eco" id="ans-lecture" placeholder="En quelques mots, de quoi parle cet article ? Quel est le problème central posé ?" rows="4"></textarea>' +
-      '<div id="fb-lecture"></div>' +
-    '</div>';
-
-  var btn = nextBtn("Valider →", function() {
-    var val = document.getElementById("ans-lecture").value;
-    if(!minWords(val, 15)){
-      document.getElementById("fb-lecture").innerHTML =
-        '<div class="feedback-tip"><strong>💡 Trop court.</strong> Essaie d\'écrire au moins 15 mots pour montrer que tu as bien compris.</div>';
-      return;
-    }
-    stepAnswers.lecture = val;
-    document.getElementById("fb-lecture").innerHTML =
-      '<div class="feedback-ok"><strong>✅ Bien résumé.</strong> Tu as identifié le cœur du sujet. On continue.</div>';
-    setTimeout(renderConcepts, 900);
-  });
-  mainZone.querySelector(".step-box").appendChild(btn);
-};
-
-// ── STEP 2 : Concepts ────────────────────────────────────────
-var renderConcepts = function() {
-  currentStep = 2;
-  updateProgress(2);
-  window.scrollTo({top:0, behavior:'smooth'});
-
-  mainZone.innerHTML =
-    '<div class="step-box">' +
-      '<div class="step-label">Étape 2 / 5 — Concepts clés</div>' +
-      '<h2 style="font-family:var(--ff-display);margin:0 0 .5rem">Quels concepts économiques sont en jeu ?</h2>' +
-      '<p style="color:var(--dust);font-size:.9rem;margin:0 0 1.25rem">Coche les concepts de tes modules que tu reconnais dans cet article.</p>' +
-      '<div style="display:flex;flex-wrap:wrap;gap:.5rem;margin-bottom:1.5rem" id="tag-zone">' +
-        currentActu.concepts.map(function(c){
-          return '<div class="actu-tag" id="tag-' + c.replace(/\s+/g,'_') + '" onclick="toggleTag(this)">' + c + '</div>';
-        }).join('') +
-        // Distractors
-        ["Taux de change","Commerce extérieur","Chômage structurel","Revenu universel","Capital humain"].map(function(c){
-          return '<div class="actu-tag" id="tag-d-' + c.replace(/\s+/g,'_') + '" onclick="toggleTag(this)">' + c + '</div>';
-        }).join('') +
-      '</div>' +
-      '<p style="color:var(--dust);font-size:.9rem;margin-bottom:.75rem">Maintenant, explique en quoi <strong>un des concepts cochés</strong> s\'applique directement à cet article :</p>' +
-      '<textarea class="text-area-eco" id="ans-concept" placeholder="Ex : La BCE est en jeu ici car... / L\'inflation par les coûts explique... / Le coefficient de Gini permet de..." rows="3"></textarea>' +
-      '<div id="fb-concepts"></div>' +
-    '</div>';
-
-  window.toggleTag = function(el) {
-    el.classList.toggle("selected");
-  };
-
-  var btn = nextBtn("Valider →", function() {
-    var selected = document.querySelectorAll(".actu-tag.selected");
-    var expl = document.getElementById("ans-concept").value;
-    var correctSelected = currentActu.concepts.filter(function(c){
-      return document.getElementById("tag-" + c.replace(/\s+/g,'_')) &&
-             document.getElementById("tag-" + c.replace(/\s+/g,'_')).classList.contains("selected");
-    });
-
-    if(selected.length === 0){
-      document.getElementById("fb-concepts").innerHTML =
-        '<div class="feedback-tip"><strong>💡</strong> Coche au moins un concept avant de continuer.</div>';
-      return;
-    }
-    if(!minWords(expl, 12)){
-      document.getElementById("fb-concepts").innerHTML =
-        '<div class="feedback-tip"><strong>💡 Développe davantage.</strong> Explique précisément comment ce concept s\'applique ici (12 mots min).</div>';
-      return;
-    }
-    stepAnswers.concepts = { selected: Array.from(selected).map(function(e){ return e.textContent; }), explication: expl };
-    var nbCorrect = correctSelected.length;
-    document.getElementById("fb-concepts").innerHTML =
-      '<div class="feedback-ok"><strong>✅</strong> Tu as identifié ' + nbCorrect + ' concept(s) directement liés à ce sujet. ' +
-      (nbCorrect >= 3 ? 'Excellent — tu fais des liens précis !' : 'Continue à muscler tes associations.') + '</div>';
-    setTimeout(renderActeurs, 900);
-  });
-  mainZone.querySelector(".step-box").appendChild(btn);
-};
-
-// ── STEP 3 : Acteurs ─────────────────────────────────────────
-var renderActeurs = function() {
-  currentStep = 3;
-  updateProgress(3);
-  window.scrollTo({top:0, behavior:'smooth'});
-
-  mainZone.innerHTML =
-    '<div class="step-box">' +
-      '<div class="step-label">Étape 3 / 5 — Qui est concerné ?</div>' +
-      '<h2 style="font-family:var(--ff-display);margin:0 0 .5rem">Identifie les acteurs et leurs intérêts</h2>' +
-      '<p style="color:var(--dust);font-size:.9rem;margin:0 0 1.25rem">Dans cette situation, qui sont les acteurs principaux ? Qui gagne, qui perd ?</p>' +
-      '<div style="display:flex;flex-wrap:wrap;gap:.5rem;margin-bottom:1.5rem">' +
-        currentActu.qui.map(function(q){ return '<span class="chip" style="font-size:.82rem">' + q + '</span>'; }).join('') +
-      '</div>' +
-      '<p style="color:var(--dust);font-size:.9rem;margin-bottom:.75rem">Choisis <strong>un acteur</strong> et explique son intérêt ou sa position face à ce sujet :</p>' +
-      '<textarea class="text-area-eco" id="ans-acteurs" placeholder="Ex : La BCE est incitée à... parce que son mandat est... / Les ménages sont affectés car... / Les entreprises préfèrent..." rows="3"></textarea>' +
-      '<div id="fb-acteurs"></div>' +
-    '</div>';
-
-  var btn = nextBtn("Valider →", function() {
-    var val = document.getElementById("ans-acteurs").value;
-    if(!minWords(val, 15)){
-      document.getElementById("fb-acteurs").innerHTML =
-        '<div class="feedback-tip"><strong>💡</strong> Développe davantage l\'intérêt ou la position de l\'acteur choisi (15 mots min).</div>';
-      return;
-    }
-    stepAnswers.acteurs = val;
-    document.getElementById("fb-acteurs").innerHTML =
-      '<div class="feedback-ok"><strong>✅</strong> Bien — analyser les intérêts en jeu, c\'est le cœur de l\'analyse économique.</div>';
-    setTimeout(renderDebat, 900);
-  });
-  mainZone.querySelector(".step-box").appendChild(btn);
-};
-
-// ── STEP 4 : Débat ───────────────────────────────────────────
-var renderDebat = function() {
-  currentStep = 4;
-  updateProgress(4);
-  window.scrollTo({top:0, behavior:'smooth'});
-
-  mainZone.innerHTML =
-    '<div class="step-box">' +
-      '<div class="step-label">Étape 4 / 5 — Débat économique</div>' +
-      '<h2 style="font-family:var(--ff-display);margin:0 0 .5rem">Arguments pour et contre</h2>' +
-      '<p style="color:var(--dust);font-size:.9rem;margin:0 0 1.25rem">Tout sujet économique comporte plusieurs lectures. Voici deux grandes pistes :</p>' +
-      '<div class="tile-grid" style="margin-bottom:1.5rem">' +
-        '<div style="background:rgba(46,93,75,.06);border:1.5px solid var(--slate);border-radius:var(--r-md);padding:1rem">' +
-          '<div style="font-family:var(--ff-display);font-weight:700;color:var(--slate);margin-bottom:.5rem;font-size:.85rem">✅ Arguments favorables</div>' +
-          '<p style="color:var(--dust);font-size:.88rem;margin:0;line-height:1.6">' + currentActu.pistes_pos + '</p>' +
-        '</div>' +
-        '<div style="background:rgba(192,57,43,.05);border:1.5px solid var(--danger);border-radius:var(--r-md);padding:1rem">' +
-          '<div style="font-family:var(--ff-display);font-weight:700;color:var(--danger);margin-bottom:.5rem;font-size:.85rem">⚠️ Points de vigilance</div>' +
-          '<p style="color:var(--dust);font-size:.88rem;margin:0;line-height:1.6">' + currentActu.pistes_neg + '</p>' +
-        '</div>' +
-      '</div>' +
-      '<p style="color:var(--dust);font-size:.9rem;margin-bottom:.75rem">Ajoute <strong>un argument</strong> qui n\'est pas mentionné ci-dessus — du côté que tu veux :</p>' +
-      '<textarea class="text-area-eco" id="ans-debat" placeholder="Un argument supplémentaire que tu n\'as pas vu ci-dessus, basé sur ce que tu as appris dans les modules..." rows="3"></textarea>' +
-      '<div id="fb-debat"></div>' +
-    '</div>';
-
-  var btn = nextBtn("Valider →", function() {
-    var val = document.getElementById("ans-debat").value;
-    if(!minWords(val, 12)){
-      document.getElementById("fb-debat").innerHTML =
-        '<div class="feedback-tip"><strong>💡</strong> Développe ton argument (12 mots min). Il doit être différent des pistes déjà listées.</div>';
-      return;
-    }
-    stepAnswers.debat = val;
-    document.getElementById("fb-debat").innerHTML =
-      '<div class="feedback-ok"><strong>✅</strong> Excellent. Voir les deux côtés d\'un argument économique, c\'est la marque d\'un esprit formé.</div>';
-    setTimeout(renderSynthese, 900);
-  });
-  mainZone.querySelector(".step-box").appendChild(btn);
-};
-
-// ── STEP 5 : Synthèse ────────────────────────────────────────
-var renderSynthese = function() {
-  currentStep = 5;
-  updateProgress(5);
-  window.scrollTo({top:0, behavior:'smooth'});
-
-  mainZone.innerHTML =
-    '<div class="step-box">' +
-      '<div class="step-label">Étape 5 / 5 — Synthèse personnelle</div>' +
-      '<h2 style="font-family:var(--ff-display);margin:0 0 .5rem">Ton avis éclairé</h2>' +
-      '<p style="color:var(--dust);font-size:.9rem;margin:0 0 1.25rem">Dernière étape : prends position. Après avoir analysé le sujet sous tous ses angles, que penses-tu ?</p>' +
-      '<div style="background:var(--ivory);border-radius:var(--r-md);padding:1rem 1.25rem;border-left:3px solid var(--gold);margin-bottom:1.25rem">' +
-        '<div style="font-family:var(--ff-display);font-weight:700;font-size:.9rem;color:var(--gold);margin-bottom:.35rem">Question centrale</div>' +
-        '<p style="margin:0;font-style:italic;font-size:.97rem;color:var(--ink)">' + currentActu.question_finale + '</p>' +
-      '</div>' +
-      '<textarea class="text-area-eco" id="ans-synthese" placeholder="Réponds en 3-5 phrases. Appuie-toi sur ce que tu as appris (concepts, acteurs, arguments). Il n\'y a pas de bonne ou mauvaise réponse — mais une réponse argumentée vaut plus qu\'une opinion brute." rows="5"></textarea>' +
-      '<div id="fb-synthese"></div>' +
-    '</div>';
-
-  var btn = nextBtn("Terminer l'analyse →", function() {
-    var val = document.getElementById("ans-synthese").value;
-    if(!minWords(val, 25)){
-      document.getElementById("fb-synthese").innerHTML =
-        '<div class="feedback-tip"><strong>💡</strong> Une synthèse mérite au moins 25 mots. Argumente ta position avec les concepts du module.</div>';
-      return;
-    }
-    stepAnswers.synthese = val;
-    renderResultat();
-  });
-  mainZone.querySelector(".step-box").appendChild(btn);
-};
-
-// ── RÉSULTAT ─────────────────────────────────────────────────
-var renderResultat = function() {
-  window.scrollTo({top:0, behavior:'smooth'});
-  ECO.completeChallenge("ch_actu");
-
-  var allWords = Object.values(stepAnswers).map(function(v){
-    return typeof v === 'string' ? v : (v.explication || '');
-  }).join(' ').split(/\s+/).length;
-
-  mainZone.innerHTML =
-    '<div style="text-align:center;padding:1.5rem 0 2rem">' +
-      '<div style="font-size:4rem;margin-bottom:1rem">🔎</div>' +
-      '<h2 style="font-family:var(--ff-display);font-size:1.8rem;margin-bottom:.5rem">Analyse complète !</h2>' +
-      '<p style="color:var(--dust);margin-bottom:1.5rem">' + allWords + ' mots rédigés · 5 étapes validées</p>' +
-      '<div style="display:flex;gap:.75rem;justify-content:center;flex-wrap:wrap;margin-bottom:2rem">' +
-        '<span class="chip gold">🔎 +150 XP</span>' +
-        '<span class="chip slate">Badge Analyste obtenu</span>' +
-      '</div>' +
-    '</div>' +
-    '<div style="background:var(--ivory);border-radius:var(--r-xl);padding:1.5rem;margin-bottom:1.5rem">' +
-      '<div style="font-family:var(--ff-display);font-size:.72rem;text-transform:uppercase;letter-spacing:.08em;color:var(--dust);margin-bottom:1rem">Ton analyse complète</div>' +
-      '<div style="margin-bottom:1rem">' +
-        '<div style="font-family:var(--ff-display);font-weight:700;font-size:.82rem;color:var(--slate);margin-bottom:.35rem">Résumé</div>' +
-        '<p style="font-size:.92rem;line-height:1.7;margin:0;color:var(--ink)">' + stepAnswers.lecture + '</p>' +
-      '</div>' +
-      '<div style="margin-bottom:1rem">' +
-        '<div style="font-family:var(--ff-display);font-weight:700;font-size:.82rem;color:var(--slate);margin-bottom:.35rem">Concept identifié</div>' +
-        '<p style="font-size:.92rem;line-height:1.7;margin:0;color:var(--ink)">' + (stepAnswers.concepts ? stepAnswers.concepts.explication : '') + '</p>' +
-      '</div>' +
-      '<div style="margin-bottom:1rem">' +
-        '<div style="font-family:var(--ff-display);font-weight:700;font-size:.82rem;color:var(--slate);margin-bottom:.35rem">Analyse d\'un acteur</div>' +
-        '<p style="font-size:.92rem;line-height:1.7;margin:0;color:var(--ink)">' + stepAnswers.acteurs + '</p>' +
-      '</div>' +
-      '<div style="margin-bottom:1rem">' +
-        '<div style="font-family:var(--ff-display);font-weight:700;font-size:.82rem;color:var(--slate);margin-bottom:.35rem">Argument supplémentaire</div>' +
-        '<p style="font-size:.92rem;line-height:1.7;margin:0;color:var(--ink)">' + stepAnswers.debat + '</p>' +
-      '</div>' +
-      '<div>' +
-        '<div style="font-family:var(--ff-display);font-weight:700;font-size:.82rem;color:var(--gold);margin-bottom:.35rem">Ta synthèse</div>' +
-        '<p style="font-size:.92rem;line-height:1.7;margin:0;color:var(--ink);font-style:italic">' + stepAnswers.synthese + '</p>' +
-      '</div>' +
-    '</div>' +
-    '<div style="background:var(--ink);border-radius:var(--r-lg);padding:1.25rem 1.5rem;margin-bottom:1.5rem">' +
-      '<div style="font-family:var(--ff-display);font-size:.72rem;text-transform:uppercase;letter-spacing:.08em;color:var(--gold);margin-bottom:.75rem">Pour aller plus loin</div>' +
-      '<a href="' + currentActu.moduleHref + '" class="btn-main" style="font-size:.88rem;padding:.55rem 1.25rem;background:white;color:var(--ink)">Revoir ' + currentActu.module + ' →</a>' +
-    '</div>' +
-    '<div style="display:flex;gap:.75rem;flex-wrap:wrap">' +
-      '<button class="btn-main btn-ghost" onclick="renderChoix()">Analyser un autre sujet</button>' +
-      '<a href="../index.html" class="btn-main btn-ghost">Accueil</a>' +
-    '</div>';
-};
-
-// ── INIT ─────────────────────────────────────────────────────
-document.addEventListener("DOMContentLoaded", function() {
-  updateProgress(0);
-  renderChoix();
-});
-</script>
+<section id="déploiement-sur-github-pages-sans-ligne-de-commande" class="level1">
+<h1>Déploiement sur GitHub Pages — sans ligne de commande</h1>
+<section id="vue-densemble" class="level2">
+<h2 class="anchored" data-anchor-id="vue-densemble">Vue d’ensemble</h2>
+<pre><code>Ce que tu fais sur ton PC         Ce que GitHub fait
+─────────────────────────         ──────────────────
+1. quarto render          →       Crée docs/ avec tout le HTML
+2. Upload des fichiers    →       Dépôt GitHub
+3. Activer Pages          →       Site en ligne</code></pre>
+<hr>
+</section>
+<section id="étape-1-compiler-le-site-sur-ton-pc" class="level2">
+<h2 class="anchored" data-anchor-id="étape-1-compiler-le-site-sur-ton-pc">ÉTAPE 1 — Compiler le site sur ton PC</h2>
+<p>Dans RStudio, ouvre le projet et lance dans la Console :</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>quarto<span class="sc">::</span><span class="fu">quarto_render</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>Ou dans le Terminal RStudio :</p>
+<pre><code>quarto render</code></pre>
+<p><strong>Résultat :</strong> un dossier <code>docs/</code> apparaît dans ton projet, avec tout le site HTML dedans.</p>
+<hr>
+</section>
+<section id="étape-2-créer-le-dépôt-github" class="level2">
+<h2 class="anchored" data-anchor-id="étape-2-créer-le-dépôt-github">ÉTAPE 2 — Créer le dépôt GitHub</h2>
+<ol type="1">
+<li>Va sur <strong>github.com</strong> → clique <strong>+</strong> en haut à droite → <strong>New repository</strong></li>
+<li><strong>Repository name :</strong> <code>lecobrut</code> (ou autre)</li>
+<li>Laisse en <strong>Public</strong></li>
+<li><strong>NE coche rien</strong> (pas de README, pas de .gitignore)</li>
+<li>Clique <strong>Create repository</strong></li>
+</ol>
+<p>Tu arrives sur une page vide avec des instructions — ignore-les.</p>
+<hr>
+</section>
+<section id="étape-3-uploader-les-fichiers-via-linterface-web" class="level2">
+<h2 class="anchored" data-anchor-id="étape-3-uploader-les-fichiers-via-linterface-web">ÉTAPE 3 — Uploader les fichiers via l’interface web</h2>
+<p>GitHub web permet d’uploader fichier par fichier ou par glisser-déposer. <strong>Le piège :</strong> l’interface web ne gère pas bien les sous-dossiers d’un coup. Voici la méthode qui marche :</p>
+<section id="a.-upload-de-la-racine-du-projet" class="level3">
+<h3 class="anchored" data-anchor-id="a.-upload-de-la-racine-du-projet">3a. Upload de la racine du projet</h3>
+<p>Clique <strong>uploading an existing file</strong> (ou le bouton <strong>Add file → Upload files</strong>).</p>
+<p>Glisse-dépose ces fichiers depuis la racine de ton projet : - <code>_quarto.yml</code> - <code>index.qmd</code> - <code>glossaire.qmd</code> - <code>apropos.qmd</code> - <code>tableau-de-bord.qmd</code> - <code>netlify.toml</code> - <code>README.md</code> - <code>.nojekyll</code> ← <strong>indispensable</strong> (fichier caché, peut nécessiter “Show hidden files”)</p>
+<p>Clique <strong>Commit changes</strong>.</p>
+</section>
+<section id="b.-créer-et-uploader-le-dossier-docs" class="level3">
+<h3 class="anchored" data-anchor-id="b.-créer-et-uploader-le-dossier-docs">3b. Créer et uploader le dossier <code>docs/</code></h3>
+<ol type="1">
+<li><p>Clique <strong>Add file → Upload files</strong></p></li>
+<li><p>En haut de la zone de dépôt, tape dans le champ de nom :</p>
+<pre><code>docs/</code></pre>
+<p>GitHub crée automatiquement le dossier</p></li>
+<li><p>Glisse-dépose <strong>tout le contenu</strong> du dossier <code>docs/</code> de ton PC</p></li>
+<li><p>Clique <strong>Commit changes</strong></p></li>
+</ol>
+</section>
+<section id="c.-créer-et-uploader-les-autres-dossiers" class="level3">
+<h3 class="anchored" data-anchor-id="c.-créer-et-uploader-les-autres-dossiers">3c. Créer et uploader les autres dossiers</h3>
+<p>Répète l’opération pour chaque dossier :</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Dossier à créer sur GitHub</th>
+<th>Contenu à uploader</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>modules/</code></td>
+<td>Tous les <code>.qmd</code> du dossier modules/</td>
+</tr>
+<tr class="even">
+<td><code>quiz/</code></td>
+<td>Tous les <code>.qmd</code> du dossier quiz/</td>
+</tr>
+<tr class="odd">
+<td><code>assets/css/</code></td>
+<td><code>custom.scss</code> et <code>style.css</code></td>
+</tr>
+<tr class="even">
+<td><code>assets/js/</code></td>
+<td><code>game.js</code></td>
+</tr>
+<tr class="odd">
+<td><code>assets/html/</code></td>
+<td><code>head-scripts.html</code></td>
+</tr>
+<tr class="even">
+<td><code>assets/pwa/</code></td>
+<td><code>manifest.json</code>, <code>icon-192.svg</code>, <code>icon-512.svg</code></td>
+</tr>
+</tbody>
+</table>
+<blockquote class="blockquote">
+<p><strong>Astuce :</strong> Pour créer un sous-dossier comme <code>assets/css/</code>, tape <code>assets/css/</code> dans le champ de nom de fichier — GitHub crée les deux niveaux.</p>
+</blockquote>
+<hr>
+</section>
+</section>
+<section id="étape-4-activer-github-pages" class="level2">
+<h2 class="anchored" data-anchor-id="étape-4-activer-github-pages">ÉTAPE 4 — Activer GitHub Pages</h2>
+<ol type="1">
+<li>Dans ton dépôt GitHub → onglet <strong>Settings</strong></li>
+<li>Dans le menu gauche → <strong>Pages</strong></li>
+<li><strong>Source</strong> → sélectionne <code>Deploy from a branch</code></li>
+<li><strong>Branch</strong> → <code>main</code></li>
+<li><strong>Folder</strong> → <code>/docs</code></li>
+<li>Clique <strong>Save</strong></li>
+</ol>
+<p>Attends 1-2 minutes. GitHub affiche l’URL :</p>
+<pre><code>https://TON_USERNAME.github.io/lecobrut/</code></pre>
+<hr>
+</section>
+<section id="étape-5-vérifier-que-ça-marche" class="level2">
+<h2 class="anchored" data-anchor-id="étape-5-vérifier-que-ça-marche">ÉTAPE 5 — Vérifier que ça marche</h2>
+<p>Ouvre l’URL. Si la page s’affiche correctement → c’est bon !</p>
+<p>Si tu vois une <strong>erreur 404</strong> : - Vérifie que le dossier <code>docs/</code> contient bien <code>index.html</code> - Vérifie que Pages est configuré sur <code>/docs</code> (pas sur <code>/root</code>)</p>
+<p>Si tu vois le <strong>contenu brut des fichiers .html</strong> sans style : - Le fichier <code>.nojekyll</code> est manquant → crée-le dans GitHub directement : - <strong>Add file → Create new file</strong> - Nom : <code>.nojekyll</code> - Contenu : (laisser vide) - Commit</p>
+<hr>
+</section>
+<section id="étape-6-mettre-à-jour-le-site" class="level2">
+<h2 class="anchored" data-anchor-id="étape-6-mettre-à-jour-le-site">ÉTAPE 6 — Mettre à jour le site</h2>
+<p>Quand tu modifies un <code>.qmd</code> :</p>
+<ol type="1">
+<li><code>quarto render</code> sur ton PC → met à jour <code>docs/</code></li>
+<li>Sur GitHub → <strong>Add file → Upload files</strong></li>
+<li>Va dans le dossier <code>docs/</code> → glisse-dépose les fichiers HTML modifiés</li>
+<li>Commit</li>
+</ol>
+<hr>
+</section>
+<section id="domaine-personnalisé-optionnel" class="level2">
+<h2 class="anchored" data-anchor-id="domaine-personnalisé-optionnel">Domaine personnalisé (optionnel)</h2>
+<p>Pour utiliser <code>lecobrut.fr</code> :</p>
+<ol type="1">
+<li>Achète le domaine chez OVH, Gandi ou Namecheap</li>
+<li>GitHub → Settings → Pages → <strong>Custom domain</strong> → tape <code>lecobrut.fr</code> → Save</li>
+<li>Chez ton registrar, crée ces enregistrements DNS :</li>
+</ol>
+<pre><code>Type    Nom    Valeur
+A       @      185.199.108.153
+A       @      185.199.109.153
+A       @      185.199.110.153
+A       @      185.199.111.153
+CNAME   www    TON_USERNAME.github.io</code></pre>
+<ol start="4" type="1">
+<li>Coche <strong>Enforce HTTPS</strong> dans GitHub Pages</li>
+<li>Délai : 24-48h max (souvent 1h)</li>
+</ol>
 
 
+</section>
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -1681,5 +1357,5 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
 
-<script src="../site_libs/quarto-html/zenscroll-min.js"></script>
+<script src="site_libs/quarto-html/zenscroll-min.js"></script>
 </body></html>

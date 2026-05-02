@@ -189,7 +189,7 @@ const ECO = (() => {
   };
 
   const checkAutoChallenge = s => {
-    if(s.completedModules.length>=6 && s.diagnosticDone && !s.completedChallenges.includes("ch_all")){
+    if(s.completedModules.length>=MODULES.length && s.diagnosticDone && !s.completedChallenges.includes("ch_all")){
       const ch=CHALLENGES.find(c=>c.id==="ch_all");
       s.completedChallenges.push("ch_all"); s.xp+=ch.xpReward; s.badges.push(ch.badge);
       save(s); setTimeout(()=>showChallengeUnlock(ch),1000);
