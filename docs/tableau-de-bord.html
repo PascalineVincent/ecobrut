@@ -1115,8 +1115,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const stats = [
     { val: s.xp, lbl: "XP total", sub: `Niveau ${lv.id}/5` },
-    { val: `${s.completedModules.length}/6`, lbl: "Modules", sub: "terminés" },
-    { val: `${s.completedChallenges.length}/10`, lbl: "Défis", sub: "accomplis" },
+    { val: `${s.completedModules.length}/${ECO.MODULES.length}`, lbl: "Modules", sub: "terminés" },
+    { val: `${s.completedChallenges.length}/${ECO.CHALLENGES.length}`, lbl: "Défis", sub: "accomplis" },
     { val: s.maxStreak || 0, lbl: "Meilleur streak", sub: "réponses d'affilée" },
     { val: `${avgScore}%`, lbl: "Score moyen", sub: `sur ${Object.keys(s.quizScores).length} quiz` },
     { val: daysSince + "j", lbl: "Membre depuis", sub: new Date(s.createdAt).toLocaleDateString("fr-FR") },
@@ -1131,12 +1131,19 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // ── Radar par module ─────────────────────────────────────────
   const moduleMap = {
-    module1: { label: "C'est quoi l'éco ?", id: "definition" },
-    module2: { label: "Courants de pensée", id: "courants" },
-    module3: { label: "La croissance",      id: "croissance" },
-    module4: { label: "L'inflation",        id: "inflation" },
-    module5: { label: "La dette",           id: "dette" },
-    module6: { label: "Les inégalités",     id: "inegalites" },
+    module1:  { label: "C'est quoi l'éco ?",    id: "definition"   },
+    module2:  { label: "Courants de pensée",     id: "courants"     },
+    module3:  { label: "La croissance",           id: "croissance"   },
+    module4:  { label: "L'inflation",             id: "inflation"    },
+    module5:  { label: "La dette",                id: "dette"        },
+    module6:  { label: "Les inégalités",          id: "inegalites"   },
+    module7:  { label: "Commerce intl.",          id: "commerce"     },
+    module8:  { label: "Idées reçues",            id: "idees_recues" },
+    module9:  { label: "Monnaie & banques",       id: "monnaie"      },
+    module10: { label: "Marché du travail",       id: "travail"      },
+    module11: { label: "Environnement",           id: "environnement"},
+    module12: { label: "Politiques éco.",         id: "politiques"   },
+    module13: { label: "Médias éco.",             id: "medias"       },
   };
 
   const radarEl = document.getElementById("db-radar");
@@ -1250,12 +1257,27 @@ document.addEventListener("DOMContentLoaded", () => {
     histEl.innerHTML = `<p style="color:var(--dust);font-style:italic;font-size:.9rem">Aucun quiz complété pour l'instant.</p>`;
   } else {
     const labels = {
-      module1:"Module 01 — C'est quoi l'éco ?", module2:"Module 02 — Courants",
-      module3:"Module 03 — Croissance", module4:"Module 04 — Inflation",
-      module5:"Module 05 — Dette", module6:"Module 06 — Inégalités",
-      diagnostic:"Diagnostic initial", vrai_faux:"Vrai ou Faux",
-      association_0:"Association — Concepts", association_1:"Association — Économistes",
-      speed_challenge:"Sprint chronométré", revision_mode:"Mode révision",
+      module1:"Module 01 — C'est quoi l'éco ?",
+      module2:"Module 02 — Courants de pensée",
+      module3:"Module 03 — La croissance",
+      module4:"Module 04 — L'inflation",
+      module5:"Module 05 — La dette publique",
+      module6:"Module 06 — Les inégalités",
+      module7:"Module 07 — Commerce international",
+      module8:"Module 08 — Les idées reçues",
+      module9:"Module 09 — Monnaie & banques",
+      module10:"Module 10 — Marché du travail",
+      module11:"Module 11 — Économie & environnement",
+      module12:"Module 12 — Politiques économiques",
+      module13:"Module 13 — Lire les médias éco",
+      diagnostic:"Diagnostic initial",
+      vrai_faux:"Vrai ou Faux",
+      association_0:"Association — Concepts",
+      association_1:"Association — Économistes",
+      speed_challenge:"Sprint chronométré",
+      revision_mode:"Mode révision",
+      revision_rapide:"Révision rapide",
+      daily:"Quiz du jour",
     };
     const rows = Object.entries(scores)
       .sort((a,b) => new Date(b[1].date) - new Date(a[1].date))
