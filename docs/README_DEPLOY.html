@@ -459,7 +459,8 @@ const ECO = (() => {
     });
   };
 
-  document.addEventListener('DOMContentLoaded', initTooltips);
+  // initTooltips disabled — caused "l'inflation" → "l'déflation" artifact
+  // document.addEventListener('DOMContentLoaded', initTooltips);
 
 
   // ── DARK MODE ────────────────────────────────────────────

@@ -424,7 +424,8 @@ const ECO = (() => {
     });
   };
 
-  document.addEventListener('DOMContentLoaded', initTooltips);
+  // initTooltips disabled — caused "l'inflation" → "l'déflation" artifact
+  // document.addEventListener('DOMContentLoaded', initTooltips);
 
 
   // ── DARK MODE ────────────────────────────────────────────
@@ -1111,7 +1112,7 @@ var renderActeurs = function() {
         }).join('') +
       '</div>' +
       '<div id="acteur-textarea-zone" style="display:none">' +
-        '<p style="color:var(--dust);font-size:.9rem;margin-bottom:.75rem">Explique l'intérêt ou la position de cet acteur :</p>' +
+        '<p style="color:var(--dust);font-size:.9rem;margin-bottom:.75rem">Explique l\'intérêt ou la position de cet acteur :</p>' +
         '<textarea class="text-area-eco" id="ans-acteurs" rows="3"></textarea>' +
         '<div id="fb-acteurs"></div>' +
       '</div>' +
@@ -1134,12 +1135,12 @@ var renderActeurs = function() {
     var selected = document.querySelector("#acteur-chips .actu-tag.selected");
     if(!selected){
       document.getElementById("fb-acteurs") && (document.getElementById("fb-acteurs").innerHTML =
-        '<div class="feedback-tip"><strong>💡</strong> Clique d'abord sur un acteur pour le sélectionner.</div>');
+        '<div class="feedback-tip"><strong>💡</strong> Clique d\'abord sur un acteur pour le sélectionner.</div>');
       // Show fb even if zone hidden
       var zone = document.getElementById("acteur-textarea-zone");
       zone.style.display = "block";
       document.getElementById("fb-acteurs").innerHTML =
-        '<div class="feedback-tip"><strong>💡</strong> Clique d'abord sur un acteur pour le sélectionner.</div>';
+        '<div class="feedback-tip"><strong>💡</strong> Clique d\'abord sur un acteur pour le sélectionner.</div>';
       return;
     }
     var val = document.getElementById("ans-acteurs").value;
