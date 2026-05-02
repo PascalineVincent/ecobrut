@@ -106,6 +106,7 @@ const ECO = (() => {
     { id:"travail",      title:"Marché du travail",        emoji:"👷", xp:100 },
     { id:"environnement",title:"Économie & environnement", emoji:"🌿", xp:100 },
     { id:"politiques",   title:"Politiques économiques",   emoji:"🏛️", xp:120 },
+    { id:"medias",        title:"Lire les médias éco",       emoji:"📰", xp:80  },
   ];
 
   const CHALLENGES = [
@@ -708,10 +709,94 @@ document.addEventListener('DOMContentLoaded', function() {
   if(defEl)  defEl.textContent  = mot.def;
 });
 
+// ================================================================
+// ACTU WIDGET — loads actu.json and shows weekly featured item
+// ================================================================
+document.addEventListener('DOMContentLoaded', function() {
+  var el = document.getElementById('index-actu-widget');
+  if(!el) return;
+
+  // Try to load from actu.json (relative path from root)
+  var paths = ['assets/data/actu.json', '../assets/data/actu.json'];
+  var idx = window.location.pathname.includes('/modules/') || window.location.pathname.includes('/quiz/') ? 1 : 0;
+
+  fetch(paths[idx])
+    .then(function(r){ return r.json(); })
+    .then(function(actus){
+      var weekNum = Math.floor(Date.now() / (7 * 24 * 3600 * 1000));
+      var a = actus[weekNum % actus.length];
+      el.innerHTML =
+        '<div style="background:var(--card);border-radius:var(--r-lg);border:2px solid var(--gold);padding:1.5rem;position:relative">' +
+          '<div style="position:absolute;top:.75rem;right:.75rem;background:var(--gold);color:var(--ink);font-family:var(--ff-display);font-weight:900;font-size:.68rem;text-transform:uppercase;letter-spacing:.06em;padding:.15rem .6rem;border-radius:999px">Cette semaine</div>' +
+          '<div style="display:flex;align-items:center;gap:.75rem;margin-bottom:.75rem">' +
+            '<span style="font-size:1.8rem">' + (a.emoji||'📰') + '</span>' +
+            '<span class="chip slate" style="font-size:.72rem">' + a.tag + '</span>' +
+            '<span style="font-family:var(--ff-mono);font-size:.72rem;color:var(--mist);margin-left:auto">' + a.date + '</span>' +
+          '</div>' +
+          '<h3 style="font-family:var(--ff-display);font-size:1.05rem;margin:0 0 .6rem;letter-spacing:-.01em;line-height:1.35">' + a.titre + '</h3>' +
+          '<p style="color:var(--dust);font-size:.88rem;line-height:1.65;margin:0 0 1rem">' + a.resume + '</p>' +
+          '<div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:.5rem;padding-top:.75rem;border-top:1px solid var(--ivory-2)">' +
+            '<span class="chip" style="font-size:.72rem">💡 ' + a.concept + '</span>' +
+            '<div style="display:flex;gap:.5rem">' +
+              '<a href="' + a.module_href + '" class="chip" style="background:var(--ink);border-color:var(--ink);color:var(--ivory);text-decoration:none;font-size:.72rem">→ ' + a.module_titre + '</a>' +
+              '<a href="actu.html" class="chip slate" style="text-decoration:none;font-size:.72rem">Toutes les actus</a>' +
+            '</div>' +
+          '</div>' +
+        '</div>';
+    })
+    .catch(function(){ el.innerHTML = ''; });
+});
+
+// ================================================================
+// MODULE MASTERY SCORE — shown on module tiles
+// ================================================================
+document.addEventListener('DOMContentLoaded', function() {
+  var s = ECO.load();
+  var moduleQuizMap = {
+    definition:'module1', courants:'module2', croissance:'module3',
+    inflation:'module4', dette:'module5', inegalites:'module6',
+    commerce:'module7', idees_recues:'module8', monnaie:'module9',
+    travail:'module10', environnement:'module11', politiques:'module12'
+  };
+
+  document.querySelectorAll('[data-module-tile]').forEach(function(el){
+    var moduleId = el.dataset.moduleTile;
+    var quizId   = moduleQuizMap[moduleId];
+    var score    = s.quizScores[quizId];
+    if(!score) return;
+
+    // Add mastery indicator to tile footer
+    var footer = el.querySelector('.tile-footer');
+    if(footer){
+      var pct = score.pct;
+      var color = pct >= 80 ? 'var(--slate)' : pct >= 50 ? 'var(--gold)' : 'var(--danger)';
+      var existing = footer.querySelector('.mastery-badge');
+      if(!existing){
+        var badge = document.createElement('span');
+        badge.className = 'mastery-badge';
+        badge.style.cssText = 'font-family:var(--ff-mono);font-size:.72rem;font-weight:700;color:' + color;
+        badge.textContent = '★ ' + pct + '%';
+        footer.insertBefore(badge, footer.firstChild);
+      }
+    }
+  });
+});
+
 </script>
 
 
 <link rel="stylesheet" href="../assets/css/style.css">
+<meta property="og:title" content="lecobrut.fr — L’économie brute de décoffrage">
+<meta property="og:description" content="13 modules, des quiz, des défis — comprendre l’économie sans le jargon">
+<meta property="og:image" content="https://lecobrut.fr/modules/assets/pwa/icon-512.svg">
+<meta property="og:site_name" content="lecobrut.fr">
+<meta property="og:locale" content="fr_FR">
+<meta name="twitter:title" content="lecobrut.fr">
+<meta name="twitter:description" content="L’économie expliquée sans jargon — 13 modules, des quiz, des défis">
+<meta name="twitter:image" content="https://lecobrut.fr/modules/07-commerce_files/figure-html/unnamed-chunk-1-1.png">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image-height" content="768">
+<meta name="twitter:image-width" content="1536">
 </head>
 
 <body class="nav-fixed quarto-light">
@@ -790,6 +875,10 @@ document.addEventListener('DOMContentLoaded', function() {
     <a class="dropdown-item" href="../modules/12-politiques.html">
  <span class="dropdown-text">12 · Politiques économiques</span></a>
   </li>  
+        <li>
+    <a class="dropdown-item" href="../modules/13-medias.html">
+ <span class="dropdown-text">13 · Lire les médias éco</span></a>
+  </li>  
     </ul>
   </li>
   <li class="nav-item dropdown ">
@@ -837,6 +926,10 @@ document.addEventListener('DOMContentLoaded', function() {
   </li>  
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../actu.html"> 
+<span class="menu-text">📰 Actu éco</span></a>
+  </li>  
   <li class="nav-item">
     <a class="nav-link" href="../tableau-de-bord.html"> 
 <span class="menu-text">📊 Mon tableau de bord</span></a>
@@ -1148,7 +1241,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
       var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var mailtoRegex = new RegExp(/^mailto:/);
-        var filterRegex = new RegExp('/' + window.location.host + '/');
+        var filterRegex = new RegExp("https:\/\/lecobrut\.fr");
       var isInternal = (href) => {
           return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }

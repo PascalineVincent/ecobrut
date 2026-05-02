@@ -1,0 +1,222 @@
+[
+  {
+    "date": "2025-05",
+    "titre": "La BCE baisse ses taux à 2,25 %",
+    "resume": "Face au ralentissement de l'inflation en zone euro (retour vers 2%), la BCE a poursuivi son cycle de baisse des taux directeurs. Le crédit immobilier redevient accessible pour les ménages.",
+    "tag": "Inflation & monnaie",
+    "module": "04",
+    "module_titre": "L'inflation",
+    "module_href": "modules/04-inflation.html",
+    "concept": "Taux directeur",
+    "emoji": "📉"
+  },
+  {
+    "date": "2025-04",
+    "titre": "Déficit français : 5,8 % du PIB en 2024",
+    "resume": "La France a terminé l'année 2024 avec un déficit de 5,8 % du PIB, bien au-dessus du plafond européen de 3 %. Le gouvernement présente un plan d'économies de 40 milliards pour 2025.",
+    "tag": "Dette & budget",
+    "module": "05",
+    "module_titre": "La dette publique",
+    "module_href": "modules/05-dette.html",
+    "concept": "Déficit budgétaire",
+    "emoji": "🏛️"
+  },
+  {
+    "date": "2025-04",
+    "titre": "Droits de douane Trump : 10 % sur toutes les importations",
+    "resume": "L'administration Trump a annoncé des droits de douane universels de 10 % sur toutes les importations américaines. L'OMC s'alarme d'une fragmentation du commerce mondial.",
+    "tag": "Commerce international",
+    "module": "07",
+    "module_titre": "Commerce international",
+    "module_href": "modules/07-commerce.html",
+    "concept": "Protectionnisme",
+    "emoji": "🛡️"
+  },
+  {
+    "date": "2025-03",
+    "titre": "Le chômage en France tombe à 7,1 %",
+    "resume": "Le taux de chômage français a continué de reculer. Pourtant, la santé, le BTP et l'industrie peinent toujours à recruter — signe d'un chômage structurel persistant.",
+    "tag": "Marché du travail",
+    "module": "10",
+    "module_titre": "Marché du travail",
+    "module_href": "modules/10-travail.html",
+    "concept": "Chômage structurel",
+    "emoji": "👷"
+  },
+  {
+    "date": "2025-03",
+    "titre": "Réarmement européen : 800 milliards d'euros en jeu",
+    "resume": "L'Union européenne envisage un plan de réarmement massif. Le débat économique est intense : comment financer cela — dette commune, réduction d'autres dépenses, ou hausse d'impôts ?",
+    "tag": "Politiques économiques",
+    "module": "12",
+    "module_titre": "Politiques économiques",
+    "module_href": "modules/12-politiques.html",
+    "concept": "Politique budgétaire",
+    "emoji": "🛡️"
+  },
+  {
+    "date": "2025-02",
+    "titre": "L'IA générative et le marché du travail : premiers bilans",
+    "resume": "Les premières études montrent des effets contrastés : hausse de productivité pour certains cols blancs, mais suppressions de postes dans la rédaction, la traduction et le support client.",
+    "tag": "Travail & technologie",
+    "module": "10",
+    "module_titre": "Marché du travail",
+    "module_href": "modules/10-travail.html",
+    "concept": "Destruction créatrice",
+    "emoji": "🤖"
+  },
+  {
+    "date": "2025-02",
+    "titre": "Le prix du CO2 remonte à 70 €/tonne",
+    "resume": "Après une baisse liée aux incertitudes politiques, le prix du carbone dans le système ETS européen s'est redressé. Les entreprises industrielles accélèrent leurs investissements verts.",
+    "tag": "Économie & environnement",
+    "module": "11",
+    "module_titre": "Économie & environnement",
+    "module_href": "modules/11-environnement.html",
+    "concept": "Marché de quotas ETS",
+    "emoji": "🌿"
+  },
+  {
+    "date": "2025-01",
+    "titre": "Inégalités : le rapport Oxfam 2025",
+    "resume": "Les 1 % les plus riches ont capté 47 % des richesses créées depuis 2020. Les milliardaires sont 2 600 dans le monde, avec une fortune cumulée en hausse de 2 000 milliards en un an.",
+    "tag": "Inégalités",
+    "module": "06",
+    "module_titre": "Les inégalités",
+    "module_href": "modules/06-inegalites.html",
+    "concept": "r > g (Piketty)",
+    "emoji": "⚖️"
+  },
+  {
+    "date": "2025-01",
+    "titre": "L'euro numérique : la BCE avance",
+    "resume": "La BCE a publié de nouvelles règles pour l'euro numérique, attendu d'ici 2027. Ce moyen de paiement public permettrait aux citoyens de détenir directement des euros sans passer par une banque commerciale.",
+    "tag": "Monnaie & banques",
+    "module": "09",
+    "module_titre": "Monnaie & banques",
+    "module_href": "modules/09-monnaie.html",
+    "concept": "CBDC",
+    "emoji": "💳"
+  },
+  {
+    "date": "2024-12",
+    "titre": "Croissance française : +1,1 % en 2024",
+    "resume": "Malgré un contexte difficile, la France a maintenu une croissance légèrement positive. La consommation des ménages a résisté grâce aux hausses de salaires réels.",
+    "tag": "Croissance",
+    "module": "03",
+    "module_titre": "La croissance",
+    "module_href": "modules/03-croissance.html",
+    "concept": "PIB",
+    "emoji": "📈"
+  },
+  {
+    "date": "2024-12",
+    "titre": "Crise politique en France : l'impact économique",
+    "resume": "L'instabilité gouvernementale fin 2024 a fait grimper le spread franco-allemand à 85 points de base — son niveau le plus haut depuis la crise de la zone euro.",
+    "tag": "Dette & marchés",
+    "module": "05",
+    "module_titre": "La dette publique",
+    "module_href": "modules/05-dette.html",
+    "concept": "Spread souverain",
+    "emoji": "📊"
+  },
+  {
+    "date": "2024-11",
+    "titre": "COP29 : un accord à 300 Mds$ pour le climat",
+    "resume": "Les pays développés se sont engagés à mobiliser 300 milliards de dollars par an pour les pays en développement. Les économistes débattent : est-ce suffisant ? Qui va vraiment payer ?",
+    "tag": "Économie & climat",
+    "module": "11",
+    "module_titre": "Économie & environnement",
+    "module_href": "modules/11-environnement.html",
+    "concept": "Externalités & bien commun mondial",
+    "emoji": "🌍"
+  },
+  {
+    "date": "2024-11",
+    "titre": "Volkswagen menace de fermer des usines en Allemagne",
+    "resume": "Pour la première fois, VW envisage des fermetures d'usines. La pression des VE chinois moins chers illustre la tension entre mondialisation et politique industrielle nationale.",
+    "tag": "Commerce & industrie",
+    "module": "07",
+    "module_titre": "Commerce international",
+    "module_href": "modules/07-commerce.html",
+    "concept": "Dumping & concurrence mondiale",
+    "emoji": "🚗"
+  },
+  {
+    "date": "2024-10",
+    "titre": "Immobilier : le marché repart après deux ans de gel",
+    "resume": "Avec la baisse des taux de la BCE, le marché immobilier repart timidement. Mais les prix restent 25-30 % plus élevés qu'avant 2020. Les propriétaires ont vu leur patrimoine croître.",
+    "tag": "Inégalités & patrimoine",
+    "module": "06",
+    "module_titre": "Les inégalités",
+    "module_href": "modules/06-inegalites.html",
+    "concept": "Inégalités de patrimoine",
+    "emoji": "🏠"
+  },
+  {
+    "date": "2024-10",
+    "titre": "Les banques françaises et le risque souverain",
+    "resume": "La dégradation des finances publiques françaises expose les banques qui détiennent une part importante de la dette de l'État — lien concret entre risque souverain et stabilité financière.",
+    "tag": "Monnaie & finance",
+    "module": "09",
+    "module_titre": "Monnaie & banques",
+    "module_href": "modules/09-monnaie.html",
+    "concept": "Risque souverain",
+    "emoji": "🏦"
+  },
+  {
+    "date": "2024-09",
+    "titre": "Prix Nobel d'économie : Acemoglu, Johnson & Robinson",
+    "resume": "Le Nobel 2024 récompense leurs travaux sur l'impact des institutions sur la prospérité des nations. Pourquoi certains pays réussissent et d'autres échouent ? Les institutions.",
+    "tag": "Histoire économique",
+    "module": "02",
+    "module_titre": "Les courants de pensée",
+    "module_href": "modules/02-courants.html",
+    "concept": "Institutions & développement",
+    "emoji": "🏆"
+  },
+  {
+    "date": "2024-09",
+    "titre": "La Chine en déflation : le cauchemar économique",
+    "resume": "L'économie chinoise fait face à une pression déflationniste persistante. Les ménages reportent leurs achats en attendant que les prix baissent encore — le cercle vicieux décrit dans le cours.",
+    "tag": "Inflation & déflation",
+    "module": "04",
+    "module_titre": "L'inflation",
+    "module_href": "modules/04-inflation.html",
+    "concept": "Déflation",
+    "emoji": "📉"
+  },
+  {
+    "date": "2024-08",
+    "titre": "Mini-crise boursière mondiale : ce qui s'est passé",
+    "resume": "En août 2024, les marchés mondiaux ont plongé brutalement. Une occasion de comprendre comment les marchés financiers interconnectés transmettent les chocs à travers le monde.",
+    "tag": "Finance & marchés",
+    "module": "09",
+    "module_titre": "Monnaie & banques",
+    "module_href": "modules/09-monnaie.html",
+    "concept": "Contagion financière",
+    "emoji": "📊"
+  },
+  {
+    "date": "2024-07",
+    "titre": "La réforme de l'assurance chômage entre en vigueur",
+    "resume": "La réforme durcit les conditions d'indemnisation pour inciter au retour à l'emploi. Partisans : elle réduit le chômage frictionnel. Opposants : elle précarise les travailleurs.",
+    "tag": "Marché du travail",
+    "module": "10",
+    "module_titre": "Marché du travail",
+    "module_href": "modules/10-travail.html",
+    "concept": "Chômage frictionnel",
+    "emoji": "📋"
+  },
+  {
+    "date": "2024-06",
+    "titre": "Le FMI revoit à la hausse ses prévisions mondiales",
+    "resume": "Le FMI a relevé ses prévisions de croissance mondiale à +3,2 % pour 2024. La résilience américaine et la reprise asiatique compensent le ralentissement européen.",
+    "tag": "Croissance mondiale",
+    "module": "03",
+    "module_titre": "La croissance",
+    "module_href": "modules/03-croissance.html",
+    "concept": "PIB mondial",
+    "emoji": "🌐"
+  }
+]

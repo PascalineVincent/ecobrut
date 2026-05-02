@@ -1,0 +1,6 @@
+<svg viewBox="0 0 192 192" xmlns="http://www.w3.org/2000/svg">
+  <rect width="192" height="192" rx="32" fill="#1A1A2E"/>
+  <rect x="8" y="8" width="176" height="4" rx="2" fill="#C9973A"/>
+  <text x="96" y="115" text-anchor="middle" font-family="Georgia,serif" font-weight="bold" font-size="72" fill="#F5F0E8">é</text>
+  <text x="96" y="160" text-anchor="middle" font-family="Georgia,serif" font-size="20" fill="#52B788">lecobrut.fr</text>
+</svg>
