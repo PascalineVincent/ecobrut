@@ -850,16 +850,15 @@ document.addEventListener('DOMContentLoaded', function() {
 <style>@keyframes floatUp{0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)}}</style>
 
 <div style="background:var(--ink);padding:3rem 2rem 4rem;position:relative;overflow:hidden">
-  <div style="position:absolute;top:-30px;right:8%;width:180px;height:180px;border-radius:50%;background:rgba(192,57,43,.08)"></div>
-  <div style="position:absolute;bottom:-50px;left:5%;width:200px;height:200px;border-radius:50%;background:rgba(201,151,58,.06)"></div>
+  <div style="position:absolute;bottom:-40px;left:8%;width:200px;height:200px;border-radius:50%;background:rgba(46,93,75,.08)"></div>
   <div class="section-sm" style="position:relative;z-index:1">
     <div style="display:flex;gap:.75rem;flex-wrap:wrap;margin-bottom:1.5rem">
-      <span class="chip" style="background:rgba(201,151,58,.15);border-color:rgba(201,151,58,.35);color:var(--gold-2)">Module 04</span>
+      <span class="chip" style="background:rgba(201,151,58,.15);border-color:rgba(201,151,58,.35);color:var(--gold-2)">Module 10</span>
       <span class="chip" style="background:rgba(255,255,255,.06);border-color:rgba(255,255,255,.1);color:rgba(245,240,232,.6)">Niveau intermédiaire</span>
-      <span class="chip" style="background:rgba(255,255,255,.06);border-color:rgba(255,255,255,.1);color:rgba(245,240,232,.6)">80 XP</span>
+      <span class="chip" style="background:rgba(255,255,255,.06);border-color:rgba(255,255,255,.1);color:rgba(245,240,232,.6)">100 XP</span>
     </div>
-    <h1 style="color:var(--ivory);margin-bottom:.75rem">L'inflation</h1>
-    <p style="color:rgba(245,240,232,.6);font-style:italic;margin:0">Pourquoi tout augmente, qui y gagne, et ce que la BCE peut (ou ne peut pas) y faire.</p>
+    <h1 style="color:var(--ivory);margin-bottom:.75rem">Le marché du travail</h1>
+    <p style="color:rgba(245,240,232,.6);font-style:italic;margin:0">Chômage, SMIC, ubérisation — le marché qui touche tout le monde.</p>
   </div>
 </div>
 
@@ -869,22 +868,41 @@ document.addEventListener('DOMContentLoaded', function() {
   <div class="step-sep"></div>
   <div class="step-item"><div class="step-num">2</div> Quiz</div>
   <div class="step-sep"></div>
-  <div class="step-item"><div class="step-num">3</div> +80 XP</div>
+  <div class="step-item"><div class="step-num">3</div> +100 XP</div>
 </div>
 <blockquote style="border-left:3px solid var(--gold);margin:0 0 2rem;padding:.75rem 1.25rem;background:rgba(201,151,58,.06);border-radius:0 var(--r-sm) var(--r-sm) 0" class="blockquote">
-  <p style="font-style:italic;margin:0 0 .4rem;font-size:1rem;color:var(--ink)">"L'inflation est la seule forme de taxation qui peut être imposée sans législation."</p>
-  <footer style="font-family:var(--ff-display);font-size:.78rem;color:var(--dust);font-weight:700">— Milton Friedman</footer>
+  <p style="font-style:italic;margin:0 0 .4rem">"Le marché du travail n'est pas un marché comme les autres — il concerne des êtres humains, pas des marchandises."</p>
+  <footer style="font-family:var(--ff-display);font-size:.78rem;color:var(--dust);font-weight:700">— John Kenneth Galbraith</footer>
 </blockquote>
-<section id="définition-pas-juste-les-prix-augmentent" class="level2">
-<h2 class="anchored" data-anchor-id="définition-pas-juste-les-prix-augmentent">Définition : pas juste “les prix augmentent”</h2>
-<p>L’inflation, c’est l’<strong>augmentation générale et durable</strong> du niveau des prix. Pas un seul produit — <em>l’ensemble</em> du panier de biens et services.</p>
-<div class="eco-note">
-<p><strong>L’indicateur clé :</strong> l’<strong>IPC</strong> (Indice des Prix à la Consommation), calculé par l’INSEE. Il suit l’évolution d’un “panier” représentatif de la consommation des ménages français.</p>
+<section id="les-trois-types-de-chômage" class="level2">
+<h2 class="anchored" data-anchor-id="les-trois-types-de-chômage">Les trois types de chômage</h2>
+<p>Tout le monde dit “le chômage” comme s’il n’y en avait qu’un. Il y en a au moins trois, avec des causes et des remèdes différents.</p>
+<div class="tile-grid" style="margin:1.5rem 0">
+  <div class="tile" style="border-top:3px solid var(--gold)">
+    <div class="tile-icon">🔄</div>
+    <div class="tile-title">Frictionnel</div>
+    <p class="tile-desc">Le temps entre deux emplois — chercher un job, changer de région. Normal, inévitable, souvent court. Existe dans toutes les économies saines.</p>
+    <div class="tile-footer"><span>Incompressible · 1-2%</span></div>
+  </div>
+  <div class="tile" style="border-top:3px solid var(--slate)">
+    <div class="tile-icon">🏭</div>
+    <div class="tile-title">Structurel</div>
+    <p class="tile-desc">Inadéquation entre les compétences disponibles et celles demandées. La désindustrialisation laisse des ouvriers sans débouchés. Long à résorber.</p>
+    <div class="tile-footer"><span>Formation / reconversion</span></div>
+  </div>
+  <div class="tile" style="border-top:3px solid var(--danger)">
+    <div class="tile-icon">📉</div>
+    <div class="tile-title">Conjoncturel</div>
+    <p class="tile-desc">Lié au cycle économique — il augmente en récession, baisse en croissance. Cible principale des politiques de relance keynésiennes.</p>
+    <div class="tile-footer"><span>Politique budgétaire / monétaire</span></div>
+  </div>
 </div>
-<p>Son contraire, la <strong>déflation</strong>, peut sembler une bonne nouvelle — mais c’est souvent catastrophique. Si tu anticipes que les prix baisseront encore demain, tu n’achètes pas aujourd’hui. L’économie se grippe. Le Japon a vécu ça pendant 20 ans.</p>
+<div class="eco-note">
+<p><strong>Le NAIRU</strong> (Non-Accelerating Inflation Rate of Unemployment) est le taux de chômage “naturel” en dessous duquel l’inflation s’emballe. En France, il est estimé autour de 7-8%. En dessous, les salaires montent, les prix suivent, la BCE réagit.</p>
+</div>
 </section>
-<section id="linflation-en-france-depuis-1960" class="level2">
-<h2 class="anchored" data-anchor-id="linflation-en-france-depuis-1960">L’inflation en France depuis 1960</h2>
+<section id="le-taux-de-chômage-en-france" class="level2">
+<h2 class="anchored" data-anchor-id="le-taux-de-chômage-en-france">Le taux de chômage en France</h2>
 <div class="cell">
 <div class="cell-output cell-output-stderr">
 <pre><code>Warning: le package 'ggplot2' a été compilé avec la version R 4.4.3</code></pre>
@@ -892,168 +910,146 @@ document.addEventListener('DOMContentLoaded', function() {
 <div class="cell-output-display">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="04-inflation_files/figure-html/unnamed-chunk-1-1.png" class="img-fluid figure-img" width="768"></p>
-<figcaption>Taux d’inflation annuel en France (1960–2023) — Source : INSEE / Banque de France</figcaption>
+<p><img src="10-travail_files/figure-html/unnamed-chunk-1-1.png" class="img-fluid figure-img" width="768"></p>
+<figcaption>Taux de chômage en France (1975–2023) — Source : INSEE</figcaption>
 </figure>
 </div>
 </div>
 </div>
 </section>
-<section id="les-trois-causes-de-linflation" class="level2">
-<h2 class="anchored" data-anchor-id="les-trois-causes-de-linflation">Les trois causes de l’inflation</h2>
-<div class="tile-grid" style="margin:1.5rem 0">
-  <div class="tile" style="border-top:3px solid var(--slate)">
-    <div class="tile-icon">🏭</div>
-    <div class="tile-title">Par les coûts</div>
-    <p class="tile-desc">Le pétrole monte → le transport coûte plus cher → tout augmente. Cause des chocs des années 70. Et de 2022.</p>
-  </div>
-  <div class="tile" style="border-top:3px solid var(--gold)">
-    <div class="tile-icon">🛒</div>
-    <div class="tile-title">Par la demande</div>
-    <p class="tile-desc">Trop d'argent pour pas assez de biens. Les vendeurs montent les prix. Classique en période de boom économique.</p>
-  </div>
-  <div class="tile" style="border-top:3px solid var(--danger)">
-    <div class="tile-icon">🖨️</div>
-    <div class="tile-title">Monétaire</div>
-    <p class="tile-desc">"Faire tourner la planche à billets" sans croissance réelle dilue la valeur de la monnaie. Ex : Weimar 1923, Venezuela 2018.</p>
-  </div>
+<section id="la-courbe-de-phillips" class="level2">
+<h2 class="anchored" data-anchor-id="la-courbe-de-phillips">La courbe de Phillips</h2>
+<p>La courbe de Phillips (1958) observe une relation inverse entre chômage et inflation : moins de chômage → pression à la hausse des salaires → hausse des prix → inflation.</p>
+<div class="eco-note warning">
+<p><strong>La stagflation des années 70 a brisé cette relation.</strong> Friedman et Phelps ont montré que la courbe de Phillips n’est stable qu’à court terme. À long terme, les agents anticipent l’inflation et demandent des hausses de salaires préventives — la relation disparaît.</p>
 </div>
 </section>
-<section id="qui-gagne-qui-perd" class="level2">
-<h2 class="anchored" data-anchor-id="qui-gagne-qui-perd">Qui gagne, qui perd ?</h2>
+<section id="le-smic-outil-ou-frein" class="level2">
+<h2 class="anchored" data-anchor-id="le-smic-outil-ou-frein">Le SMIC : outil ou frein ?</h2>
 <div style="overflow-x:auto;border-radius:var(--r-lg);overflow:hidden;border:1.5px solid var(--ivory-2);margin:1.5rem 0">
 
 <table class="eco-table caption-top table">
 <thead>
 <tr class="header">
-<th data-quarto-table-cell-role="th">Acteur</th>
-<th data-quarto-table-cell-role="th">Effet</th>
-<th data-quarto-table-cell-role="th">Pourquoi</th>
+<th data-quarto-table-cell-role="th">Argument</th>
+<th data-quarto-table-cell-role="th">Pour le SMIC élevé</th>
+<th data-quarto-table-cell-role="th">Contre le SMIC élevé</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><strong>Emprunteurs à taux fixe</strong></td>
-<td style="color: #2E5D4B; font-weight: 700">✅ Gagnants</td>
-<td>Remboursent en monnaie dévaluée</td>
+<td><strong>Emploi</strong></td>
+<td style="color: var(--slate)">Effet faible selon les études empiriques (Card &amp; Krueger)</td>
+<td style="color: var(--danger)">Théorie classique : renchérit le travail peu qualifié</td>
 </tr>
 <tr class="even">
-<td><strong>Épargnants en cash</strong></td>
-<td style="color: #C0392B; font-weight: 700">❌ Perdants</td>
-<td>Leur épargne perd du pouvoir d'achat</td>
+<td><strong>Pouvoir d'achat</strong></td>
+<td style="color: var(--slate)">Augmente le revenu des plus modestes qui consomment</td>
+<td style="color: var(--danger)">Peut décourager certaines embauches en PME</td>
 </tr>
 <tr class="odd">
-<td><strong>Propriétaires immo</strong></td>
-<td style="color: #2E5D4B; font-weight: 700">✅ Souvent gagnants</td>
-<td>La valeur de leur bien monte</td>
-</tr>
-<tr class="even">
-<td><strong>Salariés sans indexation</strong></td>
-<td style="color: #C0392B; font-weight: 700">❌ Perdants</td>
-<td>Leur salaire réel baisse</td>
-</tr>
-<tr class="odd">
-<td><strong>État endetté</strong></td>
-<td style="color: #2E5D4B; font-weight: 700">✅ Gagnants</td>
-<td>La dette "fond" en valeur réelle</td>
+<td><strong>Inégalités</strong></td>
+<td style="color: var(--slate)">Réduit les écarts bas/hauts revenus</td>
+<td style="color: var(--danger)">Peut encourager l'automatisation des tâches peu qualifiées</td>
 </tr>
 </tbody>
 </table>
 
 </div>
-<div class="eco-note" style="margin-bottom:1.5rem">
-  <strong>🔗 Liens avec d'autres modules :</strong>
-  <span class="chip slate" style="margin:.2rem">
-    <a href="05-dette.html" style="color:inherit;text-decoration:none">→ Module 05 : comment l'inflation allège la dette publique</a>
-  </span>
-  <span class="chip slate" style="margin:.2rem">
-    <a href="09-monnaie.html" style="color:inherit;text-decoration:none">→ Module 09 : comment la BCE crée la monnaie</a>
-  </span>
-  <span class="chip slate" style="margin:.2rem">
-    <a href="02-courants.html" style="color:inherit;text-decoration:none">→ Module 02 : le monétarisme de Friedman</a>
-  </span>
-</div>
 </section>
-<section id="le-rôle-de-la-bce" class="level2">
-<h2 class="anchored" data-anchor-id="le-rôle-de-la-bce">Le rôle de la BCE</h2>
-<p>La <strong>BCE</strong> a pour mandat principal de maintenir l’inflation <strong>autour de 2 %</strong>. Son outil : les <strong>taux directeurs</strong>.</p>
-<div class="eco-note warning">
-<p><strong>Mécanisme :</strong> BCE ↑ taux → crédit plus cher → moins d’emprunts → moins de consommation → moins de pression sur les prix → inflation ralentit.</p>
-<p>C’est exactement ce qui s’est passé en 2022–2023, avec 10 hausses de taux consécutives.</p>
+<section id="la-transformation-du-travail" class="level2">
+<h2 class="anchored" data-anchor-id="la-transformation-du-travail">La transformation du travail</h2>
+<div class="tile-grid-3" style="margin:1.5rem 0">
+  <div class="tile">
+    <div class="tile-icon">🚗</div>
+    <div class="tile-title">Ubérisation</div>
+    <p class="tile-desc">Des plateformes intermédiaires remplacent des employeurs traditionnels. Flexibilité pour certains, précarité pour d'autres. Le statut juridique reste flou.</p>
+  </div>
+  <div class="tile">
+    <div class="tile-icon">🤖</div>
+    <div class="tile-title">Automatisation</div>
+    <p class="tile-desc">Les tâches répétitives disparaissent. L'histoire montre que chaque vague technologique crée finalement plus d'emplois qu'elle n'en détruit — mais la transition est douloureuse.</p>
+  </div>
+  <div class="tile">
+    <div class="tile-icon">🏠</div>
+    <div class="tile-title">Télétravail</div>
+    <p class="tile-desc">La pandémie a accéléré la transition. Impact sur l'immobilier, les transports, la hiérarchie — et sur la frontière vie pro/perso. Productivité debattue.</p>
+  </div>
 </div>
+
 <div style="background:var(--ink);border-radius:var(--r-lg);padding:1.5rem;margin:2rem 0">
-  <div style="font-family:var(--ff-display);font-size:.7rem;text-transform:uppercase;letter-spacing:.1em;color:var(--gold);margin-bottom:1rem">📰 2022–2024 : l'inflation qu'on a vécue</div>
+  <div style="font-family:var(--ff-display);font-size:.7rem;text-transform:uppercase;letter-spacing:.1em;color:var(--gold);margin-bottom:1rem">📰 L'actu qui illustre ce module</div>
   <div class="tile-grid-3">
     <div style="background:rgba(255,255,255,.05);border-radius:var(--r-md);padding:1rem;border:1px solid rgba(255,255,255,.08)">
-      <div style="font-size:1.2rem;margin-bottom:.4rem">⛽</div>
-      <div style="font-family:var(--ff-display);font-weight:700;font-size:.85rem;color:var(--ivory);margin-bottom:.3rem">Le choc Covid + Guerre en Ukraine</div>
-      <p style="font-size:.8rem;color:rgba(245,240,232,.5);margin:0">2021 : les chaînes logistiques mondiales se grippent (Covid). 2022 : la guerre en Ukraine fait s'envoler le gaz et les céréales. Résultat : une inflation par les coûts de 5-6% en France.</p>
+      <div style="font-size:1.2rem;margin-bottom:.4rem">🇫🇷</div>
+      <div style="font-family:var(--ff-display);font-weight:700;font-size:.85rem;color:var(--ivory);margin-bottom:.3rem">Le plein emploi en France ?</div>
+      <p style="font-size:.8rem;color:rgba(245,240,232,.5);margin:0">Le chômage français est descendu sous 7% en 2023, niveau le plus bas depuis 40 ans. Certains parlent de "plein emploi" — mais ce mot cache des réalités très hétérogènes selon les régions et les qualifications.</p>
     </div>
     <div style="background:rgba(255,255,255,.05);border-radius:var(--r-md);padding:1rem;border:1px solid rgba(255,255,255,.08)">
-      <div style="font-size:1.2rem;margin-bottom:.4rem">📊</div>
-      <div style="font-family:var(--ff-display);font-weight:700;font-size:.85rem;color:var(--ivory);margin-bottom:.3rem">La BCE sort les grands moyens</div>
-      <p style="font-size:.8rem;color:rgba(245,240,232,.5);margin:0">En 18 mois (2022-2023), la BCE a relevé ses taux 10 fois, de 0% à 4,5%. La remontée la plus rapide de son histoire. Résultat : l'inflation a reflué, mais les crédits immobiliers ont explosé.</p>
+      <div style="font-size:1.2rem;margin-bottom:.4rem">⚖️</div>
+      <div style="font-family:var(--ff-display);font-weight:700;font-size:.85rem;color:var(--ivory);margin-bottom:.3rem">Uber et le statut des travailleurs</div>
+      <p style="font-size:.8rem;color:rgba(245,240,232,.5);margin:0">La Cour de cassation a requalifié des chauffeurs Uber en salariés (2020). La directive européenne sur les travailleurs de plateforme va dans le même sens. Un enjeu de millions de personnes en Europe.</p>
     </div>
     <div style="background:rgba(255,255,255,.05);border-radius:var(--r-md);padding:1rem;border:1px solid rgba(255,255,255,.08)">
-      <div style="font-size:1.2rem;margin-bottom:.4rem">🛒</div>
-      <div style="font-family:var(--ff-display);font-weight:700;font-size:.85rem;color:var(--ivory);margin-bottom:.3rem">La "greedflation" : les profits en cause ?</div>
-      <p style="font-size:.8rem;color:rgba(245,240,232,.5);margin:0">Certains économistes (Stiglitz) ont soutenu que des entreprises ont profité de l'inflation pour augmenter leurs marges au-delà des coûts. Le débat reste ouvert — et très politique.</p>
+      <div style="font-size:1.2rem;margin-bottom:.4rem">🏭</div>
+      <div style="font-family:var(--ff-display);font-weight:700;font-size:.85rem;color:var(--ivory);margin-bottom:.3rem">La pénurie de main-d'oeuvre</div>
+      <p style="font-size:.8rem;color:rgba(245,240,232,.5);margin:0">En 2022-2024, de nombreux secteurs (restauration, BTP, santé) ne trouvent pas de candidats malgré le chômage. Un paradoxe qui illustre le chômage structurel et les problèmes d'adéquation emploi/compétences.</p>
     </div>
   </div>
 </div>
 
 <hr class="divider">
-<h2 class="anchored">🎯 Quiz du module</h2>
-<p style="color:var(--dust);font-style:italic;margin-bottom:1.5rem">5 questions · ~3 min · jusqu'à +40 XP</p>
-<div id="quiz-m4" style="background:var(--paper);border-radius:var(--r-xl);border:1.5px solid var(--ivory-2);padding:1.75rem"></div>
+<h2 class="anchored">Quiz du module</h2>
+<p style="color:var(--dust);font-style:italic;margin-bottom:1.5rem">5 questions tirées parmi 12 · jusqu'à +40 XP</p>
+<div id="quiz-m10" style="background:var(--paper);border-radius:var(--r-xl);border:1.5px solid var(--ivory-2);padding:1.75rem"></div>
 
 <script>
-document.addEventListener("DOMContentLoaded", () => {
-  initQuiz("quiz-m4", [
-    { question:"L'inflation est définie comme…",
-      options:["La hausse du prix d'un seul produit","L'augmentation générale et durable du niveau des prix","La hausse des salaires","L'augmentation de la masse monétaire"],
-      correct:1, explanation:"L'inflation désigne une hausse généralisée et persistante des prix, mesurée par l'IPC — pas la hausse isolée d'un seul bien." },
-    { question:"La déflation est généralement considérée comme…",
-      options:["Une bonne nouvelle pour les consommateurs","Un phénomène neutre","Potentiellement dangereux car elle paralyse les achats","La cause directe du chômage"],
-      correct:2, explanation:"En déflation les agents reportent leurs achats en anticipant de nouvelles baisses — cercle vicieux qui étouffe l'économie. Le Japon en a souffert 20 ans." },
-    { question:"Les chocs pétroliers de 1973 et 1979 ont provoqué une inflation par…",
-      options:["La demande — les gens achetaient trop","Les coûts — le pétrole a renchéri la production","La monnaie — trop de billets imprimés","Les salaires — les syndicats ont trop obtenu"],
-      correct:1, explanation:"Les hausses brutales du prix du pétrole ont fait exploser les coûts de production et de transport, propageant l'inflation dans toute l'économie." },
-    { question:"Qui gagne à l'inflation, toutes choses égales par ailleurs ?",
-      options:["Les épargnants en cash","Les retraités à pension fixe","Les emprunteurs à taux fixe","Les créanciers"],
-      correct:2, explanation:"Un emprunteur rembourse une somme nominale fixe avec une monnaie qui vaut moins réellement — sa dette réelle diminue." },
-    { question:"Quel est l'objectif d'inflation officiel de la BCE ?",
-      options:["0 %","Autour de 2 %","Entre 3 et 4 %","Elle n'a pas d'objectif chiffré"],
-      correct:1, explanation:"La BCE vise une inflation 'proche mais inférieure à 2 %'. Trop basse = risque déflation. Trop haute = perte de pouvoir d'achat." },
-    { question:"La 'stagflation' désigne…",
-      options:["Une croissance forte avec faible inflation","Une inflation élevée combinée à une stagnation économique","Une déflation accompagnée de forte croissance","Un chômage élevé sans inflation"],
-      correct:1, explanation:"Néologisme des années 70 (stagnation + inflation). Situation délicate car les remèdes classiques contre l'inflation aggravent la stagnation et vice-versa." },
-    { question:"Que fait la BCE pour lutter contre l'inflation ?",
-      options:["Elle imprime moins de billets directement","Elle baisse les taux directeurs","Elle monte les taux directeurs pour renchérir le crédit","Elle augmente les impôts"],
-      correct:2, explanation:"Taux directeurs plus élevés → crédit plus cher → moins d'emprunts → moins de consommation → moins de pression sur les prix. C'est ce qui s'est passé en 2022-2023." },
-    { question:"L'IPC (Indice des Prix à la Consommation) est calculé en France par…",
-      options:["La BCE","Le ministère des Finances","L'INSEE","La Banque de France"],
-      correct:2, explanation:"L'INSEE (Institut National de la Statistique et des Études Économiques) calcule et publie l'IPC chaque mois à partir d'un panier de ~200 000 relevés de prix." },
-    { question:"L'inflation 'importée' désigne…",
-      options:["L'inflation causée par les importations de main-d'œuvre étrangère","La hausse des prix due au renchérissement des produits importés","L'inflation transmise par un pays voisin via ses touristes","La hausse des droits de douane"],
-      correct:1, explanation:"Quand le prix des importations monte (pétrole, matières premières, composants), les coûts de production augmentent et l'inflation se propage — même si la demande intérieure est stable." },
-    { question:"Le 'taux d'intérêt réel' est…",
-      options:["Le taux fixé par la BCE","Le taux nominal moins le taux d'inflation","Le taux affiché par les banques commerciales","Le taux moyen dans la zone euro"],
-      correct:1, explanation:"Taux réel = taux nominal - inflation. Si tu empruntes à 5% avec 3% d'inflation, ton taux réel n'est que 2%. C'est ce qui compte pour les décisions d'investissement." },
-    { question:"Quelle affirmation sur l'hyperinflation est VRAIE ?",
-      options:["Elle n'a jamais existé dans un pays développé","Elle correspond à une inflation supérieure à 50% par mois","Elle est bénéfique pour les créanciers","Elle est toujours causée par des guerres"],
-      correct:1, explanation:"L'hyperinflation est conventionnellement définie comme une inflation > 50%/mois. L'Allemagne de Weimar (1923), le Zimbabwe (2008), le Venezuela (2018) en sont des exemples célèbres." },
-    { question:"Pourquoi un peu d'inflation (~2%) est-elle jugée souhaitable ?",
-      options:["Elle enrichit les États","Elle évite la déflation et donne une marge pour baisser les taux en crise","Elle encourage l'épargne","Elle réduit les inégalités"],
-      correct:1, explanation:"Un peu d'inflation 'graisse les rouages' : elle permet des ajustements de salaires réels sans baisses nominales, et donne aux banques centrales une marge pour baisser les taux si nécessaire." },
-  ], "module4");
-  ECO.completeModule("inflation");
+document.addEventListener("DOMContentLoaded", function() {
+  initQuiz("quiz-m10", [
+    { question:"Le chômage frictionnel désigne...",
+      options:["Le chômage dû à la récession","Le temps normal entre deux emplois","Le chômage causé par l'automatisation","Le chômage des jeunes diplômés"],
+      correct:1, explanation:"Le chômage frictionnel est incompressible : il correspond au temps normal de transition entre deux emplois. Il existe même dans les économies les plus dynamiques et n'est pas un signe de dysfonctionnement." },
+    { question:"Le NAIRU est...",
+      options:["Le salaire minimum légal","Le taux d'intérêt naturel","Le taux de chômage en dessous duquel l'inflation s'accélère","Le taux de croissance potentiel"],
+      correct:2, explanation:"Non-Accelerating Inflation Rate of Unemployment. En dessous de ce seuil, le marché du travail est si tendu que les salaires et les prix s'emballent. En France, estimé autour de 7-8%." },
+    { question:"La courbe de Phillips montre à court terme...",
+      options:["Un lien positif entre inflation et chômage","Un lien inverse entre inflation et chômage","Aucun lien entre les deux","Un lien entre PIB et chômage"],
+      correct:1, explanation:"Phillips (1958) a observé que moins de chômage = plus de pression sur les salaires = plus d'inflation. Relation valable à court terme, mais contestée à long terme (Friedman, Phelps)." },
+    { question:"Les études empiriques (Card & Krueger) montrent que les hausses modérées du SMIC...",
+      options:["Détruisent massivement l'emploi","N'ont pas d'effet significatif sur l'emploi","Créent toujours de l'emploi","Réduisent la productivité"],
+      correct:1, explanation:"L'étude classique de Card & Krueger (1994) sur le New Jersey a montré que la hausse du salaire minimum n'avait pas réduit l'emploi dans la restauration rapide. Depuis, de nombreuses études confirment ce résultat." },
+    { question:"L'ubérisation désigne...",
+      options:["Le chômage causé par Uber","La mise en relation via plateforme remplaçant l'employeur traditionnel","Le télétravail généralisé","L'automatisation des transports"],
+      correct:1, explanation:"Des plateformes numériques (Uber, Deliveroo, Airbnb) jouent un rôle d'intermédiaire qui était auparavant celui d'un employeur. Le statut juridique des travailleurs (salarié ou indépendant) est au coeur des débats." },
+    { question:"Le chômage structurel est principalement causé par...",
+      options:["Une récession économique","Une inadéquation entre compétences disponibles et compétences demandées","Le manque de personnes cherchant un emploi","Des salaires trop élevés"],
+      correct:1, explanation:"Le chômage structurel naît d'un décalage durable entre les qualifications des chômeurs et les besoins des entreprises. La désindustrialisation a laissé de nombreux ouvriers sans emploi dans des régions entières." },
+    { question:"La 'destruction créatrice' appliquée au marché du travail signifie...",
+      options:["Les licenciements sont toujours bons","Chaque vague technologique détruit des emplois mais en crée de nouveaux, souvent plus nombreux","L'emploi diminue inéluctablement","Les syndicats freinent l'innovation"],
+      correct:1, explanation:"Schumpeter : chaque révolution technologique (machines, électricité, informatique, IA) détruit des emplois existants mais crée de nouveaux secteurs. Le bilan net historique est positif — mais la transition est toujours douloureuse." },
+    { question:"La courbe de Phillips a été remise en cause dans les années 70 car...",
+      options:["Le chômage avait disparu","La stagflation (inflation + chômage élevé) a montré que les deux peuvent coexister","Les syndicats avaient trop de pouvoir","La mondialisation avait éliminé l'inflation"],
+      correct:1, explanation:"La stagflation des chocs pétroliers (inflation à 2 chiffres ET chômage élevé) a brisé l'idée d'un arbitrage stable. Friedman et Phelps avaient prédit ce résultat : les agents anticipent l'inflation et neutralisent la politique monétaire." },
+    { question:"Quel secteur connait le plus de difficultés à recruter en France ces dernières années ?",
+      options:["La finance","L'informatique uniquement","Plusieurs secteurs à la fois : santé, BTP, restauration, industrie","Uniquement la restauration"],
+      correct:2, explanation:"La pénurie de main-d'oeuvre dans de nombreux secteurs simultanément (santé, BTP, restauration, industrie) témoigne d'un chômage structurel : les compétences disponibles ne correspondent pas aux postes ouverts, même avec un taux de chômage global en baisse." },
+    { question:"Le taux d'emploi est préférable au taux de chômage car...",
+      options:["Il est plus facile à calculer","Il compte les personnes ayant un emploi, évitant les biais des définitions du chômage","Il est toujours plus élevé","Il mesure la productivité"],
+      correct:1, explanation:"Le taux de chômage exclut les 'découragés' (qui ont abandonné la recherche) et les temps partiels subis. Le taux d'emploi (% de la population d'age actif ayant un emploi) donne une vision plus complète du marché du travail." },
+    { question:"La négociation collective désigne...",
+      options:["Les négociations entre États sur les échanges commerciaux","La discussion entre syndicats et employeurs pour fixer conditions de travail et salaires","Le vote annuel du budget de l'État","Les accords entre banques centrales"],
+      correct:1, explanation:"La négociation collective (conventions collectives, accords de branche) permet de fixer collectivement les conditions de travail au-delà du minimum légal. Elle est beaucoup plus développée en Allemagne ou en Scandinavie qu'en France." },
+    { question:"L'automatisation a historiquement...",
+      options:["Toujours détruit plus d'emplois qu'elle n'en a créé","Créé globalement plus d'emplois qu'elle n'en a détruits, avec des transitions douloureuses","N'a eu aucun effet sur l'emploi total","Uniquement créé des emplois de qualité"],
+      correct:1, explanation:"Depuis la révolution industrielle, chaque vague d'automatisation (machines textiles, tracteurs, ordinateurs) a créé de nouveaux emplois dans de nouveaux secteurs. Le bilan net est positif — mais certains groupes paient le coût de la transition." }
+  ], "module10");
+  ECO.completeModule("travail");
 });
 </script>
 
 <div style="margin-top:2.5rem;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1rem;padding-top:2rem;border-top:1.5px solid var(--ivory-2)">
-  <a href="03-croissance.html" style="color:var(--dust);font-family:var(--ff-display);font-weight:700;font-size:.88rem">← Module 03</a>
-  <a href="05-dette.html" class="btn-main">Module 05 : La dette publique →</a>
+  <a href="09-monnaie.html" style="color:var(--dust);font-family:var(--ff-display);font-weight:700;font-size:.88rem">← Module 09</a>
+  <a href="11-environnement.html" class="btn-main">Module 11 : Économie et environnement →</a>
 </div>
 
 

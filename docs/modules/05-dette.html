@@ -102,6 +102,10 @@ const ECO = (() => {
     { id:"inegalites",   title:"Les inégalités",           emoji:"⚖️", xp:100 },
     { id:"commerce",     title:"Commerce international",   emoji:"🌐", xp:100 },
     { id:"idees_recues", title:"Les idées reçues",         emoji:"🔍", xp:80  },
+    { id:"monnaie",      title:"Monnaie & banques",        emoji:"💳", xp:100 },
+    { id:"travail",      title:"Marché du travail",        emoji:"👷", xp:100 },
+    { id:"environnement",title:"Économie & environnement", emoji:"🌿", xp:100 },
+    { id:"politiques",   title:"Politiques économiques",   emoji:"🏛️", xp:120 },
   ];
 
   const CHALLENGES = [
@@ -583,7 +587,8 @@ function initQuiz(containerId, allQuestions, quizId, opts={}) {
       });
       const fb=document.getElementById("qfb");
       fb.style.display="block";
-      fb.innerHTML=`<div class="eco-note${ok?"":" warning"}"><strong>${ok?"✅ Exact !":"❌ Pas tout à fait…"}</strong> ${q.explanation||""}</div>
+      const wrongHint = (!ok && q.wrongHints && q.wrongHints[i]) ? `<div class="eco-note warning" style="margin-top:.5rem"><strong>Pourquoi pas ${String.fromCharCode(65+i)} ?</strong> ${q.wrongHints[i]}</div>` : "";
+      fb.innerHTML=`<div class="eco-note${ok?"":" warning"}"><strong>${ok?"✅ Exact !":"❌ Pas tout à fait…"}</strong> ${q.explanation||""}</div>${wrongHint}
         <button class="btn-main" style="margin-top:.75rem;font-size:.88rem;padding:.55rem 1.25rem" onclick="qNext()">
           ${current+1<questions.length?"Suivant →":"Voir mes résultats →"}
         </button>`;
@@ -618,6 +623,74 @@ function initQuiz(containerId, allQuestions, quizId, opts={}) {
   window[`_q_${containerId}`]=allQuestions;
   render();
 }
+
+// ================================================================
+// MOT DE LA SEMAINE
+// ================================================================
+const MOTS_SEMAINE = [
+  {term:"Externalité", def:"Effet d'une activité sur des tiers sans compensation. La pollution est une externalité négative — son coût n'est pas dans le prix du produit."},
+  {term:"Monopsone", def:"Marché avec un seul acheteur (comme un employeur dominant dans une région). Le pendant du monopole, mais du côté de la demande."},
+  {term:"Asymétrie d'information", def:"Situation où l'une des parties dispose de plus d'informations que l'autre. Cause principale des défaillances de marché."},
+  {term:"Aléa moral", def:"Quand quelqu'un prend plus de risques parce qu'il sait être protégé contre les conséquences. Ex : une banque 'too big to fail'."},
+  {term:"Sélection adverse", def:"Les acheteurs mal informés attirent les mauvais vendeurs. Ex : sur le marché de l'assurance, les plus malades souscrivent le plus."},
+  {term:"Trappe à pauvreté", def:"Situation où reprendre un emploi peu qualifié réduit le revenu net (perte d'aides). Désincitation perverse au travail."},
+  {term:"Désinflation", def:"Ralentissement du rythme de hausse des prix — pas une baisse (déflation). L'inflation diminue mais reste positive."},
+  {term:"Effet d'éviction", def:"Quand la dépense publique fait monter les taux et réduit l'investissement privé. Argument libéral contre les déficits."},
+  {term:"Paradoxe de l'épargne", def:"Si tout le monde épargne plus simultanément, la demande baisse, les revenus aussi, et l'épargne totale peut stagner. (Keynes)"},
+  {term:"Aléa moral", def:"Comportement plus risqué quand on est protégé contre les conséquences. Les banques 'too big to fail' en sont l'exemple canonique."},
+  {term:"Rente économique", def:"Revenu supérieur au minimum nécessaire pour maintenir un facteur dans son usage. Ex : les superprofits des ressources naturelles rares."},
+  {term:"Équilibre de Nash", def:"Situation où aucun joueur ne peut améliorer son résultat en changeant seul de stratégie. Fondement de la théorie des jeux. (John Nash, Nobel 1994)"},
+  {term:"Courbe de Laffer", def:"Au-delà d'un certain taux d'imposition, les recettes fiscales baissent car l'activité se réduit. Le taux optimal est très débattu empiriquement."},
+  {term:"Économies d'échelle", def:"Baisse du coût unitaire quand les volumes augmentent. Explique pourquoi les grandes entreprises produisent moins cher que les petites."},
+  {term:"Effets de réseau", def:"Un service gagne en valeur à mesure que le nombre d'utilisateurs augmente. Explique les monopoles naturels du numérique (téléphone, internet)."},
+  {term:"Économie comportementale", def:"Intègre la psychologie : les humains ont des biais (aversion à la perte, ancrage). Kahneman et Thaler ont reçu le Nobel pour ces travaux."},
+  {term:"Capital humain", def:"Compétences et connaissances d'un individu qui augmentent sa productivité. L'éducation est le principal investissement en capital humain. (Becker, Nobel 1992)"},
+  {term:"Biens publics", def:"Non-rivaux (ma consommation ne réduit pas la tienne) et non-exclusifs (on ne peut exclure personne). Ex : l'air pur, la défense nationale."},
+  {term:"Optimum de Pareto", def:"Situation où améliorer le bien-être d'un agent est impossible sans en détériorer un autre. Critère d'efficacité — mais pas d'équité."},
+  {term:"Théorie des jeux", def:"Étudie les décisions interdépendantes. Le dilemme du prisonnier illustre comment des individus rationnels peuvent aboutir à des résultats sous-optimaux collectivement."},
+  {term:"Biens de Veblen", def:"Biens dont la demande augmente avec le prix — leur cherté est un signal de statut social. Le luxe est l'exemple canonique."},
+  {term:"Spéculation", def:"Achat d'un actif en anticipant une hausse pour le revendre. Peut stabiliser ou déstabiliser les marchés selon les circonstances."},
+  {term:"Croissance inclusive", def:"Croissance qui réduit simultanément les inégalités. S'oppose à une croissance qui profite surtout aux plus riches."},
+  {term:"Droits de propriété", def:"Règles définissant qui peut utiliser et disposer d'un bien. Coase : si bien définis et coûts de transaction nuls, le marché résout seul les externalités."},
+  {term:"Subvention croisée", def:"Une activité rentable finance une activité déficitaire. Ex : La Poste finance ses zones rurales non rentables grâce aux zones urbaines."},
+  {term:"Neutralité de la monnaie", def:"À long terme, une hausse de la masse monétaire modifie seulement les prix, pas la production réelle. Dogme monétariste contesté à court terme."},
+  {term:"Trappe à liquidité", def:"Quand les taux proches de 0 ne stimulent plus l'économie — les agents gardent leurs liquidités. La politique monétaire devient inefficace."},
+  {term:"Marché contestable", def:"Marché où l'entrée est libre et sans coût irrécupérable. Même un monopole doit se comporter concurrentiellement pour éviter les entrants."},
+  {term:"Déflation par la dette", def:"Spirale : la dette pèse sur la consommation → baisse des prix → valeur réelle de la dette augmente → charge s'alourdit. (Irving Fisher, 1933)"},
+  {term:"Revenu universel de base", def:"Versement inconditionnel à tous les citoyens. Expérimenté en Finlande, Kenya, Namibie. Débat sur financement et effets sur l'offre de travail."},
+  {term:"Indice Big Mac", def:"Indicateur de The Economist qui compare les prix du Big Mac pour détecter les sous/surévaluations monétaires selon la parité de pouvoir d'achat."},
+  {term:"Effet d'aubaine", def:"Bénéficier d'une aide publique pour quelque chose qu'on aurait fait de toute façon. Réduit l'efficacité et le rapport coût/bénéfice des politiques publiques."},
+  {term:"Bien tutélaire", def:"Bien dont la consommation est jugée insuffisante si laissée au marché seul : éducation, santé, culture. L'État intervient pour en favoriser l'accès."},
+  {term:"Taux de change réel", def:"Taux de change nominal corrigé des différences d'inflation. Mesure la compétitivité prix d'un pays par rapport à ses partenaires commerciaux."},
+  {term:"Prime de risque", def:"Supplément de rendement exigé pour accepter un actif plus risqué. Les obligations grecques paient plus que les allemandes pour compenser le risque perçu."},
+  {term:"Courbe de Beveridge", def:"Relation inverse entre taux de chômage et taux de postes vacants. Quand les deux sont élevés, c'est le signe d'un chômage structurel important."},
+  {term:"Déséquilibres mondiaux", def:"Les excédents de certains pays (Chine, Allemagne) font le pendant des déficits d'autres (USA, France). Source de tensions commerciales et financières."},
+  {term:"Capitalisme de surveillance", def:"Les données comportementales sont captées, analysées et vendues pour prédire et influencer les comportements. Concept de Shoshana Zuboff."},
+  {term:"Politique de l'offre", def:"Réformes visant la compétitivité des entreprises : baisse des charges, flexibilité, déréglementation. Associé en France au CICE, pacte de responsabilité."},
+  {term:"Empreinte matérielle", def:"Quantité totale de matières premières consommées, y compris celles 'importées' via les produits achetés à l'étranger. La France exporte une partie de sa pollution."},
+  {term:"Bien de Giffen", def:"Bien dont la demande augmente quand le prix monte — car les ménages très pauvres doivent réduire d'autres dépenses. Rarissime en pratique (pain au 19e siècle)."},
+  {term:"Règle de Taylor", def:"Formule suggérant comment une banque centrale devrait fixer ses taux en fonction de l'inflation et de l'écart de production par rapport au potentiel."},
+  {term:"Paradoxe de Condorcet", def:"Dans une élection à 3 choix ou plus, les préférences collectives peuvent être cycliques (A bat B, B bat C, C bat A). Le vote majoritaire peut être incohérent."},
+  {term:"Économie circulaire", def:"Modèle visant à fermer les cycles de production : recycler, réparer, réutiliser — pour limiter l'extraction de nouvelles matières premières."},
+  {term:"NAIRU", def:"Non-Accelerating Inflation Rate of Unemployment. Le taux de chômage en dessous duquel l'inflation s'accélère. En France estimé à 7-8%."},
+  {term:"Multiplicateur budgétaire", def:"L'effet total d'une variation de dépense publique sur le PIB. Supérieur à 1 en récession (car les ressources sont sous-utilisées), inférieur à 1 en plein emploi."},
+  {term:"Courbe de Phillips", def:"Relation inverse à court terme entre inflation et chômage : moins de chômage = plus de pression sur les salaires = plus d'inflation. Remise en cause par la stagflation des années 70."},
+  {term:"Taxe Pigouvienne", def:"Taxe sur une activité à externalité négative, calibrée à hauteur du coût social. La taxe carbone en est l'exemple moderne."},
+  {term:"Neutralité ricardienne", def:"Théorie selon laquelle les ménages anticipent les hausses d'impôts futures liées à un déficit et épargnent davantage aujourd'hui — neutralisant l'effet de la relance budgétaire."},
+];
+
+function getMotSemaine() {
+  const weekNum = Math.floor(Date.now() / (7 * 24 * 3600 * 1000));
+  return MOTS_SEMAINE[weekNum % MOTS_SEMAINE.length];
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+  const mot = getMotSemaine();
+  const termEl = document.getElementById('mot-semaine-term');
+  const defEl  = document.getElementById('mot-semaine-def');
+  if(termEl) termEl.textContent = mot.term;
+  if(defEl)  defEl.textContent  = mot.def;
+});
 
 </script>
 
@@ -685,6 +758,22 @@ function initQuiz(containerId, allQuestions, quizId, opts={}) {
     <a class="dropdown-item" href="../modules/08-idees-recues.html">
  <span class="dropdown-text">08 · Idées reçues</span></a>
   </li>  
+        <li>
+    <a class="dropdown-item" href="../modules/09-monnaie.html">
+ <span class="dropdown-text">09 · Monnaie &amp; banques</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../modules/10-travail.html">
+ <span class="dropdown-text">10 · Marché du travail</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../modules/11-environnement.html">
+ <span class="dropdown-text">11 · Économie &amp; environnement</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../modules/12-politiques.html">
+ <span class="dropdown-text">12 · Politiques économiques</span></a>
+  </li>  
     </ul>
   </li>
   <li class="nav-item dropdown ">
@@ -715,6 +804,10 @@ function initQuiz(containerId, allQuestions, quizId, opts={}) {
         <li>
     <a class="dropdown-item" href="../quiz/defi-actu.html">
  <span class="dropdown-text">🔎 Analyse d’actu</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../quiz/revision-rapide.html">
+ <span class="dropdown-text">⚡ Révision rapide</span></a>
   </li>  
         <li>
     <a class="dropdown-item" href="../quiz/defi-association.html">
@@ -834,6 +927,18 @@ function initQuiz(containerId, allQuestions, quizId, opts={}) {
     <div class="tile-title">Un État endetté…</div>
     <p class="tile-desc">"Roule" sa dette indéfiniment. Lève des impôts. Peut en théorie émettre de la monnaie. Existe à perpétuité.</p>
   </div>
+</div>
+<div class="eco-note" style="margin-bottom:1.5rem">
+  <strong>🔗 Liens avec d'autres modules :</strong>
+  <span class="chip slate" style="margin:.2rem">
+    <a href="04-inflation.html" style="color:inherit;text-decoration:none">→ Module 04 : l'inflation réduit la valeur réelle de la dette</a>
+  </span>
+  <span class="chip slate" style="margin:.2rem">
+    <a href="09-monnaie.html" style="color:inherit;text-decoration:none">→ Module 09 : la BCE peut acheter des obligations souveraines</a>
+  </span>
+  <span class="chip slate" style="margin:.2rem">
+    <a href="12-politiques.html" style="color:inherit;text-decoration:none">→ Module 12 : déficit, budget et arbitrages politiques</a>
+  </span>
 </div>
 </section>
 <section id="la-règle-de-soutenabilité" class="level2">

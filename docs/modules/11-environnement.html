@@ -850,16 +850,15 @@ document.addEventListener('DOMContentLoaded', function() {
 <style>@keyframes floatUp{0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)}}</style>
 
 <div style="background:var(--ink);padding:3rem 2rem 4rem;position:relative;overflow:hidden">
-  <div style="position:absolute;top:-30px;right:8%;width:180px;height:180px;border-radius:50%;background:rgba(192,57,43,.08)"></div>
-  <div style="position:absolute;bottom:-50px;left:5%;width:200px;height:200px;border-radius:50%;background:rgba(201,151,58,.06)"></div>
+  <div style="position:absolute;top:-50px;left:50%;width:220px;height:220px;border-radius:50%;background:rgba(46,93,75,.1);transform:translateX(-50%)"></div>
   <div class="section-sm" style="position:relative;z-index:1">
     <div style="display:flex;gap:.75rem;flex-wrap:wrap;margin-bottom:1.5rem">
-      <span class="chip" style="background:rgba(201,151,58,.15);border-color:rgba(201,151,58,.35);color:var(--gold-2)">Module 04</span>
-      <span class="chip" style="background:rgba(255,255,255,.06);border-color:rgba(255,255,255,.1);color:rgba(245,240,232,.6)">Niveau intermédiaire</span>
-      <span class="chip" style="background:rgba(255,255,255,.06);border-color:rgba(255,255,255,.1);color:rgba(245,240,232,.6)">80 XP</span>
+      <span class="chip" style="background:rgba(201,151,58,.15);border-color:rgba(201,151,58,.35);color:var(--gold-2)">Module 11</span>
+      <span class="chip" style="background:rgba(255,255,255,.06);border-color:rgba(255,255,255,.1);color:rgba(245,240,232,.6)">Niveau avancé</span>
+      <span class="chip" style="background:rgba(255,255,255,.06);border-color:rgba(255,255,255,.1);color:rgba(245,240,232,.6)">100 XP</span>
     </div>
-    <h1 style="color:var(--ivory);margin-bottom:.75rem">L'inflation</h1>
-    <p style="color:rgba(245,240,232,.6);font-style:italic;margin:0">Pourquoi tout augmente, qui y gagne, et ce que la BCE peut (ou ne peut pas) y faire.</p>
+    <h1 style="color:var(--ivory);margin-bottom:.75rem">Économie et environnement</h1>
+    <p style="color:rgba(245,240,232,.6);font-style:italic;margin:0">Externalités, tarification carbone, biens communs — les outils économiques face au défi climatique.</p>
   </div>
 </div>
 
@@ -869,22 +868,60 @@ document.addEventListener('DOMContentLoaded', function() {
   <div class="step-sep"></div>
   <div class="step-item"><div class="step-num">2</div> Quiz</div>
   <div class="step-sep"></div>
-  <div class="step-item"><div class="step-num">3</div> +80 XP</div>
+  <div class="step-item"><div class="step-num">3</div> +100 XP</div>
 </div>
 <blockquote style="border-left:3px solid var(--gold);margin:0 0 2rem;padding:.75rem 1.25rem;background:rgba(201,151,58,.06);border-radius:0 var(--r-sm) var(--r-sm) 0" class="blockquote">
-  <p style="font-style:italic;margin:0 0 .4rem;font-size:1rem;color:var(--ink)">"L'inflation est la seule forme de taxation qui peut être imposée sans législation."</p>
-  <footer style="font-family:var(--ff-display);font-size:.78rem;color:var(--dust);font-weight:700">— Milton Friedman</footer>
+  <p style="font-style:italic;margin:0 0 .4rem">"Le changement climatique est la plus grande défaillance de marché que le monde ait jamais connue."</p>
+  <footer style="font-family:var(--ff-display);font-size:.78rem;color:var(--dust);font-weight:700">— Nicholas Stern, économiste, Rapport Stern (2006)</footer>
 </blockquote>
-<section id="définition-pas-juste-les-prix-augmentent" class="level2">
-<h2 class="anchored" data-anchor-id="définition-pas-juste-les-prix-augmentent">Définition : pas juste “les prix augmentent”</h2>
-<p>L’inflation, c’est l’<strong>augmentation générale et durable</strong> du niveau des prix. Pas un seul produit — <em>l’ensemble</em> du panier de biens et services.</p>
+<section id="les-externalités-le-coeur-du-problème" class="level2">
+<h2 class="anchored" data-anchor-id="les-externalités-le-coeur-du-problème">Les externalités — le coeur du problème</h2>
+<p>Une <strong>externalité</strong> est un effet (positif ou négatif) qu’une activité économique produit sur des tiers, <strong>sans que cela se reflète dans le prix</strong>.</p>
 <div class="eco-note">
-<p><strong>L’indicateur clé :</strong> l’<strong>IPC</strong> (Indice des Prix à la Consommation), calculé par l’INSEE. Il suit l’évolution d’un “panier” représentatif de la consommation des ménages français.</p>
+<p><strong>Exemple classique :</strong> Une usine pollue une rivière. Le coût de la pollution (pêche détruite, eau contaminée, santé dégradée) est supporté par la société — pas par l’usine. Son prix de vente ne reflète pas ce coût réel. C’est une <strong>externalité négative</strong>.</p>
 </div>
-<p>Son contraire, la <strong>déflation</strong>, peut sembler une bonne nouvelle — mais c’est souvent catastrophique. Si tu anticipes que les prix baisseront encore demain, tu n’achètes pas aujourd’hui. L’économie se grippe. Le Japon a vécu ça pendant 20 ans.</p>
+<p>Résultat : le marché produit <em>trop</em> de biens à externalités négatives (pollution, CO2) et <em>trop peu</em> de biens à externalités positives (éducation, recherche, forêts).</p>
 </section>
-<section id="linflation-en-france-depuis-1960" class="level2">
-<h2 class="anchored" data-anchor-id="linflation-en-france-depuis-1960">L’inflation en France depuis 1960</h2>
+<section id="les-quatre-solutions-économiques" class="level2">
+<h2 class="anchored" data-anchor-id="les-quatre-solutions-économiques">Les quatre solutions économiques</h2>
+<div class="tile-grid" style="margin:1.5rem 0">
+  <div class="tile" style="border-top:3px solid var(--danger)">
+    <div class="tile-icon">💰</div>
+    <div class="tile-title">Taxe Pigouvienne</div>
+    <p class="tile-desc">Taxer la pollution à hauteur de son coût social — pour internaliser l'externalité. La taxe carbone en est l'exemple. Proposée par l'économiste Pigou en 1920.</p>
+    <div class="tile-footer"><span>Internalise le coût social</span></div>
+  </div>
+  <div class="tile" style="border-top:3px solid var(--slate)">
+    <div class="tile-icon">🎫</div>
+    <div class="tile-title">Marchés de quotas</div>
+    <p class="tile-desc">L'État fixe un plafond de pollution total et distribue des droits à polluer échangeables. Les entreprises les achètent/vendent selon leurs besoins. Système ETS en Europe.</p>
+    <div class="tile-footer"><span>Plafonne les émissions totales</span></div>
+  </div>
+  <div class="tile" style="border-top:3px solid var(--gold)">
+    <div class="tile-icon">🏛️</div>
+    <div class="tile-title">Réglementation</div>
+    <p class="tile-desc">Standards d'émissions, interdictions, normes techniques. Direct mais rigide — ne tient pas compte des différences de coût entre entreprises.</p>
+    <div class="tile-footer"><span>Norme Euro 7, RE2020</span></div>
+  </div>
+  <div class="tile" style="border-top:3px solid var(--dust)">
+    <div class="tile-icon">🌿</div>
+    <div class="tile-title">Subventions vertes</div>
+    <p class="tile-desc">Soutenir les alternatives propres pour les rendre compétitives (solaire, éolien, VE). Fonctionne bien mais coûte cher à l'État.</p>
+    <div class="tile-footer"><span>IRA américain, RE2020</span></div>
+  </div>
+</div>
+</section>
+<section id="la-tragédie-des-communs" class="level2">
+<h2 class="anchored" data-anchor-id="la-tragédie-des-communs">La tragédie des communs</h2>
+<p>L’économiste Garrett Hardin (1968) a décrit un phénomène crucial : les ressources partagées sont surexploitées par les individus qui agissent rationnellement chacun pour soi.</p>
+<p><strong>L’exemple :</strong> Un pré communal peut nourrir 10 vaches. Chaque paysan a intérêt à mettre une vache de plus — il capte tout le bénéfice mais ne supporte qu’1/N du coût de surpâturage. Résultat : tout le monde le fait, le pré est détruit. Personne n’a voulu ça, mais c’est le résultat de décisions individuellement rationnelles.</p>
+<p><strong>L’atmosphère est un bien commun mondial.</strong> Chaque État, chaque entreprise a intérêt à polluer (bénéfice privé) tout en espérant que les autres feront les efforts (coût collectif). D’où la difficulté des accords climatiques.</p>
+<div class="eco-note warning">
+<p><strong>La réponse d’Elinor Ostrom (Nobel 2009)</strong> : contrairement à Hardin, Ostrom a montré empiriquement que les communautés peuvent gérer leurs communs de façon durable — sans privatisation ni État — via des règles collectives, de la surveillance mutuelle et des sanctions graduelles. Les systèmes d’irrigation au Japon ou en Espagne en sont des exemples vieux de siècles.</p>
+</div>
+</section>
+<section id="le-coût-du-carbone" class="level2">
+<h2 class="anchored" data-anchor-id="le-coût-du-carbone">Le coût du carbone</h2>
 <div class="cell">
 <div class="cell-output cell-output-stderr">
 <pre><code>Warning: le package 'ggplot2' a été compilé avec la version R 4.4.3</code></pre>
@@ -892,168 +929,107 @@ document.addEventListener('DOMContentLoaded', function() {
 <div class="cell-output-display">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="04-inflation_files/figure-html/unnamed-chunk-1-1.png" class="img-fluid figure-img" width="768"></p>
-<figcaption>Taux d’inflation annuel en France (1960–2023) — Source : INSEE / Banque de France</figcaption>
+<p><img src="11-environnement_files/figure-html/unnamed-chunk-1-1.png" class="img-fluid figure-img" width="768"></p>
+<figcaption>Prix du carbone dans le système ETS européen (€/tonne CO2) — Source : Refinitiv</figcaption>
 </figure>
 </div>
 </div>
 </div>
 </section>
-<section id="les-trois-causes-de-linflation" class="level2">
-<h2 class="anchored" data-anchor-id="les-trois-causes-de-linflation">Les trois causes de l’inflation</h2>
-<div class="tile-grid" style="margin:1.5rem 0">
-  <div class="tile" style="border-top:3px solid var(--slate)">
-    <div class="tile-icon">🏭</div>
-    <div class="tile-title">Par les coûts</div>
-    <p class="tile-desc">Le pétrole monte → le transport coûte plus cher → tout augmente. Cause des chocs des années 70. Et de 2022.</p>
+<section id="pib-vert-vs-comptabilité-du-bien-être" class="level2">
+<h2 class="anchored" data-anchor-id="pib-vert-vs-comptabilité-du-bien-être">PIB vert vs comptabilité du bien-être</h2>
+<p>Le PIB ignore les destructions environnementales. Plusieurs approches tentent d’y remédier :</p>
+<div class="tile-grid-3" style="margin:1.5rem 0">
+  <div class="tile">
+    <div class="tile-icon">🌍</div>
+    <div class="tile-title">PIB vert</div>
+    <p class="tile-desc">Soustrait la dépréciation du capital naturel (forêts, sols, eau) au PIB traditionnel. Si on abat une forêt, le PIB monte — le PIB vert baisserait.</p>
   </div>
-  <div class="tile" style="border-top:3px solid var(--gold)">
-    <div class="tile-icon">🛒</div>
-    <div class="tile-title">Par la demande</div>
-    <p class="tile-desc">Trop d'argent pour pas assez de biens. Les vendeurs montent les prix. Classique en période de boom économique.</p>
+  <div class="tile">
+    <div class="tile-icon">📊</div>
+    <div class="tile-title">Empreinte matérielle</div>
+    <p class="tile-desc">Mesure la quantité totale de matières premières consommées — y compris celles "importées" via les produits achetés à l'étranger. La France "exporte" sa pollution.</p>
   </div>
-  <div class="tile" style="border-top:3px solid var(--danger)">
-    <div class="tile-icon">🖨️</div>
-    <div class="tile-title">Monétaire</div>
-    <p class="tile-desc">"Faire tourner la planche à billets" sans croissance réelle dilue la valeur de la monnaie. Ex : Weimar 1923, Venezuela 2018.</p>
+  <div class="tile">
+    <div class="tile-icon">🌱</div>
+    <div class="tile-title">Limites planétaires</div>
+    <p class="tile-desc">Rockstrom et al. (2009) : 9 frontières biophysiques à ne pas dépasser pour rester dans un "espace sûr". 6 sur 9 sont déjà franchies en 2024.</p>
   </div>
 </div>
-</section>
-<section id="qui-gagne-qui-perd" class="level2">
-<h2 class="anchored" data-anchor-id="qui-gagne-qui-perd">Qui gagne, qui perd ?</h2>
-<div style="overflow-x:auto;border-radius:var(--r-lg);overflow:hidden;border:1.5px solid var(--ivory-2);margin:1.5rem 0">
 
-<table class="eco-table caption-top table">
-<thead>
-<tr class="header">
-<th data-quarto-table-cell-role="th">Acteur</th>
-<th data-quarto-table-cell-role="th">Effet</th>
-<th data-quarto-table-cell-role="th">Pourquoi</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><strong>Emprunteurs à taux fixe</strong></td>
-<td style="color: #2E5D4B; font-weight: 700">✅ Gagnants</td>
-<td>Remboursent en monnaie dévaluée</td>
-</tr>
-<tr class="even">
-<td><strong>Épargnants en cash</strong></td>
-<td style="color: #C0392B; font-weight: 700">❌ Perdants</td>
-<td>Leur épargne perd du pouvoir d'achat</td>
-</tr>
-<tr class="odd">
-<td><strong>Propriétaires immo</strong></td>
-<td style="color: #2E5D4B; font-weight: 700">✅ Souvent gagnants</td>
-<td>La valeur de leur bien monte</td>
-</tr>
-<tr class="even">
-<td><strong>Salariés sans indexation</strong></td>
-<td style="color: #C0392B; font-weight: 700">❌ Perdants</td>
-<td>Leur salaire réel baisse</td>
-</tr>
-<tr class="odd">
-<td><strong>État endetté</strong></td>
-<td style="color: #2E5D4B; font-weight: 700">✅ Gagnants</td>
-<td>La dette "fond" en valeur réelle</td>
-</tr>
-</tbody>
-</table>
-
-</div>
-<div class="eco-note" style="margin-bottom:1.5rem">
-  <strong>🔗 Liens avec d'autres modules :</strong>
-  <span class="chip slate" style="margin:.2rem">
-    <a href="05-dette.html" style="color:inherit;text-decoration:none">→ Module 05 : comment l'inflation allège la dette publique</a>
-  </span>
-  <span class="chip slate" style="margin:.2rem">
-    <a href="09-monnaie.html" style="color:inherit;text-decoration:none">→ Module 09 : comment la BCE crée la monnaie</a>
-  </span>
-  <span class="chip slate" style="margin:.2rem">
-    <a href="02-courants.html" style="color:inherit;text-decoration:none">→ Module 02 : le monétarisme de Friedman</a>
-  </span>
-</div>
-</section>
-<section id="le-rôle-de-la-bce" class="level2">
-<h2 class="anchored" data-anchor-id="le-rôle-de-la-bce">Le rôle de la BCE</h2>
-<p>La <strong>BCE</strong> a pour mandat principal de maintenir l’inflation <strong>autour de 2 %</strong>. Son outil : les <strong>taux directeurs</strong>.</p>
-<div class="eco-note warning">
-<p><strong>Mécanisme :</strong> BCE ↑ taux → crédit plus cher → moins d’emprunts → moins de consommation → moins de pression sur les prix → inflation ralentit.</p>
-<p>C’est exactement ce qui s’est passé en 2022–2023, avec 10 hausses de taux consécutives.</p>
-</div>
 <div style="background:var(--ink);border-radius:var(--r-lg);padding:1.5rem;margin:2rem 0">
-  <div style="font-family:var(--ff-display);font-size:.7rem;text-transform:uppercase;letter-spacing:.1em;color:var(--gold);margin-bottom:1rem">📰 2022–2024 : l'inflation qu'on a vécue</div>
+  <div style="font-family:var(--ff-display);font-size:.7rem;text-transform:uppercase;letter-spacing:.1em;color:var(--gold);margin-bottom:1rem">📰 L'actu qui illustre ce module</div>
   <div class="tile-grid-3">
     <div style="background:rgba(255,255,255,.05);border-radius:var(--r-md);padding:1rem;border:1px solid rgba(255,255,255,.08)">
-      <div style="font-size:1.2rem;margin-bottom:.4rem">⛽</div>
-      <div style="font-family:var(--ff-display);font-weight:700;font-size:.85rem;color:var(--ivory);margin-bottom:.3rem">Le choc Covid + Guerre en Ukraine</div>
-      <p style="font-size:.8rem;color:rgba(245,240,232,.5);margin:0">2021 : les chaînes logistiques mondiales se grippent (Covid). 2022 : la guerre en Ukraine fait s'envoler le gaz et les céréales. Résultat : une inflation par les coûts de 5-6% en France.</p>
+      <div style="font-size:1.2rem;margin-bottom:.4rem">🇪🇺</div>
+      <div style="font-family:var(--ff-display);font-weight:700;font-size:.85rem;color:var(--ivory);margin-bottom:.3rem">La taxe carbone aux frontières (CBAM)</div>
+      <p style="font-size:.8rem;color:rgba(245,240,232,.5);margin:0">Depuis 2023, l'UE impose une taxe carbone sur certaines importations (acier, ciment, aluminium) pour éviter que les entreprises européennes soient désavantagées face à des concurrents moins vertueux.</p>
     </div>
     <div style="background:rgba(255,255,255,.05);border-radius:var(--r-md);padding:1rem;border:1px solid rgba(255,255,255,.08)">
-      <div style="font-size:1.2rem;margin-bottom:.4rem">📊</div>
-      <div style="font-family:var(--ff-display);font-weight:700;font-size:.85rem;color:var(--ivory);margin-bottom:.3rem">La BCE sort les grands moyens</div>
-      <p style="font-size:.8rem;color:rgba(245,240,232,.5);margin:0">En 18 mois (2022-2023), la BCE a relevé ses taux 10 fois, de 0% à 4,5%. La remontée la plus rapide de son histoire. Résultat : l'inflation a reflué, mais les crédits immobiliers ont explosé.</p>
+      <div style="font-size:1.2rem;margin-bottom:.4rem">🔥</div>
+      <div style="font-family:var(--ff-display);font-weight:700;font-size:.85rem;color:var(--ivory);margin-bottom:.3rem">Le coût économique des catastrophes</div>
+      <p style="font-size:.8rem;color:rgba(245,240,232,.5);margin:0">Les assureurs évaluent les pertes liées aux catastrophes climatiques à 300-400 Mds$ par an mondialement. Swiss Re estime que le changement climatique pourrait réduire le PIB mondial de 10% d'ici 2050.</p>
     </div>
     <div style="background:rgba(255,255,255,.05);border-radius:var(--r-md);padding:1rem;border:1px solid rgba(255,255,255,.08)">
-      <div style="font-size:1.2rem;margin-bottom:.4rem">🛒</div>
-      <div style="font-family:var(--ff-display);font-weight:700;font-size:.85rem;color:var(--ivory);margin-bottom:.3rem">La "greedflation" : les profits en cause ?</div>
-      <p style="font-size:.8rem;color:rgba(245,240,232,.5);margin:0">Certains économistes (Stiglitz) ont soutenu que des entreprises ont profité de l'inflation pour augmenter leurs marges au-delà des coûts. Le débat reste ouvert — et très politique.</p>
+      <div style="font-size:1.2rem;margin-bottom:.4rem">⚡</div>
+      <div style="font-family:var(--ff-display);font-weight:700;font-size:.85rem;color:var(--ivory);margin-bottom:.3rem">Les subventions aux énergies fossiles</div>
+      <p style="font-size:.8rem;color:rgba(245,240,232,.5);margin:0">Le FMI estime les subventions mondiales aux énergies fossiles à 7 000 milliards de dollars par an (directes et indirectes). Supprimer ces subventions serait la politique climatique la plus efficace — et la plus impopulaire.</p>
     </div>
   </div>
 </div>
 
 <hr class="divider">
-<h2 class="anchored">🎯 Quiz du module</h2>
-<p style="color:var(--dust);font-style:italic;margin-bottom:1.5rem">5 questions · ~3 min · jusqu'à +40 XP</p>
-<div id="quiz-m4" style="background:var(--paper);border-radius:var(--r-xl);border:1.5px solid var(--ivory-2);padding:1.75rem"></div>
+<h2 class="anchored">Quiz du module</h2>
+<p style="color:var(--dust);font-style:italic;margin-bottom:1.5rem">5 questions tirées parmi 12 · jusqu'à +40 XP</p>
+<div id="quiz-m11" style="background:var(--paper);border-radius:var(--r-xl);border:1.5px solid var(--ivory-2);padding:1.75rem"></div>
 
 <script>
-document.addEventListener("DOMContentLoaded", () => {
-  initQuiz("quiz-m4", [
-    { question:"L'inflation est définie comme…",
-      options:["La hausse du prix d'un seul produit","L'augmentation générale et durable du niveau des prix","La hausse des salaires","L'augmentation de la masse monétaire"],
-      correct:1, explanation:"L'inflation désigne une hausse généralisée et persistante des prix, mesurée par l'IPC — pas la hausse isolée d'un seul bien." },
-    { question:"La déflation est généralement considérée comme…",
-      options:["Une bonne nouvelle pour les consommateurs","Un phénomène neutre","Potentiellement dangereux car elle paralyse les achats","La cause directe du chômage"],
-      correct:2, explanation:"En déflation les agents reportent leurs achats en anticipant de nouvelles baisses — cercle vicieux qui étouffe l'économie. Le Japon en a souffert 20 ans." },
-    { question:"Les chocs pétroliers de 1973 et 1979 ont provoqué une inflation par…",
-      options:["La demande — les gens achetaient trop","Les coûts — le pétrole a renchéri la production","La monnaie — trop de billets imprimés","Les salaires — les syndicats ont trop obtenu"],
-      correct:1, explanation:"Les hausses brutales du prix du pétrole ont fait exploser les coûts de production et de transport, propageant l'inflation dans toute l'économie." },
-    { question:"Qui gagne à l'inflation, toutes choses égales par ailleurs ?",
-      options:["Les épargnants en cash","Les retraités à pension fixe","Les emprunteurs à taux fixe","Les créanciers"],
-      correct:2, explanation:"Un emprunteur rembourse une somme nominale fixe avec une monnaie qui vaut moins réellement — sa dette réelle diminue." },
-    { question:"Quel est l'objectif d'inflation officiel de la BCE ?",
-      options:["0 %","Autour de 2 %","Entre 3 et 4 %","Elle n'a pas d'objectif chiffré"],
-      correct:1, explanation:"La BCE vise une inflation 'proche mais inférieure à 2 %'. Trop basse = risque déflation. Trop haute = perte de pouvoir d'achat." },
-    { question:"La 'stagflation' désigne…",
-      options:["Une croissance forte avec faible inflation","Une inflation élevée combinée à une stagnation économique","Une déflation accompagnée de forte croissance","Un chômage élevé sans inflation"],
-      correct:1, explanation:"Néologisme des années 70 (stagnation + inflation). Situation délicate car les remèdes classiques contre l'inflation aggravent la stagnation et vice-versa." },
-    { question:"Que fait la BCE pour lutter contre l'inflation ?",
-      options:["Elle imprime moins de billets directement","Elle baisse les taux directeurs","Elle monte les taux directeurs pour renchérir le crédit","Elle augmente les impôts"],
-      correct:2, explanation:"Taux directeurs plus élevés → crédit plus cher → moins d'emprunts → moins de consommation → moins de pression sur les prix. C'est ce qui s'est passé en 2022-2023." },
-    { question:"L'IPC (Indice des Prix à la Consommation) est calculé en France par…",
-      options:["La BCE","Le ministère des Finances","L'INSEE","La Banque de France"],
-      correct:2, explanation:"L'INSEE (Institut National de la Statistique et des Études Économiques) calcule et publie l'IPC chaque mois à partir d'un panier de ~200 000 relevés de prix." },
-    { question:"L'inflation 'importée' désigne…",
-      options:["L'inflation causée par les importations de main-d'œuvre étrangère","La hausse des prix due au renchérissement des produits importés","L'inflation transmise par un pays voisin via ses touristes","La hausse des droits de douane"],
-      correct:1, explanation:"Quand le prix des importations monte (pétrole, matières premières, composants), les coûts de production augmentent et l'inflation se propage — même si la demande intérieure est stable." },
-    { question:"Le 'taux d'intérêt réel' est…",
-      options:["Le taux fixé par la BCE","Le taux nominal moins le taux d'inflation","Le taux affiché par les banques commerciales","Le taux moyen dans la zone euro"],
-      correct:1, explanation:"Taux réel = taux nominal - inflation. Si tu empruntes à 5% avec 3% d'inflation, ton taux réel n'est que 2%. C'est ce qui compte pour les décisions d'investissement." },
-    { question:"Quelle affirmation sur l'hyperinflation est VRAIE ?",
-      options:["Elle n'a jamais existé dans un pays développé","Elle correspond à une inflation supérieure à 50% par mois","Elle est bénéfique pour les créanciers","Elle est toujours causée par des guerres"],
-      correct:1, explanation:"L'hyperinflation est conventionnellement définie comme une inflation > 50%/mois. L'Allemagne de Weimar (1923), le Zimbabwe (2008), le Venezuela (2018) en sont des exemples célèbres." },
-    { question:"Pourquoi un peu d'inflation (~2%) est-elle jugée souhaitable ?",
-      options:["Elle enrichit les États","Elle évite la déflation et donne une marge pour baisser les taux en crise","Elle encourage l'épargne","Elle réduit les inégalités"],
-      correct:1, explanation:"Un peu d'inflation 'graisse les rouages' : elle permet des ajustements de salaires réels sans baisses nominales, et donne aux banques centrales une marge pour baisser les taux si nécessaire." },
-  ], "module4");
-  ECO.completeModule("inflation");
+document.addEventListener("DOMContentLoaded", function() {
+  initQuiz("quiz-m11", [
+    { question:"Une externalité négative est...",
+      options:["Une taxe sur la production","Un coût imposé à des tiers sans compensation","Une baisse du PIB","Un choc d'offre négatif"],
+      correct:1, explanation:"Une externalité négative (pollution, bruit, congestion) est un coût subi par des tiers qui ne sont pas parties à la transaction. Le marché seul ne peut pas l'éliminer car ce coût n'est pas reflété dans le prix." },
+    { question:"La taxe Pigouvienne vise à...",
+      options:["Financer les services publics","Punir les entreprises polluantes","Faire payer aux pollueurs le coût social de leur pollution","Subventionner les alternatives propres"],
+      correct:2, explanation:"Arthur Pigou (1920) a proposé de taxer les activités polluantes à hauteur de leur coût social, pour que le prix du marché reflète le coût réel. Cela incite les acteurs à réduire leur pollution sans interdiction directe." },
+    { question:"La 'tragédie des communs' décrit...",
+      options:["L'échec des politiques de nationalisation","La surexploitation des ressources partagées par des individus agissant rationnellement","La privatisation des biens publics","La difficulté des accords internationaux"],
+      correct:1, explanation:"Hardin (1968) : chaque individu a intérêt à surexploiter une ressource commune (pêche, atmosphère) car il capte tout le bénéfice mais ne supporte qu'une fraction du coût collectif. Résultat : la ressource est détruite, même si personne ne le voulait." },
+    { question:"Elinor Ostrom (Nobel 2009) a montré que...",
+      options:["Les biens communs doivent toujours être privatisés","Les communautés peuvent gérer durablement leurs ressources communes sans privatisation ni État","L'État est toujours nécessaire pour gérer l'environnement","Les marchés de quotas sont toujours supérieurs aux taxes"],
+      correct:1, explanation:"Ostrom a documenté des centaines d'exemples de gestion durable de communs (pêcheries, forêts, irrigation) via des règles collectives et du contrôle mutuel. Elle a réfuté la 'tragédie des communs' comme fatalité." },
+    { question:"Le système ETS européen fonctionne comme...",
+      options:["Une taxe fixe sur le carbone","Un marché d'échange de droits à émettre du CO2","Une interdiction d'émissions au-dessus d'un seuil","Une subvention aux énergies renouvelables"],
+      correct:1, explanation:"Le système d'échange de quotas d'émission (ETS) fixe un plafond total d'émissions et distribue des droits échangeables. Les entreprises qui polluent moins peuvent vendre leurs droits à celles qui polluent plus. Un signal-prix pour l'ensemble de l'économie." },
+    { question:"Pourquoi le PIB monte-t-il parfois quand on abat une forêt ?",
+      options:["C'est une erreur de calcul","Le bois vendu est une production marchande comptabilisée, mais la destruction du capital naturel n'est pas soustraite","Les forestiers sont surpayés","Le PIB inclut les émissions carbone"],
+      correct:1, explanation:"Le PIB mesure les flux de production marchande. La vente de bois est comptabilisée positivement. La destruction du capital naturel (la forêt elle-même, les services écosystémiques) n'est pas soustraite. C'est un des grands défauts du PIB." },
+    { question:"Selon le rapport Stern, le changement climatique est...",
+      options:["Un problème politique, pas économique","La plus grande défaillance de marché de l'histoire","Un phénomène dont les effets économiques sont mineurs","Principalement un problème des pays pauvres"],
+      correct:1, explanation:"Nicholas Stern (2006) a chiffré le coût économique du changement climatique et conclu que l'inaction est bien plus coûteuse que l'action. Il a contribué à faire entrer l'économie du climat dans le courant dominant." },
+    { question:"La CBAM (taxe carbone aux frontières) européenne sert à...",
+      options:["Financer la transition énergétique","Éviter que les entreprises européennes soient désavantagées face à des concurrents moins contraints climatiquement","Punir les pays non-signataires de l'Accord de Paris","Subventionner les importations vertes"],
+      correct:1, explanation:"Sans taxe carbone aux frontières, les entreprises européennes soumises à l'ETS seraient désavantagées face aux importations de pays sans contrainte carbone. La CBAM applique un prix carbone sur certaines importations pour créer un niveau de jeu égal." },
+    { question:"Les 'limites planétaires' (Rockstrom et al.) désignent...",
+      options:["Les frontières entre pays riches et pauvres","9 frontières biophysiques dont le franchissement risque de déstabiliser les systèmes terrestres","Le maximum de croissance compatible avec le capitalisme","Les plafonds d'émissions fixés par l'ONU"],
+      correct:1, explanation:"Les 9 limites planétaires (changement climatique, biodiversité, cycles de l'azote et du phosphore...) définissent un 'espace sûr' pour l'humanité. En 2024, 6 sur 9 sont déjà franchies selon les chercheurs." },
+    { question:"L'empreinte carbone 'importée' de la France désigne...",
+      options:["Les émissions des touristes étrangers en France","Les émissions générées à l'étranger pour produire ce que la France consomme","Les émissions des avions français","Le carbone capturé par les forêts françaises"],
+      correct:1, explanation:"La France a réduit ses émissions territoriales — mais en important des produits fabriqués ailleurs. Si on comptabilise les émissions 'consommées' (y compris importées), le bilan est nettement moins flatteur. C'est ce qu'on appelle le 'déplacement de carbone'." },
+    { question:"Une subvention verte est préférable à une taxe carbone quand...",
+      options:["On veut punir les pollueurs","On veut rendre des alternatives propres compétitives sans toucher aux prix actuels","L'État manque de recettes","On veut créer un marché de droits"],
+      correct:1, explanation:"Les subventions (prime VE, crédit d'impôt pompe à chaleur) soutiennent les alternatives sans imposer un coût direct aux consommateurs actuels. Moins efficaces économiquement que la taxe carbone, mais plus politiquement acceptables." },
+    { question:"Le FMI estime les subventions mondiales aux énergies fossiles à environ...",
+      options:["100 milliards par an","500 milliards par an","7 000 milliards par an","20 000 milliards par an"],
+      correct:2, explanation:"7 000 milliards de dollars par an (directes + indirectes = coûts non facturés à la société). Un montant colossal qui illustre à quel point le 'vrai' prix des fossiles n'est pas payé par leurs utilisateurs." }
+  ], "module11");
+  ECO.completeModule("environnement");
 });
 </script>
 
 <div style="margin-top:2.5rem;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1rem;padding-top:2rem;border-top:1.5px solid var(--ivory-2)">
-  <a href="03-croissance.html" style="color:var(--dust);font-family:var(--ff-display);font-weight:700;font-size:.88rem">← Module 03</a>
-  <a href="05-dette.html" class="btn-main">Module 05 : La dette publique →</a>
+  <a href="10-travail.html" style="color:var(--dust);font-family:var(--ff-display);font-weight:700;font-size:.88rem">← Module 10</a>
+  <a href="12-politiques.html" class="btn-main">Module 12 : Politiques économiques →</a>
 </div>
 
 

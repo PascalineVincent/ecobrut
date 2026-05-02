@@ -850,16 +850,15 @@ document.addEventListener('DOMContentLoaded', function() {
 <style>@keyframes floatUp{0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)}}</style>
 
 <div style="background:var(--ink);padding:3rem 2rem 4rem;position:relative;overflow:hidden">
-  <div style="position:absolute;top:-30px;right:8%;width:180px;height:180px;border-radius:50%;background:rgba(192,57,43,.08)"></div>
-  <div style="position:absolute;bottom:-50px;left:5%;width:200px;height:200px;border-radius:50%;background:rgba(201,151,58,.06)"></div>
+  <div style="position:absolute;top:-40px;right:5%;width:200px;height:200px;border-radius:50%;background:rgba(201,151,58,.07)"></div>
   <div class="section-sm" style="position:relative;z-index:1">
     <div style="display:flex;gap:.75rem;flex-wrap:wrap;margin-bottom:1.5rem">
-      <span class="chip" style="background:rgba(201,151,58,.15);border-color:rgba(201,151,58,.35);color:var(--gold-2)">Module 04</span>
+      <span class="chip" style="background:rgba(201,151,58,.15);border-color:rgba(201,151,58,.35);color:var(--gold-2)">Module 09</span>
       <span class="chip" style="background:rgba(255,255,255,.06);border-color:rgba(255,255,255,.1);color:rgba(245,240,232,.6)">Niveau intermédiaire</span>
-      <span class="chip" style="background:rgba(255,255,255,.06);border-color:rgba(255,255,255,.1);color:rgba(245,240,232,.6)">80 XP</span>
+      <span class="chip" style="background:rgba(255,255,255,.06);border-color:rgba(255,255,255,.1);color:rgba(245,240,232,.6)">100 XP</span>
     </div>
-    <h1 style="color:var(--ivory);margin-bottom:.75rem">L'inflation</h1>
-    <p style="color:rgba(245,240,232,.6);font-style:italic;margin:0">Pourquoi tout augmente, qui y gagne, et ce que la BCE peut (ou ne peut pas) y faire.</p>
+    <h1 style="color:var(--ivory);margin-bottom:.75rem">La monnaie et le système bancaire</h1>
+    <p style="color:rgba(245,240,232,.6);font-style:italic;margin:0">Les banques ne prêtent pas l'argent des déposants. Démystification complète.</p>
   </div>
 </div>
 
@@ -869,22 +868,50 @@ document.addEventListener('DOMContentLoaded', function() {
   <div class="step-sep"></div>
   <div class="step-item"><div class="step-num">2</div> Quiz</div>
   <div class="step-sep"></div>
-  <div class="step-item"><div class="step-num">3</div> +80 XP</div>
+  <div class="step-item"><div class="step-num">3</div> +100 XP</div>
 </div>
 <blockquote style="border-left:3px solid var(--gold);margin:0 0 2rem;padding:.75rem 1.25rem;background:rgba(201,151,58,.06);border-radius:0 var(--r-sm) var(--r-sm) 0" class="blockquote">
-  <p style="font-style:italic;margin:0 0 .4rem;font-size:1rem;color:var(--ink)">"L'inflation est la seule forme de taxation qui peut être imposée sans législation."</p>
-  <footer style="font-family:var(--ff-display);font-size:.78rem;color:var(--dust);font-weight:700">— Milton Friedman</footer>
+  <p style="font-style:italic;margin:0 0 .4rem">"Les banques créent de la monnaie à partir de rien — et c'est parfaitement légal, normal, et nécessaire."</p>
+  <footer style="font-family:var(--ff-display);font-size:.78rem;color:var(--dust);font-weight:700">— Mervyn King, ancien gouverneur de la Banque d'Angleterre</footer>
 </blockquote>
-<section id="définition-pas-juste-les-prix-augmentent" class="level2">
-<h2 class="anchored" data-anchor-id="définition-pas-juste-les-prix-augmentent">Définition : pas juste “les prix augmentent”</h2>
-<p>L’inflation, c’est l’<strong>augmentation générale et durable</strong> du niveau des prix. Pas un seul produit — <em>l’ensemble</em> du panier de biens et services.</p>
-<div class="eco-note">
-<p><strong>L’indicateur clé :</strong> l’<strong>IPC</strong> (Indice des Prix à la Consommation), calculé par l’INSEE. Il suit l’évolution d’un “panier” représentatif de la consommation des ménages français.</p>
-</div>
-<p>Son contraire, la <strong>déflation</strong>, peut sembler une bonne nouvelle — mais c’est souvent catastrophique. Si tu anticipes que les prix baisseront encore demain, tu n’achètes pas aujourd’hui. L’économie se grippe. Le Japon a vécu ça pendant 20 ans.</p>
+<section id="lidée-reçue-la-plus-répandue" class="level2">
+<h2 class="anchored" data-anchor-id="lidée-reçue-la-plus-répandue">L’idée reçue la plus répandue</h2>
+<p><strong>“Les banques prêtent l’argent que les épargnants y déposent.”</strong></p>
+<p>C’est faux. Et comprendre pourquoi change tout à la façon dont on pense l’économie.</p>
 </section>
-<section id="linflation-en-france-depuis-1960" class="level2">
-<h2 class="anchored" data-anchor-id="linflation-en-france-depuis-1960">L’inflation en France depuis 1960</h2>
+<section id="comment-la-monnaie-est-vraiment-créée" class="level2">
+<h2 class="anchored" data-anchor-id="comment-la-monnaie-est-vraiment-créée">Comment la monnaie est vraiment créée</h2>
+<p>Quand une banque commerciale t’accorde un prêt de 10 000 €, elle ne prend pas 10 000 € dans le compte d’un épargnant pour les mettre dans le tien. Elle <strong>crée</strong> ces 10 000 € en inscrivant simultanément : - un <strong>actif</strong> à son bilan : ta dette envers elle - un <strong>passif</strong> : les 10 000 € sur ton compte courant</p>
+<p>La monnaie n’existait pas avant le prêt. Elle est créée <em>ex nihilo</em> — à partir de rien. C’est la <strong>création monétaire par le crédit</strong>.</p>
+<div class="eco-note">
+<p><strong>La formule clé :</strong> <em>“Les crédits font les dépôts”</em> — pas l’inverse. Ce sont les prêts accordés qui créent les dépôts, non les dépôts qui permettent les prêts.</p>
+</div>
+</section>
+<section id="les-trois-types-de-monnaie" class="level2">
+<h2 class="anchored" data-anchor-id="les-trois-types-de-monnaie">Les trois types de monnaie</h2>
+<div class="tile-grid" style="margin:1.5rem 0">
+  <div class="tile" style="border-top:3px solid var(--gold)">
+    <div class="tile-icon">💵</div>
+    <div class="tile-title">Monnaie fiduciaire</div>
+    <p class="tile-desc">Les billets et pièces. Créée par la banque centrale (BCE). Représente seulement ~5% de la monnaie en circulation.</p>
+    <div class="tile-footer"><span>BCE / Banque de France</span></div>
+  </div>
+  <div class="tile" style="border-top:3px solid var(--slate)">
+    <div class="tile-icon">💻</div>
+    <div class="tile-title">Monnaie scripturale</div>
+    <p class="tile-desc">Les chiffres sur ton compte bancaire. Créée par les banques commerciales via le crédit. Représente ~95% de la monnaie.</p>
+    <div class="tile-footer"><span>BNP, Crédit Agricole…</span></div>
+  </div>
+  <div class="tile" style="border-top:3px solid var(--dust)">
+    <div class="tile-icon">🏦</div>
+    <div class="tile-title">Monnaie de banque centrale</div>
+    <p class="tile-desc">Les réserves que les banques commerciales détiennent à la BCE. Sert aux règlements interbancaires.</p>
+    <div class="tile-footer"><span>Réserves obligatoires</span></div>
+  </div>
+</div>
+</section>
+<section id="qui-contrôle-quoi" class="level2">
+<h2 class="anchored" data-anchor-id="qui-contrôle-quoi">Qui contrôle quoi ?</h2>
 <div class="cell">
 <div class="cell-output cell-output-stderr">
 <pre><code>Warning: le package 'ggplot2' a été compilé avec la version R 4.4.3</code></pre>
@@ -892,168 +919,132 @@ document.addEventListener('DOMContentLoaded', function() {
 <div class="cell-output-display">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="04-inflation_files/figure-html/unnamed-chunk-1-1.png" class="img-fluid figure-img" width="768"></p>
-<figcaption>Taux d’inflation annuel en France (1960–2023) — Source : INSEE / Banque de France</figcaption>
+<p><img src="09-monnaie_files/figure-html/unnamed-chunk-1-1.png" class="img-fluid figure-img" width="768"></p>
+<figcaption>Architecture du système monétaire en zone euro</figcaption>
 </figure>
 </div>
 </div>
 </div>
 </section>
-<section id="les-trois-causes-de-linflation" class="level2">
-<h2 class="anchored" data-anchor-id="les-trois-causes-de-linflation">Les trois causes de l’inflation</h2>
-<div class="tile-grid" style="margin:1.5rem 0">
-  <div class="tile" style="border-top:3px solid var(--slate)">
-    <div class="tile-icon">🏭</div>
-    <div class="tile-title">Par les coûts</div>
-    <p class="tile-desc">Le pétrole monte → le transport coûte plus cher → tout augmente. Cause des chocs des années 70. Et de 2022.</p>
+<section id="les-limites-à-la-création-monétaire" class="level2">
+<h2 class="anchored" data-anchor-id="les-limites-à-la-création-monétaire">Les limites à la création monétaire</h2>
+<p>Si les banques créent librement de la monnaie, pourquoi ne le font-elles pas à l’infini ?</p>
+<div class="tile-grid-3" style="margin:1.5rem 0">
+  <div class="tile">
+    <div class="tile-icon">📊</div>
+    <div class="tile-title">Réserves obligatoires</div>
+    <p class="tile-desc">Les banques doivent déposer un % de leurs dépôts à la BCE (1% en zone euro). Frein partiel à la création.</p>
   </div>
-  <div class="tile" style="border-top:3px solid var(--gold)">
-    <div class="tile-icon">🛒</div>
-    <div class="tile-title">Par la demande</div>
-    <p class="tile-desc">Trop d'argent pour pas assez de biens. Les vendeurs montent les prix. Classique en période de boom économique.</p>
+  <div class="tile">
+    <div class="tile-icon">💰</div>
+    <div class="tile-title">Fonds propres</div>
+    <p class="tile-desc">Les règles de Bâle III imposent aux banques d'avoir assez de capital pour absorber les pertes. Limite les crédits risqués.</p>
   </div>
-  <div class="tile" style="border-top:3px solid var(--danger)">
-    <div class="tile-icon">🖨️</div>
-    <div class="tile-title">Monétaire</div>
-    <p class="tile-desc">"Faire tourner la planche à billets" sans croissance réelle dilue la valeur de la monnaie. Ex : Weimar 1923, Venezuela 2018.</p>
+  <div class="tile">
+    <div class="tile-icon">📈</div>
+    <div class="tile-title">Taux directeurs</div>
+    <p class="tile-desc">Quand la BCE monte les taux, emprunter entre banques coûte plus cher → moins de crédits → moins de monnaie créée.</p>
+  </div>
+  <div class="tile">
+    <div class="tile-icon">🎯</div>
+    <div class="tile-title">Demande de crédit</div>
+    <p class="tile-desc">Si personne ne veut emprunter, les banques ne peuvent pas créer de monnaie. La demande est le vrai moteur.</p>
+  </div>
+  <div class="tile">
+    <div class="tile-icon">⚠️</div>
+    <div class="tile-title">Risque de faillite</div>
+    <p class="tile-desc">Un crédit non remboursé détruit de la monnaie ET ampute les fonds propres. La prudence s'impose d'elle-même.</p>
+  </div>
+  <div class="tile">
+    <div class="tile-icon">🏛️</div>
+    <div class="tile-title">Autorités de supervision</div>
+    <p class="tile-desc">La BCE et l'ACPR en France contrôlent les banques et peuvent limiter leurs activités de crédit.</p>
   </div>
 </div>
 </section>
-<section id="qui-gagne-qui-perd" class="level2">
-<h2 class="anchored" data-anchor-id="qui-gagne-qui-perd">Qui gagne, qui perd ?</h2>
-<div style="overflow-x:auto;border-radius:var(--r-lg);overflow:hidden;border:1.5px solid var(--ivory-2);margin:1.5rem 0">
-
-<table class="eco-table caption-top table">
-<thead>
-<tr class="header">
-<th data-quarto-table-cell-role="th">Acteur</th>
-<th data-quarto-table-cell-role="th">Effet</th>
-<th data-quarto-table-cell-role="th">Pourquoi</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><strong>Emprunteurs à taux fixe</strong></td>
-<td style="color: #2E5D4B; font-weight: 700">✅ Gagnants</td>
-<td>Remboursent en monnaie dévaluée</td>
-</tr>
-<tr class="even">
-<td><strong>Épargnants en cash</strong></td>
-<td style="color: #C0392B; font-weight: 700">❌ Perdants</td>
-<td>Leur épargne perd du pouvoir d'achat</td>
-</tr>
-<tr class="odd">
-<td><strong>Propriétaires immo</strong></td>
-<td style="color: #2E5D4B; font-weight: 700">✅ Souvent gagnants</td>
-<td>La valeur de leur bien monte</td>
-</tr>
-<tr class="even">
-<td><strong>Salariés sans indexation</strong></td>
-<td style="color: #C0392B; font-weight: 700">❌ Perdants</td>
-<td>Leur salaire réel baisse</td>
-</tr>
-<tr class="odd">
-<td><strong>État endetté</strong></td>
-<td style="color: #2E5D4B; font-weight: 700">✅ Gagnants</td>
-<td>La dette "fond" en valeur réelle</td>
-</tr>
-</tbody>
-</table>
-
-</div>
-<div class="eco-note" style="margin-bottom:1.5rem">
-  <strong>🔗 Liens avec d'autres modules :</strong>
-  <span class="chip slate" style="margin:.2rem">
-    <a href="05-dette.html" style="color:inherit;text-decoration:none">→ Module 05 : comment l'inflation allège la dette publique</a>
-  </span>
-  <span class="chip slate" style="margin:.2rem">
-    <a href="09-monnaie.html" style="color:inherit;text-decoration:none">→ Module 09 : comment la BCE crée la monnaie</a>
-  </span>
-  <span class="chip slate" style="margin:.2rem">
-    <a href="02-courants.html" style="color:inherit;text-decoration:none">→ Module 02 : le monétarisme de Friedman</a>
-  </span>
-</div>
+<section id="la-crise-de-2008-vue-autrement" class="level2">
+<h2 class="anchored" data-anchor-id="la-crise-de-2008-vue-autrement">La crise de 2008 vue autrement</h2>
+<p>La crise des subprimes prend un autre sens avec cette grille de lecture : les banques américaines avaient créé massivement de la monnaie via des crédits immobiliers risqués. Quand les emprunteurs ont fait défaut, la monnaie s’est <em>détruite</em> — les bilans se sont effondrés, le crédit s’est gelé, l’économie s’est contractée.</p>
+<p>C’est une <strong>déflation par la dette</strong> : la destruction de monnaie scripturale est plus dévastatrice qu’une simple récession ordinaire.</p>
 </section>
-<section id="le-rôle-de-la-bce" class="level2">
-<h2 class="anchored" data-anchor-id="le-rôle-de-la-bce">Le rôle de la BCE</h2>
-<p>La <strong>BCE</strong> a pour mandat principal de maintenir l’inflation <strong>autour de 2 %</strong>. Son outil : les <strong>taux directeurs</strong>.</p>
+<section id="les-cryptomonnaies-une-vraie-alternative" class="level2">
+<h2 class="anchored" data-anchor-id="les-cryptomonnaies-une-vraie-alternative">Les cryptomonnaies : une vraie alternative ?</h2>
 <div class="eco-note warning">
-<p><strong>Mécanisme :</strong> BCE ↑ taux → crédit plus cher → moins d’emprunts → moins de consommation → moins de pression sur les prix → inflation ralentit.</p>
-<p>C’est exactement ce qui s’est passé en 2022–2023, avec 10 hausses de taux consécutives.</p>
+<p>Le Bitcoin et autres cryptos ne sont <strong>pas</strong> de la monnaie au sens économique : leur offre est limitée algorithmiquement (pas de création flexible), leur valeur fluctue trop pour servir d’unité de compte stable, et peu de marchands les acceptent comme moyen de paiement. Ce sont plutôt des <strong>actifs spéculatifs</strong>. Le débat reste ouvert sur les CBDC (monnaies numériques de banque centrale).</p>
 </div>
 <div style="background:var(--ink);border-radius:var(--r-lg);padding:1.5rem;margin:2rem 0">
-  <div style="font-family:var(--ff-display);font-size:.7rem;text-transform:uppercase;letter-spacing:.1em;color:var(--gold);margin-bottom:1rem">📰 2022–2024 : l'inflation qu'on a vécue</div>
+  <div style="font-family:var(--ff-display);font-size:.7rem;text-transform:uppercase;letter-spacing:.1em;color:var(--gold);margin-bottom:1rem">📰 L'actu qui illustre ce module</div>
   <div class="tile-grid-3">
     <div style="background:rgba(255,255,255,.05);border-radius:var(--r-md);padding:1rem;border:1px solid rgba(255,255,255,.08)">
-      <div style="font-size:1.2rem;margin-bottom:.4rem">⛽</div>
-      <div style="font-family:var(--ff-display);font-weight:700;font-size:.85rem;color:var(--ivory);margin-bottom:.3rem">Le choc Covid + Guerre en Ukraine</div>
-      <p style="font-size:.8rem;color:rgba(245,240,232,.5);margin:0">2021 : les chaînes logistiques mondiales se grippent (Covid). 2022 : la guerre en Ukraine fait s'envoler le gaz et les céréales. Résultat : une inflation par les coûts de 5-6% en France.</p>
+      <div style="font-size:1.2rem;margin-bottom:.4rem">🏦</div>
+      <div style="font-family:var(--ff-display);font-weight:700;font-size:.85rem;color:var(--ivory);margin-bottom:.3rem">La BCE baisse ses taux (2024)</div>
+      <p style="font-size:.8rem;color:rgba(245,240,232,.5);margin:0">En baissant ses taux directeurs, la BCE rend le crédit moins cher pour les banques, qui peuvent en créer davantage. C'est le mécanisme de transmission de la politique monétaire.</p>
     </div>
     <div style="background:rgba(255,255,255,.05);border-radius:var(--r-md);padding:1rem;border:1px solid rgba(255,255,255,.08)">
-      <div style="font-size:1.2rem;margin-bottom:.4rem">📊</div>
-      <div style="font-family:var(--ff-display);font-weight:700;font-size:.85rem;color:var(--ivory);margin-bottom:.3rem">La BCE sort les grands moyens</div>
-      <p style="font-size:.8rem;color:rgba(245,240,232,.5);margin:0">En 18 mois (2022-2023), la BCE a relevé ses taux 10 fois, de 0% à 4,5%. La remontée la plus rapide de son histoire. Résultat : l'inflation a reflué, mais les crédits immobiliers ont explosé.</p>
+      <div style="font-size:1.2rem;margin-bottom:.4rem">🏛️</div>
+      <div style="font-family:var(--ff-display);font-weight:700;font-size:.85rem;color:var(--ivory);margin-bottom:.3rem">L'euro numérique en projet</div>
+      <p style="font-size:.8rem;color:rgba(245,240,232,.5);margin:0">La BCE développe un "euro numérique" (CBDC) : une monnaie de banque centrale accessible directement aux citoyens, sans passer par une banque commerciale. Révolution potentielle.</p>
     </div>
     <div style="background:rgba(255,255,255,.05);border-radius:var(--r-md);padding:1rem;border:1px solid rgba(255,255,255,.08)">
-      <div style="font-size:1.2rem;margin-bottom:.4rem">🛒</div>
-      <div style="font-family:var(--ff-display);font-weight:700;font-size:.85rem;color:var(--ivory);margin-bottom:.3rem">La "greedflation" : les profits en cause ?</div>
-      <p style="font-size:.8rem;color:rgba(245,240,232,.5);margin:0">Certains économistes (Stiglitz) ont soutenu que des entreprises ont profité de l'inflation pour augmenter leurs marges au-delà des coûts. Le débat reste ouvert — et très politique.</p>
+      <div style="font-size:1.2rem;margin-bottom:.4rem">📉</div>
+      <div style="font-family:var(--ff-display);font-weight:700;font-size:.85rem;color:var(--ivory);margin-bottom:.3rem">Crise Credit Suisse (2023)</div>
+      <p style="font-size:.8rem;color:rgba(245,240,232,.5);margin:0">L'effondrement de Credit Suisse illustre comment la confiance est le vrai fondement du système bancaire. Quand les clients retirent massivement leurs dépôts, même une grande banque peut tomber.</p>
     </div>
   </div>
 </div>
 
 <hr class="divider">
-<h2 class="anchored">🎯 Quiz du module</h2>
-<p style="color:var(--dust);font-style:italic;margin-bottom:1.5rem">5 questions · ~3 min · jusqu'à +40 XP</p>
-<div id="quiz-m4" style="background:var(--paper);border-radius:var(--r-xl);border:1.5px solid var(--ivory-2);padding:1.75rem"></div>
+<h2 class="anchored">Quiz du module</h2>
+<p style="color:var(--dust);font-style:italic;margin-bottom:1.5rem">5 questions tirées parmi 12 · jusqu'à +40 XP</p>
+<div id="quiz-m9" style="background:var(--paper);border-radius:var(--r-xl);border:1.5px solid var(--ivory-2);padding:1.75rem"></div>
 
 <script>
-document.addEventListener("DOMContentLoaded", () => {
-  initQuiz("quiz-m4", [
-    { question:"L'inflation est définie comme…",
-      options:["La hausse du prix d'un seul produit","L'augmentation générale et durable du niveau des prix","La hausse des salaires","L'augmentation de la masse monétaire"],
-      correct:1, explanation:"L'inflation désigne une hausse généralisée et persistante des prix, mesurée par l'IPC — pas la hausse isolée d'un seul bien." },
-    { question:"La déflation est généralement considérée comme…",
-      options:["Une bonne nouvelle pour les consommateurs","Un phénomène neutre","Potentiellement dangereux car elle paralyse les achats","La cause directe du chômage"],
-      correct:2, explanation:"En déflation les agents reportent leurs achats en anticipant de nouvelles baisses — cercle vicieux qui étouffe l'économie. Le Japon en a souffert 20 ans." },
-    { question:"Les chocs pétroliers de 1973 et 1979 ont provoqué une inflation par…",
-      options:["La demande — les gens achetaient trop","Les coûts — le pétrole a renchéri la production","La monnaie — trop de billets imprimés","Les salaires — les syndicats ont trop obtenu"],
-      correct:1, explanation:"Les hausses brutales du prix du pétrole ont fait exploser les coûts de production et de transport, propageant l'inflation dans toute l'économie." },
-    { question:"Qui gagne à l'inflation, toutes choses égales par ailleurs ?",
-      options:["Les épargnants en cash","Les retraités à pension fixe","Les emprunteurs à taux fixe","Les créanciers"],
-      correct:2, explanation:"Un emprunteur rembourse une somme nominale fixe avec une monnaie qui vaut moins réellement — sa dette réelle diminue." },
-    { question:"Quel est l'objectif d'inflation officiel de la BCE ?",
-      options:["0 %","Autour de 2 %","Entre 3 et 4 %","Elle n'a pas d'objectif chiffré"],
-      correct:1, explanation:"La BCE vise une inflation 'proche mais inférieure à 2 %'. Trop basse = risque déflation. Trop haute = perte de pouvoir d'achat." },
-    { question:"La 'stagflation' désigne…",
-      options:["Une croissance forte avec faible inflation","Une inflation élevée combinée à une stagnation économique","Une déflation accompagnée de forte croissance","Un chômage élevé sans inflation"],
-      correct:1, explanation:"Néologisme des années 70 (stagnation + inflation). Situation délicate car les remèdes classiques contre l'inflation aggravent la stagnation et vice-versa." },
-    { question:"Que fait la BCE pour lutter contre l'inflation ?",
-      options:["Elle imprime moins de billets directement","Elle baisse les taux directeurs","Elle monte les taux directeurs pour renchérir le crédit","Elle augmente les impôts"],
-      correct:2, explanation:"Taux directeurs plus élevés → crédit plus cher → moins d'emprunts → moins de consommation → moins de pression sur les prix. C'est ce qui s'est passé en 2022-2023." },
-    { question:"L'IPC (Indice des Prix à la Consommation) est calculé en France par…",
-      options:["La BCE","Le ministère des Finances","L'INSEE","La Banque de France"],
-      correct:2, explanation:"L'INSEE (Institut National de la Statistique et des Études Économiques) calcule et publie l'IPC chaque mois à partir d'un panier de ~200 000 relevés de prix." },
-    { question:"L'inflation 'importée' désigne…",
-      options:["L'inflation causée par les importations de main-d'œuvre étrangère","La hausse des prix due au renchérissement des produits importés","L'inflation transmise par un pays voisin via ses touristes","La hausse des droits de douane"],
-      correct:1, explanation:"Quand le prix des importations monte (pétrole, matières premières, composants), les coûts de production augmentent et l'inflation se propage — même si la demande intérieure est stable." },
-    { question:"Le 'taux d'intérêt réel' est…",
-      options:["Le taux fixé par la BCE","Le taux nominal moins le taux d'inflation","Le taux affiché par les banques commerciales","Le taux moyen dans la zone euro"],
-      correct:1, explanation:"Taux réel = taux nominal - inflation. Si tu empruntes à 5% avec 3% d'inflation, ton taux réel n'est que 2%. C'est ce qui compte pour les décisions d'investissement." },
-    { question:"Quelle affirmation sur l'hyperinflation est VRAIE ?",
-      options:["Elle n'a jamais existé dans un pays développé","Elle correspond à une inflation supérieure à 50% par mois","Elle est bénéfique pour les créanciers","Elle est toujours causée par des guerres"],
-      correct:1, explanation:"L'hyperinflation est conventionnellement définie comme une inflation > 50%/mois. L'Allemagne de Weimar (1923), le Zimbabwe (2008), le Venezuela (2018) en sont des exemples célèbres." },
-    { question:"Pourquoi un peu d'inflation (~2%) est-elle jugée souhaitable ?",
-      options:["Elle enrichit les États","Elle évite la déflation et donne une marge pour baisser les taux en crise","Elle encourage l'épargne","Elle réduit les inégalités"],
-      correct:1, explanation:"Un peu d'inflation 'graisse les rouages' : elle permet des ajustements de salaires réels sans baisses nominales, et donne aux banques centrales une marge pour baisser les taux si nécessaire." },
-  ], "module4");
-  ECO.completeModule("inflation");
+document.addEventListener("DOMContentLoaded", function() {
+  initQuiz("quiz-m9", [
+    { question:"Comment les banques commerciales créent-elles de la monnaie ?",
+      options:["En imprimant des billets","En accordant des crédits qui créent des dépôts","En prélevant sur les dépôts existants","En empruntant à la BCE"],
+      correct:1, explanation:"Les crédits font les dépôts — pas l'inverse. Quand une banque accorde un prêt, elle crée simultanément un actif (la créance) et un passif (le dépôt du client). La monnaie est créée ex nihilo." },
+    { question:"Quelle proportion de la monnaie en circulation est scripturale (numérique) ?",
+      options:["Environ 20%","Environ 50%","Environ 80%","Environ 95%"],
+      correct:3, explanation:"Environ 95% de la monnaie existe sous forme scripturale (chiffres dans les comptes bancaires), créée par les banques commerciales via le crédit. Seulement 5% est de la monnaie fiduciaire (billets et pièces)." },
+    { question:"Les réserves obligatoires servent à...",
+      options:["Garantir tous les dépôts des épargnants","Limiter partiellement la création monétaire des banques","Financer les déficits publics","Couvrir les pertes des banques en faillite"],
+      correct:1, explanation:"Les réserves obligatoires (1% en zone euro) imposent aux banques de déposer une fraction de leurs dépôts à la BCE, ce qui freine partiellement la création monétaire. Elles ne garantissent pas tous les dépôts." },
+    { question:"Quand un crédit est remboursé, que se passe-t-il pour la monnaie ?",
+      options:["Elle va dans les réserves de la BCE","Elle est détruite — le bilan de la banque se réduit","Elle est redistribuée aux actionnaires","Elle est transférée à une autre banque"],
+      correct:1, explanation:"La monnaie scripturale est détruite quand le crédit est remboursé : l'actif (la créance) et le passif (le dépôt) disparaissent simultanément du bilan. La création monétaire est donc un processus réversible." },
+    { question:"Pourquoi les banques ne créent-elles pas de monnaie à l'infini ?",
+      options:["La loi l'interdit explicitement","Le risque de crédit, les fonds propres requis et la demande les limitent naturellement","Elles n'en ont pas techniquement la capacité","La BCE les surveille au quotidien"],
+      correct:1, explanation:"Plusieurs contraintes s'imposent : le risque de non-remboursement, les exigences de fonds propres (Bâle III), les taux directeurs de la BCE, et surtout la demande de crédit — si personne n'emprunte, rien ne se crée." },
+    { question:"Qu'est-ce que la 'monnaie de banque centrale' ?",
+      options:["Les billets en circulation","Les réserves que les banques commerciales détiennent à la BCE","Les dépôts des épargnants","Les emprunts de l'État"],
+      correct:1, explanation:"La monnaie de banque centrale (ou 'base monétaire') comprend les billets ET les réserves que les banques commerciales maintiennent à la BCE pour les règlements interbancaires." },
+    { question:"La crise de 2008 a été aggravée par...",
+      options:["Une inflation incontrôlée","Une destruction massive de monnaie scripturale quand les crédits ont fait défaut","Une politique de taux trop élevés","Une grève des banquiers centraux"],
+      correct:1, explanation:"Quand les subprimes ont fait défaut, les créances inscrites à l'actif des banques se sont dévalorisées — la monnaie qu'elles représentaient s'est en partie détruite, provoquant une contraction brutale du crédit." },
+    { question:"Le Bitcoin est-il une monnaie au sens économique ?",
+      options:["Oui, pleinement — il remplit les 3 fonctions","Non — il ne remplit pas bien les 3 fonctions (réserve de valeur instable, peu utilisé comme moyen de paiement)","Oui, mais seulement dans certains pays","Non, car il n'est pas émis par un État"],
+      correct:1, explanation:"Une monnaie doit remplir 3 fonctions : unité de compte, moyen de paiement, réserve de valeur. Le Bitcoin échoue sur la 2e (peu de marchands) et la 3e (valeur trop volatile). C'est surtout un actif spéculatif." },
+    { question:"Qu'est-ce qu'une CBDC ?",
+      options:["Une cryptomonnaie privée","Une monnaie numérique émise directement par une banque centrale","Un compte bancaire spécial pour les entreprises","Un type d'obligation d'État"],
+      correct:1, explanation:"CBDC = Central Bank Digital Currency. La BCE travaille sur un 'euro numérique' : une monnaie de banque centrale directement accessible aux citoyens, sans intermédiaire bancaire. Potentiellement révolutionnaire." },
+    { question:"Les règles de Bâle III imposent aux banques...",
+      options:["De prêter à taux zéro aux États","D'avoir suffisamment de fonds propres pour absorber des pertes","De détenir 50% de leurs actifs en or","De publier leurs comptes chaque semaine"],
+      correct:1, explanation:"Les accords de Bâle III (post-2008) exigent que les banques maintiennent un ratio de fonds propres minimum par rapport à leurs actifs pondérés par le risque. Cela limite leur capacité à prendre des risques excessifs." },
+    { question:"Quand la BCE monte ses taux directeurs, l'effet sur la création monétaire est...",
+      options:["Aucun — les banques créent librement","Positif — les banques créent plus de monnaie","Négatif — le crédit devient plus cher, donc moins demandé","Neutre à court terme"],
+      correct:2, explanation:"Des taux plus élevés renchérissent le coût de refinancement des banques et le taux des crédits. Les ménages et entreprises empruntent moins → moins de crédits accordés → moins de monnaie créée. C'est le mécanisme de transmission monétaire." },
+    { question:"'Les crédits font les dépôts' signifie...",
+      options:["Il faut d'abord déposer pour pouvoir emprunter","Ce sont les crédits accordés qui créent les dépôts, pas l'inverse","Les dépôts sont garantis par les crédits","Les banques préfèrent les crédits aux dépôts"],
+      correct:1, explanation:"C'est le principe fondamental de la création monétaire moderne : quand une banque accorde un crédit, elle crée simultanément un dépôt équivalent sur le compte de l'emprunteur. Les dépôts ne précèdent pas les crédits." }
+  ], "module9");
+  ECO.completeModule("monnaie");
 });
 </script>
 
 <div style="margin-top:2.5rem;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1rem;padding-top:2rem;border-top:1.5px solid var(--ivory-2)">
-  <a href="03-croissance.html" style="color:var(--dust);font-family:var(--ff-display);font-weight:700;font-size:.88rem">← Module 03</a>
-  <a href="05-dette.html" class="btn-main">Module 05 : La dette publique →</a>
+  <a href="08-idees-recues.html" style="color:var(--dust);font-family:var(--ff-display);font-weight:700;font-size:.88rem">← Module 08</a>
+  <a href="10-travail.html" class="btn-main">Module 10 : Le marché du travail →</a>
 </div>
 
 

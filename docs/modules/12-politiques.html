@@ -850,16 +850,15 @@ document.addEventListener('DOMContentLoaded', function() {
 <style>@keyframes floatUp{0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)}}</style>
 
 <div style="background:var(--ink);padding:3rem 2rem 4rem;position:relative;overflow:hidden">
-  <div style="position:absolute;top:-30px;right:8%;width:180px;height:180px;border-radius:50%;background:rgba(192,57,43,.08)"></div>
-  <div style="position:absolute;bottom:-50px;left:5%;width:200px;height:200px;border-radius:50%;background:rgba(201,151,58,.06)"></div>
+  <div style="position:absolute;bottom:-50px;right:5%;width:220px;height:220px;border-radius:50%;background:rgba(201,151,58,.07)"></div>
   <div class="section-sm" style="position:relative;z-index:1">
     <div style="display:flex;gap:.75rem;flex-wrap:wrap;margin-bottom:1.5rem">
-      <span class="chip" style="background:rgba(201,151,58,.15);border-color:rgba(201,151,58,.35);color:var(--gold-2)">Module 04</span>
-      <span class="chip" style="background:rgba(255,255,255,.06);border-color:rgba(255,255,255,.1);color:rgba(245,240,232,.6)">Niveau intermédiaire</span>
-      <span class="chip" style="background:rgba(255,255,255,.06);border-color:rgba(255,255,255,.1);color:rgba(245,240,232,.6)">80 XP</span>
+      <span class="chip" style="background:rgba(201,151,58,.15);border-color:rgba(201,151,58,.35);color:var(--gold-2)">Module 12</span>
+      <span class="chip" style="background:rgba(255,255,255,.06);border-color:rgba(255,255,255,.1);color:rgba(245,240,232,.6)">Niveau avancé</span>
+      <span class="chip" style="background:rgba(255,255,255,.06);border-color:rgba(255,255,255,.1);color:rgba(245,240,232,.6)">120 XP</span>
     </div>
-    <h1 style="color:var(--ivory);margin-bottom:.75rem">L'inflation</h1>
-    <p style="color:rgba(245,240,232,.6);font-style:italic;margin:0">Pourquoi tout augmente, qui y gagne, et ce que la BCE peut (ou ne peut pas) y faire.</p>
+    <h1 style="color:var(--ivory);margin-bottom:.75rem">Les politiques économiques</h1>
+    <p style="color:rgba(245,240,232,.6);font-style:italic;margin:0">Budget, fiscalité, Sécu, retraites — comment l'État agit concrètement sur l'économie.</p>
   </div>
 </div>
 
@@ -869,22 +868,31 @@ document.addEventListener('DOMContentLoaded', function() {
   <div class="step-sep"></div>
   <div class="step-item"><div class="step-num">2</div> Quiz</div>
   <div class="step-sep"></div>
-  <div class="step-item"><div class="step-num">3</div> +80 XP</div>
+  <div class="step-item"><div class="step-num">3</div> +120 XP</div>
 </div>
 <blockquote style="border-left:3px solid var(--gold);margin:0 0 2rem;padding:.75rem 1.25rem;background:rgba(201,151,58,.06);border-radius:0 var(--r-sm) var(--r-sm) 0" class="blockquote">
-  <p style="font-style:italic;margin:0 0 .4rem;font-size:1rem;color:var(--ink)">"L'inflation est la seule forme de taxation qui peut être imposée sans législation."</p>
+  <p style="font-style:italic;margin:0 0 .4rem">"En politique économique, il n'y a pas de repas gratuit — chaque choix a un coût."</p>
   <footer style="font-family:var(--ff-display);font-size:.78rem;color:var(--dust);font-weight:700">— Milton Friedman</footer>
 </blockquote>
-<section id="définition-pas-juste-les-prix-augmentent" class="level2">
-<h2 class="anchored" data-anchor-id="définition-pas-juste-les-prix-augmentent">Définition : pas juste “les prix augmentent”</h2>
-<p>L’inflation, c’est l’<strong>augmentation générale et durable</strong> du niveau des prix. Pas un seul produit — <em>l’ensemble</em> du panier de biens et services.</p>
-<div class="eco-note">
-<p><strong>L’indicateur clé :</strong> l’<strong>IPC</strong> (Indice des Prix à la Consommation), calculé par l’INSEE. Il suit l’évolution d’un “panier” représentatif de la consommation des ménages français.</p>
+<section id="les-deux-grandes-familles-de-politiques" class="level2">
+<h2 class="anchored" data-anchor-id="les-deux-grandes-familles-de-politiques">Les deux grandes familles de politiques</h2>
+<div class="tile-grid" style="margin:1.5rem 0">
+  <div class="tile" style="border-top:3px solid var(--slate)">
+    <div class="tile-icon">🏛️</div>
+    <div class="tile-title">Politique budgétaire</div>
+    <p class="tile-desc">L'État ajuste ses dépenses et ses recettes fiscales. Relance = dépenser plus / baisser les impôts. Austérité = réduire les dépenses / augmenter les recettes.</p>
+    <div class="tile-footer"><span>Gouvernement &amp; Parlement</span></div>
+  </div>
+  <div class="tile" style="border-top:3px solid var(--gold)">
+    <div class="tile-icon">🏦</div>
+    <div class="tile-title">Politique monétaire</div>
+    <p class="tile-desc">La BCE fixe les taux directeurs et gère la masse monétaire. Stimulation = baisser les taux. Restriction = monter les taux pour lutter contre l'inflation.</p>
+    <div class="tile-footer"><span>BCE — indépendante des États</span></div>
+  </div>
 </div>
-<p>Son contraire, la <strong>déflation</strong>, peut sembler une bonne nouvelle — mais c’est souvent catastrophique. Si tu anticipes que les prix baisseront encore demain, tu n’achètes pas aujourd’hui. L’économie se grippe. Le Japon a vécu ça pendant 20 ans.</p>
 </section>
-<section id="linflation-en-france-depuis-1960" class="level2">
-<h2 class="anchored" data-anchor-id="linflation-en-france-depuis-1960">L’inflation en France depuis 1960</h2>
+<section id="le-budget-de-létat-français" class="level2">
+<h2 class="anchored" data-anchor-id="le-budget-de-létat-français">Le budget de l’État français</h2>
 <div class="cell">
 <div class="cell-output cell-output-stderr">
 <pre><code>Warning: le package 'ggplot2' a été compilé avec la version R 4.4.3</code></pre>
@@ -892,169 +900,187 @@ document.addEventListener('DOMContentLoaded', function() {
 <div class="cell-output-display">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="04-inflation_files/figure-html/unnamed-chunk-1-1.png" class="img-fluid figure-img" width="768"></p>
-<figcaption>Taux d’inflation annuel en France (1960–2023) — Source : INSEE / Banque de France</figcaption>
+<p><img src="12-politiques_files/figure-html/unnamed-chunk-1-1.png" class="img-fluid figure-img" width="768"></p>
+<figcaption>Budget de l’État français 2024 — principales recettes et dépenses (Mds €)</figcaption>
 </figure>
 </div>
 </div>
 </div>
 </section>
-<section id="les-trois-causes-de-linflation" class="level2">
-<h2 class="anchored" data-anchor-id="les-trois-causes-de-linflation">Les trois causes de l’inflation</h2>
-<div class="tile-grid" style="margin:1.5rem 0">
-  <div class="tile" style="border-top:3px solid var(--slate)">
+<section id="la-fiscalité-française" class="level2">
+<h2 class="anchored" data-anchor-id="la-fiscalité-française">La fiscalité française</h2>
+<div class="eco-note">
+<p><strong>Impôt progressif vs proportionnel :</strong> - <strong>Progressif</strong> : le taux augmente avec le revenu (IR français : de 0% à 45%). Réduit les inégalités. - <strong>Proportionnel</strong> (flat tax) : taux identique pour tous. Simple, mais moins redistributif. - <strong>Régressif</strong> : pèse proportionnellement plus sur les bas revenus (TVA : un ménage pauvre y consacre une plus grande part de son revenu).</p>
+</div>
+<div class="tile-grid-3" style="margin:1.5rem 0">
+  <div class="tile">
+    <div class="tile-icon">💶</div>
+    <div class="tile-title">TVA — 212 Mds €</div>
+    <p class="tile-desc">La principale recette de l'État (20% sur la plupart des biens). Payée par tous les consommateurs. Régressive : pèse plus sur les bas revenus en proportion.</p>
+  </div>
+  <div class="tile">
+    <div class="tile-icon">📊</div>
+    <div class="tile-title">Impôt sur le Revenu — 100 Mds €</div>
+    <p class="tile-desc">Progressif, de 0% à 45%. Seuls 44% des foyers fiscaux le paient en France. Le prélèvement à la source depuis 2019 a changé la perception.</p>
+  </div>
+  <div class="tile">
     <div class="tile-icon">🏭</div>
-    <div class="tile-title">Par les coûts</div>
-    <p class="tile-desc">Le pétrole monte → le transport coûte plus cher → tout augmente. Cause des chocs des années 70. Et de 2022.</p>
-  </div>
-  <div class="tile" style="border-top:3px solid var(--gold)">
-    <div class="tile-icon">🛒</div>
-    <div class="tile-title">Par la demande</div>
-    <p class="tile-desc">Trop d'argent pour pas assez de biens. Les vendeurs montent les prix. Classique en période de boom économique.</p>
-  </div>
-  <div class="tile" style="border-top:3px solid var(--danger)">
-    <div class="tile-icon">🖨️</div>
-    <div class="tile-title">Monétaire</div>
-    <p class="tile-desc">"Faire tourner la planche à billets" sans croissance réelle dilue la valeur de la monnaie. Ex : Weimar 1923, Venezuela 2018.</p>
+    <div class="tile-title">Impôt sur les Sociétés — 65 Mds €</div>
+    <p class="tile-desc">25% des bénéfices des entreprises (ex 33%). En baisse depuis les années 80 dans tous les pays développés — effet de la concurrence fiscale internationale.</p>
   </div>
 </div>
 </section>
-<section id="qui-gagne-qui-perd" class="level2">
-<h2 class="anchored" data-anchor-id="qui-gagne-qui-perd">Qui gagne, qui perd ?</h2>
+<section id="la-protection-sociale-comment-ça-fonctionne" class="level2">
+<h2 class="anchored" data-anchor-id="la-protection-sociale-comment-ça-fonctionne">La protection sociale : comment ça fonctionne</h2>
+<p>La <strong>Sécurité sociale</strong> française est financée par des cotisations (patronales et salariales) et des impôts (CSG/CRDS). Elle couvre quatre risques :</p>
 <div style="overflow-x:auto;border-radius:var(--r-lg);overflow:hidden;border:1.5px solid var(--ivory-2);margin:1.5rem 0">
 
 <table class="eco-table caption-top table">
 <thead>
 <tr class="header">
-<th data-quarto-table-cell-role="th">Acteur</th>
-<th data-quarto-table-cell-role="th">Effet</th>
-<th data-quarto-table-cell-role="th">Pourquoi</th>
+<th data-quarto-table-cell-role="th">Branche</th>
+<th data-quarto-table-cell-role="th">Ce qu'elle couvre</th>
+<th data-quarto-table-cell-role="th">Budget 2024</th>
+<th data-quarto-table-cell-role="th">Enjeu</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><strong>Emprunteurs à taux fixe</strong></td>
-<td style="color: #2E5D4B; font-weight: 700">✅ Gagnants</td>
-<td>Remboursent en monnaie dévaluée</td>
+<td><strong>Maladie</strong></td>
+<td>Santé, hôpital, médicaments</td>
+<td>~240 Mds €</td>
+<td>Déserts médicaux, reste à charge</td>
 </tr>
 <tr class="even">
-<td><strong>Épargnants en cash</strong></td>
-<td style="color: #C0392B; font-weight: 700">❌ Perdants</td>
-<td>Leur épargne perd du pouvoir d'achat</td>
+<td><strong>Retraite</strong></td>
+<td>Pensions de retraite</td>
+<td>~350 Mds €</td>
+<td>Financement avec le vieillissement</td>
 </tr>
 <tr class="odd">
-<td><strong>Propriétaires immo</strong></td>
-<td style="color: #2E5D4B; font-weight: 700">✅ Souvent gagnants</td>
-<td>La valeur de leur bien monte</td>
+<td><strong>Famille</strong></td>
+<td>Allocations, congé parental</td>
+<td>~50 Mds €</td>
+<td>Natalité, modes de garde</td>
 </tr>
 <tr class="even">
-<td><strong>Salariés sans indexation</strong></td>
-<td style="color: #C0392B; font-weight: 700">❌ Perdants</td>
-<td>Leur salaire réel baisse</td>
-</tr>
-<tr class="odd">
-<td><strong>État endetté</strong></td>
-<td style="color: #2E5D4B; font-weight: 700">✅ Gagnants</td>
-<td>La dette "fond" en valeur réelle</td>
+<td><strong>Accidents du travail</strong></td>
+<td>Maladies pros, AT</td>
+<td>~14 Mds €</td>
+<td>Prévention, pénibilité</td>
 </tr>
 </tbody>
 </table>
 
 </div>
-<div class="eco-note" style="margin-bottom:1.5rem">
-  <strong>🔗 Liens avec d'autres modules :</strong>
-  <span class="chip slate" style="margin:.2rem">
-    <a href="05-dette.html" style="color:inherit;text-decoration:none">→ Module 05 : comment l'inflation allège la dette publique</a>
-  </span>
-  <span class="chip slate" style="margin:.2rem">
-    <a href="09-monnaie.html" style="color:inherit;text-decoration:none">→ Module 09 : comment la BCE crée la monnaie</a>
-  </span>
-  <span class="chip slate" style="margin:.2rem">
-    <a href="02-courants.html" style="color:inherit;text-decoration:none">→ Module 02 : le monétarisme de Friedman</a>
-  </span>
-</div>
 </section>
-<section id="le-rôle-de-la-bce" class="level2">
-<h2 class="anchored" data-anchor-id="le-rôle-de-la-bce">Le rôle de la BCE</h2>
-<p>La <strong>BCE</strong> a pour mandat principal de maintenir l’inflation <strong>autour de 2 %</strong>. Son outil : les <strong>taux directeurs</strong>.</p>
+<section id="le-débat-des-retraites" class="level2">
+<h2 class="anchored" data-anchor-id="le-débat-des-retraites">Le débat des retraites</h2>
+<p>C’est l’un des débats économiques les plus complexes et les plus politiques. Voici les faits bruts :</p>
+<ul>
+<li>La France consacre ~14% du PIB aux retraites (parmi les plus élevés d’Europe)</li>
+<li>Le ratio actifs/retraités était de 4 pour 1 en 1960 → 1,7 pour 1 aujourd’hui → ~1,3 pour 1 vers 2070</li>
+<li>Trois leviers existent : travailler plus longtemps (âge), cotiser plus (taux), recevoir moins (montant des pensions)</li>
+<li>La réforme de 2023 (64 ans) a choisi le premier levier</li>
+</ul>
 <div class="eco-note warning">
-<p><strong>Mécanisme :</strong> BCE ↑ taux → crédit plus cher → moins d’emprunts → moins de consommation → moins de pression sur les prix → inflation ralentit.</p>
-<p>C’est exactement ce qui s’est passé en 2022–2023, avec 10 hausses de taux consécutives.</p>
+<p><strong>Ce n’est pas un problème comptable simple.</strong> La productivité augmente aussi — si chaque actif produit plus, un ratio actifs/retraités plus faible n’est pas forcément catastrophique. Le vrai débat est : qui supporte le coût de l’ajustement ?</p>
 </div>
 <div style="background:var(--ink);border-radius:var(--r-lg);padding:1.5rem;margin:2rem 0">
-  <div style="font-family:var(--ff-display);font-size:.7rem;text-transform:uppercase;letter-spacing:.1em;color:var(--gold);margin-bottom:1rem">📰 2022–2024 : l'inflation qu'on a vécue</div>
+  <div style="font-family:var(--ff-display);font-size:.7rem;text-transform:uppercase;letter-spacing:.1em;color:var(--gold);margin-bottom:1rem">📰 L'actu qui illustre ce module</div>
   <div class="tile-grid-3">
     <div style="background:rgba(255,255,255,.05);border-radius:var(--r-md);padding:1rem;border:1px solid rgba(255,255,255,.08)">
-      <div style="font-size:1.2rem;margin-bottom:.4rem">⛽</div>
-      <div style="font-family:var(--ff-display);font-weight:700;font-size:.85rem;color:var(--ivory);margin-bottom:.3rem">Le choc Covid + Guerre en Ukraine</div>
-      <p style="font-size:.8rem;color:rgba(245,240,232,.5);margin:0">2021 : les chaînes logistiques mondiales se grippent (Covid). 2022 : la guerre en Ukraine fait s'envoler le gaz et les céréales. Résultat : une inflation par les coûts de 5-6% en France.</p>
+      <div style="font-size:1.2rem;margin-bottom:.4rem">🇫🇷</div>
+      <div style="font-family:var(--ff-display);font-weight:700;font-size:.85rem;color:var(--ivory);margin-bottom:.3rem">Le budget 2025 — la rigueur</div>
+      <p style="font-size:.8rem;color:rgba(245,240,232,.5);margin:0">Avec un déficit à 6% du PIB, la France doit économiser 40 Mds en 2025. Le débat : faut-il couper les dépenses ou augmenter les impôts ? Et lesquels ? Le choix est autant politique qu'économique.</p>
     </div>
     <div style="background:rgba(255,255,255,.05);border-radius:var(--r-md);padding:1rem;border:1px solid rgba(255,255,255,.08)">
-      <div style="font-size:1.2rem;margin-bottom:.4rem">📊</div>
-      <div style="font-family:var(--ff-display);font-weight:700;font-size:.85rem;color:var(--ivory);margin-bottom:.3rem">La BCE sort les grands moyens</div>
-      <p style="font-size:.8rem;color:rgba(245,240,232,.5);margin:0">En 18 mois (2022-2023), la BCE a relevé ses taux 10 fois, de 0% à 4,5%. La remontée la plus rapide de son histoire. Résultat : l'inflation a reflué, mais les crédits immobiliers ont explosé.</p>
+      <div style="font-size:1.2rem;margin-bottom:.4rem">🏥</div>
+      <div style="font-family:var(--ff-display);font-weight:700;font-size:.85rem;color:var(--ivory);margin-bottom:.3rem">La Sécu — un modèle sous tension</div>
+      <p style="font-size:.8rem;color:rgba(245,240,232,.5);margin:0">Le système de santé français reste parmi les meilleurs au monde selon l'OMS. Mais il accumule des déficits structurels liés au vieillissement et à l'innovation médicale. Comment le financer durablement ?</p>
     </div>
     <div style="background:rgba(255,255,255,.05);border-radius:var(--r-md);padding:1rem;border:1px solid rgba(255,255,255,.08)">
-      <div style="font-size:1.2rem;margin-bottom:.4rem">🛒</div>
-      <div style="font-family:var(--ff-display);font-weight:700;font-size:.85rem;color:var(--ivory);margin-bottom:.3rem">La "greedflation" : les profits en cause ?</div>
-      <p style="font-size:.8rem;color:rgba(245,240,232,.5);margin:0">Certains économistes (Stiglitz) ont soutenu que des entreprises ont profité de l'inflation pour augmenter leurs marges au-delà des coûts. Le débat reste ouvert — et très politique.</p>
+      <div style="font-size:1.2rem;margin-bottom:.4rem">🏭</div>
+      <div style="font-family:var(--ff-display);font-weight:700;font-size:.85rem;color:var(--ivory);margin-bottom:.3rem">Politique industrielle — le retour</div>
+      <p style="font-size:.8rem;color:rgba(245,240,232,.5);margin:0">Après 40 ans de libéralisme, les États reprennent en main leur politique industrielle. France 2030, puces européennes, batteries, hydrogène — l'État-stratège est de retour. Est-ce efficace ?</p>
     </div>
   </div>
 </div>
 
 <hr class="divider">
-<h2 class="anchored">🎯 Quiz du module</h2>
-<p style="color:var(--dust);font-style:italic;margin-bottom:1.5rem">5 questions · ~3 min · jusqu'à +40 XP</p>
-<div id="quiz-m4" style="background:var(--paper);border-radius:var(--r-xl);border:1.5px solid var(--ivory-2);padding:1.75rem"></div>
+<h2 class="anchored">Quiz du module</h2>
+<p style="color:var(--dust);font-style:italic;margin-bottom:1.5rem">5 questions tirées parmi 12 · jusqu'à +40 XP</p>
+<div id="quiz-m12" style="background:var(--paper);border-radius:var(--r-xl);border:1.5px solid var(--ivory-2);padding:1.75rem"></div>
 
 <script>
-document.addEventListener("DOMContentLoaded", () => {
-  initQuiz("quiz-m4", [
-    { question:"L'inflation est définie comme…",
-      options:["La hausse du prix d'un seul produit","L'augmentation générale et durable du niveau des prix","La hausse des salaires","L'augmentation de la masse monétaire"],
-      correct:1, explanation:"L'inflation désigne une hausse généralisée et persistante des prix, mesurée par l'IPC — pas la hausse isolée d'un seul bien." },
-    { question:"La déflation est généralement considérée comme…",
-      options:["Une bonne nouvelle pour les consommateurs","Un phénomène neutre","Potentiellement dangereux car elle paralyse les achats","La cause directe du chômage"],
-      correct:2, explanation:"En déflation les agents reportent leurs achats en anticipant de nouvelles baisses — cercle vicieux qui étouffe l'économie. Le Japon en a souffert 20 ans." },
-    { question:"Les chocs pétroliers de 1973 et 1979 ont provoqué une inflation par…",
-      options:["La demande — les gens achetaient trop","Les coûts — le pétrole a renchéri la production","La monnaie — trop de billets imprimés","Les salaires — les syndicats ont trop obtenu"],
-      correct:1, explanation:"Les hausses brutales du prix du pétrole ont fait exploser les coûts de production et de transport, propageant l'inflation dans toute l'économie." },
-    { question:"Qui gagne à l'inflation, toutes choses égales par ailleurs ?",
-      options:["Les épargnants en cash","Les retraités à pension fixe","Les emprunteurs à taux fixe","Les créanciers"],
-      correct:2, explanation:"Un emprunteur rembourse une somme nominale fixe avec une monnaie qui vaut moins réellement — sa dette réelle diminue." },
-    { question:"Quel est l'objectif d'inflation officiel de la BCE ?",
-      options:["0 %","Autour de 2 %","Entre 3 et 4 %","Elle n'a pas d'objectif chiffré"],
-      correct:1, explanation:"La BCE vise une inflation 'proche mais inférieure à 2 %'. Trop basse = risque déflation. Trop haute = perte de pouvoir d'achat." },
-    { question:"La 'stagflation' désigne…",
-      options:["Une croissance forte avec faible inflation","Une inflation élevée combinée à une stagnation économique","Une déflation accompagnée de forte croissance","Un chômage élevé sans inflation"],
-      correct:1, explanation:"Néologisme des années 70 (stagnation + inflation). Situation délicate car les remèdes classiques contre l'inflation aggravent la stagnation et vice-versa." },
-    { question:"Que fait la BCE pour lutter contre l'inflation ?",
-      options:["Elle imprime moins de billets directement","Elle baisse les taux directeurs","Elle monte les taux directeurs pour renchérir le crédit","Elle augmente les impôts"],
-      correct:2, explanation:"Taux directeurs plus élevés → crédit plus cher → moins d'emprunts → moins de consommation → moins de pression sur les prix. C'est ce qui s'est passé en 2022-2023." },
-    { question:"L'IPC (Indice des Prix à la Consommation) est calculé en France par…",
-      options:["La BCE","Le ministère des Finances","L'INSEE","La Banque de France"],
-      correct:2, explanation:"L'INSEE (Institut National de la Statistique et des Études Économiques) calcule et publie l'IPC chaque mois à partir d'un panier de ~200 000 relevés de prix." },
-    { question:"L'inflation 'importée' désigne…",
-      options:["L'inflation causée par les importations de main-d'œuvre étrangère","La hausse des prix due au renchérissement des produits importés","L'inflation transmise par un pays voisin via ses touristes","La hausse des droits de douane"],
-      correct:1, explanation:"Quand le prix des importations monte (pétrole, matières premières, composants), les coûts de production augmentent et l'inflation se propage — même si la demande intérieure est stable." },
-    { question:"Le 'taux d'intérêt réel' est…",
-      options:["Le taux fixé par la BCE","Le taux nominal moins le taux d'inflation","Le taux affiché par les banques commerciales","Le taux moyen dans la zone euro"],
-      correct:1, explanation:"Taux réel = taux nominal - inflation. Si tu empruntes à 5% avec 3% d'inflation, ton taux réel n'est que 2%. C'est ce qui compte pour les décisions d'investissement." },
-    { question:"Quelle affirmation sur l'hyperinflation est VRAIE ?",
-      options:["Elle n'a jamais existé dans un pays développé","Elle correspond à une inflation supérieure à 50% par mois","Elle est bénéfique pour les créanciers","Elle est toujours causée par des guerres"],
-      correct:1, explanation:"L'hyperinflation est conventionnellement définie comme une inflation > 50%/mois. L'Allemagne de Weimar (1923), le Zimbabwe (2008), le Venezuela (2018) en sont des exemples célèbres." },
-    { question:"Pourquoi un peu d'inflation (~2%) est-elle jugée souhaitable ?",
-      options:["Elle enrichit les États","Elle évite la déflation et donne une marge pour baisser les taux en crise","Elle encourage l'épargne","Elle réduit les inégalités"],
-      correct:1, explanation:"Un peu d'inflation 'graisse les rouages' : elle permet des ajustements de salaires réels sans baisses nominales, et donne aux banques centrales une marge pour baisser les taux si nécessaire." },
-  ], "module4");
-  ECO.completeModule("inflation");
+document.addEventListener("DOMContentLoaded", function() {
+  initQuiz("quiz-m12", [
+    { question:"La principale recette fiscale de l'État français est...",
+      options:["L'impôt sur le revenu","La TVA","L'impôt sur les sociétés","La CSG"],
+      correct:1, explanation:"La TVA rapporte environ 212 milliards d'euros par an — c'est la première recette fiscale de l'État. L'impôt sur le revenu est second (~100 Mds), suivi de l'IS (~65 Mds)." },
+    { question:"Un impôt 'progressif' signifie que...",
+      options:["Il augmente chaque année","Le taux est identique pour tous","Le taux augmente avec le revenu","Il est basé sur la consommation"],
+      correct:2, explanation:"Un impôt progressif applique des taux croissants par tranches de revenu. L'IR français va de 0% à 45%. Cela réduit les inégalités après redistribution." },
+    { question:"La TVA est considérée comme régressive car...",
+      options:["Elle favorise les produits étrangers","Elle pèse proportionnellement plus sur les bas revenus qui consomment l'essentiel de leur revenu","Son taux varie selon les revenus","Elle exclut les produits de luxe"],
+      correct:1, explanation:"Un ménage pauvre consacre une plus grande part de son revenu à la consommation qu'un ménage riche. Donc la TVA, prélevée sur la consommation, pèse relativement plus sur les revenus modestes." },
+    { question:"La politique monétaire en zone euro est décidée par...",
+      options:["Les gouvernements des États membres","La Commission européenne","La BCE, indépendante des gouvernements","La Banque de France"],
+      correct:2, explanation:"La BCE est statutairement indépendante des gouvernements. Elle décide seule des taux directeurs et de la politique monétaire pour les 20 pays de la zone euro. Son mandat principal : la stabilité des prix." },
+    { question:"Le ratio actifs/retraités en France est passé de 4 pour 1 (1960) à environ...",
+      options:["3 pour 1","2,5 pour 1","1,7 pour 1","1 pour 1"],
+      correct:2, explanation:"Le vieillissement démographique (baby-boom + allongement de la vie) a fait chuter le ratio. C'est la contrainte centrale des débats sur les retraites : moins d'actifs financent plus de retraités." },
+    { question:"Les trois leviers pour équilibrer les retraites sont...",
+      options:["Privatiser, externaliser, automatiser","Travailler plus longtemps, cotiser plus, recevoir moins","Augmenter la TVA, baisser l'IS, créer de nouveaux impôts","Importer de la main-d'oeuvre, réduire les pensions, augmenter la natalité"],
+      correct:1, explanation:"Face au déséquilibre démographique, trois leviers existent : l'âge de départ (travailler plus longtemps), le taux de cotisation (cotiser plus) et le niveau des pensions (recevoir moins). La réforme 2023 a choisi principalement le premier." },
+    { question:"La politique budgétaire est menée par...",
+      options:["La BCE","Le gouvernement et le Parlement","La Commission européenne","L'INSEE"],
+      correct:1, explanation:"La politique budgétaire (dépenses publiques, fiscalité) est du ressort du gouvernement (qui propose) et du Parlement (qui vote). Elle est contrainte par les règles européennes (Maastricht) mais reste une prérogative nationale." },
+    { question:"Une politique de relance budgétaire consiste à...",
+      options:["Augmenter les impôts et réduire les dépenses","Augmenter les dépenses et/ou baisser les impôts pour stimuler l'économie","Monter les taux directeurs","Dévaluer la monnaie"],
+      correct:1, explanation:"La relance keynésienne vise à soutenir la demande via la dépense publique ou la baisse d'impôts. Elle creuse le déficit à court terme mais peut soutenir l'activité et l'emploi en récession." },
+    { question:"La concurrence fiscale internationale tend à...",
+      options:["Augmenter les impôts sur les sociétés","Réduire les impôts sur les sociétés pour attirer les entreprises","Harmoniser tous les impôts","Accroître les dépenses publiques"],
+      correct:1, explanation:"Pour attirer les investissements, les pays se font concurrence en baissant l'IS. Résultat : le taux moyen d'IS dans les pays développés est passé de ~50% dans les années 80 à ~25% aujourd'hui. D'où l'impôt minimum mondial à 15%." },
+    { question:"La CSG (Contribution Sociale Généralisée) est...",
+      options:["Un impôt sur les sociétés","Un prélèvement sur l'ensemble des revenus finançant la protection sociale","Une taxe sur la valeur ajoutée","Un impôt local"],
+      correct:1, explanation:"La CSG (9,2% sur les revenus d'activité) finance la Sécurité sociale. Elle s'applique à tous les revenus (travail, capital, retraite) — plus large assiette que les cotisations salariales traditionnelles." },
+    { question:"La 'flat tax' (prélèvement forfaitaire unique) sur les revenus du capital est...",
+      options:["Progressive comme l'IR","Proportionnelle — taux fixe de 30% quel que soit le montant","Régressive — les plus riches paient moins","Supprimée en France"],
+      correct:1, explanation:"En France depuis 2018, les revenus du capital (dividendes, plus-values, intérêts) sont imposés au taux forfaitaire de 30% (12,8% d'IR + 17,2% de prélèvements sociaux). Ce taux est moins progressif que l'IR ordinaire." },
+    { question:"Le 'quoi qu'il en coûte' (2020) désigne...",
+      options:["La politique d'austérité post-Covid","La politique de soutien massif de l'État pendant la pandémie (chômage partiel, PGE, aides)","L'objectif de déficit zéro","La hausse d'impôts pour rembourser la dette Covid"],
+      correct:1, explanation:"L'expression de Macron résume la politique de soutien sans précédent pendant la pandémie : chômage partiel généralisé, prêts garantis par l'État (PGE), aides sectorielles. Coût : +10 points de PIB de dette. Verdict économique : a évité un effondrement bien plus coûteux." }
+  ], "module12");
+  ECO.completeModule("politiques");
 });
 </script>
 
-<div style="margin-top:2.5rem;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1rem;padding-top:2rem;border-top:1.5px solid var(--ivory-2)">
-  <a href="03-croissance.html" style="color:var(--dust);font-family:var(--ff-display);font-weight:700;font-size:.88rem">← Module 03</a>
-  <a href="05-dette.html" class="btn-main">Module 05 : La dette publique →</a>
+<div style="margin-top:2.5rem;background:var(--ink);border-radius:var(--r-xl);padding:2.5rem 2rem;text-align:center;border:2px solid rgba(201,151,58,.35)">
+  <div style="animation:floatUp 2.5s ease-in-out infinite;margin-bottom:1.25rem;display:flex;justify-content:center" id="final-char-12"></div>
+  <span class="chip gold" style="margin-bottom:1rem;display:inline-flex">🏆 Parcours complet !</span>
+  <h2 style="color:var(--ivory);font-family:var(--ff-display);margin-bottom:.75rem" class="anchored">Tu as terminé les 12 modules</h2>
+  <p style="color:rgba(245,240,232,.65);font-style:italic;margin:0 0 2rem;max-width:420px;margin-left:auto;margin-right:auto">
+    De la définition de l'économie à la politique industrielle — tu as parcouru l'essentiel. Maintenant, au dîner, tu seras redoutable.
+  </p>
+  <div style="display:flex;gap:.75rem;justify-content:center;flex-wrap:wrap">
+    <a href="../glossaire.html" class="btn-main" style="background:white;color:var(--ink)">📖 Glossaire</a>
+    <a href="../quiz/diagnostic.html" class="btn-main btn-ghost-light">🎯 Refaire le diagnostic</a>
+    <a href="../quiz/defi-actu.html" class="btn-main btn-ghost-light">🔎 Défi actu</a>
+    <a href="../index.html" class="btn-main btn-ghost-light">← Accueil</a>
+  </div>
 </div>
+
+<div style="margin-top:1.5rem">
+  <a href="11-environnement.html" style="color:var(--dust);font-family:var(--ff-display);font-weight:700;font-size:.88rem">← Module 11</a>
+</div>
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  var el = document.getElementById("final-char-12");
+  if(el) el.innerHTML = ECO.getCharSVG(5);
+});
+</script>
 
 
 </section>
