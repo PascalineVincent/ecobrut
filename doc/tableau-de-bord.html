@@ -1,0 +1,1481 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.8.25">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>lecobrut.fr – lecobrut</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<script src="site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-446cba8f0bd80e672e6d306615c6ffd9.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+<style>html{ scroll-behavior: smooth; }</style>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Anybody:wght@400;700;900&amp;family=Source+Serif+4:ital,wght@0,400;0,600;1,400&amp;family=JetBrains+Mono:wght@400;600&amp;display=swap" rel="stylesheet">
+<link rel="manifest" href="./assets/pwa/manifest.json">
+<meta name="theme-color" content="#2E5D4B">
+<script>
+// ================================================================
+// ECO GAME ENGINE v2
+// Loading: injected via <script defer> in <head>
+// All page scripts use: onEcoReady(() => { ... })
+// ================================================================
+
+// onEcoReady: legacy helper — game.js now runs in <head> so ECO is always ready
+function onEcoReady(fn) { fn(); }
+
+const ECO = (() => {
+
+  const LEVELS = [
+    { id:1, xpNeeded:0,    name:"L'Ignorant Curieux",   title:"Tu sais que tu ne sais rien.",       charStage:1 },
+    { id:2, xpNeeded:100,  name:"L'Apprenti Lecteur",   title:"Tu lis les gros titres maintenant.", charStage:2 },
+    { id:3, xpNeeded:300,  name:"Le Citoyen Éclairé",   title:"Tu poses les bonnes questions.",     charStage:3 },
+    { id:4, xpNeeded:600,  name:"L'Expert du Dîner",    title:"Tu brilles en société.",             charStage:4 },
+    { id:5, xpNeeded:1000, name:"L'Économiste en Chef", title:"Piketty te cite en réunion.",        charStage:5 },
+  ];
+
+  const MODULES = [
+    { id:"definition",   title:"C'est quoi l'éco ?",     emoji:"🤔", xp:50  },
+    { id:"courants",     title:"Courants de pensée",      emoji:"🧠", xp:80  },
+    { id:"croissance",   title:"La croissance",            emoji:"📈", xp:80  },
+    { id:"inflation",    title:"L'inflation",              emoji:"💸", xp:80  },
+    { id:"dette",        title:"La dette publique",        emoji:"🏛️", xp:100 },
+    { id:"inegalites",   title:"Les inégalités",           emoji:"⚖️", xp:100 },
+    { id:"commerce",     title:"Commerce international",   emoji:"🌐", xp:100 },
+    { id:"idees_recues", title:"Les idées reçues",         emoji:"🔍", xp:80  },
+  ];
+
+  const CHALLENGES = [
+    { id:"ch_vocab",    title:"Parler comme un éco",          xpReward:80,  badge:"🗣️", type:"manual",     unlockAt:1 },
+    { id:"ch_news",     title:"Décrypte une actu éco",        xpReward:100, badge:"📰", type:"manual",     unlockAt:1 },
+    { id:"ch_speed",    title:"Sprint : 10 questions / 3 min",xpReward:120, badge:"⚡", type:"quiz_speed", unlockAt:2 },
+    { id:"ch_vrai_faux",title:"Vrai ou Faux — 10 cartes",    xpReward:100, badge:"🃏", type:"mini_game",  unlockAt:1 },
+    { id:"ch_assoc",    title:"Jeu d'association",            xpReward:120, badge:"🔗", type:"mini_game",  unlockAt:2 },
+    { id:"ch_debate",   title:"Pour ou contre la dette ?",    xpReward:100, badge:"⚔️", type:"manual",     unlockAt:2 },
+    { id:"ch_piketty",  title:"Expliquer r > g",              xpReward:120, badge:"📚", type:"manual",     unlockAt:3 },
+    { id:"ch_streak",   title:"Sans-faute : 5 d'affilée",    xpReward:150, badge:"🎯", type:"auto_streak",unlockAt:3 },
+    { id:"ch_perfect",  title:"Score parfait sur un quiz",    xpReward:200, badge:"💎", type:"auto_perfect",unlockAt:1 },
+    { id:"ch_all",      title:"Grand Parcours",               xpReward:300, badge:"🏆", type:"auto_all",   unlockAt:1 },
+  ];
+
+  const KEY = "eco_v2";
+  const defaultState = () => ({
+    xp:0, completedModules:[], quizScores:{},
+    completedChallenges:[], badges:[], diagnosticDone:false,
+    streak:0, maxStreak:0, createdAt:new Date().toISOString(),
+    xpHistory:[], wrongAnswers:{}, lastDailyDate:'', dailyStreak:0, darkMode:false
+  });
+
+  const load = () => { try { const r=localStorage.getItem(KEY); return r?JSON.parse(r):defaultState(); } catch{ return defaultState(); } };
+  const save = s => { try { localStorage.setItem(KEY,JSON.stringify(s)); } catch{} };
+  const reset = () => { localStorage.removeItem(KEY); location.reload(); };
+
+  const getLevel   = xp => { let l=LEVELS[0]; for(const x of LEVELS){ if(xp>=x.xpNeeded) l=x; } return l; };
+  const getNextLvl = xp => { for(const x of LEVELS){ if(xp<x.xpNeeded) return x; } return null; };
+
+  const addXP = (amount, reason="") => {
+    const s=load(); const before=getLevel(s.xp).id;
+    s.xp+=amount;
+    s.xpHistory=s.xpHistory||[];
+    s.xpHistory.push({xp:s.xp, date:new Date().toISOString(), reason:reason||'xp'});
+    if(s.xpHistory.length>100) s.xpHistory=s.xpHistory.slice(-100);
+    save(s);
+    showToast(`+${amount} XP${reason?" — "+reason:""}`, "xp");
+    refreshHUD();
+    if(getLevel(s.xp).id>before) setTimeout(()=>showLevelUp(getLevel(s.xp)),800);
+  };
+
+  const completeModule = id => {
+    const s=load();
+    if(!s.completedModules.includes(id)){
+      s.completedModules.push(id);
+      const m=MODULES.find(x=>x.id===id);
+      if(m) s.xp+=m.xp;
+      save(s); refreshHUD();
+    }
+    checkAutoChallenge(load());
+  };
+
+  const saveQuizScore = (quizId, score, total, wrongQs=[]) => {
+    const s=load();
+    const pct=Math.round((score/total)*100);
+    const prev=s.quizScores[quizId];
+    if(!prev||pct>prev.pct) s.quizScores[quizId]={score,total,pct,date:new Date().toISOString()};
+    // Track wrong answers for revision mode
+    s.wrongAnswers=s.wrongAnswers||{};
+    wrongQs.forEach(q=>{ const k=q.question.slice(0,40); if(!s.wrongAnswers[k]||pct<s.wrongAnswers[k].pct) s.wrongAnswers[k]={question:q.question,options:q.options,correct:q.correct,explanation:q.explanation,quizId,pct}; });
+    const xpEarned=Math.round((pct/100)*40);
+    s.xp+=xpEarned;
+    s.xpHistory=s.xpHistory||[];
+    s.xpHistory.push({xp:s.xp, date:new Date().toISOString(), reason:quizId});
+    if(s.xpHistory.length>100) s.xpHistory=s.xpHistory.slice(-100);
+    if(pct===100 && !s.completedChallenges.includes("ch_perfect")){
+      s.completedChallenges.push("ch_perfect"); s.xp+=200;
+      setTimeout(()=>showChallengeUnlock(CHALLENGES.find(c=>c.id==="ch_perfect")),1200);
+    }
+    save(s); refreshHUD(); checkAutoChallenge(s);
+    return xpEarned;
+  };
+
+  const completeChallenge = id => {
+    const s=load();
+    if(s.completedChallenges.includes(id)) return;
+    const ch=CHALLENGES.find(c=>c.id===id);
+    if(!ch) return;
+    const before=getLevel(s.xp).id;
+    s.completedChallenges.push(id); s.xp+=ch.xpReward; s.badges.push(ch.badge);
+    save(s); refreshHUD(); showChallengeUnlock(ch);
+    if(getLevel(s.xp).id>before) setTimeout(()=>showLevelUp(getLevel(s.xp)),1400);
+  };
+
+  const checkAutoChallenge = s => {
+    if(s.completedModules.length>=6 && s.diagnosticDone && !s.completedChallenges.includes("ch_all")){
+      const ch=CHALLENGES.find(c=>c.id==="ch_all");
+      s.completedChallenges.push("ch_all"); s.xp+=ch.xpReward; s.badges.push(ch.badge);
+      save(s); setTimeout(()=>showChallengeUnlock(ch),1000);
+    }
+  };
+
+  // ── PERSONNAGE SVG ───────────────────────────────────────────
+  const getCharSVG = stage => {
+    const s = [
+      `<svg viewBox="0 0 80 100" xmlns="http://www.w3.org/2000/svg" width="72" height="90">
+        <circle cx="40" cy="28" r="20" fill="#EDE6D6" stroke="#1A1A2E" stroke-width="2"/>
+        <ellipse cx="40" cy="72" rx="22" ry="26" fill="#EDE6D6" stroke="#1A1A2E" stroke-width="2"/>
+        <circle cx="32" cy="26" r="3" fill="#1A1A2E"/><circle cx="48" cy="26" r="3" fill="#1A1A2E"/>
+        <path d="M34 36 Q40 32 46 36" stroke="#1A1A2E" stroke-width="1.8" fill="none" stroke-linecap="round"/>
+        <path d="M36 12 Q40 6 44 12" stroke="#C9973A" stroke-width="2" fill="none" stroke-linecap="round"/>
+        <rect x="28" y="74" width="24" height="16" rx="3" fill="#8B7355" stroke="#1A1A2E" stroke-width="1.5"/>
+        <text x="40" y="85" text-anchor="middle" font-size="8" fill="#EDE6D6" font-family="sans-serif">?</text>
+      </svg>`,
+      `<svg viewBox="0 0 80 100" xmlns="http://www.w3.org/2000/svg" width="72" height="90">
+        <circle cx="40" cy="28" r="20" fill="#EDE6D6" stroke="#1A1A2E" stroke-width="2"/>
+        <ellipse cx="40" cy="72" rx="22" ry="26" fill="#EDE6D6" stroke="#1A1A2E" stroke-width="2"/>
+        <circle cx="32" cy="26" r="3.5" fill="#1A1A2E"/><circle cx="48" cy="26" r="3.5" fill="#1A1A2E"/>
+        <path d="M33 35 Q40 41 47 35" stroke="#1A1A2E" stroke-width="1.8" fill="none" stroke-linecap="round"/>
+        <rect x="26" y="60" width="28" height="22" rx="3" fill="#C9973A" stroke="#1A1A2E" stroke-width="1.5"/>
+        <line x1="30" y1="67" x2="50" y2="67" stroke="#1A1A2E" stroke-width="1" opacity=".5"/>
+        <line x1="30" y1="73" x2="47" y2="73" stroke="#1A1A2E" stroke-width="1" opacity=".5"/>
+        <circle cx="58" cy="14" r="7" fill="#C9973A" stroke="#1A1A2E" stroke-width="1.5"/>
+        <text x="58" y="18" text-anchor="middle" font-size="8" fill="#1A1A2E" font-family="sans-serif">★</text>
+      </svg>`,
+      `<svg viewBox="0 0 80 100" xmlns="http://www.w3.org/2000/svg" width="72" height="90">
+        <circle cx="40" cy="28" r="20" fill="#EDE6D6" stroke="#1A1A2E" stroke-width="2"/>
+        <ellipse cx="40" cy="72" rx="22" ry="26" fill="#2E5D4B" stroke="#1A1A2E" stroke-width="2"/>
+        <circle cx="32" cy="26" r="3.5" fill="#1A1A2E"/><circle cx="48" cy="26" r="3.5" fill="#1A1A2E"/>
+        <rect x="26" y="22" width="12" height="8" rx="3" fill="none" stroke="#1A1A2E" stroke-width="2"/>
+        <rect x="42" y="22" width="12" height="8" rx="3" fill="none" stroke="#1A1A2E" stroke-width="2"/>
+        <line x1="38" y1="26" x2="42" y2="26" stroke="#1A1A2E" stroke-width="1.5"/>
+        <path d="M33 37 Q40 42 47 37" stroke="#1A1A2E" stroke-width="2" fill="none" stroke-linecap="round"/>
+        <rect x="24" y="62" width="14" height="18" rx="2" fill="#F5F0E8" stroke="#1A1A2E" stroke-width="1.5"/>
+        <rect x="42" y="62" width="14" height="18" rx="2" fill="#F5F0E8" stroke="#1A1A2E" stroke-width="1.5"/>
+        <line x1="38" y1="71" x2="42" y2="71" stroke="#1A1A2E" stroke-width="1.5"/>
+      </svg>`,
+      `<svg viewBox="0 0 80 100" xmlns="http://www.w3.org/2000/svg" width="72" height="90">
+        <circle cx="40" cy="26" r="20" fill="#EDE6D6" stroke="#1A1A2E" stroke-width="2"/>
+        <ellipse cx="40" cy="72" rx="24" ry="26" fill="#1A1A2E" stroke="#1A1A2E" stroke-width="2"/>
+        <circle cx="32" cy="24" r="3.5" fill="#1A1A2E"/><circle cx="48" cy="24" r="3.5" fill="#1A1A2E"/>
+        <path d="M33 34 Q40 40 47 34" stroke="#1A1A2E" stroke-width="2" fill="none" stroke-linecap="round"/>
+        <path d="M36 44 L40 54 L44 44" fill="#C9973A" stroke="#C9973A" stroke-width="1"/>
+        <line x1="40" y1="55" x2="40" y2="90" stroke="#C9973A" stroke-width="2.5"/>
+        <rect x="26" y="5" width="28" height="8" rx="4" fill="#C9973A" opacity=".8"/>
+      </svg>`,
+      `<svg viewBox="0 0 80 100" xmlns="http://www.w3.org/2000/svg" width="72" height="90">
+        <circle cx="40" cy="30" r="20" fill="#EDE6D6" stroke="#1A1A2E" stroke-width="2"/>
+        <ellipse cx="40" cy="74" rx="24" ry="24" fill="#2E5D4B" stroke="#1A1A2E" stroke-width="2"/>
+        <circle cx="32" cy="28" r="3.5" fill="#1A1A2E"/><circle cx="48" cy="28" r="3.5" fill="#1A1A2E"/>
+        <path d="M33 38 Q40 44 47 38" stroke="#1A1A2E" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+        <polygon points="40,4 43,13 52,13 45,18 48,27 40,22 32,27 35,18 28,13 37,13" fill="#C9973A" stroke="#1A1A2E" stroke-width="1.2"/>
+        <rect x="28" y="68" width="24" height="16" rx="3" fill="#F5F0E8" stroke="#1A1A2E" stroke-width="1.5"/>
+        <circle cx="40" cy="76" r="4" fill="#C9973A"/>
+        <text x="40" y="88" text-anchor="middle" font-size="5" fill="#8B7355" font-family="sans-serif">PhD</text>
+      </svg>`
+    ];
+    return s[Math.min(stage-1,4)];
+  };
+
+  // ── HUD ─────────────────────────────────────────────────────
+  const refreshHUD = () => {
+    const s=load(); const lv=getLevel(s.xp); const nx=getNextLvl(s.xp);
+    const xpRange=nx?nx.xpNeeded-lv.xpNeeded:1;
+    const pct=nx?Math.min(100,Math.round(((s.xp-lv.xpNeeded)/xpRange)*100)):100;
+    document.querySelectorAll("[data-xp]").forEach(el=>el.textContent=s.xp);
+    document.querySelectorAll("[data-level]").forEach(el=>el.textContent=lv.name);
+    document.querySelectorAll("[data-xp-bar]").forEach(el=>el.style.width=pct+"%");
+    document.querySelectorAll("[data-xp-next]").forEach(el=>
+      el.textContent=nx?`${nx.xpNeeded-s.xp} XP → "${nx.name}"`:"Niveau maximum !");
+    document.querySelectorAll("[data-modules-done]").forEach(el=>
+      el.textContent=`${s.completedModules.length} / ${MODULES.length}`);
+    document.querySelectorAll("[data-challenges-done]").forEach(el=>
+      el.textContent=`${s.completedChallenges.length} / ${CHALLENGES.length}`);
+    document.querySelectorAll("[data-char-stage]").forEach(el=>{
+      el.innerHTML=getCharSVG(lv.charStage);
+    });
+    // Mark completed tiles
+    document.querySelectorAll("[data-module-tile]").forEach(el=>{
+      if(s.completedModules.includes(el.dataset.moduleTile)) el.classList.add("completed");
+    });
+    document.querySelectorAll("[data-challenge-tile]").forEach(el=>{
+      const id=el.dataset.challengeTile;
+      const ch=CHALLENGES.find(c=>c.id===id);
+      if(!ch) return;
+      if(s.completedChallenges.includes(id)){ el.classList.add("completed"); }
+      else if(lv.id<ch.unlockAt){ el.classList.add("locked"); }
+    });
+  };
+
+  // ── TOAST ────────────────────────────────────────────────────
+  const showToast = (msg, type="info") => {
+    let t=document.getElementById("eco-toast");
+    if(!t){ t=document.createElement("div"); t.id="eco-toast"; t.className="eco-toast"; document.body.appendChild(t); }
+    const icons={xp:"⭐",info:"💡",success:"✅",warning:"⚠️"};
+    t.innerHTML=`<span style="font-size:1.1rem">${icons[type]||"💡"}</span>${msg}`;
+    t.classList.add("show");
+    clearTimeout(t._t);
+    t._t=setTimeout(()=>t.classList.remove("show"),3200);
+  };
+
+  // ── LEVEL UP MODAL ───────────────────────────────────────────
+  const showLevelUp = lv => {
+    const ov=document.createElement("div");
+    ov.style.cssText="position:fixed;inset:0;background:rgba(26,26,46,.75);z-index:99999;display:flex;align-items:center;justify-content:center;padding:1rem;backdrop-filter:blur(4px)";
+    ov.innerHTML=`<div style="background:var(--ivory);border-radius:var(--r-xl);padding:3rem 2.5rem;text-align:center;max-width:380px;width:100%;border:2px solid var(--gold);animation:levelPop .5s cubic-bezier(.34,1.56,.64,1)">
+      <div style="animation:floatUp 2s ease-in-out infinite;margin-bottom:1.25rem">${getCharSVG(lv.charStage)}</div>
+      <div style="font-family:var(--ff-display);font-size:.7rem;text-transform:uppercase;letter-spacing:.1em;color:var(--gold);margin-bottom:.5rem">Nouveau niveau !</div>
+      <h2 style="font-family:var(--ff-display);font-size:1.7rem;color:var(--ink);margin:0 0 .5rem">${lv.name}</h2>
+      <p style="color:var(--dust);font-style:italic;margin:0 0 2rem">"${lv.title}"</p>
+      <button onclick="this.closest('[style*=fixed]').remove()" style="background:var(--ink);color:var(--ivory);border:none;padding:.75rem 2rem;border-radius:var(--r-md);font-family:var(--ff-display);font-weight:900;cursor:pointer">Continuer →</button>
+    </div>`;
+    document.body.appendChild(ov);
+    ov.addEventListener("click",e=>{if(e.target===ov)ov.remove();});
+  };
+
+  const showChallengeUnlock = ch => {
+    showToast(`${ch.badge} Défi accompli : "${ch.title}" (+${ch.xpReward} XP)`, "success");
+  };
+
+  document.addEventListener("DOMContentLoaded", refreshHUD);
+
+  // ── TOOLTIP LEXICAL ───────────────────────────────────────
+  const TOOLTIPS = {
+    "PIB":"Produit Intérieur Brut. Valeur totale des biens et services produits en un an sur le territoire national.",
+    "IPC":"Indice des Prix à la Consommation. Mesure l'inflation via un panier de biens représentatif (calculé par l'INSEE).",
+    "BCE":"Banque Centrale Européenne. Gère l'euro et vise une inflation autour de 2%.",
+    "inflation":"Hausse générale et durable du niveau des prix. Son contraire : la déflation.",
+    "déflation":"Baisse générale des prix. Paralyse l'économie car les agents attendent des baisses supplémentaires avant d'acheter.",
+    "stagflation":"Situation rare : inflation élevée + stagnation économique. Les remèdes classiques s'annulent mutuellement.",
+    "PIB/habitant":"Le PIB divisé par la population. Meilleur indicateur du niveau de vie moyen qu'un pays.",
+    "IDH":"Indice de Développement Humain (ONU). Combine PIB/habitant, espérance de vie et niveau d'éducation.",
+    "Gini":"Coefficient mesurant les inégalités. De 0 (égalité parfaite) à 1 (inégalité totale). France : ~0,30.",
+    "taux directeur":"Taux fixé par la banque centrale auquel les banques commerciales peuvent emprunter. Principal outil de la politique monétaire.",
+    "main invisible":"Métaphore d'Adam Smith : en poursuivant leur intérêt, les agents servent (sans le vouloir) l'intérêt général via le marché.",
+    "multiplicateur":"Effet par lequel 1€ de dépense publique génère plus d'1€ de PIB, car la dépense d'un agent est le revenu d'un autre.",
+    "plus-value":"Pour Marx : différence entre la valeur produite par le travail et le salaire versé — captée par le capitaliste.",
+    "rareté":"Situation fondamentale où les ressources sont limitées face à des besoins potentiellement illimités.",
+    "déficit":"Écart annuel entre dépenses et recettes publiques. S'accumule pour former la dette.",
+    "dette publique":"Total des emprunts de l'État et des administrations publiques non encore remboursés.",
+    "OAT":"Obligation Assimilable du Trésor. Titre de dette émis par l'État français pour se financer sur les marchés.",
+    "spread":"Écart de taux d'intérêt entre deux emprunteurs. Un spread élevé = prime de risque plus élevée.",
+    "croissance":"Augmentation du PIB en volume d'une période à l'autre. Permet en principe d'augmenter le niveau de vie.",
+    "décroissance":"Courant proposant de réduire volontairement la production pour respecter les limites planétaires.",
+    "r > g":"Formule de Piketty : quand le rendement du capital (r) dépasse la croissance (g), les inégalités de patrimoine augmentent.",
+    "redistribution":"Mécanismes (impôts progressifs, prestations) qui réduisent les inégalités de revenus primaires.",
+    "coût d'opportunité":"Valeur de ce à quoi on renonce en faisant un choix. Choisir A, c'est renoncer à B.",
+    "macroéconomie":"Étudie l'économie dans son ensemble : PIB, chômage, inflation, balance commerciale.",
+    "microéconomie":"Étudie les comportements individuels : ménage, entreprise, marché particulier.",
+    "keynésianisme":"Courant de Keynes : l'État doit intervenir activement pour stabiliser l'économie en cas de crise.",
+    "monétarisme":"Courant de Friedman : l'inflation est toujours un phénomène monétaire. Priorité au contrôle de la masse monétaire.",
+  };
+
+  const initTooltips = () => {
+    // Inject tooltip CSS once
+    if(!document.getElementById('eco-tooltip-style')){
+      const st=document.createElement('style');
+      st.id='eco-tooltip-style';
+      st.textContent=`
+        .eco-term { border-bottom:1.5px dashed var(--gold); cursor:help; position:relative; color:inherit; }
+        #eco-tip {
+          position:fixed; z-index:9998; max-width:280px;
+          background:var(--ink); color:var(--ivory);
+          padding:.65rem 1rem; border-radius:var(--r-md);
+          font-family:var(--ff-body); font-size:.85rem; line-height:1.55;
+          border-left:3px solid var(--gold);
+          pointer-events:none; opacity:0;
+          transition:opacity .18s; box-shadow:0 8px 24px rgba(26,26,46,.3);
+        }
+        #eco-tip.show { opacity:1; }
+        #eco-tip strong { font-family:var(--ff-display); font-size:.9rem; display:block; margin-bottom:.25rem; color:var(--gold-2); }
+      `;
+      document.head.appendChild(st);
+    }
+    // Create tooltip element
+    if(!document.getElementById('eco-tip')){
+      const tip=document.createElement('div');
+      tip.id='eco-tip';
+      document.body.appendChild(tip);
+    }
+    const tip=document.getElementById('eco-tip');
+
+    // Scan article text nodes and wrap known terms
+    const wrap = (node) => {
+      if(node.nodeType===3 && node.parentElement && !['SCRIPT','STYLE','CODE','PRE'].includes(node.parentElement.tagName)){
+        let html=node.textContent;
+        let changed=false;
+        for(const [term, def] of Object.entries(TOOLTIPS)){
+          const rx=new RegExp('(?<![\w\-])'+term.replace(/[.*+?^${}()|[\]\\]/g,'\\$&')+'(?![\w\-])','g');
+          if(rx.test(html)){
+            html=html.replace(rx, `<span class="eco-term" data-tip="${encodeURIComponent(term+'||'+def)}">${term}</span>`);
+            changed=true;
+          }
+        }
+        if(changed){
+          const span=document.createElement('span');
+          span.innerHTML=html;
+          node.parentNode.replaceChild(span,node);
+        }
+      } else if(node.nodeType===1 && !node.classList.contains('eco-term') && !['SCRIPT','STYLE'].includes(node.tagName)){
+        for(const child of [...node.childNodes]) wrap(child);
+      }
+    };
+
+    // Only wrap article/main content
+    const main=document.querySelector('main, .content, article, #quarto-content');
+    if(main) wrap(main);
+
+    // Hover events
+    document.addEventListener('mouseover', e=>{
+      const el=e.target.closest('.eco-term');
+      if(!el) return;
+      const [term,def]=decodeURIComponent(el.dataset.tip).split('||');
+      tip.innerHTML=`<strong>${term}</strong>${def}`;
+      tip.classList.add('show');
+    });
+    document.addEventListener('mousemove', e=>{
+      const el=e.target.closest('.eco-term');
+      if(!el){ tip.classList.remove('show'); return; }
+      const x=Math.min(e.clientX+14, window.innerWidth-300);
+      const y=Math.min(e.clientY+14, window.innerHeight-120);
+      tip.style.left=x+'px'; tip.style.top=y+'px';
+    });
+    document.addEventListener('mouseout', e=>{
+      if(!e.target.closest('.eco-term')) tip.classList.remove('show');
+    });
+  };
+
+  document.addEventListener('DOMContentLoaded', initTooltips);
+
+
+  // ── DARK MODE ────────────────────────────────────────────
+  const applyDarkMode = (dark) => {
+    document.documentElement.setAttribute('data-theme', dark ? 'dark' : 'light');
+    const btn = document.getElementById('dark-toggle');
+    if(btn) btn.textContent = dark ? '☀️' : '🌙';
+  };
+  const toggleDark = () => {
+    const s=load(); s.darkMode=!s.darkMode; save(s);
+    applyDarkMode(s.darkMode);
+  };
+  document.addEventListener('DOMContentLoaded', () => {
+    const s=load(); applyDarkMode(s.darkMode||false);
+  });
+
+  // ── SCROLL PROGRESS BAR ──────────────────────────────────
+  document.addEventListener('DOMContentLoaded', () => {
+    const bar = document.createElement('div');
+    bar.id = 'scroll-progress';
+    bar.style.cssText = 'position:fixed;top:0;left:0;height:3px;width:0%;background:linear-gradient(90deg,var(--slate),var(--gold));z-index:9999;transition:width .1s linear;pointer-events:none';
+    document.body.prepend(bar);
+    window.addEventListener('scroll', () => {
+      const el = document.documentElement;
+      const pct = (el.scrollTop / (el.scrollHeight - el.clientHeight)) * 100;
+      bar.style.width = Math.min(100, pct) + '%';
+    }, { passive: true });
+  });
+
+  // ── DAILY QUIZ ───────────────────────────────────────────
+  const DAILY_QUESTIONS = [
+    {q:"Qui a inventé le concept de 'main invisible' ?",opts:["Keynes","Adam Smith","Friedman","Marx"],c:1,expl:"Adam Smith dans La Richesse des Nations (1776)."},
+    {q:"Que mesure le coefficient de Gini ?",opts:["La croissance","L'inflation","Les inégalités","La dette"],c:2,expl:"De 0 (égalité totale) à 1 (inégalité totale). France : ~0,30."},
+    {q:"La BCE vise une inflation de combien ?",opts:["0%","~2%","~5%","Il n'y a pas d'objectif"],c:1,expl:"~2% par an. Ni trop peu (risque de déflation), ni trop (perte de pouvoir d'achat)."},
+    {q:"Qu'est-ce que la stagflation ?",opts:["Fort PIB + forte inflation","Inflation + stagnation économique","Déflation + chômage","Aucune des réponses"],c:1,expl:"Stagnation + inflation. Situation délicate car les remèdes habituels s'annulent."},
+    {q:"La dette publique française en 2023 dépasse…",opts:["60% du PIB","80% du PIB","110% du PIB","150% du PIB"],c:2,expl:"110% du PIB, soit plus de 3 100 milliards d'euros."},
+    {q:"'r > g' est la formule de…",opts:["Keynes","Friedman","Piketty","Solow"],c:2,expl:"Thomas Piketty dans Le Capital au XXIe siècle. Quand le rendement du capital dépasse la croissance, les inégalités augmentent."},
+    {q:"Le PIB est un indicateur de…",opts:["Bonheur national","Richesse accumulée","Production annuelle","Niveau de vie"],c:2,expl:"Valeur de tous les biens et services finaux produits sur un territoire en un an."},
+    {q:"La déflation est généralement…",opts:["Bonne pour l'économie","Neutre","Dangereuse à terme","Recherchée par la BCE"],c:2,expl:"Elle paralyse les achats (on attend des prix encore plus bas) et crée un cercle vicieux."},
+    {q:"Le multiplicateur keynésien signifie que…",opts:["Les impôts doublent","1€ public génère > 1€ de PIB","Les salaires augmentent","La monnaie se multiplie"],c:1,expl:"La dépense publique circule : elle crée des revenus qui sont à nouveau dépensés, etc."},
+    {q:"Quel pays a le Gini le plus bas (= le plus égalitaire) ?",opts:["France","États-Unis","Afrique du Sud","Danemark"],c:3,expl:"Les pays nordiques ont des Gini autour de 0,25-0,28, grâce à une redistribution très forte."},
+    {q:"La microéconomie s'intéresse à…",opts:["L'économie mondiale","Le PIB national","Un marché ou agent particulier","La politique monétaire"],c:2,expl:"La micro analyse les comportements individuels : ménage, entreprise, marché spécifique."},
+    {q:"Quelle institution fixe les taux directeurs en zone euro ?",opts:["Le FMI","La Banque de France","La BCE","Le ministère des Finances"],c:2,expl:"La Banque Centrale Européenne, indépendante des gouvernements, fixe les taux pour toute la zone euro."},
+    {q:"Le coût d'opportunité, c'est…",opts:["Le prix d'une opportunité","Ce à quoi on renonce en choisissant","Un impôt sur les profits","Un coût de production"],c:1,expl:"Choisir A, c'est renoncer à B. C'est la valeur de cette option abandonnée."},
+    {q:"La crise de 2008 a été déclenchée par…",opts:["Une hyperinflation","Une crise des subprimes immobiliers américains","Un choc pétrolier","Une crise de la dette souveraine"],c:1,expl:"Des prêts immobiliers risqués (subprimes) ont été titrisés et vendus mondialement. Quand la bulle a éclaté, tout le système financier a vacillé."},
+    {q:"L'IDH est calculé par…",opts:["La BCE","L'INSEE","L'ONU (PNUD)","Le FMI"],c:2,expl:"Le Programme des Nations Unies pour le Développement publie l'IDH chaque année depuis 1990."},
+    {q:"Un déficit budgétaire, c'est quand…",opts:["La dette dépasse 100% du PIB","Les dépenses publiques > recettes sur un an","Le PIB baisse deux trimestres","L'inflation dépasse 5%"],c:1,expl:"Le déficit est un flux annuel. Il s'accumule pour former la dette (stock)."},
+    {q:"La 'destruction créatrice' est un concept de…",opts:["Marx","Keynes","Schumpeter","Friedman"],c:2,expl:"Joseph Schumpeter : le capitalisme avance en détruisant les anciennes structures pour en créer de nouvelles."},
+    {q:"Quelle affirmation est VRAIE concernant la dette d'un État ?",opts:["Elle doit toujours être remboursée entièrement","Un État peut la 'rouler' indéfiniment si les conditions sont favorables","Elle appartient toujours à des citoyens du pays","Elle est toujours exprimée en monnaie locale"],c:1,expl:"Les États refinancent leur dette en permanence — pas besoin de 'rembourser' si g > r."},
+    {q:"L'empreinte écologique mesure…",opts:["La pollution industrielle","La surface naturelle nécessaire à notre mode de vie","Les émissions de CO2 d'un pays","La dépense énergétique par habitant"],c:1,expl:"Si tout le monde vivait comme un Français, il faudrait environ 2,7 planètes."},
+    {q:"En économie, 'toutes choses égales par ailleurs' signifie…",opts:["On compare deux situations identiques","On isole l'effet d'une seule variable","On suppose que le marché est parfait","On ignore l'inflation"],c:1,expl:"C'est une hypothèse de méthode (ceteris paribus) pour étudier l'effet d'une seule variable sans que les autres ne changent."},
+    {q:"La France fait partie de la zone…",opts:["Dollar","Franc","Euro","Sterling"],c:2,expl:"La France utilise l'euro depuis 2002. La politique monétaire est donc gérée par la BCE, pas par la Banque de France."},
+    {q:"Le taux de chômage naturel (ou NAIRU) désigne…",opts:["0% de chômage","Le taux minimum incompressible en économie saine","Le chômage causé par la mondialisation","Le taux maximal acceptable"],c:1,expl:"Un taux de chômage nul est considéré impossible. Le NAIRU est le niveau 'naturel' au-dessous duquel l'inflation s'emballe."},
+    {q:"Quel mécanisme explique que l'inflation peut 'fondre' la dette publique ?",opts:["L'État paie moins d'intérêts","La valeur réelle des remboursements diminue","Le PIB augmente automatiquement","Les créanciers renoncent à leurs créances"],c:1,expl:"Si l'inflation est à 5% et la dette à taux fixe, la valeur réelle de ce qu'on rembourse diminue chaque année."},
+    {q:"Qu'est-ce que la 'répression financière' ?",opts:["Interdire la spéculation","Maintenir des taux réels négatifs pour réduire la dette sans l'annoncer","Taxer les revenus du capital à 100%","Nationaliser les banques"],c:1,expl:"Quand l'inflation > taux d'intérêt réel, les épargnants perdent en pouvoir d'achat et la valeur réelle de la dette diminue discrètement."},
+    {q:"Quelle est la différence entre croissance nominale et réelle du PIB ?",opts:["Aucune, c'est la même chose","La croissance réelle est corrigée de l'inflation","La nominale concerne l'industrie, la réelle les services","La réelle est toujours plus haute"],c:1,expl:"La croissance nominale inclut l'effet prix. Pour savoir si on produit vraiment plus, on corrige par l'inflation → croissance réelle."},
+    {q:"L'économie comportementale (Thaler, Kahneman) montre que…",opts:["Les agents sont toujours rationnels","Les marchés sont toujours efficaces","Les humains ont des biais cognitifs qui influencent leurs décisions","La monnaie détermine tout"],c:2,expl:"Contrairement à l'agent rationnel de l'économie classique, les vrais humains ont des biais : aversion à la perte, ancrage, biais de confirmation..."},
+    {q:"La balance commerciale d'un pays est…",opts:["Son budget annuel","La différence entre ses exportations et ses importations","Sa dette extérieure","Le solde de sa balance des paiements"],c:1,expl:"Exports > Imports = excédent commercial (Allemagne). Imports > Exports = déficit (France, USA)."},
+    {q:"La 'trappe à liquidité' de Keynes désigne…",opts:["Un compte bancaire bloqué","Une situation où baisser les taux ne relance plus l'économie","Un impôt sur l'épargne","Une crise de liquidité bancaire"],c:1,expl:"Quand les taux sont proches de 0 et que personne n'emprunte quand même (Japon, Europe 2015-2022), la politique monétaire classique est impuissante."},
+    {q:"Qui reçoit le 'prix Nobel d'économie' (qui n'en est pas vraiment un) ?",opts:["L'Académie suédoise","La Banque de Suède en mémoire de Nobel","Le FMI","L'Université de Chicago"],c:1,expl:"Le Prix de la Banque de Suède en sciences économiques en mémoire d'Alfred Nobel n'a pas été créé par Nobel lui-même — d'où les guillemets."},
+    {q:"Qu'est-ce que le PIB 'par habitant en parité de pouvoir d'achat' (PPA) ?",opts:["Le PIB corrigé de l'inflation","Le PIB ajusté pour comparer les niveaux de vie réels entre pays","Le PIB multiplié par la population","Le PIB hors secteur public"],c:1,expl:"La PPA corrige les différences de prix entre pays : 1€ n'achète pas la même chose en France et en Bulgarie. Essentiel pour comparer les niveaux de vie."},
+  ];
+
+  const getTodayKey = () => new Date().toISOString().slice(0,10);
+
+  const getDailyQuestion = () => {
+    const dayNum = Math.floor(Date.now() / 86400000);
+    return DAILY_QUESTIONS[dayNum % DAILY_QUESTIONS.length];
+  };
+
+  const hasDoneDaily = () => {
+    const s = load();
+    return s.lastDailyDate === getTodayKey();
+  };
+
+  const completeDailyQuiz = (correct) => {
+    const s = load();
+    const today = getTodayKey();
+    const yesterday = new Date(Date.now()-86400000).toISOString().slice(0,10);
+    s.dailyStreak = (s.lastDailyDate === yesterday) ? (s.dailyStreak||0)+1 : 1;
+    s.lastDailyDate = today;
+    const xp = correct ? 15 : 5;
+    s.xp += xp;
+    s.xpHistory = s.xpHistory||[];
+    s.xpHistory.push({xp:s.xp, date:new Date().toISOString(), reason:'daily'});
+    save(s);
+    refreshHUD();
+    return { xp, streak: s.dailyStreak };
+  };
+
+  return { load, save, reset, addXP, completeModule, saveQuizScore,
+           completeChallenge, getLevel, getNextLvl, LEVELS, MODULES, CHALLENGES,
+           getCharSVG, showToast, refreshHUD,
+           toggleDark, getDailyQuestion, hasDoneDaily, completeDailyQuiz, getTodayKey };
+})();
+
+
+
+// ================================================================
+// QUIZ ENGINE
+// ================================================================
+function shuffle(arr){ return [...arr].sort(()=>Math.random()-.5); }
+
+function initQuiz(containerId, allQuestions, quizId, opts={}) {
+  const container = document.getElementById(containerId);
+  if(!container){ console.warn("Quiz container not found:", containerId); return; }
+
+  // Pick N random questions from the full bank (default 5, or all if fewer)
+  const n = opts.count || Math.min(5, allQuestions.length);
+  const questions = shuffle(allQuestions).slice(0, n);
+
+  let current=0, score=0, streak=0, wrongIdx=[];
+  const startTime=Date.now();
+  const s=ECO.load();
+  const prev=s.quizScores[quizId];
+
+  if(prev && !opts.forceRetry){
+    container.innerHTML=`<div style="background:var(--paper);border-radius:var(--r-lg);border:1.5px solid var(--ivory-2);padding:1.5rem;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:1rem">
+      <div>
+        <div class="chip slate" style="margin-bottom:.5rem">Déjà complété</div>
+        <p style="margin:0;font-family:var(--ff-display);font-weight:900">Meilleur score : ${prev.pct}%</p>
+        <p style="margin:.25rem 0 0;color:var(--dust);font-size:.88rem">${prev.score}/${prev.total} bonnes réponses</p>
+      </div>
+      <button class="btn-main" onclick="initQuiz('${containerId}',window['_q_${containerId}'],'${quizId}',{forceRetry:true})">Rejouer</button>
+    </div>`;
+    return;
+  }
+
+  const render = () => {
+    if(current>=questions.length){ showResult(); return; }
+    const q=questions[current];
+    container.innerHTML=`
+      <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:1rem">
+        <span style="font-family:var(--ff-display);font-size:.8rem;text-transform:uppercase;letter-spacing:.04em;color:var(--dust)">${current+1} / ${questions.length}</span>
+        <span class="chip gold">⭐ ${score}/${current}</span>
+      </div>
+      <div class="xp-track" style="margin-bottom:1.5rem"><div class="xp-fill" style="width:${Math.round((current/questions.length)*100)}%"></div></div>
+      <p style="font-family:var(--ff-display);font-weight:900;font-size:1.1rem;margin-bottom:1.25rem;letter-spacing:-.02em">${q.question}</p>
+      <div id="qopts">
+        ${q.options.map((o,i)=>`<button class="q-option" onclick="qAnswer(${i})">${String.fromCharCode(65+i)}. ${o}</button>`).join("")}
+      </div>
+      <div id="qfb" style="display:none;margin-top:1rem"></div>`;
+
+    window.qAnswer = i => {
+      const ok=i===q.correct;
+      if(ok){ score++; streak++; } else { streak=0; wrongIdx.push(current); }
+      // Check streak challenge
+      const st=ECO.load();
+      if(!st.maxStreak || streak > st.maxStreak){ st.maxStreak=streak; ECO.save(st); }
+      if(streak>=5 && !st.completedChallenges.includes("ch_streak")) ECO.completeChallenge("ch_streak");
+      document.querySelectorAll(".q-option").forEach((b,idx)=>{
+        b.disabled=true;
+        if(idx===q.correct) b.classList.add("correct");
+        else if(idx===i&&!ok) b.classList.add("wrong");
+      });
+      const fb=document.getElementById("qfb");
+      fb.style.display="block";
+      fb.innerHTML=`<div class="eco-note${ok?"":" warning"}"><strong>${ok?"✅ Exact !":"❌ Pas tout à fait…"}</strong> ${q.explanation||""}</div>
+        <button class="btn-main" style="margin-top:.75rem;font-size:.88rem;padding:.55rem 1.25rem" onclick="qNext()">
+          ${current+1<questions.length?"Suivant →":"Voir mes résultats →"}
+        </button>`;
+    };
+    window.qNext = () => { current++; render(); };
+  };
+
+  const showResult = () => {
+    const pct=Math.round((score/questions.length)*100);
+    const elapsed=Math.round((Date.now()-startTime)/1000);
+    const wrongQs=questions.filter((_,i)=>wrongIdx.includes(i));
+    const xpEarned=ECO.saveQuizScore(quizId,score,questions.length,wrongQs);
+    const medal=pct===100?"💎":pct>=80?"🥇":pct>=60?"🥈":pct>=40?"🥉":"📖";
+    const msg=pct===100?"Score parfait ! Tu maîtrises ce thème.":
+              pct>=80?"Excellent ! Presque parfait.":
+              pct>=60?"Bien joué ! Relis quelques points.":
+              pct>=40?"Pas mal ! Le module mérite une relecture.":"Reprends le module depuis le début.";
+    container.innerHTML=`<div style="text-align:center;padding:1.5rem 0">
+      <div style="font-size:3.5rem;margin-bottom:1rem">${medal}</div>
+      <h2 style="font-family:var(--ff-display);font-size:1.7rem;margin-bottom:.25rem">${score} / ${questions.length}</h2>
+      <p style="color:var(--dust);margin-bottom:1.5rem">${msg}</p>
+      <div style="display:flex;gap:.75rem;justify-content:center;flex-wrap:wrap;margin-bottom:1.5rem">
+        <span class="chip gold">⭐ +${xpEarned} XP</span>
+        <span class="chip">${pct}% de réussite</span>
+        <span class="chip">⏱ ${elapsed}s</span>
+      </div>
+      <div class="xp-track" style="max-width:260px;margin:0 auto 1.5rem"><div class="xp-fill" style="width:${pct}%"></div></div>
+      <button class="btn-main" onclick="initQuiz('${containerId}',window['_q_${containerId}'],'${quizId}',{forceRetry:true})">🔄 Recommencer</button>
+    </div>`;
+  };
+
+  window[`_q_${containerId}`]=allQuestions;
+  render();
+}
+
+</script>
+
+
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body class="nav-fixed quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a href="./index.html" class="navbar-brand navbar-brand-logo">
+    </a>
+    <a class="navbar-brand" href="./index.html">
+    <span class="navbar-title">lecobrut</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="./index.html"> 
+<span class="menu-text">Accueil</span></a>
+  </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-modules" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Modules</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-modules">    
+        <li>
+    <a class="dropdown-item" href="./modules/01-definition.html">
+ <span class="dropdown-text">01 · C’est quoi l’économie ?</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./modules/02-courants.html">
+ <span class="dropdown-text">02 · Courants de pensée</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./modules/03-croissance.html">
+ <span class="dropdown-text">03 · La croissance</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./modules/04-inflation.html">
+ <span class="dropdown-text">04 · L’inflation</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./modules/05-dette.html">
+ <span class="dropdown-text">05 · La dette publique</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./modules/06-inegalites.html">
+ <span class="dropdown-text">06 · Les inégalités</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./modules/07-commerce.html">
+ <span class="dropdown-text">07 · Commerce international</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./modules/08-idees-recues.html">
+ <span class="dropdown-text">08 · Idées reçues</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-défis--outils" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Défis &amp; Outils</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-défis--outils">    
+        <li>
+    <a class="dropdown-item" href="./quiz/quiz-du-jour.html">
+ <span class="dropdown-text">☀️ Quiz du jour</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./quiz/diagnostic.html">
+ <span class="dropdown-text">🎯 Diagnostic initial</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./quiz/frise-chronologique.html">
+ <span class="dropdown-text">📅 Frise des crises</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./quiz/defi-sprint.html">
+ <span class="dropdown-text">⚡ Sprint chronométré</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./quiz/defi-vrai-faux.html">
+ <span class="dropdown-text">🃏 Vrai ou Faux</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./quiz/defi-association.html">
+ <span class="dropdown-text">🔗 Jeu d’association</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="./glossaire.html"> 
+<span class="menu-text">Glossaire</span></a>
+  </li>  
+</ul>
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link active" href="./tableau-de-bord.html" aria-current="page"> 
+<span class="menu-text">📊 Mon tableau de bord</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./apropos.html"> 
+<span class="menu-text">À propos</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    
+<!-- main -->
+<main class="content column-page" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
+
+
+
+
+<style>
+@keyframes floatUp{0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)}}
+@keyframes barGrow{from{width:0}to{width:var(--w)}}
+@keyframes fadeIn{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
+.db-card { background:var(--card); border:1.5px solid var(--ivory-2); border-radius:var(--r-lg); padding:1.5rem; box-shadow:var(--shadow-tile); animation:fadeIn .4s ease both; }
+.db-stat { text-align:center; }
+.db-stat .val { font-family:var(--ff-display); font-weight:900; font-size:2.2rem; letter-spacing:-.03em; color:var(--ink); line-height:1; }
+.db-stat .lbl { font-family:var(--ff-display); font-size:.72rem; text-transform:uppercase; letter-spacing:.06em; color:var(--dust); margin-top:.35rem; }
+.db-stat .sub { font-size:.82rem; color:var(--mist); margin-top:.2rem; font-style:italic; }
+.radar-bar { display:flex; align-items:center; gap:.75rem; margin-bottom:.65rem; }
+.radar-bar .name { font-family:var(--ff-display); font-weight:700; font-size:.82rem; width:130px; flex-shrink:0; color:var(--dust); }
+.radar-bar .track { flex:1; background:var(--ivory-2); border-radius:999px; height:10px; overflow:hidden; }
+.radar-bar .fill { height:100%; border-radius:999px; background:linear-gradient(90deg,var(--slate),var(--gold)); transition:width .9s cubic-bezier(.34,1,.64,1); }
+.radar-bar .pct { font-family:var(--ff-mono); font-size:.78rem; color:var(--dust); width:34px; text-align:right; }
+.revision-card { background:var(--paper); border:1.5px solid var(--ivory-2); border-radius:var(--r-md); padding:1.1rem 1.25rem; margin-bottom:.65rem; }
+.revision-card .q-txt { font-family:var(--ff-display); font-weight:700; font-size:.92rem; margin-bottom:.6rem; letter-spacing:-.01em; }
+.chart-bar { display:inline-block; background:var(--slate); border-radius:3px 3px 0 0; width:18px; margin:0 2px; transition:height .6s ease; vertical-align:bottom; cursor:pointer; opacity:.75; }
+.chart-bar:hover { opacity:1; background:var(--gold); }
+.badge-pill { display:inline-flex; align-items:center; gap:.35rem; background:var(--ivory); border:1.5px solid var(--ivory-2); border-radius:999px; padding:.3rem .85rem; font-family:var(--ff-display); font-weight:700; font-size:.8rem; color:var(--dust); }
+.badge-pill.earned { background:rgba(201,151,58,.1); border-color:rgba(201,151,58,.4); color:#92650a; }
+</style>
+
+<!-- HEADER -->
+<div style="background:var(--ink);padding:2.5rem 2rem 3.5rem;position:relative;overflow:hidden">
+  <div style="position:absolute;top:-60px;right:5%;width:240px;height:240px;border-radius:50%;background:rgba(201,151,58,.06)"></div>
+  <div style="position:absolute;bottom:-40px;left:10%;width:180px;height:180px;border-radius:50%;background:rgba(46,93,75,.08)"></div>
+  <div class="section-sm" style="position:relative;z-index:1">
+    <div style="display:flex;align-items:center;gap:1.5rem;flex-wrap:wrap">
+      <div style="flex-shrink:0;animation:floatUp 3s ease-in-out infinite" id="db-char"></div>
+      <div>
+        <div class="chip" style="background:rgba(201,151,58,.15);border-color:rgba(201,151,58,.35);color:var(--gold-2);margin-bottom:.75rem">Mon tableau de bord</div>
+        <h1 style="color:var(--ivory);font-size:2rem;margin-bottom:.25rem" id="db-level-name">…</h1>
+        <p style="color:rgba(245,240,232,.55);font-style:italic;margin:0" id="db-level-title">…</p>
+      </div>
+    </div>
+    <!-- XP bar -->
+    <div style="margin-top:1.5rem;background:rgba(255,255,255,.06);border-radius:var(--r-md);padding:1rem 1.25rem">
+      <div style="display:flex;justify-content:space-between;font-family:var(--ff-display);font-size:.78rem;color:rgba(245,240,232,.5);margin-bottom:.5rem">
+        <span id="db-xp-label">0 XP</span>
+        <span id="db-xp-next-label">…</span>
+      </div>
+      <div class="xp-track"><div class="xp-fill" id="db-xp-bar" style="width:0%"></div></div>
+    </div>
+  </div>
+</div>
+
+<!-- BODY -->
+<div class="section">
+
+  <!-- ROW 1: stats -->
+  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:1rem;margin-bottom:2rem" id="db-stats-row">
+    <!-- filled by JS -->
+  </div>
+
+  <!-- ROW 2: radar + progression chart -->
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:1.5rem;margin-bottom:2rem">
+
+    <!-- Radar par module -->
+    <div class="db-card">
+      <h3 style="font-family:var(--ff-display);margin:0 0 1.25rem;font-size:1rem;letter-spacing:-.01em" class="anchored">📊 Niveau par thème</h3>
+      <div id="db-radar">
+        <p style="color:var(--dust);font-style:italic;font-size:.9rem">Complète au moins un quiz pour voir tes résultats.</p>
+      </div>
+    </div>
+
+    <!-- Courbe XP -->
+    <div class="db-card">
+      <h3 style="font-family:var(--ff-display);margin:0 0 1.25rem;font-size:1rem;letter-spacing:-.01em" class="anchored">📈 Progression XP</h3>
+      <div id="db-chart" style="height:140px;display:flex;align-items:flex-end;padding-top:.5rem;gap:0;overflow:hidden;position:relative">
+        <div style="position:absolute;bottom:0;left:0;right:0;border-top:1px dashed var(--ivory-2);font-family:var(--ff-mono);font-size:.7rem;color:var(--mist)" id="db-chart-axis"></div>
+      </div>
+      <div style="font-family:var(--ff-mono);font-size:.72rem;color:var(--mist);margin-top:.5rem;text-align:center" id="db-chart-hint">Chaque barre = une session XP</div>
+    </div>
+
+  </div>
+
+  <!-- ROW 3: révision + badges -->
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:1.5rem;margin-bottom:2rem">
+
+    <!-- Révision questions ratées -->
+    <div class="db-card">
+      <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:1.25rem">
+        <h3 style="font-family:var(--ff-display);margin:0;font-size:1rem;letter-spacing:-.01em" class="anchored">🔁 Mode révision</h3>
+        <span class="chip" id="db-revision-count">0 questions</span>
+      </div>
+      <div id="db-revision">
+        <p style="color:var(--dust);font-style:italic;font-size:.9rem">Réponds à des quiz pour voir ici les questions que tu as ratées.</p>
+      </div>
+      <div id="db-revision-quiz" style="margin-top:1rem;display:none"></div>
+    </div>
+
+    <!-- Badges -->
+    <div class="db-card">
+      <h3 style="font-family:var(--ff-display);margin:0 0 1.25rem;font-size:1rem;letter-spacing:-.01em" class="anchored">🎖️ Badges obtenus</h3>
+      <div id="db-badges" style="display:flex;flex-wrap:wrap;gap:.5rem"></div>
+      <div style="margin-top:1.25rem">
+        <h4 style="font-family:var(--ff-display);font-size:.82rem;text-transform:uppercase;letter-spacing:.05em;color:var(--dust);margin:0 0 .75rem" class="anchored">À débloquer</h4>
+        <div id="db-badges-locked" style="display:flex;flex-wrap:wrap;gap:.5rem"></div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- ROW 4: historique quiz -->
+  <div class="db-card" style="margin-bottom:2rem">
+    <h3 style="font-family:var(--ff-display);margin:0 0 1.25rem;font-size:1rem;letter-spacing:-.01em" class="anchored">📋 Historique des quiz</h3>
+    <div id="db-history" style="overflow-x:auto">
+      <p style="color:var(--dust);font-style:italic;font-size:.9rem">Aucun quiz complété pour l'instant.</p>
+    </div>
+  </div>
+
+  <!-- Reset -->
+  <div style="text-align:center;padding-top:1rem;border-top:1.5px solid var(--ivory-2)">
+    <button onclick="if(confirm('Remettre toute ta progression à zéro ?')) ECO.reset()" style="background:transparent;border:1.5px solid var(--ivory-2);color:var(--dust);padding:.5rem 1.25rem;border-radius:var(--r-md);font-family:var(--ff-display);font-weight:700;font-size:.82rem;cursor:pointer;transition:all .15s" onmouseover="this.style.borderColor='var(--danger)';this.style.color='var(--danger)'" onmouseout="this.style.borderColor='var(--ivory-2)';this.style.color='var(--dust)'">
+      🔄 Réinitialiser la progression
+    </button>
+  </div>
+
+</div>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const s = ECO.load();
+  const lv = ECO.getLevel(s.xp);
+  const nx = ECO.getNextLvl(s.xp);
+
+  // ── Header ──────────────────────────────────────────────────
+  document.getElementById("db-char").innerHTML = ECO.getCharSVG(lv.charStage);
+  document.getElementById("db-level-name").textContent = lv.name;
+  document.getElementById("db-level-title").textContent = `"${lv.title}"`;
+  document.getElementById("db-xp-label").textContent = `${s.xp} XP total`;
+  document.getElementById("db-xp-next-label").textContent = nx ? `${nx.xpNeeded - s.xp} XP → "${nx.name}"` : "Niveau maximum !";
+  const xpRange = nx ? nx.xpNeeded - lv.xpNeeded : 1;
+  const xpPct = nx ? Math.min(100, Math.round(((s.xp - lv.xpNeeded) / xpRange) * 100)) : 100;
+  document.getElementById("db-xp-bar").style.width = xpPct + "%";
+
+  // ── Stats row ───────────────────────────────────────────────
+  const avgScore = Object.values(s.quizScores).length
+    ? Math.round(Object.values(s.quizScores).reduce((a, v) => a + v.pct, 0) / Object.values(s.quizScores).length)
+    : 0;
+  const daysSince = Math.floor((Date.now() - new Date(s.createdAt)) / 86400000);
+
+  const stats = [
+    { val: s.xp, lbl: "XP total", sub: `Niveau ${lv.id}/5` },
+    { val: `${s.completedModules.length}/6`, lbl: "Modules", sub: "terminés" },
+    { val: `${s.completedChallenges.length}/10`, lbl: "Défis", sub: "accomplis" },
+    { val: s.maxStreak || 0, lbl: "Meilleur streak", sub: "réponses d'affilée" },
+    { val: `${avgScore}%`, lbl: "Score moyen", sub: `sur ${Object.keys(s.quizScores).length} quiz` },
+    { val: daysSince + "j", lbl: "Membre depuis", sub: new Date(s.createdAt).toLocaleDateString("fr-FR") },
+  ];
+
+  document.getElementById("db-stats-row").innerHTML = stats.map((st, i) => `
+    <div class="db-card db-stat" style="animation-delay:${i*0.06}s">
+      <div class="val">${st.val}</div>
+      <div class="lbl">${st.lbl}</div>
+      <div class="sub">${st.sub}</div>
+    </div>`).join("");
+
+  // ── Radar par module ─────────────────────────────────────────
+  const moduleMap = {
+    module1: { label: "C'est quoi l'éco ?", id: "definition" },
+    module2: { label: "Courants de pensée", id: "courants" },
+    module3: { label: "La croissance",      id: "croissance" },
+    module4: { label: "L'inflation",        id: "inflation" },
+    module5: { label: "La dette",           id: "dette" },
+    module6: { label: "Les inégalités",     id: "inegalites" },
+  };
+
+  const radarEl = document.getElementById("db-radar");
+  const radarItems = Object.entries(moduleMap).map(([qid, mod]) => {
+    const score = s.quizScores[qid];
+    const done = s.completedModules.includes(mod.id);
+    const pct = score ? score.pct : (done ? 50 : 0);
+    return { label: mod.label, pct, done, score };
+  });
+
+  if (radarItems.some(r => r.pct > 0)) {
+    radarEl.innerHTML = radarItems.map(r => `
+      <div class="radar-bar">
+        <div class="name">${r.label}</div>
+        <div class="track"><div class="fill" style="width:0%" data-pct="${r.pct}"></div></div>
+        <div class="pct">${r.pct}%</div>
+      </div>`).join("");
+    setTimeout(() => {
+      radarEl.querySelectorAll(".fill").forEach(el => {
+        el.style.width = el.dataset.pct + "%";
+      });
+    }, 100);
+  }
+
+  // ── Courbe XP ────────────────────────────────────────────────
+  const hist = (s.xpHistory || []).filter(h => h.xp > 0);
+  const chartEl = document.getElementById("db-chart");
+  if (hist.length >= 2) {
+    const maxXp = Math.max(...hist.map(h => h.xp));
+    const displayHist = hist.slice(-40); // last 40 points
+    const barH = 120;
+    const bars = displayHist.map((h, i) => {
+      const h2 = Math.max(4, Math.round((h.xp / maxXp) * barH));
+      const date = new Date(h.date).toLocaleDateString("fr-FR", {day:"2-digit",month:"2-digit"});
+      return `<div class="chart-bar" title="${h.xp} XP — ${date}" style="height:${h2}px;min-height:4px"></div>`;
+    }).join("");
+    chartEl.innerHTML = bars + `<div style="position:absolute;bottom:0;left:0;right:0;height:1px;background:var(--ivory-2)"></div>`;
+    document.getElementById("db-chart-hint").textContent = `${hist.length} sessions · Max : ${maxXp} XP`;
+  } else {
+    chartEl.innerHTML = `<div style="width:100%;display:flex;align-items:center;justify-content:center;color:var(--mist);font-style:italic;font-size:.88rem;padding-bottom:2rem">Continue à jouer pour voir ta courbe de progression !</div>`;
+  }
+
+  // ── Mode révision ─────────────────────────────────────────────
+  const wrongs = Object.values(s.wrongAnswers || {});
+  document.getElementById("db-revision-count").textContent = `${wrongs.length} question${wrongs.length !== 1 ? "s" : ""}`;
+
+  const revEl = document.getElementById("db-revision");
+  const revQuizEl = document.getElementById("db-revision-quiz");
+
+  if (wrongs.length === 0) {
+    revEl.innerHTML = `<p style="color:var(--dust);font-style:italic;font-size:.9rem">Aucune erreur mémorisée. Continue les quiz !</p>`;
+  } else {
+    // Show up to 3 preview cards
+    const preview = wrongs.slice(0, 3);
+    revEl.innerHTML = preview.map(w => `
+      <div class="revision-card">
+        <div class="q-txt">${w.question}</div>
+        <span class="chip" style="font-size:.72rem">${w.quizId || "quiz"} · ${w.pct || "?"}% lors du dernier essai</span>
+      </div>`).join("") +
+      (wrongs.length > 3 ? `<div style="font-size:.85rem;color:var(--dust);font-style:italic;margin-top:.4rem">+ ${wrongs.length - 3} autres questions…</div>` : "");
+
+    revEl.innerHTML += `<button class="btn-main" style="margin-top:1rem;font-size:.85rem;padding:.55rem 1.25rem" onclick="startRevision()">🔁 Réviser ces ${Math.min(wrongs.length,10)} questions</button>`;
+
+    window.startRevision = () => {
+      const qs = wrongs.slice(0, 10).map(w => ({
+        question: w.question,
+        options: w.options,
+        correct: w.correct,
+        explanation: w.explanation || ""
+      }));
+      revEl.style.display = "none";
+      revQuizEl.style.display = "block";
+      initQuiz("db-revision-quiz", qs, "revision_mode", { forceRetry: true, count: qs.length });
+    };
+  }
+
+  // ── Badges ───────────────────────────────────────────────────
+  const earnedBadges = s.badges || [];
+  const badgesEl = document.getElementById("db-badges");
+  const badgesLockedEl = document.getElementById("db-badges-locked");
+
+  if (earnedBadges.length === 0) {
+    badgesEl.innerHTML = `<p style="color:var(--dust);font-style:italic;font-size:.88rem">Complète des défis pour gagner des badges.</p>`;
+  } else {
+    badgesEl.innerHTML = earnedBadges.map(b =>
+      `<span class="badge-pill earned">${b}</span>`
+    ).join("");
+  }
+
+  // Locked badges
+  const allBadges = ECO.CHALLENGES.map(c => ({badge:c.badge, title:c.title}));
+  const locked = allBadges.filter(b => !earnedBadges.includes(b.badge));
+  badgesLockedEl.innerHTML = locked.map(b =>
+    `<span class="badge-pill" title="${b.title}" style="filter:grayscale(1);opacity:.4">${b.badge}</span>`
+  ).join("");
+
+  // ── Historique ────────────────────────────────────────────────
+  const scores = s.quizScores || {};
+  const histEl = document.getElementById("db-history");
+  if (Object.keys(scores).length === 0) {
+    histEl.innerHTML = `<p style="color:var(--dust);font-style:italic;font-size:.9rem">Aucun quiz complété pour l'instant.</p>`;
+  } else {
+    const labels = {
+      module1:"Module 01 — C'est quoi l'éco ?", module2:"Module 02 — Courants",
+      module3:"Module 03 — Croissance", module4:"Module 04 — Inflation",
+      module5:"Module 05 — Dette", module6:"Module 06 — Inégalités",
+      diagnostic:"Diagnostic initial", vrai_faux:"Vrai ou Faux",
+      association_0:"Association — Concepts", association_1:"Association — Économistes",
+      speed_challenge:"Sprint chronométré", revision_mode:"Mode révision",
+    };
+    const rows = Object.entries(scores)
+      .sort((a,b) => new Date(b[1].date) - new Date(a[1].date))
+      .map(([id, sc]) => {
+        const pct = sc.pct;
+        const medal = pct===100?"💎":pct>=80?"🥇":pct>=60?"🥈":pct>=40?"🥉":"📖";
+        const bar = Math.round(pct/10);
+        const date = new Date(sc.date).toLocaleDateString("fr-FR");
+        return `<tr>
+          <td style="padding:.6rem 1rem;font-family:var(--ff-display);font-weight:700;font-size:.85rem">${labels[id]||id}</td>
+          <td style="padding:.6rem 1rem;text-align:center">${medal}</td>
+          <td style="padding:.6rem 1rem">
+            <div style="display:flex;align-items:center;gap:.6rem">
+              <div style="flex:1;background:var(--ivory-2);border-radius:999px;height:7px;overflow:hidden">
+                <div style="width:${pct}%;height:100%;background:${pct>=60?'var(--slate)':'var(--danger)'};border-radius:999px"></div>
+              </div>
+              <span style="font-family:var(--ff-mono);font-size:.78rem;color:var(--dust);width:32px">${pct}%</span>
+            </div>
+          </td>
+          <td style="padding:.6rem 1rem;font-size:.82rem;color:var(--dust)">${sc.score}/${sc.total}</td>
+          <td style="padding:.6rem 1rem;font-size:.78rem;color:var(--mist);font-family:var(--ff-mono)">${date}</td>
+        </tr>`;
+      }).join("");
+
+    histEl.innerHTML = `<table class="eco-table" style="min-width:500px">
+      <thead><tr>
+        <th>Quiz</th><th style="text-align:center">Médaille</th>
+        <th>Score</th><th>Détail</th><th>Date</th>
+      </tr></thead>
+      <tbody>${rows}</tbody>
+    </table>`;
+  }
+});
+</script>
+
+
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+<p>© 2025 · lecobrut.fr</p>
+</div>   
+    <div class="nav-footer-center">
+      &nbsp;
+    </div>
+    <div class="nav-footer-right">
+<p>Construit avec ❤️ Quarto &amp; R</p>
+</div>
+  </div>
+</footer>
+
+
+
+
+<script src="site_libs/quarto-html/zenscroll-min.js"></script>
+</body></html>
