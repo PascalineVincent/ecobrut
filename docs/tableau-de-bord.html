@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>lecobrut.fr</title>
+<title>Mon tableau de bord – lecobrut.fr</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -40,7 +40,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-446cba8f0bd80e672e6d306615c6ffd9.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-1a42fb5e4d3b8f67e00383ca1c01e326.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -448,14 +448,25 @@ const ECO = (() => {
 
   // ── SCROLL PROGRESS BAR ──────────────────────────────────
   document.addEventListener('DOMContentLoaded', () => {
+    // Scroll progress bar
     const bar = document.createElement('div');
     bar.id = 'scroll-progress';
     bar.style.cssText = 'position:fixed;top:0;left:0;height:3px;width:0%;background:linear-gradient(90deg,var(--slate),var(--gold));z-index:9999;transition:width .1s linear;pointer-events:none';
     document.body.prepend(bar);
+
+    // Back to top button
+    const btt = document.createElement('button');
+    btt.id = 'back-to-top';
+    btt.innerHTML = '↑';
+    btt.title = 'Retour en haut';
+    btt.onclick = () => window.scrollTo({top:0, behavior:'smooth'});
+    document.body.appendChild(btt);
+
     window.addEventListener('scroll', () => {
       const el = document.documentElement;
       const pct = (el.scrollTop / (el.scrollHeight - el.clientHeight)) * 100;
       bar.style.width = Math.min(100, pct) + '%';
+      btt.classList.toggle('show', el.scrollTop > 400);
     }, { passive: true });
   });
 
@@ -569,7 +580,7 @@ function initQuiz(containerId, allQuestions, quizId, opts={}) {
       <div class="xp-track" style="margin-bottom:1.5rem"><div class="xp-fill" style="width:${Math.round((current/questions.length)*100)}%"></div></div>
       <p style="font-family:var(--ff-display);font-weight:900;font-size:1.1rem;margin-bottom:1.25rem;letter-spacing:-.02em">${q.question}</p>
       <div id="qopts">
-        ${q.options.map((o,i)=>`<button class="q-option" onclick="qAnswer(${i})">${String.fromCharCode(65+i)}. ${o}</button>`).join("")}
+        ${q.options.map((o,i)=>`<button class="q-option" data-letter="${String.fromCharCode(65+i)}" onclick="qAnswer(${i})">${o}</button>`).join("")}
       </div>
       <div id="qfb" style="display:none;margin-top:1rem"></div>`;
 
@@ -617,6 +628,11 @@ function initQuiz(containerId, allQuestions, quizId, opts={}) {
       </div>
       <div class="xp-track" style="max-width:260px;margin:0 auto 1.5rem"><div class="xp-fill" style="width:${pct}%"></div></div>
       <button class="btn-main" onclick="initQuiz('${containerId}',window['_q_${containerId}'],'${quizId}',{forceRetry:true})">🔄 Recommencer</button>
+      ${(()=>{
+        const modLinks = {module1:'../modules/01-definition.html',module2:'../modules/02-courants.html',module3:'../modules/03-croissance.html',module4:'../modules/04-inflation.html',module5:'../modules/05-dette.html',module6:'../modules/06-inegalites.html',module7:'../modules/07-commerce.html',module8:'../modules/08-idees-recues.html',module9:'../modules/09-monnaie.html',module10:'../modules/10-travail.html',module11:'../modules/11-environnement.html',module12:'../modules/12-politiques.html'};
+        const link = modLinks[quizId];
+        return link ? `<a href="${link}" class="result-module-link">📖 Revoir le module →</a>` : '';
+      })()}
     </div>`;
   };
 
@@ -992,6 +1008,16 @@ document.addEventListener("DOMContentLoaded", () => {
   document.getElementById("db-xp-bar").style.width = xpPct + "%";
 
   // ── Stats row ───────────────────────────────────────────────
+  // Show welcome message if brand new
+  if(s.xp === 0 && s.completedModules.length === 0){
+    document.getElementById("db-stats-row").innerHTML = `<div class="db-card" style="grid-column:1/-1;text-align:center;padding:2rem;animation:fadeIn .4s ease">
+      <div style="font-size:3rem;margin-bottom:1rem">👋</div>
+      <h3 style="font-family:var(--ff-display);margin:0 0 .5rem">Bienvenue !</h3>
+      <p style="color:var(--dust);margin:0 0 1.25rem">Ton tableau de bord est vide pour l'instant — commence par le diagnostic pour voir tes stats apparaître ici.</p>
+      <a href="../quiz/diagnostic.html" class="btn-main btn-gold">🎯 Faire le diagnostic</a>
+    </div>`;
+  }
+
   const avgScore = Object.values(s.quizScores).length
     ? Math.round(Object.values(s.quizScores).reduce((a, v) => a + v.pct, 0) / Object.values(s.quizScores).length)
     : 0;
@@ -1060,7 +1086,11 @@ document.addEventListener("DOMContentLoaded", () => {
     chartEl.innerHTML = bars + `<div style="position:absolute;bottom:0;left:0;right:0;height:1px;background:var(--ivory-2)"></div>`;
     document.getElementById("db-chart-hint").textContent = `${hist.length} sessions · Max : ${maxXp} XP`;
   } else {
-    chartEl.innerHTML = `<div style="width:100%;display:flex;align-items:center;justify-content:center;color:var(--mist);font-style:italic;font-size:.88rem;padding-bottom:2rem">Continue à jouer pour voir ta courbe de progression !</div>`;
+    chartEl.innerHTML = `<div style="width:100%;display:flex;flex-direction:column;align-items:center;justify-content:center;color:var(--mist);padding-bottom:1.5rem;gap:.5rem">
+      <div style="font-size:2rem">📈</div>
+      <div style="font-style:italic;font-size:.88rem;text-align:center">Commence un quiz ou un défi pour voir ta courbe de progression !</div>
+      <a href="../quiz/diagnostic.html" style="font-family:var(--ff-display);font-weight:700;font-size:.82rem;color:var(--slate)">→ Faire le diagnostic</a>
+    </div>`;
   }
 
   // ── Mode révision ─────────────────────────────────────────────
@@ -1071,7 +1101,11 @@ document.addEventListener("DOMContentLoaded", () => {
   const revQuizEl = document.getElementById("db-revision-quiz");
 
   if (wrongs.length === 0) {
-    revEl.innerHTML = `<p style="color:var(--dust);font-style:italic;font-size:.9rem">Aucune erreur mémorisée. Continue les quiz !</p>`;
+    revEl.innerHTML = `<div style="text-align:center;padding:1rem 0">
+      <div style="font-size:2rem;margin-bottom:.5rem">🎯</div>
+      <p style="color:var(--dust);font-style:italic;font-size:.9rem;margin:0">Pas d'erreurs mémorisées — soit tu réponds juste à tout, soit tu n'as pas encore fait de quiz !</p>
+      <a href="../quiz/revision-rapide.html" style="display:inline-block;margin-top:.75rem;font-family:var(--ff-display);font-weight:700;font-size:.82rem;color:var(--slate)">→ Lancer une révision rapide</a>
+    </div>`;
   } else {
     // Show up to 3 preview cards
     const preview = wrongs.slice(0, 3);
@@ -1114,7 +1148,9 @@ document.addEventListener("DOMContentLoaded", () => {
   const allBadges = ECO.CHALLENGES.map(c => ({badge:c.badge, title:c.title}));
   const locked = allBadges.filter(b => !earnedBadges.includes(b.badge));
   badgesLockedEl.innerHTML = locked.map(b =>
-    `<span class="badge-pill" title="${b.title}" style="filter:grayscale(1);opacity:.4">${b.badge}</span>`
+    `<span class="badge-pill" title="${b.title}" style="filter:grayscale(.8);opacity:.5;cursor:help">
+      ${b.badge} <span style="font-size:.7rem;font-weight:400;font-family:var(--ff-body);text-transform:none;letter-spacing:0">${b.title}</span>
+    </span>`
   ).join("");
 
   // ── Historique ────────────────────────────────────────────────
@@ -1589,7 +1625,7 @@ document.addEventListener("DOMContentLoaded", () => {
 <footer class="footer">
   <div class="nav-footer">
     <div class="nav-footer-left">
-<p>© 2025 · lecobrut.fr</p>
+<p>© 2025 · <a href="index.html">lecobrut.fr</a> · <a href="glossaire.html">Glossaire</a> · <a href="apropos.html">À propos</a></p>
 </div>   
     <div class="nav-footer-center">
       &nbsp;

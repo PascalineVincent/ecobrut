@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>lecobrut.fr</title>
+<title>L’inflation — lecobrut.fr – lecobrut.fr</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -40,7 +40,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-446cba8f0bd80e672e6d306615c6ffd9.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-1a42fb5e4d3b8f67e00383ca1c01e326.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -448,14 +448,25 @@ const ECO = (() => {
 
   // ── SCROLL PROGRESS BAR ──────────────────────────────────
   document.addEventListener('DOMContentLoaded', () => {
+    // Scroll progress bar
     const bar = document.createElement('div');
     bar.id = 'scroll-progress';
     bar.style.cssText = 'position:fixed;top:0;left:0;height:3px;width:0%;background:linear-gradient(90deg,var(--slate),var(--gold));z-index:9999;transition:width .1s linear;pointer-events:none';
     document.body.prepend(bar);
+
+    // Back to top button
+    const btt = document.createElement('button');
+    btt.id = 'back-to-top';
+    btt.innerHTML = '↑';
+    btt.title = 'Retour en haut';
+    btt.onclick = () => window.scrollTo({top:0, behavior:'smooth'});
+    document.body.appendChild(btt);
+
     window.addEventListener('scroll', () => {
       const el = document.documentElement;
       const pct = (el.scrollTop / (el.scrollHeight - el.clientHeight)) * 100;
       bar.style.width = Math.min(100, pct) + '%';
+      btt.classList.toggle('show', el.scrollTop > 400);
     }, { passive: true });
   });
 
@@ -569,7 +580,7 @@ function initQuiz(containerId, allQuestions, quizId, opts={}) {
       <div class="xp-track" style="margin-bottom:1.5rem"><div class="xp-fill" style="width:${Math.round((current/questions.length)*100)}%"></div></div>
       <p style="font-family:var(--ff-display);font-weight:900;font-size:1.1rem;margin-bottom:1.25rem;letter-spacing:-.02em">${q.question}</p>
       <div id="qopts">
-        ${q.options.map((o,i)=>`<button class="q-option" onclick="qAnswer(${i})">${String.fromCharCode(65+i)}. ${o}</button>`).join("")}
+        ${q.options.map((o,i)=>`<button class="q-option" data-letter="${String.fromCharCode(65+i)}" onclick="qAnswer(${i})">${o}</button>`).join("")}
       </div>
       <div id="qfb" style="display:none;margin-top:1rem"></div>`;
 
@@ -617,6 +628,11 @@ function initQuiz(containerId, allQuestions, quizId, opts={}) {
       </div>
       <div class="xp-track" style="max-width:260px;margin:0 auto 1.5rem"><div class="xp-fill" style="width:${pct}%"></div></div>
       <button class="btn-main" onclick="initQuiz('${containerId}',window['_q_${containerId}'],'${quizId}',{forceRetry:true})">🔄 Recommencer</button>
+      ${(()=>{
+        const modLinks = {module1:'../modules/01-definition.html',module2:'../modules/02-courants.html',module3:'../modules/03-croissance.html',module4:'../modules/04-inflation.html',module5:'../modules/05-dette.html',module6:'../modules/06-inegalites.html',module7:'../modules/07-commerce.html',module8:'../modules/08-idees-recues.html',module9:'../modules/09-monnaie.html',module10:'../modules/10-travail.html',module11:'../modules/11-environnement.html',module12:'../modules/12-politiques.html'};
+        const link = modLinks[quizId];
+        return link ? `<a href="${link}" class="result-module-link">📖 Revoir le module →</a>` : '';
+      })()}
     </div>`;
   };
 
@@ -1464,7 +1480,7 @@ document.addEventListener("DOMContentLoaded", () => {
 <footer class="footer">
   <div class="nav-footer">
     <div class="nav-footer-left">
-<p>© 2025 · lecobrut.fr</p>
+<p>© 2025 · <a href="index.html">lecobrut.fr</a> · <a href="glossaire.html">Glossaire</a> · <a href="apropos.html">À propos</a></p>
 </div>   
     <div class="nav-footer-center">
       &nbsp;
