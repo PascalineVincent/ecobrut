@@ -14,6 +14,13 @@
     "text": "Mon tableau de bord\n        …\n        …\n      \n    \n    \n    \n      \n        0 XP\n        …\n      \n      \n    \n  \n\n\n\n\n\n  \n  \n    \n  \n\n  \n  \n\n    \n    \n      📊 Niveau par thème\n      \n        Complète au moins un quiz pour voir tes résultats.\n      \n    \n\n    \n    \n      📈 Progression XP\n      \n        \n      \n      Chaque barre = une session XP\n    \n\n  \n\n  \n  \n\n    \n    \n      \n        🔁 Mode révision\n        0 questions\n      \n      \n        Réponds à des quiz pour voir ici les questions que tu as ratées.\n      \n      \n    \n\n    \n    \n      🎖️ Badges obtenus\n      \n      \n        À débloquer\n        \n      \n    \n\n  \n\n  \n  \n    📋 Historique des quiz\n    \n      Aucun quiz complété pour l'instant.\n    \n  \n\n  \n  \n    🔎 Mes analyses d'actu\n    \n      Aucune analyse complétée pour l'instant.\n    \n  \n\n  \n  \n    \n      🔄 Réinitialiser la progression"
   },
   {
+    "objectID": "quiz/revision-rapide.html",
+    "href": "quiz/revision-rapide.html",
+    "title": "Révision rapide",
+    "section": "",
+    "text": "⚡\n    Révision rapide\n    10 questions flash, tous modules — sans chrono, juste l'essentiel.\n    \n      \n        10\n        questions\n      \n      \n        ~5 min\n        estimé\n      \n      \n        +40 XP\n        à gagner"
+  },
+  {
     "objectID": "quiz/frise-chronologique.html",
     "href": "quiz/frise-chronologique.html",
     "title": "Les grandes crises économiques",
@@ -35,228 +42,186 @@
     "text": "🔗\n    Jeu d'association\n    \n      Relie chaque terme à sa définition. Colonne gauche → colonne droite.\n    \n    \n      \n        8\n        paires\n      \n      \n        +120 XP\n        si tu reussis\n      \n    \n  \n\n\n\n  \n    \n      Selectionne un terme, puis sa definition\n      0 / 8 paires"
   },
   {
-    "objectID": "modules/08-idees-recues.html",
-    "href": "modules/08-idees-recues.html",
-    "title": "Les idées reçues économiques",
+    "objectID": "modules/13-medias.html",
+    "href": "modules/13-medias.html",
+    "title": "Comment lire les médias éco",
     "section": "",
-    "text": "Module 08\n      Démystification\n      80 XP\n    \n    \n    Les affirmations qu'on entend partout — et ce que l'économie en dit vraiment."
+    "text": "Module 13\n      Niveau avancé\n      80 XP\n    \n    \n    Décrypter un titre, repérer un biais, distinguer une stat d'une opinion — le mode d'emploi."
   },
   {
-    "objectID": "modules/08-idees-recues.html#les-8-grandes-idées-reçues",
-    "href": "modules/08-idees-recues.html#les-8-grandes-idées-reçues",
-    "title": "Les idées reçues économiques",
-    "section": "Les 8 grandes idées reçues",
-    "text": "Les 8 grandes idées reçues\n\n\n  \n    ❌\n    \n      Mythe 1\n      \"L'État doit gérer son budget comme une famille — sans dettes.\"\n    \n  \n  \n    ✅ La réalité\n    Un État n'est pas une famille. Il peut emprunter sans fin si sa dette reste soutenable (g &gt; r), il lève des impôts, il ne \"meurt\" pas, et sa dette ne disparaît pas à sa mort. Une famille qui ne s'endette jamais ne peut pas acheter de maison. Un État qui ne s'endette jamais ne peut pas investir dans les infrastructures, l'éducation ou la défense. La question n'est pas d'avoir zéro dette, mais une dette productive et soutenable.\n  \n\n\n\n\n  \n    ❌\n    \n      Mythe 2\n      \"L'immigration fait baisser les salaires des travailleurs locaux.\"\n    \n  \n  \n    ✅ La réalité\n    La plupart des études empiriques (Carte, Peri, Dustmann) montrent que l'effet global de l'immigration sur les salaires est faible ou nul, voire positif. Les immigrés créent de la demande et des emplois, pas seulement de l'offre de travail. Les effets négatifs, quand ils existent, concernent surtout les autres immigrés récents — pas les travailleurs natifs. Le marché du travail n'est pas un gâteau à taille fixe.\n  \n\n\n\n\n  \n    ❌\n    \n      Mythe 3\n      \"Augmenter le SMIC crée automatiquement du chômage.\"\n    \n  \n  \n    ✅ La réalité\n    La théorie classique prédit cet effet. Mais les études empiriques — dont le célèbre travail de Card et Krueger sur le New Jersey — montrent que des hausses modérées du salaire minimum n'entraînent pas de hausse significative du chômage. Pourquoi ? Les marchés du travail ne sont pas parfaitement compétitifs : les employeurs ont du pouvoir de marché (monopsone). Le résultat dépend du niveau de l'augmentation et du contexte.\n  \n\n\n\n\n  \n    ❌\n    \n      Mythe 4\n      \"La richesse des uns, c'est la pauvreté des autres — l'économie est un jeu à somme nulle.\"\n    \n  \n  \n    ✅ La réalité\n    L'économie est globalement un jeu à somme positive : la croissance crée de nouvelles richesses. En 1800, la quasi-totalité de l'humanité vivait dans l'extrême pauvreté. En 2024, moins de 10%. Le PIB mondial a été multiplié par ~100 en deux siècles. La question centrale n'est pas \"combien de richesses\" mais \"comment elles se distribuent.\" Les inégalités peuvent augmenter même quand tout le monde s'enrichit.\n  \n\n\n\n\n  \n    ❌\n    \n      Mythe 5\n      \"Les économistes sont tous d'accord entre eux.\"\n    \n  \n  \n    ✅ La réalité\n    Les économistes s'accordent sur certains faits (le libre-échange augmente globalement le bien-être, les prix plafonnés créent des pénuries) mais divergent profondément sur les politiques — niveau d'imposition optimal, rôle de l'État, gestion de la dette, politique monétaire. Ces désaccords ne sont pas des erreurs : ils reflètent de vraies incertitudes empiriques et des valeurs différentes. L'économie est une science jeune, complexe et partielle.\n  \n\n\n\n\n  \n    ❌\n    \n      Mythe 6\n      \"La déflation est bonne pour les consommateurs — les prix baissent, on est plus riches.\"\n    \n  \n  \n    ✅ La réalité\n    Court terme oui, long terme non. Si les prix baissent, les agents reportent leurs achats (pourquoi acheter aujourd'hui si c'est moins cher demain ?), les entreprises voient leurs revenus chuter, elles licencient, les salaires baissent, la demande s'effondre… Le Japon a vécu 20 ans de déflation et de stagnation. La BCE fait tout pour l'éviter.\n  \n\n\n\n\n  \n    ❌\n    \n      Mythe 7\n      \"On laisse une dette aux générations futures — nos enfants paieront.\"\n    \n  \n  \n    ✅ La réalité\n    C'est plus nuancé. La dette intérieure est une dette d'une partie des Français envers une autre (les épargnants envers les contribuables). La dette laisse aussi des actifs : autoroutes, hôpitaux, université, infrastructures. L'enjeu réel est double : la charge d'intérêts annuelle (50 Mds€/an en France) et la part de dette détenue par des créanciers étrangers. La vraie question : la dette finance-t-elle des investissements productifs ou de la dépense courante ?\n  \n\n\n\n\n  \n    ❌\n    \n      Mythe 8\n      \"La croissance économique détruit forcément l'environnement.\"\n    \n  \n  \n    ✅ La réalité\n    La courbe de Kuznets environnementale suggère que la pollution augmente d'abord avec le développement, puis diminue — les pays riches peuvent se permettre de dépolluer. Des pays ont effectivement découplé croissance et émissions (France, Allemagne, UK depuis les années 90). Mais le découplage absolu reste limité et la question des limites planétaires est réelle. Les deux camps ont des arguments solides.\n  \n\n\n\n🎯 Quiz — Vrai ou mythe ?\n5 questions tirées parmi 10 · jusqu'à +40 XP\n\n\n\n\n\n  \n  🏆 Parcours complet !\n  Tu as terminé les 8 modules\n  \n    Tu sais maintenant décrypter une actu éco, démêler un argument, et reconnaître une idée reçue. Pas mal.\n  \n  \n    📖 Glossaire\n    🎯 Refaire le diagnostic\n    🔎 Défi actu\n    ← Accueil\n  \n\n\n\n  ← Module 07"
+    "objectID": "modules/13-medias.html#distinguer-fait-opinion-et-jugement-de-valeur",
+    "href": "modules/13-medias.html#distinguer-fait-opinion-et-jugement-de-valeur",
+    "title": "Comment lire les médias éco",
+    "section": "1. Distinguer fait, opinion et jugement de valeur",
+    "text": "1. Distinguer fait, opinion et jugement de valeur\nAvant même de lire un article, la question fondamentale est : de quoi s’agit-il ?\n\n  \n    📊\n    Fait vérifiable\n    \"Le PIB a augmenté de 1,1 % en 2024.\" C'est mesurable, falsifiable, sourcé. On peut le vérifier.\n    Chercher la source primaire\n  \n  \n    💭\n    Opinion/analyse\n    \"Cette croissance est insuffisante.\" Jugement qui dépend d'un référentiel. Insuffisant par rapport à quoi ? Pour qui ?\n    Demander le référentiel\n  \n  \n    ⚖️\n    Jugement normatif\n    \"L'État devrait investir davantage.\" Prescription politique déguisée en analyse. Ni vrai ni faux — c'est un choix de valeurs.\n    Rappel : module 01"
   },
   {
-    "objectID": "modules/06-inegalites.html",
-    "href": "modules/06-inegalites.html",
-    "title": "Les inégalités",
+    "objectID": "modules/13-medias.html#lire-un-graphique-économique-sans-se-faire-piéger",
+    "href": "modules/13-medias.html#lire-un-graphique-économique-sans-se-faire-piéger",
+    "title": "Comment lire les médias éco",
+    "section": "2. Lire un graphique économique sans se faire piéger",
+    "text": "2. Lire un graphique économique sans se faire piéger\nLes graphiques sont puissants — et facilement manipulables. Cinq pièges classiques :\n\n\n\n\n\nPiège\nComment le repérer\nExemple concret\n\n\n\n\nAxe Y tronqué\nL'axe ne part pas de 0 — une petite variation semble immense\nCroissance qui passe de 1,9 % à 2,1 % montrée comme une \"explosion\"\n\n\nAbsence de contexte\nPas de comparaison internationale ou historique\n\"La France a 3 000 Mds de dettes\" — sans dire que l'Allemagne ou les USA en ont plus en proportion\n\n\nNominal vs réel\nLes chiffres sont en euros courants, non corrigés de l'inflation\nLes salaires \"ont augmenté de 5 %\" quand l'inflation était à 6 % — en réel, ils ont baissé\n\n\nStock vs flux\nOn compare une accumulation (dette) avec une variation annuelle (déficit)\n\"La dette a augmenté de 100 Mds\" ≠ \"le déficit est de 100 Mds\"\n\n\nCorrélation ≠ causalité\nDeux variables qui varient ensemble ne s'expliquent pas forcément l'une l'autre\n\"Les pays qui mangent plus de chocolat ont plus de Nobel\" — vraie corrélation, aucune causalité"
+  },
+  {
+    "objectID": "modules/13-medias.html#décrypter-un-titre-accrocheur",
+    "href": "modules/13-medias.html#décrypter-un-titre-accrocheur",
+    "title": "Comment lire les médias éco",
+    "section": "3. Décrypter un titre accrocheur",
+    "text": "3. Décrypter un titre accrocheur\nLes titres de presse économique ont souvent des formules typiques. Voici comment les désamorcer :\n\n\n  \n    🔴 Titre alarmiste\n    \"La dette française, bombe à retardement pour nos enfants\"\n    Questions à poser : À quel taux ? Détenue par qui ? Quelle part est intérieure vs extérieure ? Comparer avec d'autres pays. La métaphore de la \"bombe\" est normative, pas analytique.\n  \n\n  \n    🟢 Titre factuel\n    \"La dette française atteint 112 % du PIB au 3e trimestre 2024\"\n    À vérifier quand même : Source ? Comment le PIB est-il calculé ? La donnée est-elle brute ou nette (dette - actifs) ?\n  \n\n  \n    🟡 Titre ambigu\n    \"Le chômage recule — bonne nouvelle pour l'économie\"\n    Creuser : Quel type de chômage ? Le taux d'emploi a-t-il aussi augmenté ? Les emplois créés sont-ils à temps plein ou partiel ? \"Bonne nouvelle\" pour qui exactement ?"
+  },
+  {
+    "objectID": "modules/13-medias.html#les-biais-de-cadrage-framing",
+    "href": "modules/13-medias.html#les-biais-de-cadrage-framing",
+    "title": "Comment lire les médias éco",
+    "section": "4. Les biais de cadrage (framing)",
+    "text": "4. Les biais de cadrage (framing)\nLa façon dont une information est présentée change radicalement sa perception :\n\nExemple classique : Un médicament qui “réduit le risque de 50 %” semble miraculeux. Si le risque passe de 2 % à 1 %, la réduction absolue n’est que de 1 point. Même donnée, deux cadrages très différents. En économie : “les riches paient 50 % de l’impôt sur le revenu” est vrai — mais ils détiennent aussi 50 % des revenus imposables.\n\n\n  \n    📉\n    Risque relatif vs absolu\n    \"-50 % de risque\" peut masquer un risque initial très faible. Toujours demander : \"50 % de combien ?\"\n  \n  \n    📊\n    Milliards vs % du PIB\n    \"200 milliards de dépenses sociales\" vs \"8 % du PIB\" — même chiffre, perceptions très différentes.\n  \n  \n    🔢\n    Moyenne vs médiane\n    Le salaire \"moyen\" est tiré vers le haut par les très hauts salaires. La médiane (50 % gagne plus, 50 % moins) est plus représentative.\n  \n  \n    🗓️\n    Point de départ choisi\n    La même tendance sur 3 ans ou 30 ans peut raconter des histoires opposées. Attention à la \"date de référence\" sélectionnée."
+  },
+  {
+    "objectID": "modules/13-medias.html#les-cinq-questions-à-poser-à-chaque-article",
+    "href": "modules/13-medias.html#les-cinq-questions-à-poser-à-chaque-article",
+    "title": "Comment lire les médias éco",
+    "section": "5. Les cinq questions à poser à chaque article",
+    "text": "5. Les cinq questions à poser à chaque article\n\n  \n    1\n    Quelle est la source primaire ?INSEE, Eurostat, Banque de France, OCDE… ou un think tank partial ? La source primaire compte plus que le journal qui la reprend.\n  \n  \n    2\n    Quel est le référentiel de comparaison ?Par rapport à quand ? Par rapport à quel pays ? Une information sans référentiel ne veut souvent rien dire.\n  \n  \n    3\n    Qui en bénéficie ? Qui paie ?Toute politique économique a des gagnants et des perdants. Si l'article n'en parle pas, c'est un angle manquant.\n  \n  \n    4\n    C'est nominal ou réel ?Les chiffres sont-ils corrigés de l'inflation ? +5 % de salaires avec 6 % d'inflation = baisse de pouvoir d'achat.\n  \n  \n    5\n    Corrélation ou causalité ?\"Quand les taux montent, l'immobilier baisse\" — causalité probable. \"Les pays qui lisent plus sont plus riches\" — corrélation avec un facteur tiers (niveau d'éducation).\n  \n\n\n\n  📰 Exercice pratique\n  \n    \n      🔍\n      Tester ces 5 questions\n      Prends n'importe quel article des Échos, du Monde Éco ou de BFM Business cette semaine. Applique les 5 questions. Tu verras combien d'articles laissent des angles vides.\n    \n    \n      📊\n      Sources fiables à connaître\n      INSEE (données françaises), Eurostat (UE), OCDE (comparaisons internationales), Banque de France (données financières), FMI (perspectives mondiales). Ce sont les sources primaires.\n    \n    \n      🔗\n      Lier à ce qu'on sait\n      Chaque info de presse éco renvoie à un concept vu dans les modules. \"La BCE monte les taux\" → module 04 + 09. \"Oxfam publie son rapport\" → module 06. Le défi actu est fait pour ça.\n    \n  \n\n\n\nQuiz du module\n5 questions tirées parmi 10 · jusqu'à +40 XP\n\n\n\n\n\n  ← Module 12\n  🔎 Pratiquer avec le défi actu →"
+  },
+  {
+    "objectID": "modules/11-environnement.html",
+    "href": "modules/11-environnement.html",
+    "title": "Économie et environnement",
     "section": "",
-    "text": "Module 06\n      Niveau avancé\n      100 XP\n    \n    \n    Gini, Piketty, r&gt;g — les riches s'enrichissent-ils vraiment plus vite que les autres ?"
+    "text": "Module 11\n      Niveau avancé\n      100 XP\n    \n    \n    Externalités, tarification carbone, biens communs — les outils économiques face au défi climatique."
   },
   {
-    "objectID": "modules/06-inegalites.html#comment-mesure-t-on-les-inégalités",
-    "href": "modules/06-inegalites.html#comment-mesure-t-on-les-inégalités",
-    "title": "Les inégalités",
-    "section": "Comment mesure-t-on les inégalités ?",
-    "text": "Comment mesure-t-on les inégalités ?\n\nLa courbe de Lorenz\n\n\nWarning: le package 'ggplot2' a été compilé avec la version R 4.4.3\n\n\n\n\n\nCourbe de Lorenz — France vs égalité parfaite\n\n\n\n\n\n\nLe coefficient de Gini\n\n  \n    0,30\n    France\n    Parmi les plus égalitaires d'Europe grâce à la redistribution\n  \n  \n    0,40\n    États-Unis\n    Inégalités plus marquées, filet social plus limité\n  \n  \n    0,63\n    Afrique du Sud\n    Un des plus élevés du monde — héritage de l'apartheid"
+    "objectID": "modules/11-environnement.html#les-externalités-le-coeur-du-problème",
+    "href": "modules/11-environnement.html#les-externalités-le-coeur-du-problème",
+    "title": "Économie et environnement",
+    "section": "Les externalités — le coeur du problème",
+    "text": "Les externalités — le coeur du problème\nUne externalité est un effet (positif ou négatif) qu’une activité économique produit sur des tiers, sans que cela se reflète dans le prix.\n\nExemple classique : Une usine pollue une rivière. Le coût de la pollution (pêche détruite, eau contaminée, santé dégradée) est supporté par la société — pas par l’usine. Son prix de vente ne reflète pas ce coût réel. C’est une externalité négative.\n\nRésultat : le marché produit trop de biens à externalités négatives (pollution, CO2) et trop peu de biens à externalités positives (éducation, recherche, forêts)."
   },
   {
-    "objectID": "modules/06-inegalites.html#thomas-piketty-et-r-g",
-    "href": "modules/06-inegalites.html#thomas-piketty-et-r-g",
-    "title": "Les inégalités",
-    "section": "Thomas Piketty et r > g",
-    "text": "Thomas Piketty et r &gt; g\nDans Le Capital au XXIe siècle (2013), Piketty montre qu’à partir des années 1980, les inégalités de patrimoine — pas seulement de revenus — repartent à la hausse dans les pays riches.\nSa formule clé : r &gt; g\n\nr = rendement du capital (dividendes, loyers, intérêts) → historiquement ~4-5 %\ng = croissance économique → ~1-2 % dans les pays riches aujourd’hui\nQuand r &gt; g, les détenteurs de patrimoine s’enrichissent plus vite que les autres — mécaniquement, sans travailler davantage. Les inégalités se creusent.\n\n\n  🔗 Liens avec d'autres modules :\n  \n    → Module 05 : l'État endetté profite de l'inflation (r vs g)\n  \n  \n    → Module 07 : la mondialisation réduit les inégalités entre pays mais les creuse à l'intérieur\n  \n  \n    → Module 12 : impôt progressif et redistribution"
+    "objectID": "modules/11-environnement.html#les-quatre-solutions-économiques",
+    "href": "modules/11-environnement.html#les-quatre-solutions-économiques",
+    "title": "Économie et environnement",
+    "section": "Les quatre solutions économiques",
+    "text": "Les quatre solutions économiques\n\n  \n    💰\n    Taxe Pigouvienne\n    Taxer la pollution à hauteur de son coût social — pour internaliser l'externalité. La taxe carbone en est l'exemple. Proposée par l'économiste Pigou en 1920.\n    Internalise le coût social\n  \n  \n    🎫\n    Marchés de quotas\n    L'État fixe un plafond de pollution total et distribue des droits à polluer échangeables. Les entreprises les achètent/vendent selon leurs besoins. Système ETS en Europe.\n    Plafonne les émissions totales\n  \n  \n    🏛️\n    Réglementation\n    Standards d'émissions, interdictions, normes techniques. Direct mais rigide — ne tient pas compte des différences de coût entre entreprises.\n    Norme Euro 7, RE2020\n  \n  \n    🌿\n    Subventions vertes\n    Soutenir les alternatives propres pour les rendre compétitives (solaire, éolien, VE). Fonctionne bien mais coûte cher à l'État.\n    IRA américain, RE2020\n  \n\n\n  🔗 Liens avec d'autres modules :\n  → Module 07 : CBAM, taxe carbone aux frontières→ Module 03 : PIB vert et décroissance→ Module 12 : politiques publiques environnementales"
   },
   {
-    "objectID": "modules/06-inegalites.html#les-inégalités-mondiales-ont-elles-baissé",
-    "href": "modules/06-inegalites.html#les-inégalités-mondiales-ont-elles-baissé",
-    "title": "Les inégalités",
-    "section": "Les inégalités mondiales ont-elles baissé ?",
-    "text": "Les inégalités mondiales ont-elles baissé ?\nC’est une question piège. Ça dépend de ce qu’on mesure :\n\nEntre pays : les inégalités ont baissé (Chine, Inde ont rattrapé une partie du retard)\nAu sein des pays riches : elles ont augmenté depuis les années 80\nEn termes de patrimoine : le 1 % le plus riche détient ~45 % du patrimoine mondial"
+    "objectID": "modules/11-environnement.html#la-tragédie-des-communs",
+    "href": "modules/11-environnement.html#la-tragédie-des-communs",
+    "title": "Économie et environnement",
+    "section": "La tragédie des communs",
+    "text": "La tragédie des communs\nL’économiste Garrett Hardin (1968) a décrit un phénomène crucial : les ressources partagées sont surexploitées par les individus qui agissent rationnellement chacun pour soi.\nL’exemple : Un pré communal peut nourrir 10 vaches. Chaque paysan a intérêt à mettre une vache de plus — il capte tout le bénéfice mais ne supporte qu’1/N du coût de surpâturage. Résultat : tout le monde le fait, le pré est détruit. Personne n’a voulu ça, mais c’est le résultat de décisions individuellement rationnelles.\nL’atmosphère est un bien commun mondial. Chaque État, chaque entreprise a intérêt à polluer (bénéfice privé) tout en espérant que les autres feront les efforts (coût collectif). D’où la difficulté des accords climatiques.\n\nLa réponse d’Elinor Ostrom (Nobel 2009) : contrairement à Hardin, Ostrom a montré empiriquement que les communautés peuvent gérer leurs communs de façon durable — sans privatisation ni État — via des règles collectives, de la surveillance mutuelle et des sanctions graduelles. Les systèmes d’irrigation au Japon ou en Espagne en sont des exemples vieux de siècles."
   },
   {
-    "objectID": "modules/06-inegalites.html#solutions-possibles",
-    "href": "modules/06-inegalites.html#solutions-possibles",
-    "title": "Les inégalités",
-    "section": "Solutions possibles",
-    "text": "Solutions possibles\n\n  \n    📊\n    Impôt progressif\n    Taux marginal plus élevé pour les hauts revenus. France : taux marginal à 45%. Piketty propose un impôt mondial sur le capital.\n  \n  \n    🏥\n    Services publics universels\n    Santé, éducation, transports — gratuits ou très subventionnés. Bénéficient proportionnellement plus aux revenus les plus faibles.\n  \n  \n    💵\n    Revenu universel de base\n    Verser à tous les citoyens un revenu inconditionnel. Expérimenté en Finlande, Namibie, Kenya. Débat ouvert.\n  \n\n\n\n\n  📰 Les inégalités aujourd'hui\n  \n    \n      💰\n      Oxfam : 1% vs 99%\n      Chaque année à Davos, Oxfam publie son rapport sur les inégalités mondiales. En 2024 : les 1% les plus riches ont capté les 2/3 de toutes les nouvelles richesses créées depuis le Covid.\n    \n    \n      🏠\n      L'immobilier : machine à inégalités\n      La hausse des prix immobiliers depuis 20 ans a massivement enrichi les propriétaires et appauvri les locataires — exactement le mécanisme r&gt;g de Piketty appliqué à un actif concret.\n    \n    \n      🧮\n      L'impôt minimum mondial à 15%\n      En 2023, 140 pays ont adopté un impôt minimum de 15% sur les bénéfices des grandes multinationales. Une tentative concrète de limiter l'optimisation fiscale — un premier pas vers le \"Piketty mondial\" ?\n    \n  \n\n\n\n🎯 Quiz final — Les inégalités\n5 questions · ~3 min · jusqu'à +40 XP\n\n\n\n\n\n\n  \n  🏆 Parcours complet !\n  Tu as terminé les 6 premiers modules\n  \n    Encore deux modules pour aller plus loin : commerce international et idées reçues.\n  \n  \n    Module 07 : Commerce →\n    Module 08 : Idées reçues →\n    ← Accueil\n  \n\n\n\n\n\n  ← Module 05"
+    "objectID": "modules/11-environnement.html#le-coût-du-carbone",
+    "href": "modules/11-environnement.html#le-coût-du-carbone",
+    "title": "Économie et environnement",
+    "section": "Le coût du carbone",
+    "text": "Le coût du carbone\n\n\nWarning: le package 'ggplot2' a été compilé avec la version R 4.4.3\n\n\n\n\n\nPrix du carbone dans le système ETS européen (€/tonne CO2) — Source : Refinitiv"
   },
   {
-    "objectID": "modules/04-inflation.html",
-    "href": "modules/04-inflation.html",
-    "title": "L'inflation",
+    "objectID": "modules/11-environnement.html#pib-vert-vs-comptabilité-du-bien-être",
+    "href": "modules/11-environnement.html#pib-vert-vs-comptabilité-du-bien-être",
+    "title": "Économie et environnement",
+    "section": "PIB vert vs comptabilité du bien-être",
+    "text": "PIB vert vs comptabilité du bien-être\nLe PIB ignore les destructions environnementales. Plusieurs approches tentent d’y remédier :\n\n  \n    🌍\n    PIB vert\n    Soustrait la dépréciation du capital naturel (forêts, sols, eau) au PIB traditionnel. Si on abat une forêt, le PIB monte — le PIB vert baisserait.\n  \n  \n    📊\n    Empreinte matérielle\n    Mesure la quantité totale de matières premières consommées — y compris celles \"importées\" via les produits achetés à l'étranger. La France \"exporte\" sa pollution.\n  \n  \n    🌱\n    Limites planétaires\n    Rockstrom et al. (2009) : 9 frontières biophysiques à ne pas dépasser pour rester dans un \"espace sûr\". 6 sur 9 sont déjà franchies en 2024.\n  \n\n\n\n  📰 L'actu qui illustre ce module\n  \n    \n      🇪🇺\n      La taxe carbone aux frontières (CBAM)\n      Depuis 2023, l'UE impose une taxe carbone sur certaines importations (acier, ciment, aluminium) pour éviter que les entreprises européennes soient désavantagées face à des concurrents moins vertueux.\n    \n    \n      🔥\n      Le coût économique des catastrophes\n      Les assureurs évaluent les pertes liées aux catastrophes climatiques à 300-400 Mds$ par an mondialement. Swiss Re estime que le changement climatique pourrait réduire le PIB mondial de 10% d'ici 2050.\n    \n    \n      ⚡\n      Les subventions aux énergies fossiles\n      Le FMI estime les subventions mondiales aux énergies fossiles à 7 000 milliards de dollars par an (directes et indirectes). Supprimer ces subventions serait la politique climatique la plus efficace — et la plus impopulaire.\n    \n  \n\n\n\nQuiz du module\n5 questions tirées parmi 12 · jusqu'à +40 XP\n\n\n\n\n\n  ← Module 10\n  Module 12 : Politiques économiques →"
+  },
+  {
+    "objectID": "modules/09-monnaie.html",
+    "href": "modules/09-monnaie.html",
+    "title": "La monnaie et le système bancaire",
     "section": "",
-    "text": "Module 04\n      Niveau intermédiaire\n      80 XP\n    \n    \n    Pourquoi tout augmente, qui y gagne, et ce que la BCE peut (ou ne peut pas) y faire."
+    "text": "Module 09\n      Niveau intermédiaire\n      100 XP\n    \n    \n    Les banques ne prêtent pas l'argent des déposants. Démystification complète."
   },
   {
-    "objectID": "modules/04-inflation.html#définition-pas-juste-les-prix-augmentent",
-    "href": "modules/04-inflation.html#définition-pas-juste-les-prix-augmentent",
-    "title": "L'inflation",
-    "section": "Définition : pas juste “les prix augmentent”",
-    "text": "Définition : pas juste “les prix augmentent”\nL’inflation, c’est l’augmentation générale et durable du niveau des prix. Pas un seul produit — l’ensemble du panier de biens et services.\n\nL’indicateur clé : l’IPC (Indice des Prix à la Consommation), calculé par l’INSEE. Il suit l’évolution d’un “panier” représentatif de la consommation des ménages français.\n\nSon contraire, la déflation, peut sembler une bonne nouvelle — mais c’est souvent catastrophique. Si tu anticipes que les prix baisseront encore demain, tu n’achètes pas aujourd’hui. L’économie se grippe. Le Japon a vécu ça pendant 20 ans."
+    "objectID": "modules/09-monnaie.html#lidée-reçue-la-plus-répandue",
+    "href": "modules/09-monnaie.html#lidée-reçue-la-plus-répandue",
+    "title": "La monnaie et le système bancaire",
+    "section": "L’idée reçue la plus répandue",
+    "text": "L’idée reçue la plus répandue\n“Les banques prêtent l’argent que les épargnants y déposent.”\nC’est faux. Et comprendre pourquoi change tout à la façon dont on pense l’économie."
   },
   {
-    "objectID": "modules/04-inflation.html#linflation-en-france-depuis-1960",
-    "href": "modules/04-inflation.html#linflation-en-france-depuis-1960",
-    "title": "L'inflation",
-    "section": "L’inflation en France depuis 1960",
-    "text": "L’inflation en France depuis 1960\n\n\nWarning: le package 'ggplot2' a été compilé avec la version R 4.4.3\n\n\n\n\n\nTaux d’inflation annuel en France (1960–2023) — Source : INSEE / Banque de France"
+    "objectID": "modules/09-monnaie.html#comment-la-monnaie-est-vraiment-créée",
+    "href": "modules/09-monnaie.html#comment-la-monnaie-est-vraiment-créée",
+    "title": "La monnaie et le système bancaire",
+    "section": "Comment la monnaie est vraiment créée",
+    "text": "Comment la monnaie est vraiment créée\nQuand une banque commerciale t’accorde un prêt de 10 000 €, elle ne prend pas 10 000 € dans le compte d’un épargnant pour les mettre dans le tien. Elle crée ces 10 000 € en inscrivant simultanément : - un actif à son bilan : ta dette envers elle - un passif : les 10 000 € sur ton compte courant\nLa monnaie n’existait pas avant le prêt. Elle est créée ex nihilo — à partir de rien. C’est la création monétaire par le crédit.\n\nLa formule clé : “Les crédits font les dépôts” — pas l’inverse. Ce sont les prêts accordés qui créent les dépôts, non les dépôts qui permettent les prêts."
   },
   {
-    "objectID": "modules/04-inflation.html#les-trois-causes-de-linflation",
-    "href": "modules/04-inflation.html#les-trois-causes-de-linflation",
-    "title": "L'inflation",
-    "section": "Les trois causes de l’inflation",
-    "text": "Les trois causes de l’inflation\n\n  \n    🏭\n    Par les coûts\n    Le pétrole monte → le transport coûte plus cher → tout augmente. Cause des chocs des années 70. Et de 2022.\n  \n  \n    🛒\n    Par la demande\n    Trop d'argent pour pas assez de biens. Les vendeurs montent les prix. Classique en période de boom économique.\n  \n  \n    🖨️\n    Monétaire\n    \"Faire tourner la planche à billets\" sans croissance réelle dilue la valeur de la monnaie. Ex : Weimar 1923, Venezuela 2018."
+    "objectID": "modules/09-monnaie.html#les-trois-types-de-monnaie",
+    "href": "modules/09-monnaie.html#les-trois-types-de-monnaie",
+    "title": "La monnaie et le système bancaire",
+    "section": "Les trois types de monnaie",
+    "text": "Les trois types de monnaie\n\n  \n    💵\n    Monnaie fiduciaire\n    Les billets et pièces. Créée par la banque centrale (BCE). Représente seulement ~5% de la monnaie en circulation.\n    BCE / Banque de France\n  \n  \n    💻\n    Monnaie scripturale\n    Les chiffres sur ton compte bancaire. Créée par les banques commerciales via le crédit. Représente ~95% de la monnaie.\n    BNP, Crédit Agricole…\n  \n  \n    🏦\n    Monnaie de banque centrale\n    Les réserves que les banques commerciales détiennent à la BCE. Sert aux règlements interbancaires.\n    Réserves obligatoires"
   },
   {
-    "objectID": "modules/04-inflation.html#qui-gagne-qui-perd",
-    "href": "modules/04-inflation.html#qui-gagne-qui-perd",
-    "title": "L'inflation",
-    "section": "Qui gagne, qui perd ?",
-    "text": "Qui gagne, qui perd ?\n\n\n\n\n\nActeur\nEffet\nPourquoi\n\n\n\n\nEmprunteurs à taux fixe\n✅ Gagnants\nRemboursent en monnaie dévaluée\n\n\nÉpargnants en cash\n❌ Perdants\nLeur épargne perd du pouvoir d'achat\n\n\nPropriétaires immo\n✅ Souvent gagnants\nLa valeur de leur bien monte\n\n\nSalariés sans indexation\n❌ Perdants\nLeur salaire réel baisse\n\n\nÉtat endetté\n✅ Gagnants\nLa dette \"fond\" en valeur réelle\n\n\n\n\n\n\n  🔗 Liens avec d'autres modules :\n  \n    → Module 05 : comment l'inflation allège la dette publique\n  \n  \n    → Module 09 : comment la BCE crée la monnaie\n  \n  \n    → Module 02 : le monétarisme de Friedman"
+    "objectID": "modules/09-monnaie.html#qui-contrôle-quoi",
+    "href": "modules/09-monnaie.html#qui-contrôle-quoi",
+    "title": "La monnaie et le système bancaire",
+    "section": "Qui contrôle quoi ?",
+    "text": "Qui contrôle quoi ?\n\n\nWarning: le package 'ggplot2' a été compilé avec la version R 4.4.3\n\n\n\n\n\nArchitecture du système monétaire en zone euro\n\n\n\n\n\n  🔗 Liens avec d'autres modules :\n  → Module 04 : les taux directeurs et l'inflation→ Module 05 : la BCE peut racheter des obligations souveraines→ Module 12 : politique monétaire vs budgétaire"
   },
   {
-    "objectID": "modules/04-inflation.html#le-rôle-de-la-bce",
-    "href": "modules/04-inflation.html#le-rôle-de-la-bce",
-    "title": "L'inflation",
-    "section": "Le rôle de la BCE",
-    "text": "Le rôle de la BCE\nLa BCE a pour mandat principal de maintenir l’inflation autour de 2 %. Son outil : les taux directeurs.\n\nMécanisme : BCE ↑ taux → crédit plus cher → moins d’emprunts → moins de consommation → moins de pression sur les prix → inflation ralentit.\nC’est exactement ce qui s’est passé en 2022–2023, avec 10 hausses de taux consécutives.\n\n\n  📰 2022–2024 : l'inflation qu'on a vécue\n  \n    \n      ⛽\n      Le choc Covid + Guerre en Ukraine\n      2021 : les chaînes logistiques mondiales se grippent (Covid). 2022 : la guerre en Ukraine fait s'envoler le gaz et les céréales. Résultat : une inflation par les coûts de 5-6% en France.\n    \n    \n      📊\n      La BCE sort les grands moyens\n      En 18 mois (2022-2023), la BCE a relevé ses taux 10 fois, de 0% à 4,5%. La remontée la plus rapide de son histoire. Résultat : l'inflation a reflué, mais les crédits immobiliers ont explosé.\n    \n    \n      🛒\n      La \"greedflation\" : les profits en cause ?\n      Certains économistes (Stiglitz) ont soutenu que des entreprises ont profité de l'inflation pour augmenter leurs marges au-delà des coûts. Le débat reste ouvert — et très politique.\n    \n  \n\n\n\n🎯 Quiz du module\n5 questions · ~3 min · jusqu'à +40 XP\n\n\n\n\n\n  ← Module 03\n  Module 05 : La dette publique →"
+    "objectID": "modules/09-monnaie.html#les-limites-à-la-création-monétaire",
+    "href": "modules/09-monnaie.html#les-limites-à-la-création-monétaire",
+    "title": "La monnaie et le système bancaire",
+    "section": "Les limites à la création monétaire",
+    "text": "Les limites à la création monétaire\nSi les banques créent librement de la monnaie, pourquoi ne le font-elles pas à l’infini ?\n\n  \n    📊\n    Réserves obligatoires\n    Les banques doivent déposer un % de leurs dépôts à la BCE (1% en zone euro). Frein partiel à la création.\n  \n  \n    💰\n    Fonds propres\n    Les règles de Bâle III imposent aux banques d'avoir assez de capital pour absorber les pertes. Limite les crédits risqués.\n  \n  \n    📈\n    Taux directeurs\n    Quand la BCE monte les taux, emprunter entre banques coûte plus cher → moins de crédits → moins de monnaie créée.\n  \n  \n    🎯\n    Demande de crédit\n    Si personne ne veut emprunter, les banques ne peuvent pas créer de monnaie. La demande est le vrai moteur.\n  \n  \n    ⚠️\n    Risque de faillite\n    Un crédit non remboursé détruit de la monnaie ET ampute les fonds propres. La prudence s'impose d'elle-même.\n  \n  \n    🏛️\n    Autorités de supervision\n    La BCE et l'ACPR en France contrôlent les banques et peuvent limiter leurs activités de crédit."
   },
   {
-    "objectID": "modules/02-courants.html",
-    "href": "modules/02-courants.html",
-    "title": "Les courants de pensée",
+    "objectID": "modules/09-monnaie.html#la-crise-de-2008-vue-autrement",
+    "href": "modules/09-monnaie.html#la-crise-de-2008-vue-autrement",
+    "title": "La monnaie et le système bancaire",
+    "section": "La crise de 2008 vue autrement",
+    "text": "La crise de 2008 vue autrement\nLa crise des subprimes prend un autre sens avec cette grille de lecture : les banques américaines avaient créé massivement de la monnaie via des crédits immobiliers risqués. Quand les emprunteurs ont fait défaut, la monnaie s’est détruite — les bilans se sont effondrés, le crédit s’est gelé, l’économie s’est contractée.\nC’est une déflation par la dette : la destruction de monnaie scripturale est plus dévastatrice qu’une simple récession ordinaire."
+  },
+  {
+    "objectID": "modules/09-monnaie.html#les-cryptomonnaies-une-vraie-alternative",
+    "href": "modules/09-monnaie.html#les-cryptomonnaies-une-vraie-alternative",
+    "title": "La monnaie et le système bancaire",
+    "section": "Les cryptomonnaies : une vraie alternative ?",
+    "text": "Les cryptomonnaies : une vraie alternative ?\n\nLe Bitcoin et autres cryptos ne sont pas de la monnaie au sens économique : leur offre est limitée algorithmiquement (pas de création flexible), leur valeur fluctue trop pour servir d’unité de compte stable, et peu de marchands les acceptent comme moyen de paiement. Ce sont plutôt des actifs spéculatifs. Le débat reste ouvert sur les CBDC (monnaies numériques de banque centrale).\n\n\n  📰 L'actu qui illustre ce module\n  \n    \n      🏦\n      La BCE baisse ses taux (2024)\n      En baissant ses taux directeurs, la BCE rend le crédit moins cher pour les banques, qui peuvent en créer davantage. C'est le mécanisme de transmission de la politique monétaire.\n    \n    \n      🏛️\n      L'euro numérique en projet\n      La BCE développe un \"euro numérique\" (CBDC) : une monnaie de banque centrale accessible directement aux citoyens, sans passer par une banque commerciale. Révolution potentielle.\n    \n    \n      📉\n      Crise Credit Suisse (2023)\n      L'effondrement de Credit Suisse illustre comment la confiance est le vrai fondement du système bancaire. Quand les clients retirent massivement leurs dépôts, même une grande banque peut tomber.\n    \n  \n\n\n\nQuiz du module\n5 questions tirées parmi 12 · jusqu'à +40 XP\n\n\n\n\n\n  ← Module 08\n  Module 10 : Le marché du travail →"
+  },
+  {
+    "objectID": "modules/07-commerce.html",
+    "href": "modules/07-commerce.html",
+    "title": "Le commerce international",
     "section": "",
-    "text": "Module 02\n      Niveau débutant\n      80 XP\n    \n    \n    Libéraux, keynésiens, marxistes… qui dit quoi — et pourquoi ça change tout."
+    "text": "Module 07\n      Niveau intermédiaire\n      100 XP\n    \n    \n    Mondialisation, protectionnisme, balance des paiements — pourquoi les pays échangent et ce que ça change."
   },
   {
-    "objectID": "modules/02-courants.html#pourquoi-y-a-t-il-plusieurs-écoles",
-    "href": "modules/02-courants.html#pourquoi-y-a-t-il-plusieurs-écoles",
-    "title": "Les courants de pensée",
-    "section": "Pourquoi y a-t-il plusieurs écoles ?",
-    "text": "Pourquoi y a-t-il plusieurs écoles ?\nL’économie n’est pas une science exacte avec une seule vérité. Elle repose sur des hypothèses sur le comportement humain, le rôle de l’État, l’efficacité des marchés — autant de points où les économistes divergent sincèrement.\nRésultat : depuis 250 ans, plusieurs grandes familles de pensée s’affrontent."
+    "objectID": "modules/07-commerce.html#pourquoi-les-pays-commercent-ils",
+    "href": "modules/07-commerce.html#pourquoi-les-pays-commercent-ils",
+    "title": "Le commerce international",
+    "section": "Pourquoi les pays commercent-ils ?",
+    "text": "Pourquoi les pays commercent-ils ?\nLa réponse intuitive est : parce qu’on ne sait pas tout faire. Mais l’économiste David Ricardo a montré quelque chose de plus subtil en 1817 : même si un pays est meilleur que tous les autres dans tout, il a quand même intérêt à se spécialiser.\n\nL’avantage comparatif (Ricardo)\n\nL’idée clé : Chaque pays doit se spécialiser dans ce qu’il produit relativement mieux — même s’il pourrait tout faire. C’est plus efficace pour tout le monde.\nExemple concret : La France est bonne en vins ET en avions. Mais elle est relativement meilleure en vins. Elle a intérêt à faire du vin, importer des avions, et laisser l’Allemagne construire les voitures.\n\nC’est contre-intuitif mais mathématiquement solide. C’est le fondement théorique du libre-échange depuis 200 ans."
   },
   {
-    "objectID": "modules/02-courants.html#adam-smith-et-le-libéralisme-classique",
-    "href": "modules/02-courants.html#adam-smith-et-le-libéralisme-classique",
-    "title": "Les courants de pensée",
-    "section": "Adam Smith et le libéralisme classique",
-    "text": "Adam Smith et le libéralisme classique\nAdam Smith (1723–1790) pose les bases dans La Richesse des Nations (1776). Sa thèse centrale : le marché libre, guidé par la “main invisible”, alloue les ressources mieux que n’importe quelle planification.\n\nLa main invisible : En poursuivant son intérêt personnel, chaque agent sert — sans le vouloir — l’intérêt collectif. Le boucher vend de la viande pour gagner sa vie, pas pour te nourrir. Mais tu es nourri quand même."
+    "objectID": "modules/07-commerce.html#la-balance-commerciale",
+    "href": "modules/07-commerce.html#la-balance-commerciale",
+    "title": "Le commerce international",
+    "section": "La balance commerciale",
+    "text": "La balance commerciale\n\n\nWarning: le package 'ggplot2' a été compilé avec la version R 4.4.3\n\n\n\n\n\nBalance commerciale de quelques pays (milliards USD, 2022) — Source : Banque mondiale"
   },
   {
-    "objectID": "modules/02-courants.html#john-maynard-keynes-et-linterventionnisme",
-    "href": "modules/02-courants.html#john-maynard-keynes-et-linterventionnisme",
-    "title": "Les courants de pensée",
-    "section": "John Maynard Keynes et l’interventionnisme",
-    "text": "John Maynard Keynes et l’interventionnisme\nLa crise de 1929 brise le mythe de l’autorégulation des marchés. Keynes (1883–1946) démontre qu’une économie peut rester coincée dans un équilibre de sous-emploi — sans que le marché s’en sorte seul.\nSa solution : l’État doit injecter de la demande via la dépense publique. C’est le multiplicateur keynésien : 1 € de dépense publique génère plus d’1 € de PIB, car cet argent circule et crée des revenus à chaque tour.\n\n\nWarning: le package 'ggplot2' a été compilé avec la version R 4.4.3\n\n\n\n\n\nMultiplicateur keynésien — propension à consommer de 80%"
+    "objectID": "modules/07-commerce.html#libre-échange-vs-protectionnisme",
+    "href": "modules/07-commerce.html#libre-échange-vs-protectionnisme",
+    "title": "Le commerce international",
+    "section": "Libre-échange vs protectionnisme",
+    "text": "Libre-échange vs protectionnisme\n\n\n  \n    🌐\n    Libre-échange\n    Suppression des barrières (droits de douane, quotas). Favorise la spécialisation, baisse les prix, stimule l'innovation. Défendu par l'OMC et la majorité des économistes.\n    Ricardo, Smith, OMC\n  \n\n  \n    🛡️\n    Protectionnisme\n    Taxes à l'import, quotas, subventions aux industries nationales. Protège l'emploi local et les secteurs stratégiques. Risque de guerre commerciale et hausse des prix.\n    Hamilton, List, Trump\n  \n\n  \n    ⚖️\n    La réalité : un entre-deux\n    Aucun pays ne pratique le libre-échange pur. Même les plus libéraux subventionnent leur agriculture ou protègent leurs secteurs stratégiques (semi-conducteurs, défense).\n    IRA américain, Plan industriel UE"
   },
   {
-    "objectID": "modules/02-courants.html#milton-friedman-et-le-monétarisme",
-    "href": "modules/02-courants.html#milton-friedman-et-le-monétarisme",
-    "title": "Les courants de pensée",
-    "section": "Milton Friedman et le monétarisme",
-    "text": "Milton Friedman et le monétarisme\nFriedman (1912–2006) et l’école de Chicago ramènent la confiance dans les marchés. Sa thèse principale : “l’inflation est toujours et partout un phénomène monétaire”. La politique monétaire (contrôle de la masse monétaire) prime sur la politique budgétaire."
+    "objectID": "modules/07-commerce.html#la-balance-des-paiements",
+    "href": "modules/07-commerce.html#la-balance-des-paiements",
+    "title": "Le commerce international",
+    "section": "La balance des paiements",
+    "text": "La balance des paiements\nLa balance des paiements enregistre toutes les transactions économiques entre un pays et le reste du monde. Elle se décompose en :\n\nBalance courante = échanges de biens + services + revenus + transferts\nBalance financière = investissements, prêts, placements à l’étranger\nRéserves de change = ce que la banque centrale détient en devises étrangères\n\n\nLa loi d’équilibre : La balance des paiements est toujours équilibrée comptablement. Un déficit courant (on importe plus qu’on exporte) est forcément financé par un excédent financier (des étrangers investissent chez nous). Les États-Unis ont un déficit commercial colossal — mais aussi les plus gros flux d’investissements entrants."
   },
   {
-    "objectID": "modules/02-courants.html#karl-marx-et-léconomie-critique",
-    "href": "modules/02-courants.html#karl-marx-et-léconomie-critique",
-    "title": "Les courants de pensée",
-    "section": "Karl Marx et l’économie critique",
-    "text": "Karl Marx et l’économie critique\nMarx (1818–1883) refuse d’analyser le capitalisme comme un système neutre. La valeur est créée par le travail, mais captée par le capital. Cette tension structure toute l’économie et mène inévitablement aux crises."
-  },
-  {
-    "objectID": "modules/02-courants.html#tableau-comparatif",
-    "href": "modules/02-courants.html#tableau-comparatif",
-    "title": "Les courants de pensée",
-    "section": "Tableau comparatif",
-    "text": "Tableau comparatif\n\n\n\n\n\nCourant\nRôle de l'État\nConfiance au marché\nFigure clé\n\n\n\n\nLibéral classique\nMinimal\n✅ Très haute\nAdam Smith\n\n\nKeynésien\nActif, stabilisateur\n⚠️ Partielle\nJ.M. Keynes\n\n\nMonétariste\nLimité à la monnaie\n✅ Haute\nM. Friedman\n\n\nMarxiste\nPlanificateur\n❌ Rejetée\nK. Marx\n\n\nNéo-keynésien\nRégulateur souple\n⚠️ Encadrée\nStiglitz, Krugman\n\n\n\n\n\n\n  📰 L'actu qui illustre le débat\n  \n    \n      🏛️\n      Biden vs Thatcher : le retour du keynésianisme ?\n      L'Inflation Reduction Act américain (2022) : 370 milliards de dépenses publiques pour la transition énergétique. Un retour assumé à la logique keynésienne après 40 ans de libéralisme.\n    \n    \n      🇫🇷\n      La France entre deux écoles\n      Le débat sur les retraites, la politique industrielle ou les nationalisations reflète directement l'affrontement entre courants : qui doit décider — le marché ou l'État ?\n    \n    \n      🌐\n      La MMT : théorie ou utopie ?\n      La Modern Monetary Theory postule qu'un État souverain peut dépenser sans limite tant qu'il contrôle sa monnaie. Très débattue — et pratiquée involontairement par certains.\n    \n  \n\n\n\n🎯 Quiz du module\n5 questions · ~3 min · jusqu'à +40 XP\n\n\n\n\n\n  ← Module 01\n  Module 03 : La croissance →"
-  },
-  {
-    "objectID": "glossaire.html",
-    "href": "glossaire.html",
-    "title": "📖 Glossaire",
-    "section": "",
-    "text": "Référence\n    📖 Glossaire\n    Tous les termes clés, définis simplement. Sans bullshit.\n  \n\n\n\n\n\n\n  \n  \n\n\n\n\n  Tout voir\n  🤔 Bases\n  🧠 Courants\n  📈 Croissance\n  💸 Inflation\n  🏛️ Dette\n  ⚖️ Inégalités"
-  },
-  {
-    "objectID": "apropos.html",
-    "href": "apropos.html",
-    "title": "À propos",
-    "section": "",
-    "text": "L'histoire derrière le site — et la philosophie qui le guide.\n  \n\n\n\n\n\n\n  L'idée de départ\n  \n    Ce site est né d'une frustration simple : à chaque dîner où l'on aborde l'économie,\n    deux camps s'affrontent. Ceux qui croient tout comprendre — et ceux qui décrochent immédiatement.\n  \n  \n    La réalité, c'est que la plupart des gens — même très instruits — n'ont jamais eu\n    l'occasion d'apprendre les bases de l'économie de façon claire et engageante.\n    Ce site est une tentative d'y remédier, avec du jeu, des graphiques et zéro jargon gratuit.\n  \n\n\nLa philosophie\n\n  \n    🚫\n    Zéro jargon inutile\n    On n'utilise un terme technique que si on le définit aussitôt.\n  \n  \n    ⚖️\n    Pas de parti pris\n    On présente les courants et leurs arguments. Les faits sont séparés des jugements de valeur.\n  \n  \n    📊\n    Données réelles\n    Tous les graphiques sont faits avec R à partir de données publiques (INSEE, Banque de France, OCDE).\n  \n  \n    🎮\n    Apprendre en jouant\n    XP, niveaux, défis, personnage — pas qu'un gadget. Ça aide à mesurer sa progression.\n  \n  \n    📈\n    Progressif\n    Du plus simple au plus profond. Chaque module prépare le suivant.\n  \n  \n    🔓\n    Tout gratuit\n    Aucun compte, aucun abonnement. La progression est stockée dans ton navigateur.\n  \n\n\nComment c'est fait\n\n  \n    Ce site est construit avec Quarto et R.\n    Les graphiques utilisent ggplot2.\n    Le système de jeu (XP, niveaux, défis, personnage SVG) est en JavaScript vanilla\n    avec persistance dans le localStorage du navigateur — aucun serveur, aucune donnée collectée.\n  \n  \n    Quarto\n    R / ggplot2\n    Vanilla JS\n    localStorage\n    SCSS custom\n    SVG pur\n  \n\n\nSources & lectures recommandées\n\n  \n    📗\n    Piketty — Le Capital au XXIe siècle\n    La référence sur les inégalités. Dense mais accessible dans ses grandes thèses.\n  \n  \n    📘\n    Mankiw — Principes de l'économie\n    Le manuel de référence mondial. Exhaustif, pédagogique, un peu aride.\n  \n  \n    📙\n    Harford — The Undercover Economist\n    L'économie expliquée par la vie quotidienne. Brillant et très accessible.\n  \n  \n    🌐\n    INSEE — insee.fr\n    Toutes les données françaises en accès libre. L'autorité statistique nationale.\n  \n\n\n\n\n  \n    Ta progression\n    Stockée localement dans ton navigateur, jamais envoyée nulle part.\n  \n  \n    🔄 Réinitialiser la progression"
-  },
-  {
-    "objectID": "modules/01-definition.html",
-    "href": "modules/01-definition.html",
-    "title": "C'est quoi l'économie ?",
-    "section": "",
-    "text": "Module 01\n      Niveau débutant\n      50 XP\n    \n    \n    \n      La discipline qui explique pourquoi tu ne peux pas tout avoir en même temps."
-  },
-  {
-    "objectID": "modules/01-definition.html#la-définition-classique",
-    "href": "modules/01-definition.html#la-définition-classique",
-    "title": "C'est quoi l'économie ?",
-    "section": "La définition classique",
-    "text": "La définition classique\nL’économie, c’est l’étude de la façon dont les individus, les entreprises et les États font des choix face à des ressources rares.\n\nEn une phrase : L’économie répond à trois questions fondamentales — quoi produire ? comment ? pour qui ?\n\nLa rareté est le concept fondateur : si tout était abondant et gratuit, il n’y aurait pas de problème économique. C’est parce que le temps, l’argent, les matières premières sont limités qu’on doit choisir — et donc faire des compromis."
-  },
-  {
-    "objectID": "modules/01-definition.html#micro-vs-macro",
-    "href": "modules/01-definition.html#micro-vs-macro",
-    "title": "C'est quoi l'économie ?",
-    "section": "Micro vs Macro",
-    "text": "Micro vs Macro\n\n  \n    🔬\n    Microéconomie\n    Étudie les comportements individuels : un ménage, une entreprise, un marché particulier.\n    Ex : Pourquoi les fraises baissent en été ?\n  \n  \n    🌍\n    Macroéconomie\n    Étudie l'économie dans son ensemble : croissance, chômage, inflation, dette d'un pays.\n    Ex : Pourquoi y a-t-il du chômage en France ?"
-  },
-  {
-    "objectID": "modules/01-definition.html#économie-positive-vs-normative",
-    "href": "modules/01-definition.html#économie-positive-vs-normative",
-    "title": "C'est quoi l'économie ?",
-    "section": "Économie positive vs normative",
-    "text": "Économie positive vs normative\nC’est une distinction cruciale, souvent oubliée dans les débats politiques :\n\nÉconomie positive = décrit ce qui est. Neutre, factuelle. “Le chômage est à 7 %.”\nÉconomie normative = dit ce qui devrait être. Implique des valeurs. “Le chômage est trop élevé, l’État devrait agir.”\n\nLa confusion entre les deux génère la majorité des faux débats économiques que tu entends à la radio."
-  },
-  {
-    "objectID": "modules/01-definition.html#léconomie-parmi-les-sciences-sociales",
-    "href": "modules/01-definition.html#léconomie-parmi-les-sciences-sociales",
-    "title": "C'est quoi l'économie ?",
-    "section": "L’économie parmi les sciences sociales",
-    "text": "L’économie parmi les sciences sociales\n\n\nWarning: le package 'ggplot2' a été compilé avec la version R 4.4.3\n\n\n\n\n\nL’économie emprunte à toutes ces disciplines\n\n\n\n\n\n  📰 L'actu éco qui illustre ce module\n  \n    \n      🤖\n      L'IA va-t-elle changer les règles ?\n      L'intelligence artificielle repose la question de la rareté du travail qualifié — un problème d'allocation des ressources très économique.\n    \n    \n      🌍\n      Le débat positif/normatif en vrai\n      Quand des politiques affirment que \"la dette, c'est mauvais\", ils font de l'économie normative — pas positive. Une distinction clé pour décrypter les discours.\n    \n    \n      🎓\n      Pourquoi l'éco est mal enseignée\n      En France, l'économie reste peu accessible. Résultat : beaucoup d'opinions, peu de faits dans les débats publics sur l'emploi, la fiscalité ou la mondialisation.\n    \n  \n\n\n\n🎯 Quiz du module\n5 questions · ~3 min · jusqu'à +40 XP\n\n\n\n\n\n\n  ← Accueil\n  Module 02 : Courants de pensée →"
-  },
-  {
-    "objectID": "modules/03-croissance.html",
-    "href": "modules/03-croissance.html",
-    "title": "La croissance économique",
-    "section": "",
-    "text": "Module 03\n      Niveau intermédiaire\n      80 XP\n    \n    \n    PIB, IDH, croissance verte, décroissance — le vrai débat derrière les chiffres."
-  },
-  {
-    "objectID": "modules/03-croissance.html#le-pib-lindicateur-roi-et-ses-limites",
-    "href": "modules/03-croissance.html#le-pib-lindicateur-roi-et-ses-limites",
-    "title": "La croissance économique",
-    "section": "Le PIB — l’indicateur roi (et ses limites)",
-    "text": "Le PIB — l’indicateur roi (et ses limites)\nLe Produit Intérieur Brut mesure la valeur totale des biens et services finaux produits sur un territoire en un an. C’est le thermomètre de l’activité économique — utilisé dans le monde entier, critiqué dans le monde entier.\n\nFormule simplifiée :\nPIB = Consommation + Investissement + Dépenses publiques + (Exports − Imports)\n\n\n  \n    ❌\n    Ce que le PIB ne mesure pas\n    Bonheur, inégalités, travail domestique, destruction environnementale, économie informelle.\n  \n  \n    ✅\n    Ce qu'il mesure bien\n    Le flux d'activité marchande. La capacité d'un État à financer ses services publics.\n  \n  \n    💡\n    L'anecdote révélatrice\n    Un accident de voiture fait monter le PIB (réparations, hôpital). Kafkaïen mais vrai."
-  },
-  {
-    "objectID": "modules/03-croissance.html#lévolution-du-pib-français-depuis-1960",
-    "href": "modules/03-croissance.html#lévolution-du-pib-français-depuis-1960",
-    "title": "La croissance économique",
-    "section": "L’évolution du PIB français depuis 1960",
-    "text": "L’évolution du PIB français depuis 1960\n\n\nWarning: le package 'ggplot2' a été compilé avec la version R 4.4.3\n\n\n\n\n\nTaux de croissance annuel du PIB en France — Source : Banque mondiale / INSEE"
-  },
-  {
-    "objectID": "modules/03-croissance.html#les-alternatives-au-pib",
-    "href": "modules/03-croissance.html#les-alternatives-au-pib",
-    "title": "La croissance économique",
-    "section": "Les alternatives au PIB",
-    "text": "Les alternatives au PIB\n\n  \n    🌍\n    IDH — Indice de Développement Humain\n    Créé par le PNUD (ONU). Combine PIB/habitant + espérance de vie + niveau d'éducation.\n    Meilleur que le PIB seulONU\n  \n  \n    🌿\n    Empreinte écologique\n    Espace naturel nécessaire pour soutenir notre mode de vie. Si tout le monde vivait comme un Français, il faudrait 2,7 planètes.\n    Limite planétaireWWF\n  \n  \n    😊\n    Bonheur National Brut\n    Inventé par le Bhoutan. Intègre bien-être subjectif, équilibre écologique, gouvernance, culture.\n    Indicateur philosophiqueBhoutan"
-  },
-  {
-    "objectID": "modules/03-croissance.html#le-grand-débat-croissance-ou-décroissance",
-    "href": "modules/03-croissance.html#le-grand-débat-croissance-ou-décroissance",
-    "title": "La croissance économique",
-    "section": "Le grand débat : croissance ou décroissance ?",
-    "text": "Le grand débat : croissance ou décroissance ?\n\nPro-croissance : La croissance réduit la pauvreté, finance les services publics, permet l’innovation technologique — y compris verte. On peut découpler croissance et émissions carbone.\nDécroissance : Croissance infinie sur une planète finie, c’est impossible par définition. Il faut réduire la production et la consommation, pas juste les rendre “plus vertes”.\n\nCe débat est l’un des plus importants de notre siècle. Les deux camps ont des arguments sérieux.\n\n  📰 Croissance : l'actu qui fait débat\n  \n    \n      🌡️\n      Le PIB vert — oxymore ou solution ?\n      L'UE travaille sur un \"PIB vert\" qui intègrerait le coût des externalités environnementales. Si la destruction d'une forêt était comptée négativement, le PIB mondial s'effondrerait.\n    \n    \n      🇯🇵\n      Le Japon : riche sans croissance\n      Le Japon stagne depuis 30 ans mais reste un pays très développé. Un cas d'école pour ceux qui se demandent si la croissance est vraiment indispensable au bien-être.\n    \n    \n      🇨🇳\n      Le ralentissement chinois\n      La Chine vise 5% de croissance — un chiffre que l'Europe envierait, mais un ralentissement historique pour Pékin. Quand une économie \"mature\", la croissance naturellement baisse.\n    \n  \n\n\n\n🎯 Quiz du module\n5 questions · ~3 min · jusqu'à +40 XP\n\n\n\n\n\n  ← Module 02\n  Module 04 : L'inflation →"
+    "objectID": "modules/07-commerce.html#la-mondialisation-bilan-nuancé",
+    "href": "modules/07-commerce.html#la-mondialisation-bilan-nuancé",
+    "title": "Le commerce international",
+    "section": "La mondialisation : bilan nuancé",
+    "text": "La mondialisation : bilan nuancé\n\n\n\n\n\nDimension\nGains réels\nCoûts réels\n\n\n\n\nPauvreté mondiale\n✅ Forte réduction (Chine, Inde)\n❌ Inégalités au sein des pays riches\n\n\nPrix à la consommation\n✅ Baisse durable des prix industriels\n❌ Désindustrialisation en Occident\n\n\nInnovation\n✅ Diffusion rapide des technologies\n❌ Dépendances stratégiques (masques, puces)\n\n\nEnvironnement\n✅ Accès aux technologies vertes\n❌ Transport, externalisation de la pollution\n\n\n\n\n\n\n\n\n  📰 L'actu qui illustre ce module\n  \n    \n      🇺🇸🇨🇳\n      La guerre commerciale USA-Chine\n      Trump (2018) puis Biden ont imposé des droits de douane sur les produits chinois — semi-conducteurs, acier, véhicules électriques. La Chine a riposté. Un retour au protectionnisme assumé.\n    \n    \n      🇪🇺\n      Le \"Buy European Act\"\n      Face aux subventions américaines (IRA) et chinoises, l'UE a réagi avec son propre plan industriel. Le libre-échange recule partout au profit de la souveraineté industrielle.\n    \n    \n      🚢\n      La crise des chaînes logistiques\n      Le Covid a révélé notre dépendance : masques fabriqués en Chine, puces à Taïwan, gaz en Russie. La \"relocalisation\" et le \"reshoring\" sont devenus des priorités politiques majeures.\n    \n  \n\n\n\n🎯 Quiz du module\n5 questions tirées parmi 12 · jusqu'à +40 XP\n\n\n\n\n\n  ← Module 06\n  Module 08 : Idées reçues →"
   },
   {
     "objectID": "modules/05-dette.html",
@@ -301,46 +266,361 @@
     "text": "La règle de soutenabilité\nCe qui compte, ce n’est pas le chiffre absolu de la dette — c’est le ratio dette/PIB et surtout la comparaison entre :\n\ng = taux de croissance de l’économie\nr = taux d’intérêt sur la dette\n\n\nSi g &gt; r → la dette diminue automatiquement en % du PIB, même sans surplus budgétaire.\nSi r &gt; g → la dette explose mécaniquement. C’est le scénario dangereux — celui de la Grèce en 2010.\n\n\n  📰 La dette qui fait la une\n  \n    \n      🇫🇷\n      110% du PIB et après ?\n      La France a vu sa dette dépasser 3 100 milliards d'euros après le Covid. La charge d'intérêts approche 50 Mds/an. Pour la première fois depuis longtemps, les taux élevés rendent la gestion difficile.\n    \n    \n      🇺🇸\n      Le plafond de dette américain\n      Les États-Unis ont une limite légale d'endettement — et ils la dépassent régulièrement avec l'accord du Congrès. Un feuilleton politique récurrent qui illustre la spécificité de la dette souveraine.\n    \n    \n      🌍\n      La crise de la dette des pays pauvres\n      Des dizaines de pays en développement peinent à rembourser leurs dettes libellées en dollars. La hausse des taux américains a rendu ces dettes insoutenables — un problème global souvent oublié.\n    \n  \n\n\n\n🎯 Quiz du module\n5 questions · ~3 min · jusqu'à +40 XP\n\n\n\n\n\n  ← Module 04\n  Module 06 : Les inégalités →"
   },
   {
-    "objectID": "modules/07-commerce.html",
-    "href": "modules/07-commerce.html",
-    "title": "Le commerce international",
+    "objectID": "modules/03-croissance.html",
+    "href": "modules/03-croissance.html",
+    "title": "La croissance économique",
     "section": "",
-    "text": "Module 07\n      Niveau intermédiaire\n      100 XP\n    \n    \n    Mondialisation, protectionnisme, balance des paiements — pourquoi les pays échangent et ce que ça change."
+    "text": "Module 03\n      Niveau intermédiaire\n      80 XP\n    \n    \n    \n      Le PIB grimpe de 1,1 % — et alors ? Ce que ce chiffre dit vraiment de ta vie."
   },
   {
-    "objectID": "modules/07-commerce.html#pourquoi-les-pays-commercent-ils",
-    "href": "modules/07-commerce.html#pourquoi-les-pays-commercent-ils",
-    "title": "Le commerce international",
-    "section": "Pourquoi les pays commercent-ils ?",
-    "text": "Pourquoi les pays commercent-ils ?\nLa réponse intuitive est : parce qu’on ne sait pas tout faire. Mais l’économiste David Ricardo a montré quelque chose de plus subtil en 1817 : même si un pays est meilleur que tous les autres dans tout, il a quand même intérêt à se spécialiser.\n\nL’avantage comparatif (Ricardo)\n\nL’idée clé : Chaque pays doit se spécialiser dans ce qu’il produit relativement mieux — même s’il pourrait tout faire. C’est plus efficace pour tout le monde.\nExemple concret : La France est bonne en vins ET en avions. Mais elle est relativement meilleure en vins. Elle a intérêt à faire du vin, importer des avions, et laisser l’Allemagne construire les voitures.\n\nC’est contre-intuitif mais mathématiquement solide. C’est le fondement théorique du libre-échange depuis 200 ans."
+    "objectID": "modules/03-croissance.html#le-pib-ce-que-cest-concrètement",
+    "href": "modules/03-croissance.html#le-pib-ce-que-cest-concrètement",
+    "title": "La croissance économique",
+    "section": "Le PIB : ce que c’est, concrètement",
+    "text": "Le PIB : ce que c’est, concrètement\nChaque matin, des millions de personnes fabriquent des choses, vendent des services, se font couper les cheveux, réparent des voitures, écrivent des rapports, soignent des malades. Tout ça crée de la valeur. Le PIB, c’est la somme de toute cette valeur produite sur un an, sur un territoire.\nEn France : environ 2 800 milliards d’euros en 2025. Divisé par 68 millions d’habitants, ça donne ~41 000 € par personne — soit le PIB par habitant.\n\nAttention à la confusion classique : le PIB mesure la production annuelle, pas la richesse totale accumulée. La France n’a pas 2 800 Mds d’euros “dans son compte en banque” — c’est ce qu’elle produit chaque année."
   },
   {
-    "objectID": "modules/07-commerce.html#la-balance-commerciale",
-    "href": "modules/07-commerce.html#la-balance-commerciale",
-    "title": "Le commerce international",
-    "section": "La balance commerciale",
-    "text": "La balance commerciale\n\n\nWarning: le package 'ggplot2' a été compilé avec la version R 4.4.3\n\n\n\n\n\nBalance commerciale de quelques pays (milliards USD, 2022) — Source : Banque mondiale"
+    "objectID": "modules/03-croissance.html#ce-que-le-pib-compte-et-ce-quil-oublie",
+    "href": "modules/03-croissance.html#ce-que-le-pib-compte-et-ce-quil-oublie",
+    "title": "La croissance économique",
+    "section": "Ce que le PIB compte — et ce qu’il oublie",
+    "text": "Ce que le PIB compte — et ce qu’il oublie\n\n  \n    ✅\n    Ce que le PIB compte\n    \n      La réparation d'une voiture après un accident\n      Les soins médicaux (même si tu es malade à cause d'une pollution)\n      La construction d'une prison\n      La déforestation pour vendre le bois\n    \n  \n  \n    ❌\n    Ce que le PIB ignore\n    \n      Cuisiner pour sa famille (non marchand)\n      S'occuper de ses enfants ou parents âgés\n      Le bonheur, la santé mentale, les liens sociaux\n      La destruction du capital naturel (forêts, sols, eau)\n    \n  \n\nLe paradoxe : un pays où les gens tombent plus souvent malades et vont plus souvent chez le médecin voit son PIB augmenter. La catastrophe de l’Erika (marée noire, 1999) a mécaniquement augmenté le PIB français — nettoyage, réparation, procès, soins. C’est absurde, et c’est pour ça que beaucoup d’économistes cherchent des alternatives."
   },
   {
-    "objectID": "modules/07-commerce.html#libre-échange-vs-protectionnisme",
-    "href": "modules/07-commerce.html#libre-échange-vs-protectionnisme",
-    "title": "Le commerce international",
-    "section": "Libre-échange vs protectionnisme",
-    "text": "Libre-échange vs protectionnisme\n\n\n  \n    🌐\n    Libre-échange\n    Suppression des barrières (droits de douane, quotas). Favorise la spécialisation, baisse les prix, stimule l'innovation. Défendu par l'OMC et la majorité des économistes.\n    Ricardo, Smith, OMC\n  \n\n  \n    🛡️\n    Protectionnisme\n    Taxes à l'import, quotas, subventions aux industries nationales. Protège l'emploi local et les secteurs stratégiques. Risque de guerre commerciale et hausse des prix.\n    Hamilton, List, Trump\n  \n\n  \n    ⚖️\n    La réalité : un entre-deux\n    Aucun pays ne pratique le libre-échange pur. Même les plus libéraux subventionnent leur agriculture ou protègent leurs secteurs stratégiques (semi-conducteurs, défense).\n    IRA américain, Plan industriel UE"
+    "objectID": "modules/03-croissance.html#la-croissance-en-france-depuis-1960",
+    "href": "modules/03-croissance.html#la-croissance-en-france-depuis-1960",
+    "title": "La croissance économique",
+    "section": "La croissance en France depuis 1960",
+    "text": "La croissance en France depuis 1960\n\n\nWarning: le package 'ggplot2' a été compilé avec la version R 4.4.3\n\n\n\n\n\nTaux de croissance du PIB français en volume (1961–2024) — Source : INSEE"
   },
   {
-    "objectID": "modules/07-commerce.html#la-balance-des-paiements",
-    "href": "modules/07-commerce.html#la-balance-des-paiements",
-    "title": "Le commerce international",
-    "section": "La balance des paiements",
-    "text": "La balance des paiements\nLa balance des paiements enregistre toutes les transactions économiques entre un pays et le reste du monde. Elle se décompose en :\n\nBalance courante = échanges de biens + services + revenus + transferts\nBalance financière = investissements, prêts, placements à l’étranger\nRéserves de change = ce que la banque centrale détient en devises étrangères\n\n\nLa loi d’équilibre : La balance des paiements est toujours équilibrée comptablement. Un déficit courant (on importe plus qu’on exporte) est forcément financé par un excédent financier (des étrangers investissent chez nous). Les États-Unis ont un déficit commercial colossal — mais aussi les plus gros flux d’investissements entrants."
+    "objectID": "modules/03-croissance.html#les-trente-glorieuses-quand-tout-allait-vite",
+    "href": "modules/03-croissance.html#les-trente-glorieuses-quand-tout-allait-vite",
+    "title": "La croissance économique",
+    "section": "Les Trente Glorieuses : quand tout allait vite",
+    "text": "Les Trente Glorieuses : quand tout allait vite\nDe 1945 à 1975, la France a connu une croissance de 5 à 6 % par an. En 30 ans, le niveau de vie a été multiplié par 4. C’est ce qu’on appelle les Trente Glorieuses.\nPour comprendre ce que ça veut dire concrètement :\n\n  Ce que 5 % de croissance veut dire dans une vie\n  À 5 % par an, le PIB double en 14 ans (règle des 70 : divise 70 par le taux de croissance). Sur une carrière de 40 ans, un ouvrier vivait la transformation de la société — du poste de radio noir et blanc à la télé couleur, de la 2CV aux autoroutes, du loyer sans salle de bain à l'appartement avec baignoire.\n  Aujourd'hui en France : 1 % par an. Le même calcul donne un doublement en 70 ans. La croissance faible rend les arbitrages politiques (retraites, santé, transition énergétique) beaucoup plus douloureux."
   },
   {
-    "objectID": "modules/07-commerce.html#la-mondialisation-bilan-nuancé",
-    "href": "modules/07-commerce.html#la-mondialisation-bilan-nuancé",
-    "title": "Le commerce international",
-    "section": "La mondialisation : bilan nuancé",
-    "text": "La mondialisation : bilan nuancé\n\n\n\n\n\nDimension\nGains réels\nCoûts réels\n\n\n\n\nPauvreté mondiale\n✅ Forte réduction (Chine, Inde)\n❌ Inégalités au sein des pays riches\n\n\nPrix à la consommation\n✅ Baisse durable des prix industriels\n❌ Désindustrialisation en Occident\n\n\nInnovation\n✅ Diffusion rapide des technologies\n❌ Dépendances stratégiques (masques, puces)\n\n\nEnvironnement\n✅ Accès aux technologies vertes\n❌ Transport, externalisation de la pollution\n\n\n\n\n\n\n\n\n  📰 L'actu qui illustre ce module\n  \n    \n      🇺🇸🇨🇳\n      La guerre commerciale USA-Chine\n      Trump (2018) puis Biden ont imposé des droits de douane sur les produits chinois — semi-conducteurs, acier, véhicules électriques. La Chine a riposté. Un retour au protectionnisme assumé.\n    \n    \n      🇪🇺\n      Le \"Buy European Act\"\n      Face aux subventions américaines (IRA) et chinoises, l'UE a réagi avec son propre plan industriel. Le libre-échange recule partout au profit de la souveraineté industrielle.\n    \n    \n      🚢\n      La crise des chaînes logistiques\n      Le Covid a révélé notre dépendance : masques fabriqués en Chine, puces à Taïwan, gaz en Russie. La \"relocalisation\" et le \"reshoring\" sont devenus des priorités politiques majeures.\n    \n  \n\n\n\n🎯 Quiz du module\n5 questions tirées parmi 12 · jusqu'à +40 XP\n\n\n\n\n\n  ← Module 06\n  Module 08 : Idées reçues →"
+    "objectID": "modules/03-croissance.html#au-delà-du-pib-mesurer-ce-qui-compte-vraiment",
+    "href": "modules/03-croissance.html#au-delà-du-pib-mesurer-ce-qui-compte-vraiment",
+    "title": "La croissance économique",
+    "section": "Au-delà du PIB : mesurer ce qui compte vraiment",
+    "text": "Au-delà du PIB : mesurer ce qui compte vraiment\n\nL’IDH (Indice de Développement Humain) combine trois dimensions : PIB par habitant, espérance de vie et niveau d’éducation. La Norvège a un IDH de 0,96 (proche du maximum), contre 0,45 pour le Niger malgré des ressources pétrolières importantes.\n\n\n\n\n\n\nIndicateur\nCe qu'il mesure\nCe qu'il rate\n\n\n\n\nPIB/habitant\nRichesse produite par personne\nInégalités, environnement, non-marchand\n\n\nIDH\nPIB + santé + éducation\nInégalités internes, bonheur, démocratie\n\n\nEmpreinte écologique\nPression sur les ressources naturelles\nBien-être social, services publics\n\n\nBNB (Bhoutan)\nBonheur national brut — mesure le bien-être subjectif\nDifficilement comparable, subjectif"
+  },
+  {
+    "objectID": "modules/03-croissance.html#la-croissance-peut-elle-être-verte",
+    "href": "modules/03-croissance.html#la-croissance-peut-elle-être-verte",
+    "title": "La croissance économique",
+    "section": "La croissance peut-elle être verte ?",
+    "text": "La croissance peut-elle être verte ?\nC’est le grand débat de notre époque. Deux camps :\n\n  \n    🌱\n    Les optimistes du découplage\n    La France émet 30 % de moins de CO2 qu'en 1990 avec un PIB plus élevé. L'énergie propre et l'efficacité énergétique permettent de \"découpler\" croissance et empreinte. C'est possible.\n    Nordhaus, OCDE, Commission européenne\n  \n  \n    🛑\n    Les tenants de la décroissance\n    Le découplage n'est qu'apparent — on a juste délocalisé nos émissions. Les limites planétaires sont réelles et imposent de réduire la production totale, même au prix d'un PIB plus faible.\n    Latouche, Raworth, Hickel\n  \n\n\n\n  📰 Croissance : l'actu qui fait débat\n  \n    \n      🇩🇪\n      L'Allemagne en récession\n      L'Allemagne est en récession technique pour la 2e année consécutive. Son modèle — industrie lourde dépendante du gaz russe et des marchés chinois — est en crise. Que devient l'Europe sans son moteur ?\n    \n    \n      🇨🇳\n      La Chine relance à 1 000 Mds\n      Face à la déflation et à la crise immobilière, Pékin a lancé le plus grand plan de stimulus de son histoire. Du pur keynésianisme d'État — mais le multiplicateur sera-t-il suffisant pour relancer la demande intérieure ?\n    \n    \n      🌡️\n      Les coûts du climat sur le PIB\n      Swiss Re estime que le changement climatique pourrait amputer le PIB mondial de 10 à 20 % d'ici 2050. La croissance qui détruit le capital naturel est-elle vraiment de la croissance ?\n    \n  \n\n\n\n🎯 Quiz du module\n5 questions tirées parmi 12 · jusqu'à +40 XP\n\n\n\n\n\n  ← Module 02\n  Module 04 : L'inflation →"
+  },
+  {
+    "objectID": "modules/01-definition.html",
+    "href": "modules/01-definition.html",
+    "title": "C'est quoi l'économie ?",
+    "section": "",
+    "text": "Module 01\n      Niveau débutant\n      50 XP\n    \n    \n    \n      La discipline qui explique pourquoi tu ne peux pas tout avoir en même temps."
+  },
+  {
+    "objectID": "modules/01-definition.html#commence-par-ça-tu-fais-de-léco-tous-les-jours",
+    "href": "modules/01-definition.html#commence-par-ça-tu-fais-de-léco-tous-les-jours",
+    "title": "C'est quoi l'économie ?",
+    "section": "Commence par ça : tu fais de l’éco tous les jours",
+    "text": "Commence par ça : tu fais de l’éco tous les jours\nCe matin, tu t’es levé(e). Tu avais 30 minutes avant de partir. Tu as choisi entre : prendre une douche longue, petit-déjeuner tranquillement, répondre à un message, ou te rendormir 10 minutes.\nTu as fait de l’économie. Tu as alloué une ressource rare (le temps) entre des usages qui se concurrençaient.\nL’économie ne parle pas que de la Bourse, des taux d’intérêt ou du budget de l’État. Elle décrit quelque chose de beaucoup plus fondamental : comment on prend des décisions quand on ne peut pas tout avoir.\n\nLa définition simple : L’économie étudie comment les individus, les entreprises et les États font des choix face à des ressources limitées. Ces ressources peuvent être du temps, de l’argent, de l’énergie, des matières premières — tout ce qui est rare."
+  },
+  {
+    "objectID": "modules/01-definition.html#la-rareté-le-point-de-départ-de-tout",
+    "href": "modules/01-definition.html#la-rareté-le-point-de-départ-de-tout",
+    "title": "C'est quoi l'économie ?",
+    "section": "La rareté : le point de départ de tout",
+    "text": "La rareté : le point de départ de tout\nImagine un monde où tout serait gratuit et illimité — l’air en bouteille, les appartements à Paris, les chirurgiens cardiaques, les heures dans une journée. Il n’y aurait aucun problème économique. Personne n’aurait à choisir.\nMais ce monde n’existe pas. Et c’est là que l’économie commence.\n\n  \n    ⏰\n    Le temps\n    24h par jour, pour tout le monde. La ressource la plus démocratiquement rare qui soit. Chaque heure passée à une chose est une heure qu'on ne passe pas à une autre.\n    Exemple : regarder Netflix ou réviser\n  \n  \n    💶\n    L'argent\n    Même les très riches font des choix. Payer ses impôts, investir, dépenser — tout revenu dépensé quelque part n'est pas dépensé ailleurs.\n    Exemple : vacances ou épargne retraite\n  \n  \n    👩‍⚕️\n    Les ressources humaines\n    Il n'y a pas assez de médecins, d'enseignants ou d'ingénieurs pour satisfaire tous les besoins. Qui les forme ? Combien les paye-t-on ? C'est de l'économie.\n    Exemple : déserts médicaux"
+  },
+  {
+    "objectID": "modules/01-definition.html#le-coût-dopportunité-ce-que-tu-abandonnes-en-choisissant",
+    "href": "modules/01-definition.html#le-coût-dopportunité-ce-que-tu-abandonnes-en-choisissant",
+    "title": "C'est quoi l'économie ?",
+    "section": "Le coût d’opportunité : ce que tu abandonnes en choisissant",
+    "text": "Le coût d’opportunité : ce que tu abandonnes en choisissant\nQuand tu choisis A, tu renonces à B. Cette valeur de B — ce que tu sacrifies — s’appelle le coût d’opportunité.\nC’est l’un des concepts les plus importants de l’économie, et le plus souvent oublié dans la vraie vie.\n\n  Exemples concrets de coûts d'opportunité\n  \n    \n      🏠\n      Acheter sa résidence principale — le coût d'opportunité, c'est les 300 000 € qui auraient pu être investis en bourse ou garder une flexibilité géographique pour changer de ville si une meilleure opportunité professionnelle se présente.\n    \n    \n      🎓\n      Faire un master — 2 ans d'études = 2 ans de salaire sacrifiés, en plus des frais de scolarité. L'investissement ne vaut que si les gains futurs compensent ce manque à gagner.\n    \n    \n      🚗\n      Posséder une voiture à Paris — au-delà du coût direct (crédit, assurance, parking), le vrai coût d'opportunité est la somme investie autrement — et le temps passé à trouver à se garer."
+  },
+  {
+    "objectID": "modules/01-definition.html#micro-vs-macro-deux-façons-de-zoomer",
+    "href": "modules/01-definition.html#micro-vs-macro-deux-façons-de-zoomer",
+    "title": "C'est quoi l'économie ?",
+    "section": "Micro vs Macro : deux façons de zoomer",
+    "text": "Micro vs Macro : deux façons de zoomer\nL’économie peut regarder les mêmes phénomènes à deux échelles très différentes. Pense à Google Maps : tu peux voir ta rue ou le continent entier.\n\n  \n    🔬\n    Microéconomie\n    Zoom sur un agent, un marché, une décision. Pourquoi les fraises coûtent moins cher en juin ? Comment une entreprise fixe ses prix ? Que fait un ménage quand son loyer augmente ?\n    L'arbre\n  \n  \n    🌍\n    Macroéconomie\n    Zoom arrière sur toute l'économie d'un pays ou du monde. Le chômage national, la croissance du PIB, l'inflation, la dette publique — les grands agrégats qui font les JT.\n    La forêt\n  \n\n\nBonne nouvelle : ce site fait les deux. Les premiers modules (inflation, dette, croissance) sont de la macro — ce qu’on entend aux infos. Les modules plus avancés plongent dans la micro des marchés spécifiques."
+  },
+  {
+    "objectID": "modules/01-definition.html#la-distinction-qui-change-tout-positif-vs-normatif",
+    "href": "modules/01-definition.html#la-distinction-qui-change-tout-positif-vs-normatif",
+    "title": "C'est quoi l'économie ?",
+    "section": "La distinction qui change tout : positif vs normatif",
+    "text": "La distinction qui change tout : positif vs normatif\nC’est sans doute la distinction la plus utile pour ne plus se faire avoir dans les débats économiques — à la télé, autour d’un dîner, sur les réseaux.\nÉconomie positive : décrit ce qui est. Factuel, vérifiable, ne prend pas position. “Le chômage est à 7,3 % en France au premier trimestre 2026.”\nÉconomie normative : dit ce qui devrait être. Implique des valeurs, des priorités, des choix politiques. “Le gouvernement devrait dépenser plus pour réduire le chômage.”\n\n\n\n\n\nÉnoncé\nPositif ou normatif ?\nPourquoi\n\n\n\n\n\"La France a une dette de 3 200 milliards d'euros.\"\nPositif\nVérifiable, sourcé (INSEE), ne dit pas si c'est bien ou mal\n\n\n\"La dette est une bombe à retardement pour nos enfants.\"\nNormatif\nJugement de valeur déguisé en fait — \"bombe\" est une métaphore alarmiste\n\n\n\"Le SMIC est à 1 800 € brut depuis janvier 2026.\"\nPositif\nFait vérifiable sur le site du gouvernement\n\n\n\"Le SMIC est trop élevé — il détruit des emplois.\"\nNormatif\nThèse économique contestée, pas un fait — et l'adjectif \"trop\" encode un jugement\n\n\n\n\n\n\n\n  Dans 80 % des débats économiques que tu entends, quelqu'un présente un énoncé normatif comme s'il était positif — comme si son opinion était un fait scientifique. Une fois que tu vois cette distinction, tu ne peux plus l'ignorer."
+  },
+  {
+    "objectID": "modules/01-definition.html#les-trois-questions-fondamentales-de-toute-économie",
+    "href": "modules/01-definition.html#les-trois-questions-fondamentales-de-toute-économie",
+    "title": "C'est quoi l'économie ?",
+    "section": "Les trois questions fondamentales de toute économie",
+    "text": "Les trois questions fondamentales de toute économie\nToute société, riche ou pauvre, libérale ou planifiée, doit répondre aux mêmes trois questions :\n\n  \n    1\n    Quoi produire ? Des voitures électriques ou à essence ? Des hôpitaux ou des gymnases ? Des HLM ou des bureaux ? Chaque société fait ces choix — soit via le marché, soit via l'État, soit les deux.\n  \n  \n    2\n    Comment produire ? Avec beaucoup de main-d'œuvre ou beaucoup de machines ? En France ou en Asie du Sud-Est ? De façon polluante ou propre ? Ce sont des arbitrages économiques qui ont des conséquences sociales et environnementales.\n  \n  \n    3\n    Pour qui produire ? Qui accède aux soins, à l'éducation, au logement ? La répartition des richesses — via les salaires, les prix, les impôts — répond à cette question. C'est le cœur du module sur les inégalités.\n  \n\n\n  📰 L'actu qui illustre ce module\n  \n    \n      ⏰\n      La semaine de 4 jours : un arbitrage\n      Plusieurs pays expérimentent la semaine de 4 jours. Le débat est typiquement économique : gagner en bien-être et productivité (gains) vs moins d'heures de production (coût). Un arbitrage pur.\n    \n    \n      🏠\n      Louer ou acheter ? Le vrai calcul\n      La décision louer/acheter est un problème de coût d'opportunité classique. L'apport immobilisé, les intérêts du crédit, la flexibilité perdue — les économistes ont des outils pour comparer.\n    \n    \n      🌡️\n      Le positif/normatif en politique\n      Quand un ministre affirme que \"baisser les impôts crée de la croissance\", il mélange positif (une thèse économique contestée) et normatif (un choix politique). Repère cette confusion — elle est partout.\n    \n  \n\n\n\n🎯 Quiz du module\n5 questions · ~3 min · jusqu'à +40 XP\n\n\n\n\n\n  ← Accueil\n  Module 02 : Les courants de pensée →"
+  },
+  {
+    "objectID": "apropos.html",
+    "href": "apropos.html",
+    "title": "À propos",
+    "section": "",
+    "text": "L'histoire derrière le site — et la philosophie qui le guide.\n  \n\n\n\n\n\n\n  L'idée de départ\n  \n    Ce site est né d'une frustration simple : à chaque dîner où l'on aborde l'économie,\n    deux camps s'affrontent. Ceux qui croient tout comprendre — et ceux qui décrochent immédiatement.\n  \n  \n    La réalité, c'est que la plupart des gens — même très instruits — n'ont jamais eu\n    l'occasion d'apprendre les bases de l'économie de façon claire et engageante.\n    Ce site est une tentative d'y remédier, avec du jeu, des graphiques et zéro jargon gratuit.\n  \n\n\nLa philosophie\n\n  \n    🚫\n    Zéro jargon inutile\n    On n'utilise un terme technique que si on le définit aussitôt.\n  \n  \n    ⚖️\n    Pas de parti pris\n    On présente les courants et leurs arguments. Les faits sont séparés des jugements de valeur.\n  \n  \n    📊\n    Données réelles\n    Tous les graphiques sont faits avec R à partir de données publiques (INSEE, Banque de France, OCDE).\n  \n  \n    🎮\n    Apprendre en jouant\n    XP, niveaux, défis, personnage — pas qu'un gadget. Ça aide à mesurer sa progression.\n  \n  \n    📈\n    Progressif\n    Du plus simple au plus profond. Chaque module prépare le suivant.\n  \n  \n    🔓\n    Tout gratuit\n    Aucun compte, aucun abonnement. La progression est stockée dans ton navigateur.\n  \n\n\nComment c'est fait\n\n  \n    Ce site est construit avec Quarto et R.\n    Les graphiques utilisent ggplot2.\n    Le système de jeu (XP, niveaux, défis, personnage SVG) est en JavaScript vanilla\n    avec persistance dans le localStorage du navigateur — aucun serveur, aucune donnée collectée.\n  \n  \n    Quarto\n    R / ggplot2\n    Vanilla JS\n    localStorage\n    SCSS custom\n    SVG pur\n  \n\n\nSources & lectures recommandées\n\n  \n    📗\n    Piketty — Le Capital au XXIe siècle\n    La référence sur les inégalités. Dense mais accessible dans ses grandes thèses.\n  \n  \n    📘\n    Mankiw — Principes de l'économie\n    Le manuel de référence mondial. Exhaustif, pédagogique, un peu aride.\n  \n  \n    📙\n    Harford — The Undercover Economist\n    L'économie expliquée par la vie quotidienne. Brillant et très accessible.\n  \n  \n    🌐\n    INSEE — insee.fr\n    Toutes les données françaises en accès libre. L'autorité statistique nationale.\n  \n\n\n\n\n  \n    Ta progression\n    Stockée localement dans ton navigateur, jamais envoyée nulle part.\n  \n  \n    🔄 Réinitialiser la progression"
+  },
+  {
+    "objectID": "actu.html",
+    "href": "actu.html",
+    "title": "L'actu éco de la semaine",
+    "section": "",
+    "text": "📰\n    L'actu éco de la semaine\n    \n      20 actualités économiques récentes — chacune liée à un module du site. Une nouvelle actu mise en avant chaque semaine.\n    \n    \n      \n        20\n        actus\n      \n      \n        12\n        thèmes\n      \n      \n        ↻\n        hebdo\n      \n    \n  \n\n\n\n  \n  \n    Tout\n  \n\n  \n  \n\n  \n  \n    📝 Comment mettre à jour les actus\n    \n      Les actus sont dans le fichier assets/data/actu.json.\n      Pour en ajouter une, copie le modèle ci-dessous et colle-le en tête du tableau JSON :\n    \n    {\n  \"date\": \"2025-MM\",\n  \"titre\": \"Titre de l'actu\",\n  \"resume\": \"Description en 1-2 phrases.\",\n  \"tag\": \"Thème\",\n  \"module\": \"01\",\n  \"module_titre\": \"Nom du module\",\n  \"module_href\": \"modules/01-definition.html\",\n  \"concept\": \"Concept clé illustré\",\n  \"emoji\": \"📰\"\n}"
+  },
+  {
+    "objectID": "glossaire.html",
+    "href": "glossaire.html",
+    "title": "📖 Glossaire",
+    "section": "",
+    "text": "Référence\n    📖 Glossaire\n    Tous les termes clés, définis simplement. Sans bullshit.\n  \n\n\n\n\n\n\n  \n  \n\n\n\n\n  Tout voir\n  🤔 Bases\n  🧠 Courants\n  📈 Croissance\n  💸 Inflation\n  🏛️ Dette\n  ⚖️ Inégalités"
+  },
+  {
+    "objectID": "modules/02-courants.html",
+    "href": "modules/02-courants.html",
+    "title": "Les courants de pensée économique",
+    "section": "",
+    "text": "Module 02\n      Niveau débutant\n      80 XP\n    \n    \n    \n      Pourquoi des économistes sérieux arrivent à des conclusions opposées sur les mêmes faits."
+  },
+  {
+    "objectID": "modules/02-courants.html#pourquoi-les-économistes-ne-sont-pas-daccord",
+    "href": "modules/02-courants.html#pourquoi-les-économistes-ne-sont-pas-daccord",
+    "title": "Les courants de pensée économique",
+    "section": "Pourquoi les économistes ne sont pas d’accord ?",
+    "text": "Pourquoi les économistes ne sont pas d’accord ?\nTu allumes BFM, tu entends un économiste dire que les baisses d’impôts vont relancer la croissance. Le lendemain, un autre économiste dit que c’est faux et qu’il faut au contraire augmenter les dépenses publiques. Ils ont tous les deux des diplômes impressionnants. Qui croire ?\nLa réponse honnête : les deux partent de valeurs et d’hypothèses différentes. Les courants de pensée économique, ce sont des façons différentes de répondre à une question fondamentale : quel rôle l’État doit-il jouer dans l’économie ?"
+  },
+  {
+    "objectID": "modules/02-courants.html#adam-smith-et-le-marché-libre-1776",
+    "href": "modules/02-courants.html#adam-smith-et-le-marché-libre-1776",
+    "title": "Les courants de pensée économique",
+    "section": "Adam Smith et le marché libre (1776)",
+    "text": "Adam Smith et le marché libre (1776)\nAdam Smith est le fondateur de l’économie moderne. Son idée centrale : si chacun cherche son intérêt personnel, le résultat bénéficie à tous — sans qu’on l’ait planifié.\n\n  La main invisible — en pratique\n  Quand le boulanger se lève à 4h du matin pour faire ton pain, il ne le fait pas par altruisme — il veut gagner sa vie. Pourtant, son pain nourrit des familles. C'est ça, la main invisible : l'intérêt privé qui produit un bénéfice collectif sans coordination centrale.\n  Smith pensait que le marché libre coordonne mieux les ressources que n'importe quel planificateur — parce qu'il agrège des millions d'informations dispersées que personne ne peut centraliser."
+  },
+  {
+    "objectID": "modules/02-courants.html#john-maynard-keynes-et-létat-actif-1936",
+    "href": "modules/02-courants.html#john-maynard-keynes-et-létat-actif-1936",
+    "title": "Les courants de pensée économique",
+    "section": "John Maynard Keynes et l’État actif (1936)",
+    "text": "John Maynard Keynes et l’État actif (1936)\nKeynes a écrit sa théorie au pire moment de la Grande Dépression — 25 % de chômage aux États-Unis, files de gens devant les soupes populaires. Sa question : pourquoi le marché ne se rééquilibre-t-il pas tout seul ?\nSa réponse : parfois, personne n’ose dépenser en premier. Les ménages épargnent par peur. Les entreprises n’investissent pas faute de clients. La banque ne prête pas. L’économie reste coincée. Il faut que quelqu’un brise ce cercle vicieux — et ce quelqu’un, c’est l’État.\n\n  Le multiplicateur keynésien en 3 étapes\n  \n    \n      1\n      L'État dépense 1 milliard pour construire des routes. Des ouvriers sont embauchés.\n    \n    \n      2\n      Ces ouvriers reçoivent des salaires. Ils les dépensent en épicerie, loyer, vêtements.\n    \n    \n      3\n      Ces commercants reçoivent des revenus, réembauchent, dépensent à leur tour… L'effet total dépasse 1 milliard.\n    \n  \n  \n    C'est pour ça que Keynes disait que même payer des gens à creuser des trous et les reboucher pouvait relancer l'économie. L'important, c'est la mise en circulation de revenus."
+  },
+  {
+    "objectID": "modules/02-courants.html#milton-friedman-et-le-monétarisme-années-1960-70",
+    "href": "modules/02-courants.html#milton-friedman-et-le-monétarisme-années-1960-70",
+    "title": "Les courants de pensée économique",
+    "section": "Milton Friedman et le monétarisme (années 1960-70)",
+    "text": "Milton Friedman et le monétarisme (années 1960-70)\nFriedman arrive sur scène quand les politiques keynésiennes se heurtent à un problème inattendu : l’inflation. Son diagnostic : les gouvernements ont trop dépensé, les banques centrales ont trop imprimé. Sa prescription : restreindre la masse monétaire et laisser le marché faire son travail.\nSon influence : la Fed de Paul Volcker qui monte les taux à 20 % en 1979 pour tuer l’inflation américaine. Résultat : inflation vaincue, mais récession douloureuse et chômage à 10 %.\n\nLe débat Keynes vs Friedman ne s’est jamais vraiment arrêté. En 2008, les gouvernements ont massivement dépensé (Keynes). En 2022, les banques centrales ont monté les taux pour tuer l’inflation (Friedman). Les deux outils coexistent — mais leurs partisans continuent de se disputer sur lequel fonctionne le mieux."
+  },
+  {
+    "objectID": "modules/02-courants.html#le-tableau-de-bord-des-courants",
+    "href": "modules/02-courants.html#le-tableau-de-bord-des-courants",
+    "title": "Les courants de pensée économique",
+    "section": "Le tableau de bord des courants",
+    "text": "Le tableau de bord des courants\n\n\n\n\n\nCourant\nFigure emblématique\nRôle de l'État\nEn cas de récession\nCe qu'ils diraient aujourd'hui\n\n\n\n\nLibéralisme classique\nAdam Smith, Hayek\nMinimal — \"arbitre du jeu\"\nRien : le marché se rééquilibre seul\nMoins d'impôts, moins de règles, liberté des entreprises\n\n\nKeynésianisme\nJohn M. Keynes\nActif — \"pompier anti-crise\"\nDépenser plus pour compenser la baisse privée\nInvestissement public dans la transition énergétique, le soin\n\n\nMonétarisme\nMilton Friedman\nLimité — contrôle la monnaie\nNe pas sur-stimuler, risque d'inflation\nLa BCE a eu raison de monter les taux en 2022\n\n\nMarxisme\nKarl Marx\nPropriétaire des moyens de prod.\nChanger le système — la récession prouve l'échec du capital\nLes inégalités explosent — preuve que r &gt; g (voir module 06)"
+  },
+  {
+    "objectID": "modules/02-courants.html#la-destruction-créatrice-de-schumpeter",
+    "href": "modules/02-courants.html#la-destruction-créatrice-de-schumpeter",
+    "title": "Les courants de pensée économique",
+    "section": "La destruction créatrice de Schumpeter",
+    "text": "La destruction créatrice de Schumpeter\nJoseph Schumpeter a une vision différente : l’économie avance par ruptures violentes, pas par ajustements progressifs. Chaque nouvelle technologie tue une ancienne industrie et en crée une nouvelle.\n\n  \n    🚂\n    Le train (1830s)\n    A tué les diligences et les cochers. A créé les compagnies ferroviaires, les aciéries, les villes nouvelles le long des lignes.\n  \n  \n    🚗\n    L'automobile (1900s)\n    A tué les maréchal-ferrants et l'industrie équine. A créé l'automobile, le pétrole, la grande distribution, la banlieue.\n  \n  \n    🤖\n    L'IA (2020s)\n    Détruit les métiers de la traduction, du support, de la rédaction de base. Crée quoi en échange ? Le débat est ouvert — et c'est exactement la question du module 10."
+  },
+  {
+    "objectID": "modules/02-courants.html#léconomie-comportementale-quand-les-humains-ne-sont-pas-rationnels",
+    "href": "modules/02-courants.html#léconomie-comportementale-quand-les-humains-ne-sont-pas-rationnels",
+    "title": "Les courants de pensée économique",
+    "section": "L’économie comportementale : quand les humains ne sont pas rationnels",
+    "text": "L’économie comportementale : quand les humains ne sont pas rationnels\nL’économie classique supposait un “Homo Economicus” — un agent parfaitement rationnel qui maximise toujours son intérêt. Daniel Kahneman (Nobel 2002) et Richard Thaler (Nobel 2017) ont montré que c’est faux.\n\nExemple concret : Tu as acheté une place de concert 80 €. Le soir J, tu es malade. Tu y vas quand même pour “ne pas perdre tes 80 €”. C’est le biais du coût irrécupérable (sunk cost fallacy) — les 80 € sont partis que tu y ailles ou non. La décision rationnelle serait de rester chez toi si tu es vraiment malade. Mais l’humain n’est pas rationnel.\n\n\n  📰 L'actu qui illustre le débat\n  \n    \n      🇺🇸\n      Trump : le retour du protectionnisme\n      Des droits de douane à 145 % sur la Chine — c'est du protectionnisme assumé, opposé au libéralisme de Smith. Les économistes libéraux s'alarment. Les keynésiens souverainistes applaudissent.\n    \n    \n      🇪🇺\n      Le réarmement européen : keynésianisme de guerre\n      800 milliards de dépenses publiques pour la défense — c'est exactement la logique keynésienne : l'État dépense massivement pour entraîner l'économie. Le multiplicateur militaire est-il aussi puissant ?\n    \n    \n      🏦\n      La Fed hésite : Keynes ou Friedman ?\n      Maintenir des taux élevés (Friedman : tuer l'inflation en priorité) ou les baisser pour soutenir la croissance (Keynes) ? La Fed américaine vit ce dilemme en 2026 face aux incertitudes commerciales.\n    \n  \n\n\n🎯 Quiz du module\n5 questions tirées parmi 12 · jusqu'à +40 XP\n\n\n\n\n\n  ← Module 01\n  Module 03 : La croissance →"
+  },
+  {
+    "objectID": "modules/04-inflation.html",
+    "href": "modules/04-inflation.html",
+    "title": "L'inflation",
+    "section": "",
+    "text": "Module 04\n      Niveau intermédiaire\n      80 XP\n    \n    \n    \n      En 2022, tes courses ont augmenté de 10 %. En 2026, les prix sont redescendus — mais pas aux niveaux d'avant. Comprendre pourquoi."
+  },
+  {
+    "objectID": "modules/04-inflation.html#ce-que-tu-as-ressenti-entre-2021-et-2024",
+    "href": "modules/04-inflation.html#ce-que-tu-as-ressenti-entre-2021-et-2024",
+    "title": "L'inflation",
+    "section": "Ce que tu as ressenti entre 2021 et 2024",
+    "text": "Ce que tu as ressenti entre 2021 et 2024\nSi tu faisais les courses en France, tu l’as vécu : les pâtes qui passent de 0,90 € à 1,50 €, le plein d’essence à 2 €/litre, la baguette qui dépasse 1,20 €. Ce n’était pas une impression — l’inflation a atteint 6 % en France en 2022, du jamais vu depuis 40 ans.\nEt maintenant que l’inflation a “reculé” à 2 %, beaucoup de gens se demandent pourquoi les prix n’ont pas baissé. Parce que l’inflation mesure le rythme de hausse des prix, pas leur niveau. Si les prix montent de 10 %, puis de 2 %, ils sont toujours 12 % plus élevés qu’au départ. La baisse de l’inflation, c’est la désinflation — pas la déflation.\n\nTrois mots à ne pas confondre : - Inflation : les prix montent (ex : +6 % en 2022) - Désinflation : les prix montent moins vite (ex : +2 % en 2024 — mais ils montent encore) - Déflation : les prix baissent (rare, dangereux — voir ci-dessous)"
+  },
+  {
+    "objectID": "modules/04-inflation.html#comment-on-la-mesure-le-panier-de-la-ménagère",
+    "href": "modules/04-inflation.html#comment-on-la-mesure-le-panier-de-la-ménagère",
+    "title": "L'inflation",
+    "section": "Comment on la mesure : le panier de la ménagère",
+    "text": "Comment on la mesure : le panier de la ménagère\nL’INSEE suit chaque mois l’évolution des prix d’un panier représentatif de la consommation française — l’IPC (Indice des Prix à la Consommation).\n\n  Ce que contient le panier de l'IPC (poids approximatifs)\n  \n    \n      🏠\n      Logement\n      ~28 %\n    \n    \n      🚗\n      Transport\n      ~15 %\n    \n    \n      🛒\n      Alimentation\n      ~16 %\n    \n    \n      🏥\n      Santé\n      ~10 %\n    \n    \n      📱\n      Loisirs & tech\n      ~9 %\n    \n  \n  Ton inflation personnelle peut être très différente de l'IPC officiel. Si tu loues à Paris, le poids du logement dans ton budget dépasse souvent 40-50 % — tu ressens l'inflation plus fortement que la moyenne."
+  },
+  {
+    "objectID": "modules/04-inflation.html#pourquoi-les-prix-montent-les-trois-sources",
+    "href": "modules/04-inflation.html#pourquoi-les-prix-montent-les-trois-sources",
+    "title": "L'inflation",
+    "section": "Pourquoi les prix montent ? Les trois sources",
+    "text": "Pourquoi les prix montent ? Les trois sources\n\n  \n    📦\n    Par les coûts (offre)\n    Les matières premières coûtent plus cher → les entreprises répercutent. C'est ce qui s'est passé en 2022 : gaz russe coupé → énergie chère → tout coûte plus cher à produire.\n    Ex : choc pétrolier, guerre en Ukraine\n  \n  \n    💸\n    Par la demande\n    Trop d'argent en circulation pour pas assez de biens → les prix montent. Après le Covid, les relances massives ont injecté des milliards — et les gens ont voulu dépenser en même temps.\n    Ex : relances Covid + retour à la normale\n  \n  \n    🔄\n    Par les anticipations\n    Si les syndicats anticipent 5 % d'inflation, ils demandent 5 % d'augmentation. Les entreprises l'accordent et augmentent leurs prix pour compenser. L'inflation se réalise parce qu'on l'attendait.\n    La prophétie auto-réalisatrice"
+  },
+  {
+    "objectID": "modules/04-inflation.html#linflation-en-france-depuis-1960",
+    "href": "modules/04-inflation.html#linflation-en-france-depuis-1960",
+    "title": "L'inflation",
+    "section": "L’inflation en France depuis 1960",
+    "text": "L’inflation en France depuis 1960\n\n\nWarning: le package 'ggplot2' a été compilé avec la version R 4.4.3\n\n\n\n\n\nTaux d’inflation annuel en France (1960–2025) — Source : INSEE / Banque de France"
+  },
+  {
+    "objectID": "modules/04-inflation.html#pourquoi-la-déflation-est-plus-dangereuse-que-linflation",
+    "href": "modules/04-inflation.html#pourquoi-la-déflation-est-plus-dangereuse-que-linflation",
+    "title": "L'inflation",
+    "section": "Pourquoi la déflation est plus dangereuse que l’inflation",
+    "text": "Pourquoi la déflation est plus dangereuse que l’inflation\nInstinctivement, on pense : des prix qui baissent, c’est bien pour le consommateur. En réalité, la déflation peut être catastrophique.\n\n  Le cercle vicieux de la déflation — exemple concret\n  \n    \n      1\n      Les prix baissent de 2 %. Tu veux acheter une voiture à 25 000 €. Tu attends — si ça continue, elle coûtera 24 500 € dans 6 mois.\n    \n    \n      2\n      Des millions de ménages font pareil. La demande s'effondre. Le fabricant de voitures vend moins, licencie des ouvriers.\n    \n    \n      3\n      Ces chômeurs dépensent moins. D'autres entreprises souffrent. Le chômage monte, les revenus baissent, les prix baissent encore.\n    \n    \n      4\n      Et recommence. Le Japon a vécu ce scénario pendant 25 ans. La BCE fait tout pour éviter que ça arrive en zone euro."
+  },
+  {
+    "objectID": "modules/04-inflation.html#le-rôle-de-la-bce",
+    "href": "modules/04-inflation.html#le-rôle-de-la-bce",
+    "title": "L'inflation",
+    "section": "Le rôle de la BCE",
+    "text": "Le rôle de la BCE\n\n  🔗 Liens avec d'autres modules :\n  → Module 05 : comment l'inflation allège la dette publique\n  → Module 09 : comment la BCE crée la monnaie\n  → Module 02 : le monétarisme de Friedman\n\nLa BCE a un mandat simple : maintenir l’inflation proche de 2 %. Ni trop (perte de pouvoir d’achat), ni trop peu (risque de déflation).\nSon outil principal : les taux directeurs. Si elle monte les taux, les banques empruntent plus cher à la BCE → répercutent sur les crédits → les ménages et entreprises empruntent moins → moins de dépenses → moins de pression sur les prix.\n\n  📰 2022–2026 : l'inflation qu'on a vécue\n  \n    \n      ⛽\n      Le double choc : Covid + Ukraine\n      2021 : les chaînes logistiques se grippent après le Covid (pénurie de puces, containers). 2022 : la guerre coupe le gaz russe, fait flamber l'énergie. L'inflation par les coûts monte à 6 % en France.\n    \n    \n      📈\n      La BCE sort les grands moyens\n      10 hausses de taux en 18 mois (de 0 % à 4,5 %). La remontée la plus rapide de l'histoire de la BCE. Résultat : l'inflation reflue à 2 %, mais les crédits immobiliers ont explosé.\n    \n    \n      🛒\n      Les prix ne redescendent pas\n      En 2026, l'inflation est à 2 % — mais les prix alimentaires restent 20-25 % plus élevés qu'en 2020. La désinflation ne signifie pas la déflation. Le pouvoir d'achat réel n'est pas restauré.\n    \n  \n\n\n\n🎯 Quiz du module\n5 questions tirées parmi 12 · jusqu'à +40 XP\n\n\n\n\n\n  ← Module 03\n  Module 05 : La dette publique →"
+  },
+  {
+    "objectID": "modules/06-inegalites.html",
+    "href": "modules/06-inegalites.html",
+    "title": "Les inégalités",
+    "section": "",
+    "text": "Module 06\n      Niveau avancé\n      100 XP\n    \n    \n    Gini, Piketty, r&gt;g — les riches s'enrichissent-ils vraiment plus vite que les autres ?"
+  },
+  {
+    "objectID": "modules/06-inegalites.html#comment-mesure-t-on-les-inégalités",
+    "href": "modules/06-inegalites.html#comment-mesure-t-on-les-inégalités",
+    "title": "Les inégalités",
+    "section": "Comment mesure-t-on les inégalités ?",
+    "text": "Comment mesure-t-on les inégalités ?\n\nLa courbe de Lorenz\n\n\nWarning: le package 'ggplot2' a été compilé avec la version R 4.4.3\n\n\n\n\n\nCourbe de Lorenz — France vs égalité parfaite\n\n\n\n\n\n\nLe coefficient de Gini\n\n  \n    0,30\n    France\n    Parmi les plus égalitaires d'Europe grâce à la redistribution\n  \n  \n    0,40\n    États-Unis\n    Inégalités plus marquées, filet social plus limité\n  \n  \n    0,63\n    Afrique du Sud\n    Un des plus élevés du monde — héritage de l'apartheid"
+  },
+  {
+    "objectID": "modules/06-inegalites.html#thomas-piketty-et-r-g",
+    "href": "modules/06-inegalites.html#thomas-piketty-et-r-g",
+    "title": "Les inégalités",
+    "section": "Thomas Piketty et r > g",
+    "text": "Thomas Piketty et r &gt; g\nDans Le Capital au XXIe siècle (2013), Piketty montre qu’à partir des années 1980, les inégalités de patrimoine — pas seulement de revenus — repartent à la hausse dans les pays riches.\nSa formule clé : r &gt; g\n\nr = rendement du capital (dividendes, loyers, intérêts) → historiquement ~4-5 %\ng = croissance économique → ~1-2 % dans les pays riches aujourd’hui\nQuand r &gt; g, les détenteurs de patrimoine s’enrichissent plus vite que les autres — mécaniquement, sans travailler davantage. Les inégalités se creusent.\n\n\n  🔗 Liens avec d'autres modules :\n  \n    → Module 05 : l'État endetté profite de l'inflation (r vs g)\n  \n  \n    → Module 07 : la mondialisation réduit les inégalités entre pays mais les creuse à l'intérieur\n  \n  \n    → Module 12 : impôt progressif et redistribution"
+  },
+  {
+    "objectID": "modules/06-inegalites.html#les-inégalités-mondiales-ont-elles-baissé",
+    "href": "modules/06-inegalites.html#les-inégalités-mondiales-ont-elles-baissé",
+    "title": "Les inégalités",
+    "section": "Les inégalités mondiales ont-elles baissé ?",
+    "text": "Les inégalités mondiales ont-elles baissé ?\nC’est une question piège. Ça dépend de ce qu’on mesure :\n\nEntre pays : les inégalités ont baissé (Chine, Inde ont rattrapé une partie du retard)\nAu sein des pays riches : elles ont augmenté depuis les années 80\nEn termes de patrimoine : le 1 % le plus riche détient ~45 % du patrimoine mondial"
+  },
+  {
+    "objectID": "modules/06-inegalites.html#solutions-possibles",
+    "href": "modules/06-inegalites.html#solutions-possibles",
+    "title": "Les inégalités",
+    "section": "Solutions possibles",
+    "text": "Solutions possibles\n\n  \n    📊\n    Impôt progressif\n    Taux marginal plus élevé pour les hauts revenus. France : taux marginal à 45%. Piketty propose un impôt mondial sur le capital.\n  \n  \n    🏥\n    Services publics universels\n    Santé, éducation, transports — gratuits ou très subventionnés. Bénéficient proportionnellement plus aux revenus les plus faibles.\n  \n  \n    💵\n    Revenu universel de base\n    Verser à tous les citoyens un revenu inconditionnel. Expérimenté en Finlande, Namibie, Kenya. Débat ouvert.\n  \n\n\n\n\n  📰 Les inégalités aujourd'hui\n  \n    \n      💰\n      Oxfam : 1% vs 99%\n      Chaque année à Davos, Oxfam publie son rapport sur les inégalités mondiales. En 2024 : les 1% les plus riches ont capté les 2/3 de toutes les nouvelles richesses créées depuis le Covid.\n    \n    \n      🏠\n      L'immobilier : machine à inégalités\n      La hausse des prix immobiliers depuis 20 ans a massivement enrichi les propriétaires et appauvri les locataires — exactement le mécanisme r&gt;g de Piketty appliqué à un actif concret.\n    \n    \n      🧮\n      L'impôt minimum mondial à 15%\n      En 2023, 140 pays ont adopté un impôt minimum de 15% sur les bénéfices des grandes multinationales. Une tentative concrète de limiter l'optimisation fiscale — un premier pas vers le \"Piketty mondial\" ?\n    \n  \n\n\n\n🎯 Quiz final — Les inégalités\n5 questions · ~3 min · jusqu'à +40 XP\n\n\n\n\n\n\n  \n  🏆 Parcours complet !\n  Tu as terminé les 6 premiers modules\n  \n    Encore deux modules pour aller plus loin : commerce international et idées reçues.\n  \n  \n    Module 07 : Commerce →\n    Module 08 : Idées reçues →\n    ← Accueil\n  \n\n\n\n\n\n  ← Module 05"
+  },
+  {
+    "objectID": "modules/08-idees-recues.html",
+    "href": "modules/08-idees-recues.html",
+    "title": "Les idées reçues économiques",
+    "section": "",
+    "text": "Module 08\n      Démystification\n      80 XP\n    \n    \n    Les affirmations qu'on entend partout — et ce que l'économie en dit vraiment."
+  },
+  {
+    "objectID": "modules/08-idees-recues.html#les-8-grandes-idées-reçues",
+    "href": "modules/08-idees-recues.html#les-8-grandes-idées-reçues",
+    "title": "Les idées reçues économiques",
+    "section": "Les 8 grandes idées reçues",
+    "text": "Les 8 grandes idées reçues\n\n\n  \n    ❌\n    \n      Mythe 1\n      \"L'État doit gérer son budget comme une famille — sans dettes.\"\n    \n  \n  \n    ✅ La réalité\n    Un État n'est pas une famille. Il peut emprunter sans fin si sa dette reste soutenable (g &gt; r), il lève des impôts, il ne \"meurt\" pas, et sa dette ne disparaît pas à sa mort. Une famille qui ne s'endette jamais ne peut pas acheter de maison. Un État qui ne s'endette jamais ne peut pas investir dans les infrastructures, l'éducation ou la défense. La question n'est pas d'avoir zéro dette, mais une dette productive et soutenable.\n  \n\n\n\n\n  \n    ❌\n    \n      Mythe 2\n      \"L'immigration fait baisser les salaires des travailleurs locaux.\"\n    \n  \n  \n    ✅ La réalité\n    La plupart des études empiriques (Carte, Peri, Dustmann) montrent que l'effet global de l'immigration sur les salaires est faible ou nul, voire positif. Les immigrés créent de la demande et des emplois, pas seulement de l'offre de travail. Les effets négatifs, quand ils existent, concernent surtout les autres immigrés récents — pas les travailleurs natifs. Le marché du travail n'est pas un gâteau à taille fixe.\n  \n\n\n\n\n  \n    ❌\n    \n      Mythe 3\n      \"Augmenter le SMIC crée automatiquement du chômage.\"\n    \n  \n  \n    ✅ La réalité\n    La théorie classique prédit cet effet. Mais les études empiriques — dont le célèbre travail de Card et Krueger sur le New Jersey — montrent que des hausses modérées du salaire minimum n'entraînent pas de hausse significative du chômage. Pourquoi ? Les marchés du travail ne sont pas parfaitement compétitifs : les employeurs ont du pouvoir de marché (monopsone). Le résultat dépend du niveau de l'augmentation et du contexte.\n  \n\n\n\n\n  \n    ❌\n    \n      Mythe 4\n      \"La richesse des uns, c'est la pauvreté des autres — l'économie est un jeu à somme nulle.\"\n    \n  \n  \n    ✅ La réalité\n    L'économie est globalement un jeu à somme positive : la croissance crée de nouvelles richesses. En 1800, la quasi-totalité de l'humanité vivait dans l'extrême pauvreté. En 2024, moins de 10%. Le PIB mondial a été multiplié par ~100 en deux siècles. La question centrale n'est pas \"combien de richesses\" mais \"comment elles se distribuent.\" Les inégalités peuvent augmenter même quand tout le monde s'enrichit.\n  \n\n\n\n\n  \n    ❌\n    \n      Mythe 5\n      \"Les économistes sont tous d'accord entre eux.\"\n    \n  \n  \n    ✅ La réalité\n    Les économistes s'accordent sur certains faits (le libre-échange augmente globalement le bien-être, les prix plafonnés créent des pénuries) mais divergent profondément sur les politiques — niveau d'imposition optimal, rôle de l'État, gestion de la dette, politique monétaire. Ces désaccords ne sont pas des erreurs : ils reflètent de vraies incertitudes empiriques et des valeurs différentes. L'économie est une science jeune, complexe et partielle.\n  \n\n\n\n\n  \n    ❌\n    \n      Mythe 6\n      \"La déflation est bonne pour les consommateurs — les prix baissent, on est plus riches.\"\n    \n  \n  \n    ✅ La réalité\n    Court terme oui, long terme non. Si les prix baissent, les agents reportent leurs achats (pourquoi acheter aujourd'hui si c'est moins cher demain ?), les entreprises voient leurs revenus chuter, elles licencient, les salaires baissent, la demande s'effondre… Le Japon a vécu 20 ans de déflation et de stagnation. La BCE fait tout pour l'éviter.\n  \n\n\n\n\n  \n    ❌\n    \n      Mythe 7\n      \"On laisse une dette aux générations futures — nos enfants paieront.\"\n    \n  \n  \n    ✅ La réalité\n    C'est plus nuancé. La dette intérieure est une dette d'une partie des Français envers une autre (les épargnants envers les contribuables). La dette laisse aussi des actifs : autoroutes, hôpitaux, université, infrastructures. L'enjeu réel est double : la charge d'intérêts annuelle (50 Mds€/an en France) et la part de dette détenue par des créanciers étrangers. La vraie question : la dette finance-t-elle des investissements productifs ou de la dépense courante ?\n  \n\n\n\n\n  \n    ❌\n    \n      Mythe 8\n      \"La croissance économique détruit forcément l'environnement.\"\n    \n  \n  \n    ✅ La réalité\n    La courbe de Kuznets environnementale suggère que la pollution augmente d'abord avec le développement, puis diminue — les pays riches peuvent se permettre de dépolluer. Des pays ont effectivement découplé croissance et émissions (France, Allemagne, UK depuis les années 90). Mais le découplage absolu reste limité et la question des limites planétaires est réelle. Les deux camps ont des arguments solides.\n  \n\n\n\n🎯 Quiz — Vrai ou mythe ?\n5 questions tirées parmi 10 · jusqu'à +40 XP\n\n\n\n\n\n  \n  🏆 Parcours complet !\n  Tu as terminé les 8 modules\n  \n    Tu sais maintenant décrypter une actu éco, démêler un argument, et reconnaître une idée reçue. Pas mal.\n  \n  \n    📖 Glossaire\n    🎯 Refaire le diagnostic\n    🔎 Défi actu\n    ← Accueil\n  \n\n\n\n  ← Module 07"
+  },
+  {
+    "objectID": "modules/10-travail.html",
+    "href": "modules/10-travail.html",
+    "title": "Le marché du travail",
+    "section": "",
+    "text": "Module 10\n      Niveau intermédiaire\n      100 XP\n    \n    \n    Chômage, SMIC, ubérisation — le marché qui touche tout le monde."
+  },
+  {
+    "objectID": "modules/10-travail.html#les-trois-types-de-chômage",
+    "href": "modules/10-travail.html#les-trois-types-de-chômage",
+    "title": "Le marché du travail",
+    "section": "Les trois types de chômage",
+    "text": "Les trois types de chômage\nTout le monde dit “le chômage” comme s’il n’y en avait qu’un. Il y en a au moins trois, avec des causes et des remèdes différents.\n\n  \n    🔄\n    Frictionnel\n    Le temps entre deux emplois — chercher un job, changer de région. Normal, inévitable, souvent court. Existe dans toutes les économies saines.\n    Incompressible · 1-2%\n  \n  \n    🏭\n    Structurel\n    Inadéquation entre les compétences disponibles et celles demandées. La désindustrialisation laisse des ouvriers sans débouchés. Long à résorber.\n    Formation / reconversion\n  \n  \n    📉\n    Conjoncturel\n    Lié au cycle économique — il augmente en récession, baisse en croissance. Cible principale des politiques de relance keynésiennes.\n    Politique budgétaire / monétaire\n  \n\n\nLe NAIRU (Non-Accelerating Inflation Rate of Unemployment) est le taux de chômage “naturel” en dessous duquel l’inflation s’emballe. En France, il est estimé autour de 7-8%. En dessous, les salaires montent, les prix suivent, la BCE réagit."
+  },
+  {
+    "objectID": "modules/10-travail.html#le-taux-de-chômage-en-france",
+    "href": "modules/10-travail.html#le-taux-de-chômage-en-france",
+    "title": "Le marché du travail",
+    "section": "Le taux de chômage en France",
+    "text": "Le taux de chômage en France\n\n\nWarning: le package 'ggplot2' a été compilé avec la version R 4.4.3\n\n\n\n\n\nTaux de chômage en France (1975–2023) — Source : INSEE"
+  },
+  {
+    "objectID": "modules/10-travail.html#la-courbe-de-phillips",
+    "href": "modules/10-travail.html#la-courbe-de-phillips",
+    "title": "Le marché du travail",
+    "section": "La courbe de Phillips",
+    "text": "La courbe de Phillips\nLa courbe de Phillips (1958) observe une relation inverse entre chômage et inflation : moins de chômage → pression à la hausse des salaires → hausse des prix → inflation.\n\nLa stagflation des années 70 a brisé cette relation. Friedman et Phelps ont montré que la courbe de Phillips n’est stable qu’à court terme. À long terme, les agents anticipent l’inflation et demandent des hausses de salaires préventives — la relation disparaît.\n\n\n  🔗 Liens avec d'autres modules :\n  → Module 08 : idées reçues sur le SMIC et l'immigration→ Module 03 : croissance et emploi→ Module 12 : politique de l'emploi et protection sociale"
+  },
+  {
+    "objectID": "modules/10-travail.html#le-smic-outil-ou-frein",
+    "href": "modules/10-travail.html#le-smic-outil-ou-frein",
+    "title": "Le marché du travail",
+    "section": "Le SMIC : outil ou frein ?",
+    "text": "Le SMIC : outil ou frein ?\n\n\n\n\n\nArgument\nPour le SMIC élevé\nContre le SMIC élevé\n\n\n\n\nEmploi\nEffet faible selon les études empiriques (Card & Krueger)\nThéorie classique : renchérit le travail peu qualifié\n\n\nPouvoir d'achat\nAugmente le revenu des plus modestes qui consomment\nPeut décourager certaines embauches en PME\n\n\nInégalités\nRéduit les écarts bas/hauts revenus\nPeut encourager l'automatisation des tâches peu qualifiées"
+  },
+  {
+    "objectID": "modules/10-travail.html#la-transformation-du-travail",
+    "href": "modules/10-travail.html#la-transformation-du-travail",
+    "title": "Le marché du travail",
+    "section": "La transformation du travail",
+    "text": "La transformation du travail\n\n  \n    🚗\n    Ubérisation\n    Des plateformes intermédiaires remplacent des employeurs traditionnels. Flexibilité pour certains, précarité pour d'autres. Le statut juridique reste flou.\n  \n  \n    🤖\n    Automatisation\n    Les tâches répétitives disparaissent. L'histoire montre que chaque vague technologique crée finalement plus d'emplois qu'elle n'en détruit — mais la transition est douloureuse.\n  \n  \n    🏠\n    Télétravail\n    La pandémie a accéléré la transition. Impact sur l'immobilier, les transports, la hiérarchie — et sur la frontière vie pro/perso. Productivité debattue.\n  \n\n\n\n  📰 L'actu qui illustre ce module\n  \n    \n      🇫🇷\n      Le plein emploi en France ?\n      Le chômage français est descendu sous 7% en 2023, niveau le plus bas depuis 40 ans. Certains parlent de \"plein emploi\" — mais ce mot cache des réalités très hétérogènes selon les régions et les qualifications.\n    \n    \n      ⚖️\n      Uber et le statut des travailleurs\n      La Cour de cassation a requalifié des chauffeurs Uber en salariés (2020). La directive européenne sur les travailleurs de plateforme va dans le même sens. Un enjeu de millions de personnes en Europe.\n    \n    \n      🏭\n      La pénurie de main-d'oeuvre\n      En 2022-2024, de nombreux secteurs (restauration, BTP, santé) ne trouvent pas de candidats malgré le chômage. Un paradoxe qui illustre le chômage structurel et les problèmes d'adéquation emploi/compétences.\n    \n  \n\n\n\nQuiz du module\n5 questions tirées parmi 12 · jusqu'à +40 XP\n\n\n\n\n\n  ← Module 09\n  Module 11 : Économie et environnement →"
+  },
+  {
+    "objectID": "modules/12-politiques.html",
+    "href": "modules/12-politiques.html",
+    "title": "Les politiques économiques",
+    "section": "",
+    "text": "Module 12\n      Niveau avancé\n      120 XP\n    \n    \n    Budget, fiscalité, Sécu, retraites — comment l'État agit concrètement sur l'économie."
+  },
+  {
+    "objectID": "modules/12-politiques.html#les-deux-grandes-familles-de-politiques",
+    "href": "modules/12-politiques.html#les-deux-grandes-familles-de-politiques",
+    "title": "Les politiques économiques",
+    "section": "Les deux grandes familles de politiques",
+    "text": "Les deux grandes familles de politiques\n\n  \n    🏛️\n    Politique budgétaire\n    L'État ajuste ses dépenses et ses recettes fiscales. Relance = dépenser plus / baisser les impôts. Austérité = réduire les dépenses / augmenter les recettes.\n    Gouvernement & Parlement\n  \n  \n    🏦\n    Politique monétaire\n    La BCE fixe les taux directeurs et gère la masse monétaire. Stimulation = baisser les taux. Restriction = monter les taux pour lutter contre l'inflation.\n    BCE — indépendante des États"
+  },
+  {
+    "objectID": "modules/12-politiques.html#le-budget-de-létat-français",
+    "href": "modules/12-politiques.html#le-budget-de-létat-français",
+    "title": "Les politiques économiques",
+    "section": "Le budget de l’État français",
+    "text": "Le budget de l’État français\n\n\nWarning: le package 'ggplot2' a été compilé avec la version R 4.4.3\n\n\n\n\n\nBudget de l’État français 2024 — principales recettes et dépenses (Mds €)\n\n\n\n\n\n  🔗 Liens avec d'autres modules :\n  → Module 05 : déficit, dette et rigueur budgétaire→ Module 06 : redistribution et réduction des inégalités→ Module 09 : politique monétaire — le pendant de la budgétaire"
+  },
+  {
+    "objectID": "modules/12-politiques.html#la-fiscalité-française",
+    "href": "modules/12-politiques.html#la-fiscalité-française",
+    "title": "Les politiques économiques",
+    "section": "La fiscalité française",
+    "text": "La fiscalité française\n\nImpôt progressif vs proportionnel : - Progressif : le taux augmente avec le revenu (IR français : de 0% à 45%). Réduit les inégalités. - Proportionnel (flat tax) : taux identique pour tous. Simple, mais moins redistributif. - Régressif : pèse proportionnellement plus sur les bas revenus (TVA : un ménage pauvre y consacre une plus grande part de son revenu).\n\n\n  \n    💶\n    TVA — 212 Mds €\n    La principale recette de l'État (20% sur la plupart des biens). Payée par tous les consommateurs. Régressive : pèse plus sur les bas revenus en proportion.\n  \n  \n    📊\n    Impôt sur le Revenu — 100 Mds €\n    Progressif, de 0% à 45%. Seuls 44% des foyers fiscaux le paient en France. Le prélèvement à la source depuis 2019 a changé la perception.\n  \n  \n    🏭\n    Impôt sur les Sociétés — 65 Mds €\n    25% des bénéfices des entreprises (ex 33%). En baisse depuis les années 80 dans tous les pays développés — effet de la concurrence fiscale internationale."
+  },
+  {
+    "objectID": "modules/12-politiques.html#la-protection-sociale-comment-ça-fonctionne",
+    "href": "modules/12-politiques.html#la-protection-sociale-comment-ça-fonctionne",
+    "title": "Les politiques économiques",
+    "section": "La protection sociale : comment ça fonctionne",
+    "text": "La protection sociale : comment ça fonctionne\nLa Sécurité sociale française est financée par des cotisations (patronales et salariales) et des impôts (CSG/CRDS). Elle couvre quatre risques :\n\n\n\n\n\nBranche\nCe qu'elle couvre\nBudget 2024\nEnjeu\n\n\n\n\nMaladie\nSanté, hôpital, médicaments\n~240 Mds €\nDéserts médicaux, reste à charge\n\n\nRetraite\nPensions de retraite\n~350 Mds €\nFinancement avec le vieillissement\n\n\nFamille\nAllocations, congé parental\n~50 Mds €\nNatalité, modes de garde\n\n\nAccidents du travail\nMaladies pros, AT\n~14 Mds €\nPrévention, pénibilité"
+  },
+  {
+    "objectID": "modules/12-politiques.html#le-débat-des-retraites",
+    "href": "modules/12-politiques.html#le-débat-des-retraites",
+    "title": "Les politiques économiques",
+    "section": "Le débat des retraites",
+    "text": "Le débat des retraites\nC’est l’un des débats économiques les plus complexes et les plus politiques. Voici les faits bruts :\n\nLa France consacre ~14% du PIB aux retraites (parmi les plus élevés d’Europe)\nLe ratio actifs/retraités était de 4 pour 1 en 1960 → 1,7 pour 1 aujourd’hui → ~1,3 pour 1 vers 2070\nTrois leviers existent : travailler plus longtemps (âge), cotiser plus (taux), recevoir moins (montant des pensions)\nLa réforme de 2023 (64 ans) a choisi le premier levier\n\n\nCe n’est pas un problème comptable simple. La productivité augmente aussi — si chaque actif produit plus, un ratio actifs/retraités plus faible n’est pas forcément catastrophique. Le vrai débat est : qui supporte le coût de l’ajustement ?\n\n\n  📰 L'actu qui illustre ce module\n  \n    \n      🇫🇷\n      Le budget 2025 — la rigueur\n      Avec un déficit à 6% du PIB, la France doit économiser 40 Mds en 2025. Le débat : faut-il couper les dépenses ou augmenter les impôts ? Et lesquels ? Le choix est autant politique qu'économique.\n    \n    \n      🏥\n      La Sécu — un modèle sous tension\n      Le système de santé français reste parmi les meilleurs au monde selon l'OMS. Mais il accumule des déficits structurels liés au vieillissement et à l'innovation médicale. Comment le financer durablement ?\n    \n    \n      🏭\n      Politique industrielle — le retour\n      Après 40 ans de libéralisme, les États reprennent en main leur politique industrielle. France 2030, puces européennes, batteries, hydrogène — l'État-stratège est de retour. Est-ce efficace ?\n    \n  \n\n\n\nQuiz du module\n5 questions tirées parmi 12 · jusqu'à +40 XP\n\n\n\n\n\n  \n  🏆 Parcours complet !\n  Tu as terminé les 12 modules\n  \n    De la définition de l'économie à la politique industrielle — tu as parcouru l'essentiel. Maintenant, au dîner, tu seras redoutable.\n  \n  \n    📖 Glossaire\n    🎯 Refaire le diagnostic\n    🔎 Défi actu\n    ← Accueil\n  \n\n\n\n  ← Module 11"
   },
   {
     "objectID": "quiz/defi-actu.html",
@@ -432,243 +712,5 @@
     "title": "Déploiement sur GitHub Pages — sans ligne de commande",
     "section": "",
     "text": "Pour utiliser lecobrut.fr :\n\nAchète le domaine chez OVH, Gandi ou Namecheap\nGitHub → Settings → Pages → Custom domain → tape lecobrut.fr → Save\nChez ton registrar, crée ces enregistrements DNS :\n\nType    Nom    Valeur\nA       @      185.199.108.153\nA       @      185.199.109.153\nA       @      185.199.110.153\nA       @      185.199.111.153\nCNAME   www    TON_USERNAME.github.io\n\nCoche Enforce HTTPS dans GitHub Pages\nDélai : 24-48h max (souvent 1h)"
-  },
-  {
-    "objectID": "quiz/revision-rapide.html",
-    "href": "quiz/revision-rapide.html",
-    "title": "Révision rapide",
-    "section": "",
-    "text": "⚡\n    Révision rapide\n    10 questions flash, tous modules — sans chrono, juste l'essentiel.\n    \n      \n        10\n        questions\n      \n      \n        ~5 min\n        estimé\n      \n      \n        +40 XP\n        à gagner"
-  },
-  {
-    "objectID": "modules/12-politiques.html",
-    "href": "modules/12-politiques.html",
-    "title": "Les politiques économiques",
-    "section": "",
-    "text": "Module 12\n      Niveau avancé\n      120 XP\n    \n    \n    Budget, fiscalité, Sécu, retraites — comment l'État agit concrètement sur l'économie."
-  },
-  {
-    "objectID": "modules/12-politiques.html#les-deux-grandes-familles-de-politiques",
-    "href": "modules/12-politiques.html#les-deux-grandes-familles-de-politiques",
-    "title": "Les politiques économiques",
-    "section": "Les deux grandes familles de politiques",
-    "text": "Les deux grandes familles de politiques\n\n  \n    🏛️\n    Politique budgétaire\n    L'État ajuste ses dépenses et ses recettes fiscales. Relance = dépenser plus / baisser les impôts. Austérité = réduire les dépenses / augmenter les recettes.\n    Gouvernement & Parlement\n  \n  \n    🏦\n    Politique monétaire\n    La BCE fixe les taux directeurs et gère la masse monétaire. Stimulation = baisser les taux. Restriction = monter les taux pour lutter contre l'inflation.\n    BCE — indépendante des États"
-  },
-  {
-    "objectID": "modules/12-politiques.html#le-budget-de-létat-français",
-    "href": "modules/12-politiques.html#le-budget-de-létat-français",
-    "title": "Les politiques économiques",
-    "section": "Le budget de l’État français",
-    "text": "Le budget de l’État français\n\n\nWarning: le package 'ggplot2' a été compilé avec la version R 4.4.3\n\n\n\n\n\nBudget de l’État français 2024 — principales recettes et dépenses (Mds €)\n\n\n\n\n\n  🔗 Liens avec d'autres modules :\n  → Module 05 : déficit, dette et rigueur budgétaire→ Module 06 : redistribution et réduction des inégalités→ Module 09 : politique monétaire — le pendant de la budgétaire"
-  },
-  {
-    "objectID": "modules/12-politiques.html#la-fiscalité-française",
-    "href": "modules/12-politiques.html#la-fiscalité-française",
-    "title": "Les politiques économiques",
-    "section": "La fiscalité française",
-    "text": "La fiscalité française\n\nImpôt progressif vs proportionnel : - Progressif : le taux augmente avec le revenu (IR français : de 0% à 45%). Réduit les inégalités. - Proportionnel (flat tax) : taux identique pour tous. Simple, mais moins redistributif. - Régressif : pèse proportionnellement plus sur les bas revenus (TVA : un ménage pauvre y consacre une plus grande part de son revenu).\n\n\n  \n    💶\n    TVA — 212 Mds €\n    La principale recette de l'État (20% sur la plupart des biens). Payée par tous les consommateurs. Régressive : pèse plus sur les bas revenus en proportion.\n  \n  \n    📊\n    Impôt sur le Revenu — 100 Mds €\n    Progressif, de 0% à 45%. Seuls 44% des foyers fiscaux le paient en France. Le prélèvement à la source depuis 2019 a changé la perception.\n  \n  \n    🏭\n    Impôt sur les Sociétés — 65 Mds €\n    25% des bénéfices des entreprises (ex 33%). En baisse depuis les années 80 dans tous les pays développés — effet de la concurrence fiscale internationale."
-  },
-  {
-    "objectID": "modules/12-politiques.html#la-protection-sociale-comment-ça-fonctionne",
-    "href": "modules/12-politiques.html#la-protection-sociale-comment-ça-fonctionne",
-    "title": "Les politiques économiques",
-    "section": "La protection sociale : comment ça fonctionne",
-    "text": "La protection sociale : comment ça fonctionne\nLa Sécurité sociale française est financée par des cotisations (patronales et salariales) et des impôts (CSG/CRDS). Elle couvre quatre risques :\n\n\n\n\n\nBranche\nCe qu'elle couvre\nBudget 2024\nEnjeu\n\n\n\n\nMaladie\nSanté, hôpital, médicaments\n~240 Mds €\nDéserts médicaux, reste à charge\n\n\nRetraite\nPensions de retraite\n~350 Mds €\nFinancement avec le vieillissement\n\n\nFamille\nAllocations, congé parental\n~50 Mds €\nNatalité, modes de garde\n\n\nAccidents du travail\nMaladies pros, AT\n~14 Mds €\nPrévention, pénibilité"
-  },
-  {
-    "objectID": "modules/12-politiques.html#le-débat-des-retraites",
-    "href": "modules/12-politiques.html#le-débat-des-retraites",
-    "title": "Les politiques économiques",
-    "section": "Le débat des retraites",
-    "text": "Le débat des retraites\nC’est l’un des débats économiques les plus complexes et les plus politiques. Voici les faits bruts :\n\nLa France consacre ~14% du PIB aux retraites (parmi les plus élevés d’Europe)\nLe ratio actifs/retraités était de 4 pour 1 en 1960 → 1,7 pour 1 aujourd’hui → ~1,3 pour 1 vers 2070\nTrois leviers existent : travailler plus longtemps (âge), cotiser plus (taux), recevoir moins (montant des pensions)\nLa réforme de 2023 (64 ans) a choisi le premier levier\n\n\nCe n’est pas un problème comptable simple. La productivité augmente aussi — si chaque actif produit plus, un ratio actifs/retraités plus faible n’est pas forcément catastrophique. Le vrai débat est : qui supporte le coût de l’ajustement ?\n\n\n  📰 L'actu qui illustre ce module\n  \n    \n      🇫🇷\n      Le budget 2025 — la rigueur\n      Avec un déficit à 6% du PIB, la France doit économiser 40 Mds en 2025. Le débat : faut-il couper les dépenses ou augmenter les impôts ? Et lesquels ? Le choix est autant politique qu'économique.\n    \n    \n      🏥\n      La Sécu — un modèle sous tension\n      Le système de santé français reste parmi les meilleurs au monde selon l'OMS. Mais il accumule des déficits structurels liés au vieillissement et à l'innovation médicale. Comment le financer durablement ?\n    \n    \n      🏭\n      Politique industrielle — le retour\n      Après 40 ans de libéralisme, les États reprennent en main leur politique industrielle. France 2030, puces européennes, batteries, hydrogène — l'État-stratège est de retour. Est-ce efficace ?\n    \n  \n\n\n\nQuiz du module\n5 questions tirées parmi 12 · jusqu'à +40 XP\n\n\n\n\n\n  \n  🏆 Parcours complet !\n  Tu as terminé les 12 modules\n  \n    De la définition de l'économie à la politique industrielle — tu as parcouru l'essentiel. Maintenant, au dîner, tu seras redoutable.\n  \n  \n    📖 Glossaire\n    🎯 Refaire le diagnostic\n    🔎 Défi actu\n    ← Accueil\n  \n\n\n\n  ← Module 11"
-  },
-  {
-    "objectID": "modules/10-travail.html",
-    "href": "modules/10-travail.html",
-    "title": "Le marché du travail",
-    "section": "",
-    "text": "Module 10\n      Niveau intermédiaire\n      100 XP\n    \n    \n    Chômage, SMIC, ubérisation — le marché qui touche tout le monde."
-  },
-  {
-    "objectID": "modules/10-travail.html#les-trois-types-de-chômage",
-    "href": "modules/10-travail.html#les-trois-types-de-chômage",
-    "title": "Le marché du travail",
-    "section": "Les trois types de chômage",
-    "text": "Les trois types de chômage\nTout le monde dit “le chômage” comme s’il n’y en avait qu’un. Il y en a au moins trois, avec des causes et des remèdes différents.\n\n  \n    🔄\n    Frictionnel\n    Le temps entre deux emplois — chercher un job, changer de région. Normal, inévitable, souvent court. Existe dans toutes les économies saines.\n    Incompressible · 1-2%\n  \n  \n    🏭\n    Structurel\n    Inadéquation entre les compétences disponibles et celles demandées. La désindustrialisation laisse des ouvriers sans débouchés. Long à résorber.\n    Formation / reconversion\n  \n  \n    📉\n    Conjoncturel\n    Lié au cycle économique — il augmente en récession, baisse en croissance. Cible principale des politiques de relance keynésiennes.\n    Politique budgétaire / monétaire\n  \n\n\nLe NAIRU (Non-Accelerating Inflation Rate of Unemployment) est le taux de chômage “naturel” en dessous duquel l’inflation s’emballe. En France, il est estimé autour de 7-8%. En dessous, les salaires montent, les prix suivent, la BCE réagit."
-  },
-  {
-    "objectID": "modules/10-travail.html#le-taux-de-chômage-en-france",
-    "href": "modules/10-travail.html#le-taux-de-chômage-en-france",
-    "title": "Le marché du travail",
-    "section": "Le taux de chômage en France",
-    "text": "Le taux de chômage en France\n\n\nWarning: le package 'ggplot2' a été compilé avec la version R 4.4.3\n\n\n\n\n\nTaux de chômage en France (1975–2023) — Source : INSEE"
-  },
-  {
-    "objectID": "modules/10-travail.html#la-courbe-de-phillips",
-    "href": "modules/10-travail.html#la-courbe-de-phillips",
-    "title": "Le marché du travail",
-    "section": "La courbe de Phillips",
-    "text": "La courbe de Phillips\nLa courbe de Phillips (1958) observe une relation inverse entre chômage et inflation : moins de chômage → pression à la hausse des salaires → hausse des prix → inflation.\n\nLa stagflation des années 70 a brisé cette relation. Friedman et Phelps ont montré que la courbe de Phillips n’est stable qu’à court terme. À long terme, les agents anticipent l’inflation et demandent des hausses de salaires préventives — la relation disparaît.\n\n\n  🔗 Liens avec d'autres modules :\n  → Module 08 : idées reçues sur le SMIC et l'immigration→ Module 03 : croissance et emploi→ Module 12 : politique de l'emploi et protection sociale"
-  },
-  {
-    "objectID": "modules/10-travail.html#le-smic-outil-ou-frein",
-    "href": "modules/10-travail.html#le-smic-outil-ou-frein",
-    "title": "Le marché du travail",
-    "section": "Le SMIC : outil ou frein ?",
-    "text": "Le SMIC : outil ou frein ?\n\n\n\n\n\nArgument\nPour le SMIC élevé\nContre le SMIC élevé\n\n\n\n\nEmploi\nEffet faible selon les études empiriques (Card & Krueger)\nThéorie classique : renchérit le travail peu qualifié\n\n\nPouvoir d'achat\nAugmente le revenu des plus modestes qui consomment\nPeut décourager certaines embauches en PME\n\n\nInégalités\nRéduit les écarts bas/hauts revenus\nPeut encourager l'automatisation des tâches peu qualifiées"
-  },
-  {
-    "objectID": "modules/10-travail.html#la-transformation-du-travail",
-    "href": "modules/10-travail.html#la-transformation-du-travail",
-    "title": "Le marché du travail",
-    "section": "La transformation du travail",
-    "text": "La transformation du travail\n\n  \n    🚗\n    Ubérisation\n    Des plateformes intermédiaires remplacent des employeurs traditionnels. Flexibilité pour certains, précarité pour d'autres. Le statut juridique reste flou.\n  \n  \n    🤖\n    Automatisation\n    Les tâches répétitives disparaissent. L'histoire montre que chaque vague technologique crée finalement plus d'emplois qu'elle n'en détruit — mais la transition est douloureuse.\n  \n  \n    🏠\n    Télétravail\n    La pandémie a accéléré la transition. Impact sur l'immobilier, les transports, la hiérarchie — et sur la frontière vie pro/perso. Productivité debattue.\n  \n\n\n\n  📰 L'actu qui illustre ce module\n  \n    \n      🇫🇷\n      Le plein emploi en France ?\n      Le chômage français est descendu sous 7% en 2023, niveau le plus bas depuis 40 ans. Certains parlent de \"plein emploi\" — mais ce mot cache des réalités très hétérogènes selon les régions et les qualifications.\n    \n    \n      ⚖️\n      Uber et le statut des travailleurs\n      La Cour de cassation a requalifié des chauffeurs Uber en salariés (2020). La directive européenne sur les travailleurs de plateforme va dans le même sens. Un enjeu de millions de personnes en Europe.\n    \n    \n      🏭\n      La pénurie de main-d'oeuvre\n      En 2022-2024, de nombreux secteurs (restauration, BTP, santé) ne trouvent pas de candidats malgré le chômage. Un paradoxe qui illustre le chômage structurel et les problèmes d'adéquation emploi/compétences.\n    \n  \n\n\n\nQuiz du module\n5 questions tirées parmi 12 · jusqu'à +40 XP\n\n\n\n\n\n  ← Module 09\n  Module 11 : Économie et environnement →"
-  },
-  {
-    "objectID": "modules/09-monnaie.html",
-    "href": "modules/09-monnaie.html",
-    "title": "La monnaie et le système bancaire",
-    "section": "",
-    "text": "Module 09\n      Niveau intermédiaire\n      100 XP\n    \n    \n    Les banques ne prêtent pas l'argent des déposants. Démystification complète."
-  },
-  {
-    "objectID": "modules/09-monnaie.html#lidée-reçue-la-plus-répandue",
-    "href": "modules/09-monnaie.html#lidée-reçue-la-plus-répandue",
-    "title": "La monnaie et le système bancaire",
-    "section": "L’idée reçue la plus répandue",
-    "text": "L’idée reçue la plus répandue\n“Les banques prêtent l’argent que les épargnants y déposent.”\nC’est faux. Et comprendre pourquoi change tout à la façon dont on pense l’économie."
-  },
-  {
-    "objectID": "modules/09-monnaie.html#comment-la-monnaie-est-vraiment-créée",
-    "href": "modules/09-monnaie.html#comment-la-monnaie-est-vraiment-créée",
-    "title": "La monnaie et le système bancaire",
-    "section": "Comment la monnaie est vraiment créée",
-    "text": "Comment la monnaie est vraiment créée\nQuand une banque commerciale t’accorde un prêt de 10 000 €, elle ne prend pas 10 000 € dans le compte d’un épargnant pour les mettre dans le tien. Elle crée ces 10 000 € en inscrivant simultanément : - un actif à son bilan : ta dette envers elle - un passif : les 10 000 € sur ton compte courant\nLa monnaie n’existait pas avant le prêt. Elle est créée ex nihilo — à partir de rien. C’est la création monétaire par le crédit.\n\nLa formule clé : “Les crédits font les dépôts” — pas l’inverse. Ce sont les prêts accordés qui créent les dépôts, non les dépôts qui permettent les prêts."
-  },
-  {
-    "objectID": "modules/09-monnaie.html#les-trois-types-de-monnaie",
-    "href": "modules/09-monnaie.html#les-trois-types-de-monnaie",
-    "title": "La monnaie et le système bancaire",
-    "section": "Les trois types de monnaie",
-    "text": "Les trois types de monnaie\n\n  \n    💵\n    Monnaie fiduciaire\n    Les billets et pièces. Créée par la banque centrale (BCE). Représente seulement ~5% de la monnaie en circulation.\n    BCE / Banque de France\n  \n  \n    💻\n    Monnaie scripturale\n    Les chiffres sur ton compte bancaire. Créée par les banques commerciales via le crédit. Représente ~95% de la monnaie.\n    BNP, Crédit Agricole…\n  \n  \n    🏦\n    Monnaie de banque centrale\n    Les réserves que les banques commerciales détiennent à la BCE. Sert aux règlements interbancaires.\n    Réserves obligatoires"
-  },
-  {
-    "objectID": "modules/09-monnaie.html#qui-contrôle-quoi",
-    "href": "modules/09-monnaie.html#qui-contrôle-quoi",
-    "title": "La monnaie et le système bancaire",
-    "section": "Qui contrôle quoi ?",
-    "text": "Qui contrôle quoi ?\n\n\nWarning: le package 'ggplot2' a été compilé avec la version R 4.4.3\n\n\n\n\n\nArchitecture du système monétaire en zone euro\n\n\n\n\n\n  🔗 Liens avec d'autres modules :\n  → Module 04 : les taux directeurs et l'inflation→ Module 05 : la BCE peut racheter des obligations souveraines→ Module 12 : politique monétaire vs budgétaire"
-  },
-  {
-    "objectID": "modules/09-monnaie.html#les-limites-à-la-création-monétaire",
-    "href": "modules/09-monnaie.html#les-limites-à-la-création-monétaire",
-    "title": "La monnaie et le système bancaire",
-    "section": "Les limites à la création monétaire",
-    "text": "Les limites à la création monétaire\nSi les banques créent librement de la monnaie, pourquoi ne le font-elles pas à l’infini ?\n\n  \n    📊\n    Réserves obligatoires\n    Les banques doivent déposer un % de leurs dépôts à la BCE (1% en zone euro). Frein partiel à la création.\n  \n  \n    💰\n    Fonds propres\n    Les règles de Bâle III imposent aux banques d'avoir assez de capital pour absorber les pertes. Limite les crédits risqués.\n  \n  \n    📈\n    Taux directeurs\n    Quand la BCE monte les taux, emprunter entre banques coûte plus cher → moins de crédits → moins de monnaie créée.\n  \n  \n    🎯\n    Demande de crédit\n    Si personne ne veut emprunter, les banques ne peuvent pas créer de monnaie. La demande est le vrai moteur.\n  \n  \n    ⚠️\n    Risque de faillite\n    Un crédit non remboursé détruit de la monnaie ET ampute les fonds propres. La prudence s'impose d'elle-même.\n  \n  \n    🏛️\n    Autorités de supervision\n    La BCE et l'ACPR en France contrôlent les banques et peuvent limiter leurs activités de crédit."
-  },
-  {
-    "objectID": "modules/09-monnaie.html#la-crise-de-2008-vue-autrement",
-    "href": "modules/09-monnaie.html#la-crise-de-2008-vue-autrement",
-    "title": "La monnaie et le système bancaire",
-    "section": "La crise de 2008 vue autrement",
-    "text": "La crise de 2008 vue autrement\nLa crise des subprimes prend un autre sens avec cette grille de lecture : les banques américaines avaient créé massivement de la monnaie via des crédits immobiliers risqués. Quand les emprunteurs ont fait défaut, la monnaie s’est détruite — les bilans se sont effondrés, le crédit s’est gelé, l’économie s’est contractée.\nC’est une déflation par la dette : la destruction de monnaie scripturale est plus dévastatrice qu’une simple récession ordinaire."
-  },
-  {
-    "objectID": "modules/09-monnaie.html#les-cryptomonnaies-une-vraie-alternative",
-    "href": "modules/09-monnaie.html#les-cryptomonnaies-une-vraie-alternative",
-    "title": "La monnaie et le système bancaire",
-    "section": "Les cryptomonnaies : une vraie alternative ?",
-    "text": "Les cryptomonnaies : une vraie alternative ?\n\nLe Bitcoin et autres cryptos ne sont pas de la monnaie au sens économique : leur offre est limitée algorithmiquement (pas de création flexible), leur valeur fluctue trop pour servir d’unité de compte stable, et peu de marchands les acceptent comme moyen de paiement. Ce sont plutôt des actifs spéculatifs. Le débat reste ouvert sur les CBDC (monnaies numériques de banque centrale).\n\n\n  📰 L'actu qui illustre ce module\n  \n    \n      🏦\n      La BCE baisse ses taux (2024)\n      En baissant ses taux directeurs, la BCE rend le crédit moins cher pour les banques, qui peuvent en créer davantage. C'est le mécanisme de transmission de la politique monétaire.\n    \n    \n      🏛️\n      L'euro numérique en projet\n      La BCE développe un \"euro numérique\" (CBDC) : une monnaie de banque centrale accessible directement aux citoyens, sans passer par une banque commerciale. Révolution potentielle.\n    \n    \n      📉\n      Crise Credit Suisse (2023)\n      L'effondrement de Credit Suisse illustre comment la confiance est le vrai fondement du système bancaire. Quand les clients retirent massivement leurs dépôts, même une grande banque peut tomber.\n    \n  \n\n\n\nQuiz du module\n5 questions tirées parmi 12 · jusqu'à +40 XP\n\n\n\n\n\n  ← Module 08\n  Module 10 : Le marché du travail →"
-  },
-  {
-    "objectID": "modules/11-environnement.html",
-    "href": "modules/11-environnement.html",
-    "title": "Économie et environnement",
-    "section": "",
-    "text": "Module 11\n      Niveau avancé\n      100 XP\n    \n    \n    Externalités, tarification carbone, biens communs — les outils économiques face au défi climatique."
-  },
-  {
-    "objectID": "modules/11-environnement.html#les-externalités-le-coeur-du-problème",
-    "href": "modules/11-environnement.html#les-externalités-le-coeur-du-problème",
-    "title": "Économie et environnement",
-    "section": "Les externalités — le coeur du problème",
-    "text": "Les externalités — le coeur du problème\nUne externalité est un effet (positif ou négatif) qu’une activité économique produit sur des tiers, sans que cela se reflète dans le prix.\n\nExemple classique : Une usine pollue une rivière. Le coût de la pollution (pêche détruite, eau contaminée, santé dégradée) est supporté par la société — pas par l’usine. Son prix de vente ne reflète pas ce coût réel. C’est une externalité négative.\n\nRésultat : le marché produit trop de biens à externalités négatives (pollution, CO2) et trop peu de biens à externalités positives (éducation, recherche, forêts)."
-  },
-  {
-    "objectID": "modules/11-environnement.html#les-quatre-solutions-économiques",
-    "href": "modules/11-environnement.html#les-quatre-solutions-économiques",
-    "title": "Économie et environnement",
-    "section": "Les quatre solutions économiques",
-    "text": "Les quatre solutions économiques\n\n  \n    💰\n    Taxe Pigouvienne\n    Taxer la pollution à hauteur de son coût social — pour internaliser l'externalité. La taxe carbone en est l'exemple. Proposée par l'économiste Pigou en 1920.\n    Internalise le coût social\n  \n  \n    🎫\n    Marchés de quotas\n    L'État fixe un plafond de pollution total et distribue des droits à polluer échangeables. Les entreprises les achètent/vendent selon leurs besoins. Système ETS en Europe.\n    Plafonne les émissions totales\n  \n  \n    🏛️\n    Réglementation\n    Standards d'émissions, interdictions, normes techniques. Direct mais rigide — ne tient pas compte des différences de coût entre entreprises.\n    Norme Euro 7, RE2020\n  \n  \n    🌿\n    Subventions vertes\n    Soutenir les alternatives propres pour les rendre compétitives (solaire, éolien, VE). Fonctionne bien mais coûte cher à l'État.\n    IRA américain, RE2020\n  \n\n\n  🔗 Liens avec d'autres modules :\n  → Module 07 : CBAM, taxe carbone aux frontières→ Module 03 : PIB vert et décroissance→ Module 12 : politiques publiques environnementales"
-  },
-  {
-    "objectID": "modules/11-environnement.html#la-tragédie-des-communs",
-    "href": "modules/11-environnement.html#la-tragédie-des-communs",
-    "title": "Économie et environnement",
-    "section": "La tragédie des communs",
-    "text": "La tragédie des communs\nL’économiste Garrett Hardin (1968) a décrit un phénomène crucial : les ressources partagées sont surexploitées par les individus qui agissent rationnellement chacun pour soi.\nL’exemple : Un pré communal peut nourrir 10 vaches. Chaque paysan a intérêt à mettre une vache de plus — il capte tout le bénéfice mais ne supporte qu’1/N du coût de surpâturage. Résultat : tout le monde le fait, le pré est détruit. Personne n’a voulu ça, mais c’est le résultat de décisions individuellement rationnelles.\nL’atmosphère est un bien commun mondial. Chaque État, chaque entreprise a intérêt à polluer (bénéfice privé) tout en espérant que les autres feront les efforts (coût collectif). D’où la difficulté des accords climatiques.\n\nLa réponse d’Elinor Ostrom (Nobel 2009) : contrairement à Hardin, Ostrom a montré empiriquement que les communautés peuvent gérer leurs communs de façon durable — sans privatisation ni État — via des règles collectives, de la surveillance mutuelle et des sanctions graduelles. Les systèmes d’irrigation au Japon ou en Espagne en sont des exemples vieux de siècles."
-  },
-  {
-    "objectID": "modules/11-environnement.html#le-coût-du-carbone",
-    "href": "modules/11-environnement.html#le-coût-du-carbone",
-    "title": "Économie et environnement",
-    "section": "Le coût du carbone",
-    "text": "Le coût du carbone\n\n\nWarning: le package 'ggplot2' a été compilé avec la version R 4.4.3\n\n\n\n\n\nPrix du carbone dans le système ETS européen (€/tonne CO2) — Source : Refinitiv"
-  },
-  {
-    "objectID": "modules/11-environnement.html#pib-vert-vs-comptabilité-du-bien-être",
-    "href": "modules/11-environnement.html#pib-vert-vs-comptabilité-du-bien-être",
-    "title": "Économie et environnement",
-    "section": "PIB vert vs comptabilité du bien-être",
-    "text": "PIB vert vs comptabilité du bien-être\nLe PIB ignore les destructions environnementales. Plusieurs approches tentent d’y remédier :\n\n  \n    🌍\n    PIB vert\n    Soustrait la dépréciation du capital naturel (forêts, sols, eau) au PIB traditionnel. Si on abat une forêt, le PIB monte — le PIB vert baisserait.\n  \n  \n    📊\n    Empreinte matérielle\n    Mesure la quantité totale de matières premières consommées — y compris celles \"importées\" via les produits achetés à l'étranger. La France \"exporte\" sa pollution.\n  \n  \n    🌱\n    Limites planétaires\n    Rockstrom et al. (2009) : 9 frontières biophysiques à ne pas dépasser pour rester dans un \"espace sûr\". 6 sur 9 sont déjà franchies en 2024.\n  \n\n\n\n  📰 L'actu qui illustre ce module\n  \n    \n      🇪🇺\n      La taxe carbone aux frontières (CBAM)\n      Depuis 2023, l'UE impose une taxe carbone sur certaines importations (acier, ciment, aluminium) pour éviter que les entreprises européennes soient désavantagées face à des concurrents moins vertueux.\n    \n    \n      🔥\n      Le coût économique des catastrophes\n      Les assureurs évaluent les pertes liées aux catastrophes climatiques à 300-400 Mds$ par an mondialement. Swiss Re estime que le changement climatique pourrait réduire le PIB mondial de 10% d'ici 2050.\n    \n    \n      ⚡\n      Les subventions aux énergies fossiles\n      Le FMI estime les subventions mondiales aux énergies fossiles à 7 000 milliards de dollars par an (directes et indirectes). Supprimer ces subventions serait la politique climatique la plus efficace — et la plus impopulaire.\n    \n  \n\n\n\nQuiz du module\n5 questions tirées parmi 12 · jusqu'à +40 XP\n\n\n\n\n\n  ← Module 10\n  Module 12 : Politiques économiques →"
-  },
-  {
-    "objectID": "modules/13-medias.html",
-    "href": "modules/13-medias.html",
-    "title": "Comment lire les médias éco",
-    "section": "",
-    "text": "Module 13\n      Niveau avancé\n      80 XP\n    \n    \n    Décrypter un titre, repérer un biais, distinguer une stat d'une opinion — le mode d'emploi."
-  },
-  {
-    "objectID": "modules/13-medias.html#distinguer-fait-opinion-et-jugement-de-valeur",
-    "href": "modules/13-medias.html#distinguer-fait-opinion-et-jugement-de-valeur",
-    "title": "Comment lire les médias éco",
-    "section": "1. Distinguer fait, opinion et jugement de valeur",
-    "text": "1. Distinguer fait, opinion et jugement de valeur\nAvant même de lire un article, la question fondamentale est : de quoi s’agit-il ?\n\n  \n    📊\n    Fait vérifiable\n    \"Le PIB a augmenté de 1,1 % en 2024.\" C'est mesurable, falsifiable, sourcé. On peut le vérifier.\n    Chercher la source primaire\n  \n  \n    💭\n    Opinion/analyse\n    \"Cette croissance est insuffisante.\" Jugement qui dépend d'un référentiel. Insuffisant par rapport à quoi ? Pour qui ?\n    Demander le référentiel\n  \n  \n    ⚖️\n    Jugement normatif\n    \"L'État devrait investir davantage.\" Prescription politique déguisée en analyse. Ni vrai ni faux — c'est un choix de valeurs.\n    Rappel : module 01"
-  },
-  {
-    "objectID": "modules/13-medias.html#lire-un-graphique-économique-sans-se-faire-piéger",
-    "href": "modules/13-medias.html#lire-un-graphique-économique-sans-se-faire-piéger",
-    "title": "Comment lire les médias éco",
-    "section": "2. Lire un graphique économique sans se faire piéger",
-    "text": "2. Lire un graphique économique sans se faire piéger\nLes graphiques sont puissants — et facilement manipulables. Cinq pièges classiques :\n\n\n\n\n\nPiège\nComment le repérer\nExemple concret\n\n\n\n\nAxe Y tronqué\nL'axe ne part pas de 0 — une petite variation semble immense\nCroissance qui passe de 1,9 % à 2,1 % montrée comme une \"explosion\"\n\n\nAbsence de contexte\nPas de comparaison internationale ou historique\n\"La France a 3 000 Mds de dettes\" — sans dire que l'Allemagne ou les USA en ont plus en proportion\n\n\nNominal vs réel\nLes chiffres sont en euros courants, non corrigés de l'inflation\nLes salaires \"ont augmenté de 5 %\" quand l'inflation était à 6 % — en réel, ils ont baissé\n\n\nStock vs flux\nOn compare une accumulation (dette) avec une variation annuelle (déficit)\n\"La dette a augmenté de 100 Mds\" ≠ \"le déficit est de 100 Mds\"\n\n\nCorrélation ≠ causalité\nDeux variables qui varient ensemble ne s'expliquent pas forcément l'une l'autre\n\"Les pays qui mangent plus de chocolat ont plus de Nobel\" — vraie corrélation, aucune causalité"
-  },
-  {
-    "objectID": "modules/13-medias.html#décrypter-un-titre-accrocheur",
-    "href": "modules/13-medias.html#décrypter-un-titre-accrocheur",
-    "title": "Comment lire les médias éco",
-    "section": "3. Décrypter un titre accrocheur",
-    "text": "3. Décrypter un titre accrocheur\nLes titres de presse économique ont souvent des formules typiques. Voici comment les désamorcer :\n\n\n  \n    🔴 Titre alarmiste\n    \"La dette française, bombe à retardement pour nos enfants\"\n    Questions à poser : À quel taux ? Détenue par qui ? Quelle part est intérieure vs extérieure ? Comparer avec d'autres pays. La métaphore de la \"bombe\" est normative, pas analytique.\n  \n\n  \n    🟢 Titre factuel\n    \"La dette française atteint 112 % du PIB au 3e trimestre 2024\"\n    À vérifier quand même : Source ? Comment le PIB est-il calculé ? La donnée est-elle brute ou nette (dette - actifs) ?\n  \n\n  \n    🟡 Titre ambigu\n    \"Le chômage recule — bonne nouvelle pour l'économie\"\n    Creuser : Quel type de chômage ? Le taux d'emploi a-t-il aussi augmenté ? Les emplois créés sont-ils à temps plein ou partiel ? \"Bonne nouvelle\" pour qui exactement ?"
-  },
-  {
-    "objectID": "modules/13-medias.html#les-biais-de-cadrage-framing",
-    "href": "modules/13-medias.html#les-biais-de-cadrage-framing",
-    "title": "Comment lire les médias éco",
-    "section": "4. Les biais de cadrage (framing)",
-    "text": "4. Les biais de cadrage (framing)\nLa façon dont une information est présentée change radicalement sa perception :\n\nExemple classique : Un médicament qui “réduit le risque de 50 %” semble miraculeux. Si le risque passe de 2 % à 1 %, la réduction absolue n’est que de 1 point. Même donnée, deux cadrages très différents. En économie : “les riches paient 50 % de l’impôt sur le revenu” est vrai — mais ils détiennent aussi 50 % des revenus imposables.\n\n\n  \n    📉\n    Risque relatif vs absolu\n    \"-50 % de risque\" peut masquer un risque initial très faible. Toujours demander : \"50 % de combien ?\"\n  \n  \n    📊\n    Milliards vs % du PIB\n    \"200 milliards de dépenses sociales\" vs \"8 % du PIB\" — même chiffre, perceptions très différentes.\n  \n  \n    🔢\n    Moyenne vs médiane\n    Le salaire \"moyen\" est tiré vers le haut par les très hauts salaires. La médiane (50 % gagne plus, 50 % moins) est plus représentative.\n  \n  \n    🗓️\n    Point de départ choisi\n    La même tendance sur 3 ans ou 30 ans peut raconter des histoires opposées. Attention à la \"date de référence\" sélectionnée."
-  },
-  {
-    "objectID": "modules/13-medias.html#les-cinq-questions-à-poser-à-chaque-article",
-    "href": "modules/13-medias.html#les-cinq-questions-à-poser-à-chaque-article",
-    "title": "Comment lire les médias éco",
-    "section": "5. Les cinq questions à poser à chaque article",
-    "text": "5. Les cinq questions à poser à chaque article\n\n  \n    1\n    Quelle est la source primaire ?INSEE, Eurostat, Banque de France, OCDE… ou un think tank partial ? La source primaire compte plus que le journal qui la reprend.\n  \n  \n    2\n    Quel est le référentiel de comparaison ?Par rapport à quand ? Par rapport à quel pays ? Une information sans référentiel ne veut souvent rien dire.\n  \n  \n    3\n    Qui en bénéficie ? Qui paie ?Toute politique économique a des gagnants et des perdants. Si l'article n'en parle pas, c'est un angle manquant.\n  \n  \n    4\n    C'est nominal ou réel ?Les chiffres sont-ils corrigés de l'inflation ? +5 % de salaires avec 6 % d'inflation = baisse de pouvoir d'achat.\n  \n  \n    5\n    Corrélation ou causalité ?\"Quand les taux montent, l'immobilier baisse\" — causalité probable. \"Les pays qui lisent plus sont plus riches\" — corrélation avec un facteur tiers (niveau d'éducation).\n  \n\n\n\n  📰 Exercice pratique\n  \n    \n      🔍\n      Tester ces 5 questions\n      Prends n'importe quel article des Échos, du Monde Éco ou de BFM Business cette semaine. Applique les 5 questions. Tu verras combien d'articles laissent des angles vides.\n    \n    \n      📊\n      Sources fiables à connaître\n      INSEE (données françaises), Eurostat (UE), OCDE (comparaisons internationales), Banque de France (données financières), FMI (perspectives mondiales). Ce sont les sources primaires.\n    \n    \n      🔗\n      Lier à ce qu'on sait\n      Chaque info de presse éco renvoie à un concept vu dans les modules. \"La BCE monte les taux\" → module 04 + 09. \"Oxfam publie son rapport\" → module 06. Le défi actu est fait pour ça.\n    \n  \n\n\n\nQuiz du module\n5 questions tirées parmi 10 · jusqu'à +40 XP\n\n\n\n\n\n  ← Module 12\n  🔎 Pratiquer avec le défi actu →"
-  },
-  {
-    "objectID": "actu.html",
-    "href": "actu.html",
-    "title": "L'actu éco de la semaine",
-    "section": "",
-    "text": "📰\n    L'actu éco de la semaine\n    \n      20 actualités économiques récentes — chacune liée à un module du site. Une nouvelle actu mise en avant chaque semaine.\n    \n    \n      \n        20\n        actus\n      \n      \n        12\n        thèmes\n      \n      \n        ↻\n        hebdo\n      \n    \n  \n\n\n\n  \n  \n    Tout\n  \n\n  \n  \n\n  \n  \n    📝 Comment mettre à jour les actus\n    \n      Les actus sont dans le fichier assets/data/actu.json.\n      Pour en ajouter une, copie le modèle ci-dessous et colle-le en tête du tableau JSON :\n    \n    {\n  \"date\": \"2025-MM\",\n  \"titre\": \"Titre de l'actu\",\n  \"resume\": \"Description en 1-2 phrases.\",\n  \"tag\": \"Thème\",\n  \"module\": \"01\",\n  \"module_titre\": \"Nom du module\",\n  \"module_href\": \"modules/01-definition.html\",\n  \"concept\": \"Concept clé illustré\",\n  \"emoji\": \"📰\"\n}"
   }
 ]
